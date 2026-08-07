@@ -47,7 +47,7 @@ SPEC.md section 6 and cannot be revised after data.
 - [x] Design frozen (2026-08-06)
 - [x] Tier A rule tables drafted; adversarial review COMPLETE — findings ruled on by both parties, dispositions applied (REVIEW_LOG.md, 2026-08-07); rule 02 display-line set amended (F2); rule 03 sequencing set structurally disabled in code (F1)
 - [ ] environment.json pinned — DRAFT complete incl. party-ruled judge (claude-opus-4-5-20251101, temp 0, thinking omitted); judge smoke test PENDING (requires API key; Sol's F3 condition)
-- [ ] Harness: matcher DONE (75 tests, incl. F2/F5 semantics + F4 skip logging); eligibility scorer, intervention decoder, density logger pending
+- [ ] Harness: matcher DONE; eligibility scorer DONE (F5 two-region scoring, Δ=1.5); intervention decoder + density logger DONE (95 tests total, incl. HF-adapter integration tests against pinned transformers 5.14.1); depth calibrator + audit sampler pending; see REVIEW_LOG IN-1 for a decoder-side conservative rule awaiting party awareness
 - [ ] Matcher-only review pass: dry run regenerated post-amendment (24 traces, 298 sites); Noah's Step 4 sign-off PENDING
 - [ ] seeds.json completed, FREEZE_MANIFEST.json generated and published
 - [ ] Depth calibration (native greedy, with/without trace)

@@ -92,6 +92,25 @@ supplied by Fable: where rulings differ, adopt the more conservative option
 - APPLIED: Site records `score_start`/`score_end`; for rule 06 they span
   <lhs> through <rhs>; for all other rules they equal the edit span.
 
+## Implementation note IN-1 (2026-08-07, decoder build) — flagged for parties, not yet ruled
+
+Building the intervention decoder surfaced a temporal-knowledge gap in one
+frozen exclusion: rule 03's initiation set is dropped "whenever the trace
+contains explicit ordinal enumeration" — a TRACE-GLOBAL condition. During
+generation, the decoder must decide a site using only the text that exists at
+that moment; an ordinal ("Second, ...") produced LATER would retroactively
+flip the exclusion, and by then a randomized "First," -> "To start," would
+already have broken enumeration parallelism (channel 2 — the hunt list's own
+example). Per CLAUDE.md rule 2 (ambiguity -> skip), the decoder never
+randomizes the initiation set mid-generation; such sites are logged with
+skip_reason "global_exclusion_undecidable_mid_generation" and must be
+reported as structurally unavailable during generation, mirroring the F1
+treatment of the sequencing set. Table untouched. This is a mechanical
+consequence of the frozen table's global wording plus causal decoding; the
+parties should be shown this note before hashing. If they prefer a different
+resolution (e.g., decide on trace-so-far), that is a pre-hash amendment
+discussion.
+
 ## Remaining before hash (checkpoint Step 4)
 
 1. Noah's explicit sign-off on the reviewed site list (post-amendment rerun).
