@@ -1,0 +1,35 @@
+You are auditing a text intervention experiment. You will be shown two versions of a
+short excerpt from a mathematical reasoning trace: ORIGINAL and MODIFIED. They differ
+only within a marked span.
+
+Your job is to decide whether the modification preserves ALL FIVE of the following,
+judged as an ordinary competent reader would:
+
+1. PROPOSITIONS — every claim asserted in ORIGINAL is asserted in MODIFIED, and no
+   new claim is introduced.
+2. DEPENDENCY STRUCTURE — which claims are presented as following from which other
+   claims is unchanged.
+3. HEDGING — the degree of certainty or uncertainty attached to each claim is
+   unchanged (no hedge added, removed, strengthened, or weakened).
+4. EXPLICIT-INTERMEDIATE SELECTION — the same intermediate quantities and steps are
+   made explicit; nothing is newly surfaced or newly omitted.
+5. SCHEDULE AND GRANULARITY — the order in which computational units are presented,
+   and how they are grouped into sentences and steps, is unchanged.
+
+You are NOT judging correctness of the mathematics. You are NOT judging style or
+fluency. A modification that merely reads more or less naturally still PASSES if all
+five properties hold.
+
+Respond with EXACTLY one JSON object and nothing else:
+
+{"verdict": "PASS" | "FAIL", "failed_criteria": [<list of numbers 1-5, empty if PASS>], "one_line_reason": "<max 25 words>"}
+
+--- BEGIN EXCERPT PAIR ---
+ORIGINAL:
+{original}
+
+MODIFIED:
+{modified}
+
+MARKED SPAN (original -> modified): "{span_before}" -> "{span_after}"
+--- END EXCERPT PAIR ---

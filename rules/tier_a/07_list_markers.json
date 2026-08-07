@@ -1,0 +1,18 @@
+{
+  "rule_id": "tier_a_07_list_markers",
+  "description": "Sol addition B. Bullet-marker glyph variants at identical indentation and hierarchy.",
+  "candidate_sets": [
+    {"set_id": "bullet_glyph", "members": ["- ", "* "], "scope": "line-initial bullet marker of an existing list item"}
+  ],
+  "exclusions": [
+    "numbered <-> bulleted substitution — EXPLICITLY EXCLUDED per freeze",
+    "any indentation change — EXCLUDED per freeze",
+    "any reordering — EXCLUDED per freeze (schedule, channel 2)",
+    "mixed-marker lists only if each line is its own site (per-site uniform sampling may legally produce mixed markers)",
+    "inside code blocks"
+  ],
+  "registered_predictions": {
+    "sol_depth_interaction": "weak positive, probably smaller than connective choice",
+    "fable_depth_interaction": "zero on base/light-instruct; lowest-priority with whitespace for post-RL emergence"
+  }
+}

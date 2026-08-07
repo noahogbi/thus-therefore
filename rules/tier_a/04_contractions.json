@@ -1,0 +1,24 @@
+{
+  "rule_id": "tier_a_04_contractions",
+  "description": "Standard English contraction <-> expansion pairs.",
+  "candidate_sets": [
+    {"set_id": "its", "members": ["it's", "it is"]},
+    {"set_id": "thats", "members": ["that's", "that is"]},
+    {"set_id": "were", "members": ["we're", "we are"]},
+    {"set_id": "dont", "members": ["don't", "do not"]},
+    {"set_id": "doesnt", "members": ["doesn't", "does not"]},
+    {"set_id": "cant", "members": ["can't", "cannot"]},
+    {"set_id": "isnt", "members": ["isn't", "is not"]},
+    {"set_id": "wont", "members": ["won't", "will not"]},
+    {"set_id": "lets", "members": ["let's", "let us"], "note": "only clause-initial hortative; exclude possessive-adjacent ambiguity"}
+  ],
+  "exclusions": [
+    "inside quotations or code blocks",
+    "possessive 'its' (no apostrophe) — matcher must verify the contraction reading via following-token POS heuristic; when ambiguous, skip",
+    "capitalization follows the replaced span's original casing"
+  ],
+  "registered_predictions": {
+    "sol_depth_interaction": "near zero",
+    "fable_depth_interaction": "zero"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "rule_id": "tier_a_05_whitespace",
+  "description": "Formatting whitespace variants that cannot change step boundaries or schedule.",
+  "candidate_sets": [
+    {
+      "set_id": "inter_paragraph_gap",
+      "pattern": "boundary between two reasoning paragraphs already separated by at least one newline",
+      "members": ["\n", "\n\n"],
+      "note": "Varies blank-line presence at an EXISTING boundary only. Never merges lines (that would be merge/split — protected, channel 2) and never inserts a break inside a paragraph."
+    }
+  ],
+  "exclusions": [
+    "any whitespace inside or adjacent to code blocks",
+    "indentation of any kind (list hierarchy is protected)",
+    "whitespace inside symbolic expressions (belongs to rule 06)",
+    "markdown constructs where blank lines change rendering semantics of lists/tables"
+  ],
+  "registered_predictions": {
+    "sol_depth_interaction": "weak positive",
+    "fable_depth_interaction": "zero on base/light-instruct; lowest-priority rule for post-RL emergence (low entropy)"
+  }
+}

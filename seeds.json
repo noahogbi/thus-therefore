@@ -1,0 +1,6 @@
+{
+  "_comment": "All randomness sources for the run. FILL BEFORE FREEZING. Audit sample seed must be committed before outcome analysis per SPEC section 8.",
+  "task_generation_seeds": [1337, 2026, 8191],
+  "intervention_sampling_seed": null,
+  "audit_sample_seed": null
+}

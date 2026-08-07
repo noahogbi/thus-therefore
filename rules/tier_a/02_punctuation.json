@@ -1,0 +1,28 @@
+{
+  "rule_id": "tier_a_02_punctuation",
+  "description": "Punctuation variants that do NOT alter clause boundaries.",
+  "candidate_sets": [
+    {
+      "set_id": "comma_after_initial_connective",
+      "pattern": "sentence-initial connective (Thus/Therefore/Hence/So/Then/Next/Now) followed by optional comma",
+      "members": ["<connective>, ", "<connective> "]
+    },
+    {
+      "set_id": "final_period_on_display_line",
+      "pattern": "short standalone equation/result line",
+      "members": ["<line>.", "<line>"],
+      "note": "Only when the line is a complete standalone step ending in a value or expression; never when the period disambiguates sentence structure."
+    }
+  ],
+  "exclusions": [
+    "colon/semicolon swaps — EXPLICITLY EXCLUDED per freeze",
+    "any comma whose presence/absence changes clause attachment or list structure",
+    "serial/Oxford commas — EXPLICITLY EXCLUDED per freeze",
+    "decimal points, thousands separators, or any numeral-internal punctuation",
+    "inside quotations or code blocks"
+  ],
+  "registered_predictions": {
+    "sol_depth_interaction": "weak positive / near zero",
+    "fable_depth_interaction": "zero on base/light-instruct"
+  }
+}

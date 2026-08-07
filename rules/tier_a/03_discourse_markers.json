@@ -1,0 +1,25 @@
+{
+  "rule_id": "tier_a_03_discourse_markers",
+  "description": "Closed-set discourse-marker lexical variants, sentence/step-initial only.",
+  "candidate_sets": [
+    {"set_id": "sequencing", "members": ["Next,", "Then,"]},
+    {"set_id": "attention", "members": ["Note that", "Observe that", "Notice that"]},
+    {"set_id": "recap", "members": ["In other words,", "That is,"]},
+    {"set_id": "initiation", "members": ["First,", "To start,", "To begin,"]}
+  ],
+  "context_requirements": {
+    "position": "start of sentence or reasoning step only",
+    "note": "Members within a set substitute ONLY for each other; sets never mix."
+  },
+  "exclusions": [
+    "because/since/as — EXPLICITLY EXCLUDED per freeze (causal discourse relation can move)",
+    "'Then' when it carries conditional meaning (preceded by an 'If'-clause in the same sentence) — excluded: if-then is dependency structure, channel 2",
+    "'First,' when a 'Second,'/'Next,' has NOT yet appeared and the substitution would break enumeration parallelism established elsewhere in the trace — conservative: exclude 'First,' set entirely whenever the trace contains explicit ordinal enumeration (First/Second/Third)",
+    "any marker introducing new hedging (e.g., 'Presumably,') — hedging is channel 2",
+    "inside quotations or code blocks"
+  ],
+  "registered_predictions": {
+    "sol_depth_interaction": "positive",
+    "fable_depth_interaction": "zero on base/light-instruct; positive post outcome-filtered training (high-entropy rule)"
+  }
+}

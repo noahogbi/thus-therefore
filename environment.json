@@ -1,0 +1,12 @@
+{
+  "_comment": "Pin BEFORE freezing per Sol's freeze mechanics: model version alone is insufficient because the experiment is tokenizer-level.",
+  "model_id": null,
+  "model_revision_hash": null,
+  "tokenizer_id": null,
+  "tokenizer_revision_hash": null,
+  "decoding_implementation": null,
+  "decoding_implementation_version": null,
+  "judge_model_id": null,
+  "judge_model_revision": null,
+  "judge_temperature": 0
+}

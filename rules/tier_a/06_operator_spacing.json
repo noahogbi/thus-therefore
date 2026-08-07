@@ -1,0 +1,25 @@
+{
+  "rule_id": "tier_a_06_operator_spacing",
+  "description": "Sol addition A. Spacing around binary operators in already-explicit symbolic expressions.",
+  "candidate_sets": [
+    {"set_id": "equals", "members": ["<lhs>=<rhs>", "<lhs> = <rhs>"]},
+    {"set_id": "plus", "members": ["<a>+<b>", "<a> + <b>"]},
+    {"set_id": "times", "members": ["<a>*<b>", "<a> * <b>"]},
+    {"set_id": "binary_minus", "members": ["<a>-<b>", "<a> - <b>"], "note": "binary ONLY — see exclusions"}
+  ],
+  "context_requirements": {
+    "scope": "expressions already emitted as symbolic math in prose or display lines",
+    "consistency": "each site is one operator instance; no requirement of global consistency (inconsistency within a trace is itself a legal random outcome)"
+  },
+  "exclusions": [
+    "unary operators (unary minus, negation) — EXPLICITLY EXCLUDED per freeze",
+    "ambiguous minus (could parse as unary or range/hyphen) — skip when the matcher cannot prove binary reading",
+    "code blocks where whitespace is syntactically meaningful — EXCLUDED per freeze",
+    "anything where parsing changes (e.g., '**' exponent, '->' arrows, negative exponents)",
+    "numeral-internal characters; digit<->word substitution is a DISPUTED CELL, never this rule"
+  ],
+  "registered_predictions": {
+    "sol_depth_interaction": "weak positive (available carrier if neutral state is reused)",
+    "fable_depth_interaction": "zero on base/light-instruct"
+  }
+}

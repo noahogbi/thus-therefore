@@ -1,0 +1,27 @@
+{
+  "rule_id": "tier_a_01_connectives",
+  "description": "Sentence-initial inferential connective synonyms. Uniform sampling among eligible members of the closed set.",
+  "candidate_sets": [
+    {
+      "set_id": "inferential",
+      "members": ["Thus", "Therefore", "Hence", "So"],
+      "members_mid_sentence": ["thus", "therefore", "hence", "so"]
+    }
+  ],
+  "context_requirements": {
+    "position": "start of sentence (preceded by sentence-final punctuation + whitespace, or start of a reasoning step/line), OR immediately after a clause-initial comma",
+    "must_be_followed_by": "a comma or a complete clause (subject-verb detectable within the next 12 tokens)"
+  },
+  "exclusions": [
+    "'so that' constructions (purpose clauses) — check next non-space token != 'that'",
+    "comparative/degree 'so' — exclude when followed by adjective/adverb + 'that' or by 'much'/'many'/'few'/'little'",
+    "inside quotation marks",
+    "inside code blocks (fenced or inline backticks)",
+    "when the span overlaps a site matched by another rule (overlap resolution: lowest rule_id wins, other rule skips)"
+  ],
+  "span_note": "Tokenizer may split members into different token counts. Score full forced span per SPEC section 2; no length normalization.",
+  "registered_predictions": {
+    "sol_depth_interaction": "positive",
+    "fable_depth_interaction": "zero on base/light-instruct; positive post outcome-filtered training; highest-priority rule for constant brittleness penalty"
+  }
+}
