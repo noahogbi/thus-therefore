@@ -93,13 +93,19 @@ class DecodeResult:
 class InterventionDecoder:
     def __init__(self, lm: SequenceLM, scorer: EligibilityScorer, rng,
                  matcher: Callable[[str], list[Site]] = match_sites,
-                 lookahead_chars: int = 100, intervene: bool = True):
+                 lookahead_chars: int = 100, intervene: bool = True,
+                 rules: set[str] | None = None):
         self.lm = lm
         self.scorer = scorer
         self.rng = rng
         self.matcher = matcher
         self.lookahead_chars = lookahead_chars
         self.intervene = intervene
+        # Per-rule arms: when set, only sites of these rules are considered
+        # (others are neither randomized nor logged — they are not part of
+        # the arm; overlap resolution still runs over ALL rules first, so a
+        # rule's site inventory is identical across arms).
+        self.rules = rules
 
     def generate(self, prompt: str, max_new_tokens: int) -> DecodeResult:
         ids = self.lm.encode(prompt)
@@ -138,6 +144,8 @@ class InterventionDecoder:
     def _next_confirmed_site(self, realized: str, frontier: int,
                              terminal: bool) -> Site | None:
         for site in self.matcher(realized):
+            if self.rules is not None and site.rule_id not in self.rules:
+                continue
             if site.start < frontier:
                 continue
             if terminal or site.end + self.lookahead_chars <= len(realized):

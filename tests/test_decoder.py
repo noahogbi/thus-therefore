@@ -129,6 +129,20 @@ class TestBoundaries:
         assert result.text == script
 
 
+class TestRuleArms:
+    def test_rules_subset_restricts_interventions(self):
+        # Per-rule arms: a decoder configured for rule 06 only must ignore
+        # the rule 01 site entirely (not even log it).
+        lm = ScriptedLM(
+            [("", SCRIPT), (PROMPT + "Go on. So", PROMPT + "Go on. So, x is 2 now here. END")],
+            branch=branch_two_eligible(),
+        )
+        dec = make_decoder(lm, rng=PickRng("So"), rules={"tier_a_06_operator_spacing"})
+        result = dec.generate(PROMPT, max_new_tokens=100)
+        assert all(r.rule_id == "tier_a_06_operator_spacing" for r in result.sites)
+        assert result.text == SCRIPT
+
+
 class TestDensity:
     def test_density_counts_intervenable_sites_per_1000_tokens(self):
         lm = ScriptedLM(
