@@ -9,9 +9,9 @@
     },
     {
       "set_id": "final_period_on_display_line",
-      "pattern": "short standalone equation/result line",
-      "members": ["<line>.", "<line>"],
-      "note": "Only when the line is a complete standalone step ending in a value or expression; never when the period disambiguates sentence structure."
+      "pattern": "terminal period boundary of a short standalone equation/result line followed by a line break; the site begins immediately before the optional final period and includes the existing line break; the equation/result body is invariant left context and is not part of the matched span",
+      "members": [".<linebreak>", "<linebreak>"],
+      "note": "Only when the line is a complete standalone step ending in a value or expression; never when the period disambiguates sentence structure. <linebreak> is the actual existing line terminator in the trace and is included in forced-candidate scoring. Lines at EOF without a following line break are conservatively skipped. Interior operators remain eligible for rule 06. Amended at pre-freeze review per REVIEW_LOG F2 (defect and amendment proposed by Fable, adopted wording by Sol, applied 2026-08-07)."
     }
   ],
   "exclusions": [

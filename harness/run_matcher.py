@@ -14,7 +14,7 @@ import argparse
 from collections import defaultdict
 from pathlib import Path
 
-from harness.matcher import match_sites
+from harness.matcher import match_sites_with_stats
 
 REPO = Path(__file__).resolve().parent.parent
 TRACES = REPO / "samples" / "traces"
@@ -40,12 +40,16 @@ def main() -> None:
     args = ap.parse_args()
 
     by_rule: dict[str, list] = defaultdict(list)
+    r1_skip_totals: dict[str, int] = defaultdict(int)
     trace_count, token_est = 0, 0
     for path in sorted(TRACES.glob("*.txt")):
         text = path.read_text(encoding="utf-8")
         trace_count += 1
         token_est += len(text.split())
-        for site in match_sites(text):
+        sites, stats = match_sites_with_stats(text)
+        for reason, n in stats["tier_a_01_connectives"].items():
+            r1_skip_totals[reason] += n
+        for site in sites:
             by_rule[site.rule_id].append((path.name, text, site))
 
     total = sum(len(v) for v in by_rule.values())
@@ -84,10 +88,21 @@ def main() -> None:
     if not (all_rules - hit):
         lines.append("- none — every rule produced at least one site")
 
+    lines.append("")
+    lines.append("## Rule 01 effective-power log (REVIEW_LOG F4)")
+    lines.append("")
+    lines.append("Candidate connective occurrences considered, by outcome:")
+    for reason in sorted(r1_skip_totals):
+        lines.append(f"- {reason}: {r1_skip_totals[reason]}")
+    lines.append("")
+    lines.append("Rule 03 sequencing set: structurally unavailable per REVIEW_LOG F1")
+    lines.append("(density is a structural zero, not an observed zero).")
+
     Path(args.out).write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"{total} sites from {trace_count} traces -> {args.out}")
     for rule_id in sorted(by_rule):
         print(f"  {rule_id}: {len(by_rule[rule_id])}")
+    print("  rule 01 skip stats:", dict(sorted(r1_skip_totals.items())))
 
 
 if __name__ == "__main__":

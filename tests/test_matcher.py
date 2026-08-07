@@ -139,16 +139,42 @@ class TestPunctuation:
         assert sites_for(text, R2) == []
 
     def test_display_line_final_period_site(self):
+        # REVIEW_LOG F2: the site is the terminal-period boundary plus the
+        # existing line break — the line body is invariant left context.
         text = "We evaluate step by step.\nx = 42.\nNext we substitute."
         [s] = sites_for(text, R2, "final_period_on_display_line")
-        assert s.matched == "x = 42."
-        assert set(s.candidates) == {"x = 42.", "x = 42"}
+        assert s.matched == ".\n"
+        assert set(s.candidates) == {".\n", "\n"}
 
     def test_display_line_without_period_site(self):
         text = "Step one gives this line:\nf3(x) = (5*x + 2) mod 97\nNow apply f4."
         sites = sites_for(text, R2, "final_period_on_display_line")
         assert len(sites) == 1
-        assert sites[0].matched == "f3(x) = (5*x + 2) mod 97"
+        assert sites[0].matched == "\n"
+        assert set(sites[0].candidates) == {"\n", ".\n"}
+
+    def test_display_line_interior_operators_survive(self):
+        # The point of the F2 amendment: rule 06 sites inside a display line
+        # are no longer swallowed by rule 02's span. ('=' here is still
+        # conservatively skipped: its right operand is a parenthesized
+        # expression, which the operand prover doesn't accept.)
+        text = "Step one gives this line:\nf3(x) = (5*x + 2) mod 97\nNow apply f4."
+        assert len(sites_for(text, R6, "times")) == 1
+        assert len(sites_for(text, R6, "plus")) == 1
+
+    def test_display_line_at_eof_without_linebreak_skipped(self):
+        # REVIEW_LOG F2 (Sol): no following line break -> conservatively skip.
+        text = "Track the value.\nx = 42"
+        assert sites_for(text, R2, "final_period_on_display_line") == []
+
+    def test_display_line_period_span_consumes_rule5_boundary(self):
+        # Recorded consequence in REVIEW_LOG F2: rule 02's span includes the
+        # first newline, so a following blank-line boundary loses its rule 05
+        # site to overlap resolution (02 < 05).
+        text = "We compute the value.\na = 1.\n\nNext we go further."
+        [s] = sites_for(text, R2, "final_period_on_display_line")
+        assert s.matched == ".\n"
+        assert sites_for(text, R5) == []
 
     def test_prose_sentence_period_not_a_display_line(self):
         text = "We conclude the following.\nThe answer is 42.\nDone."
@@ -183,10 +209,17 @@ class TestDiscourseMarkers:
     def test_sequencing_set_lost_to_rule2_overlap(self):
         # "Next," / "Then," are also rule 2 connectives; rule 2's span
         # (connective + optional comma) overlaps, and 02 < 03 wins.
-        # Mechanical consequence of the frozen tables — documented for review.
         text = "Compute f1 of x. Next, compute f2."
         assert sites_for(text, R3, "sequencing") == []
         assert len(sites_for(text, R2)) == 1
+
+    def test_sequencing_set_never_fires_even_when_rule2_skips(self):
+        # REVIEW_LOG F1: both parties ruled the sequencing set structurally
+        # unavailable. Rule 2's conservative 'that' guard skips this site, so
+        # without the explicit disable a sequencing site would leak through.
+        text = "We check the base case. Then, that case is trivial."
+        assert sites_for(text, R3, "sequencing") == []
+        assert sites_for(text, R2) == []
 
     def test_first_site_when_no_enumeration(self):
         text = "First, we factor the modulus."
@@ -400,6 +433,53 @@ class TestListMarkers:
 # ---------------------------------------------------------------------------
 # Cross-cutting properties
 # ---------------------------------------------------------------------------
+
+class TestScoreSpans:
+    def test_rule6_score_span_is_operand_inclusive(self):
+        # REVIEW_LOG F5 (Sol): edit_span drives replacement and overlap;
+        # score_span covers <lhs> through <rhs> for eligibility scoring.
+        text = "So we get x = 17 as the residue."
+        [s] = sites_for(text, R6, "equals")
+        assert s.matched == " = "
+        assert text[s.score_start:s.score_end] == "x = 17"
+
+    def test_adjacent_operators_not_suppressed_by_shared_operands(self):
+        # The reason Sol rejected extending the edit span: "5*x + 2" has
+        # adjacent sites sharing operand x; both must survive.
+        text = "Evaluate (5*x + 2) mod 97 now."
+        assert len(sites_for(text, R6, "times")) == 1
+        assert len(sites_for(text, R6, "plus")) == 1
+
+    def test_non_rule6_score_span_equals_edit_span(self):
+        text = "x = 5. Thus, y = 6."
+        for s in sites_for(text, R1):
+            assert (s.score_start, s.score_end) == (s.start, s.end)
+
+
+class TestSkipStats:
+    def test_rule1_skip_reasons_counted(self):
+        # REVIEW_LOG F4 (Fable): matched-then-skipped counts per reason for
+        # rule 01, so analysis can report effective power.
+        from harness.matcher import match_sites_with_stats
+
+        text = (
+            'So x = 17. We simplify, so that the terms cancel. '
+            'The gap grows, so much faster. He said "Thus, use induction."'
+        )
+        sites, stats = match_sites_with_stats(text)
+        r1 = stats["tier_a_01_connectives"]
+        assert r1["so_that_purpose"] == 1
+        assert r1["comparative_so"] == 1
+        assert r1["masked_quote_or_code"] == 1
+        assert r1["matched"] == 1
+
+    def test_clause_not_detected_counted(self):
+        from harness.matcher import match_sites_with_stats
+
+        text = "The base case holds. Hence proved."
+        _, stats = match_sites_with_stats(text)
+        assert stats["tier_a_01_connectives"]["clause_not_detected"] == 1
+
 
 class TestCrossCutting:
     def test_span_integrity_on_mixed_trace(self):

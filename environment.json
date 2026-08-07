@@ -1,13 +1,14 @@
 {
   "_comment": "Pin BEFORE freezing per Sol's freeze mechanics: model version alone is insufficient because the experiment is tokenizer-level.",
-  "_draft_status": "DRAFT (2026-08-07) — proposed by Claude, NOT final. Final values are confirmed at checkpoint Step 4, after Noah's adversarial review sign-off and before scripts/hash_commit.py runs. Rationale: Qwen2.5-7B base per HANDOFF hardware notes (fits RTX 4090 24GB, base/light-instruct condition); judge is a DATED Anthropic snapshot because the frozen protocol requires temperature=0 and an exact pinned version — current top-tier models (claude-opus-5, claude-fable-5) reject the temperature parameter entirely, so they cannot satisfy the frozen judge spec; claude-sonnet-4-5-20250929 is the strongest dated snapshot that accepts temperature 0.",
+  "_draft_status": "DRAFT (2026-08-07) — final at checkpoint Step 4. Model: Qwen2.5-7B base per HANDOFF hardware notes (RTX 4090 24GB, base/light-instruct condition). Judge: ruled by Sol at pre-freeze review (REVIEW_LOG F3), consented by Fable — claude-opus-4-5-20251101 at temperature 0 with thinking omitted/not enabled. Sol's conditions: one exact-request smoke test MUST pass before hashing; if this model/configuration is unavailable, no silent substitution — amendment protocol. Fable's rider: the audit runs immediately after the main generation run, before any outcome analysis.",
   "model_id": "Qwen/Qwen2.5-7B",
   "model_revision_hash": "d149729398750b98c0af14eb82c78cfe92750796",
   "tokenizer_id": "Qwen/Qwen2.5-7B",
   "tokenizer_revision_hash": "d149729398750b98c0af14eb82c78cfe92750796",
   "decoding_implementation": "huggingface transformers (greedy + forced candidate scoring via per-step logits)",
   "decoding_implementation_version": "5.14.1",
-  "judge_model_id": "claude-sonnet-4-5-20250929",
-  "judge_model_revision": "20250929",
-  "judge_temperature": 0
+  "judge_model_id": "claude-opus-4-5-20251101",
+  "judge_model_revision": "20251101",
+  "judge_temperature": 0,
+  "judge_thinking": "omitted"
 }

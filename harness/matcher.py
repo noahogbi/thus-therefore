@@ -41,6 +41,18 @@ class Site:
     end: int
     matched: str
     candidates: list[str] = field(default_factory=list)
+    # REVIEW_LOG F5: (start, end) is the edit span — it drives replacement and
+    # overlap resolution. (score_start, score_end) is the span the eligibility
+    # scorer must force-score; for rule 06 it is operand-inclusive per the
+    # table's member shape, for every other rule it equals the edit span.
+    score_start: int = -1
+    score_end: int = -1
+
+    def __post_init__(self) -> None:
+        if self.score_start < 0:
+            self.score_start = self.start
+        if self.score_end < 0:
+            self.score_end = self.end
 
     def to_dict(self) -> dict:
         return {
@@ -48,6 +60,8 @@ class Site:
             "set_id": self.set_id,
             "start": self.start,
             "end": self.end,
+            "score_start": self.score_start,
+            "score_end": self.score_end,
             "matched": self.matched,
             "candidates": self.candidates,
         }
@@ -209,7 +223,14 @@ def _clause_follows(rest: str) -> bool:
     return False
 
 
-def _match_connectives(text: str, code: list[bool], quote: list[bool]) -> list[Site]:
+def _match_connectives(text: str, code: list[bool], quote: list[bool],
+                       stats: dict | None = None) -> list[Site]:
+    # REVIEW_LOG F4 (Fable): count matched-then-skipped occurrences per reason
+    # so analysis can report effective power on rule 01.
+    def tally(reason: str) -> None:
+        if stats is not None:
+            stats[reason] = stats.get(reason, 0) + 1
+
     sites = []
     pattern = re.compile(
         r"\b(" + "|".join(R1_MEMBERS + R1_MEMBERS_MID) + r")\b"
@@ -217,14 +238,17 @@ def _match_connectives(text: str, code: list[bool], quote: list[bool]) -> list[S
     for m in pattern.finditer(text):
         word, start, end = m.group(1), m.start(1), m.end(1)
         if _masked(code, start, end) or _masked(quote, start, end):
+            tally("masked_quote_or_code")
             continue
         capitalized = word[0].isupper()
         if capitalized:
             if word not in R1_MEMBERS or not _is_sentence_start(text, start):
+                tally("position_invalid")
                 continue
             candidates = [word] + [c for c in R1_MEMBERS if c != word]
         else:
             if word not in R1_MEMBERS_MID or not _after_clause_comma(text, start):
+                tally("position_invalid")
                 continue
             candidates = [word] + [c for c in R1_MEMBERS_MID if c != word]
 
@@ -233,16 +257,23 @@ def _match_connectives(text: str, code: list[bool], quote: list[bool]) -> list[S
         # 'so that' purpose clause / comparative-degree 'so' (table exclusions).
         if word.lower() == "so" and following:
             nxt = following[0].strip(_PUNCT_STRIP).lower()
-            if nxt in {"that", "much", "many", "few", "little"}:
+            if nxt == "that":
+                tally("so_that_purpose")
+                continue
+            if nxt in {"much", "many", "few", "little"}:
+                tally("comparative_so")
                 continue
             if len(following) >= 2 and following[1].strip(_PUNCT_STRIP).lower() == "that":
+                tally("comparative_so")
                 continue
         # must_be_followed_by: comma, or a detectable clause. Skip otherwise.
         stripped = rest.lstrip(" ")
         if stripped.startswith(","):
             pass
         elif not _clause_follows(rest):
+            tally("clause_not_detected")
             continue
+        tally("matched")
         sites.append(Site(R1, "inferential", start, end, word, candidates))
     return sites
 
@@ -274,16 +305,22 @@ def _match_punctuation(text: str, code: list[bool], quote: list[bool]) -> list[S
         sites.append(Site(R2, "comma_after_initial_connective",
                           start, end, matched, [matched, other]))
 
-    # Set B: optional final period on a short standalone display line. A line
-    # qualifies only if it is symbolic: contains '=', and every alphabetic word
-    # of length >= 2 is a known math word. Prose lines never qualify.
+    # Set B (amended per REVIEW_LOG F2): the site is ONLY the terminal-period
+    # boundary of a short standalone display line, and it includes the
+    # existing line terminator. The line body is invariant left context. A
+    # line qualifies only if it is symbolic: contains '=', and every
+    # alphabetic word of length >= 2 is a known math word.
     allowed_words = {"mod", "div", "gcd", "lcm", "log", "exp", "min", "max"}
     for ls, le in _line_spans(text):
         line = text[ls:le]
         s = line.strip()
         if not s or len(s) > 60 or "=" not in s:
             continue
-        if _masked(code, ls, le):
+        if le >= len(text):
+            continue  # EOF without a following line break: skip (F2, Sol)
+        if line != line.rstrip():
+            continue  # trailing whitespace before the terminator: ambiguous
+        if _masked(code, ls, le + 1):
             continue
         if _is_structural_line(line):
             continue
@@ -298,10 +335,13 @@ def _match_punctuation(text: str, code: list[bool], quote: list[bool]) -> list[S
         core = s[:-1] if s.endswith(".") else s
         if "." in core:
             continue
-        a = ls + (len(line) - len(line.lstrip()))
-        b = a + len(s)
+        if s.endswith("."):
+            start, matched = le - 1, ".\n"
+        else:
+            start, matched = le, "\n"
+        other = "\n" if matched == ".\n" else ".\n"
         sites.append(Site(R2, "final_period_on_display_line",
-                          a, b, s, [s, core if s.endswith(".") else s + "."]))
+                          start, le + 1, matched, [matched, other]))
     return sites
 
 
@@ -313,6 +353,12 @@ def _match_discourse(text: str, code: list[bool], quote: list[bool]) -> list[Sit
     sites = []
     has_enumeration = bool(re.search(r"\b(Second|Third|Fourth|Fifth)\b", text))
     for set_id, members in R3_SETS.items():
+        if set_id == "sequencing":
+            # REVIEW_LOG F1: ruled structurally unavailable by both parties
+            # (consequence-force "Then" is not mechanically separable from
+            # sequencing "Then"). Never emit; report density as structural
+            # zero, not observed zero. Table intentionally unchanged.
+            continue
         if set_id == "initiation" and has_enumeration:
             # Table exclusion: drop the whole set when the trace enumerates.
             continue
@@ -437,7 +483,8 @@ def _match_operators(text: str, code: list[bool]) -> list[Site]:
         matched = text[ls:re_]
         spaced, unspaced = f" {op} ", op
         other = unspaced if matched == spaced else spaced
-        sites.append(Site(R6, _OP_SETS[op], ls, re_, matched, [matched, other]))
+        sites.append(Site(R6, _OP_SETS[op], ls, re_, matched, [matched, other],
+                          score_start=lhs_m.start(1), score_end=after))
     return sites
 
 
@@ -467,12 +514,18 @@ def _match_list_markers(text: str, code: list[bool]) -> list[Site]:
 # ---------------------------------------------------------------------------
 
 def match_sites(text: str) -> list[Site]:
+    return match_sites_with_stats(text)[0]
+
+
+def match_sites_with_stats(text: str) -> tuple[list[Site], dict]:
+    """Match sites and return per-rule skip statistics (REVIEW_LOG F4)."""
+    stats: dict = {R1: {}}
     if not text:
-        return []
+        return [], stats
     code = _code_mask(text)
     quote = _quote_mask(text)
     all_sites = (
-        _match_connectives(text, code, quote)
+        _match_connectives(text, code, quote, stats[R1])
         + _match_punctuation(text, code, quote)
         + _match_discourse(text, code, quote)
         + _match_contractions(text, code, quote)
@@ -486,4 +539,4 @@ def match_sites(text: str) -> list[Site]:
         if all(site.end <= a.start or site.start >= a.end for a in accepted):
             accepted.append(site)
     accepted.sort(key=lambda s: s.start)
-    return accepted
+    return accepted, stats
