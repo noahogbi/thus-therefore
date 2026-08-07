@@ -47,8 +47,8 @@ SPEC.md section 6 and cannot be revised after data.
 - [x] Design frozen (2026-08-06)
 - [x] Tier A rule tables drafted (adversarial review by Noah pending — see CLAUDE.md)
 - [ ] environment.json pinned (model / tokenizer / decoding impl / judge)
-- [ ] Harness: matcher, eligibility scorer, intervention decoder, density logger
-- [ ] Matcher-only review pass over sample traces
+- [ ] Harness: matcher DONE (66 tests); eligibility scorer, intervention decoder, density logger pending
+- [ ] Matcher-only review pass: dry run DONE (24 traces, 290 sites -> REVIEW_SITES.md); Noah's adversarial review PENDING (see REVIEW_NOTES.md)
 - [ ] seeds.json completed, FREEZE_MANIFEST.json generated and published
 - [ ] Depth calibration (native greedy, with/without trace)
 - [ ] Main run (native vs. neutral-randomized)
