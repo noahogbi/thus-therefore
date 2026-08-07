@@ -1,0 +1,11 @@
+We scale the equation so that the leading coefficient becomes 1. Dividing by 4
+gives x*x + 2*x - 3 = 0.
+
+Factor it so that each root is visible: (x + 3)(x - 1) = 0.
+
+So the roots are -3 and 1. We arranged the factorization so that the signs are
+immediate to read off.
+
+The positive root is 1.
+
+ANSWER: 1

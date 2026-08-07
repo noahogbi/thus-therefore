@@ -1,0 +1,15 @@
+Track the value line by line.
+
+x = 23
+f1(x) = (11*23 + 4) mod 97
+f1(x) = 63.
+
+Halving the offset would give 0.5 * 4 = 2, but the offset stays 4 in this
+problem.
+
+y = 63 - 40
+y = 23.
+
+So the chain returns to its starting value after one full cycle.
+
+ANSWER: 23

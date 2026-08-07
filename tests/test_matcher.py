@@ -102,6 +102,17 @@ class TestConnectives:
         text = "The base case holds. Hence proved."
         assert sites_for(text, R1) == []
 
+    def test_clause_detection_stops_at_sentence_boundary(self):
+        # The verb that legitimizes the clause must be in the SAME sentence;
+        # a verb in the following sentence must not leak into the window.
+        text = "We stop. So the target. It is done."
+        assert sites_for(text, R1) == []
+
+    def test_common_trace_verbs_detected(self):
+        text = "We follow the chain, so it reaches the target."
+        [s] = sites_for(text, R1)
+        assert s.matched == "so"
+
 
 # ---------------------------------------------------------------------------
 # Rule 2 — punctuation
@@ -264,10 +275,12 @@ class TestWhitespace:
         assert s.matched == "\n\n"
         assert set(s.candidates) == {"\n", "\n\n"}
 
-    def test_single_newline_between_paragraphs_site(self):
+    def test_single_newline_never_a_site(self):
+        # A lone \n cannot be proven to be a paragraph boundary rather than a
+        # line wrap inside a paragraph; \n -> \n\n there would insert a break
+        # inside a paragraph (forbidden by the rule 5 note). Conservative: skip.
         text = "We factor the modulus into primes.\nNext we apply the CRT."
-        [s] = sites_for(text, R5)
-        assert s.matched == "\n"
+        assert sites_for(text, R5) == []
 
     def test_boundary_adjacent_to_code_fence_excluded(self):
         text = "Run the check.\n\n```\nassert x == 5\n```\n\nIt passes."

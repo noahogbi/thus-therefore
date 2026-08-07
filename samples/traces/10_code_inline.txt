@@ -1,0 +1,9 @@
+Set the flag `dont_retry = True` before the run, and keep `so_far=0` as the
+accumulator's initial value.
+
+The accumulator can't overflow here, because the loop adds at most 97 per
+iteration and runs 6 times, so the maximum is 582.
+
+Therefore the guard `assert so_far <= 582` always passes.
+
+ANSWER: 582

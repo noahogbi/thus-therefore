@@ -1,0 +1,10 @@
+Let's compute the residue of 2 to the power 10 modulo 11.
+
+Fermat's little theorem lets us reduce the exponent: 2 to the power 10 is
+congruent to 1 modulo 11, because 11 is prime and 2 is not divisible by 11.
+
+Let us double-check by squaring: 32 = 2*2*2*2*2, and 32 mod 11 = 10, then
+10*10 = 100, and 100 mod 11 = 1. Squaring the fifth power gives the tenth
+power, so the check confirms it.
+
+ANSWER: 1

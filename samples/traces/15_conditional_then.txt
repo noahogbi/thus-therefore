@@ -1,0 +1,12 @@
+If x is even, then x*x is divisible by 4. If x is odd, then x*x leaves
+remainder 1 modulo 8.
+
+Our x is 6, which is even. Then, by the first rule, 36 is divisible by 4.
+Check: 36 = 4 * 9.
+
+If we had started from x = 7 instead, then the second rule would apply, and
+indeed 49 = 48 + 1 leaves remainder 1 modulo 8.
+
+Thus, the divisibility claim holds for x = 6.
+
+ANSWER: yes

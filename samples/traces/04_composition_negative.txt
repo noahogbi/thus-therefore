@@ -1,0 +1,12 @@
+The map is g(x) = 3*x - 5, applied twice to x = -4.
+
+First application: g(-4) = 3*(-4) - 5 = -12 - 5 = -17.
+
+Second application: g(-17) = 3*(-17) - 5 = -51 - 5 = -56.
+
+Note that the sign stays negative throughout, since each step multiplies a
+negative value by a positive constant and then subtracts 5.
+
+Hence the result is -56.
+
+ANSWER: -56

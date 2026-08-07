@@ -1,0 +1,31 @@
+First, restate the task: evaluate h(h(4)) where h(x) = x*x - 3, then report
+whether the result lies in the range 10-200.
+
+It's a two-step composition, so we go inside out.
+
+Inner step:
+
+h(4) = 4*4 - 3
+h(4) = 13.
+
+Outer step: h(13) = 13*13 - 3 = 169 - 3 = 166.
+
+Note that 166 is positive, and the problem said "report whether the result
+lies in the range," so that is what we do:
+
+- lower bound: 166 >= 10 holds
+- upper bound: 166 <= 200 holds
+
+If both bounds hold, then the value lies in the range. Both hold. Hence the
+answer is yes, and its verification needed only two comparisons. We can't
+skip the bounds check, since 13*13 might plausibly have exceeded 200.
+
+```python
+def h(x):
+    return x*x - 3  # so simple it can't hide a bug
+assert h(h(4)) == 166
+```
+
+Therefore the final answer is yes.
+
+ANSWER: yes

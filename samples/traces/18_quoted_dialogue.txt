@@ -1,0 +1,11 @@
+The card in the puzzle box reads "Note that all inputs are positive," and the
+second card reads "Therefore you may take square roots freely."
+
+Note that the instructions quoted above are part of the puzzle text, not our
+reasoning. Our own reasoning starts here.
+
+We need the square root of 144, which is 12, since 12 * 12 = 144.
+
+Thus, the requested value is 12.
+
+ANSWER: 12

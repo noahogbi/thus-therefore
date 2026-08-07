@@ -176,7 +176,11 @@ _VERB_WORDS = {
     "show", "tells", "tell", "requires", "require", "denotes", "denote",
     "says", "say", "stays", "stay", "grows", "grow", "goes", "go", "works",
     "work", "fails", "fail", "passes", "pass", "counts", "count", "know",
-    "see", "obtain", "compute", "conclude", "concludes",
+    "see", "obtain", "compute", "conclude", "concludes", "reaches", "reach",
+    "uses", "use", "agrees", "agree", "appears", "appear", "contains",
+    "contain", "matches", "leaves", "leave", "returns", "return", "comes",
+    "come", "halts", "halt", "terminates", "terminate", "differs", "differ",
+    "checks", "check", "sums", "sum", "adds", "add", "lands", "land",
 }
 _PUNCT_STRIP = ".,;:!?()[]{}\"'"
 
@@ -198,6 +202,10 @@ def _clause_follows(rest: str) -> bool:
         bare = w.strip(_PUNCT_STRIP).lower()
         if bare in _VERB_WORDS or "=" in w:
             return True
+        # The subject-verb pair must lie in the SAME sentence: a verb beyond
+        # sentence-final punctuation must not legitimize this clause.
+        if w and w[-1] in ".!?":
+            return False
     return False
 
 
@@ -361,8 +369,12 @@ def _match_whitespace(text: str, code: list[bool]) -> list[Site]:
     sites = []
     for m in re.finditer(r"\n+", text):
         run = m.group(0)
-        if len(run) > 2:
-            continue  # unusual gap; ambiguous, skip
+        # Only a blank line (\n\n) PROVES a paragraph boundary. A single \n
+        # may be a hard wrap inside a paragraph; randomizing it to \n\n would
+        # insert a break inside a paragraph, which the rule 5 note forbids.
+        # Conservative-skip. Runs > 2 are unusual formatting: also skip.
+        if len(run) != 2:
+            continue
         start, end = m.start(), m.end()
         if _masked(code, max(0, start - 1), min(len(text), end + 1)):
             continue

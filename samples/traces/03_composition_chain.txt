@@ -1,0 +1,14 @@
+We evaluate the chain from the inside out, starting with x = 23.
+
+Apply f1. f1(23) = (11*23 + 4) mod 97. Compute 11*23 = 253, and 253 + 4 = 257.
+Now reduce: 257 mod 97 = 63.
+
+Then, apply f2 to 63.
+f2(63) = (7*63 + 90) mod 97
+Compute 7*63 = 441, and 441 + 90 = 531. We reduce 531 mod 97 = 46.
+
+Next, apply f3 to 46. We get f3(46) = (2*46 + 1) mod 97 = 93.
+
+So the final value is 93.
+
+ANSWER: 93

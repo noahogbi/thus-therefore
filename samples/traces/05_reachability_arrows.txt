@@ -1,0 +1,15 @@
+Edges: N0->N1, N1->N2, D0->D1, N2->N3, D1->D0, N0->D0.
+
+Is there a path from N0 to N3?
+
+Start at N0. Its outgoing edges are N0->N1 and N0->D0.
+
+Follow N0->N1. From N1 the only edge is N1->N2. From N2 we have N2->N3, so we
+reach the target. The path N0->N1->N2->N3 uses 3 edges.
+
+The decoy branch through D0 only cycles between D0 and D1, so it never reaches
+the target.
+
+Therefore the path exists and has length 3.
+
+ANSWER: 3

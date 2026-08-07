@@ -1,0 +1,16 @@
+# Working through the table
+
+The table below records each step.
+
+| step | value |
+|------|-------|
+| 1    | 14    |
+| 2    | 42    |
+
+Reading the last row, the value after step 2 is 42.
+
+## Verification
+
+Each step multiplies by 3. Check: 14 * 3 = 42. So the table is consistent.
+
+ANSWER: 42

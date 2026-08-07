@@ -1,0 +1,21 @@
+The algorithm has three phases:
+
+- factor the modulus into primes
+- solve the congruence for each prime power
+- combine the solutions with the CRT
+
+Applied to our case:
+
+* the modulus 45 factors as 9 * 5
+* modulo 9 the solution is x = 4
+* modulo 5 the solution is x = 2
+
+Numbered recap for the writeup:
+
+1. factor 45
+2. solve both congruences
+3. combine
+
+Combining x = 4 (mod 9) and x = 2 (mod 5) gives x = 22 (mod 45).
+
+ANSWER: 22

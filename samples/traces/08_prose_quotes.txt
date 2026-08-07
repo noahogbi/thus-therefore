@@ -1,0 +1,12 @@
+The problem cites the classical fact: "If a prime divides a product, then it
+divides one of the factors." This is Euclid's lemma.
+
+Note that 7 divides 84, since 84 = 7 * 12. The problem asks whether 7 divides
+21 * 4.
+
+Observe that 21 * 4 = 84. So the answer follows directly: 7 divides 21 * 4, and
+by the quoted lemma 7 must divide 21 or divide 4. Indeed 21 = 7 * 3.
+
+The hint said "Thus, use the lemma directly," and that is what we did.
+
+ANSWER: yes

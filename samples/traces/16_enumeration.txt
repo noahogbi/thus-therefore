@@ -1,0 +1,12 @@
+First, list the divisors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36.
+
+Second, keep only the perfect squares among them: 1, 4, 9, 36.
+
+Third, count them. There are 4.
+
+Next, we double-check by the exponent formula. Since 36 = 2*2 * 3*3, a divisor
+is a square iff both exponents are even, giving 2 * 2 = 4 choices.
+
+Therefore both methods agree.
+
+ANSWER: 4

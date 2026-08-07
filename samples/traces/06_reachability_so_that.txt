@@ -1,0 +1,13 @@
+We order the vertices so that every edge points from a lower index to a higher
+index. This works because the graph is acyclic.
+
+If a vertex has no outgoing edges, then it cannot lie on any path to the target
+unless it is the target itself.
+
+Scan the frontier. From S we reach A and B. From A we reach C. From B we reach
+nothing new. From C we reach T.
+
+So the path S->A->C->T exists, and it has 3 edges. We chose the ordering so that
+no edge was ever examined twice.
+
+ANSWER: 3

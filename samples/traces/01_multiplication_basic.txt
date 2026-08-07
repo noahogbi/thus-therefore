@@ -1,0 +1,13 @@
+I need to compute 47 * 86.
+
+First, break 86 into 80 + 6.
+
+Compute 47 * 80. We have 47 * 8 = 376, so 47 * 80 = 3760.
+
+Compute 47 * 6 = 282.
+
+Now add the partial products. The sum is 3760 + 282 = 4042.
+
+Thus, the product is 4042.
+
+ANSWER: 4042

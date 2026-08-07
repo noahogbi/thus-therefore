@@ -1,0 +1,10 @@
+The graph keeps its edge set fixed while we relabel vertices. Relabeling
+cannot change connectivity, because an edge exists after relabeling iff its
+preimage existed before.
+
+It's therefore enough to count components once. The graph has 3 components,
+and each keeps its size under relabeling.
+
+So the component count is 3.
+
+ANSWER: 3

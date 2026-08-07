@@ -1,0 +1,11 @@
+The second term grows so much faster than the first that we can ignore the
+first entirely for large n.
+
+The bound we derived is so loose that it tells us nothing below n = 100. For
+small n we compute directly.
+
+At n = 10 the sum is 55, so the direct value is what we report. The gap
+between the bound and the truth was so large that only direct computation
+settles it.
+
+ANSWER: 55

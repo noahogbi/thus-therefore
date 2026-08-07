@@ -1,0 +1,11 @@
+Consider the triangle with sides 5, 12, and 13. It's a right triangle, because
+5*5 + 12*12 = 25 + 144 = 169 = 13*13, which is exactly the Pythagorean
+condition.
+
+The triangle keeps its right angle under scaling, since scaling preserves
+angles. In other words, every similar triangle is also a right triangle.
+
+We cannot say the same about reflections changing orientation, but orientation
+does not affect side lengths. Thus, the area is (5 * 12) / 2 = 30.
+
+ANSWER: 30

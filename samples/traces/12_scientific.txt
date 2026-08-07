@@ -1,0 +1,9 @@
+The tolerance is 1e-5 and the step size is 2e-3.
+
+Each iteration reduces the error by a factor of 10, starting from an error of
+roughly 2e-3. After one step the error is 2e-4, after two steps 2e-5, and
+after three steps 2e-6, which is below 1e-5.
+
+Hence we need 3 iterations.
+
+ANSWER: 3

@@ -1,0 +1,17 @@
+We can verify the recurrence with a short script.
+
+```python
+so = 1
+thus = 1
+for i in range(10):
+    so, thus = thus, so + thus
+# don't touch the seed values
+print(f"result={thus}")
+```
+
+The loop maintains two accumulators, so the final print shows the tenth term.
+Running it gives 89.
+
+Thus, the tenth Fibonacci number under this indexing is 89.
+
+ANSWER: 89
