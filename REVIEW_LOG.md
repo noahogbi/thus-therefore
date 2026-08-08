@@ -197,6 +197,32 @@ in the project conversation.
   frozen task seed 2026 (calibration used 1337), so the main-run problem
   stream does not overlap the calibration pilot's.
 
+## Fourth relay reconciliation (2026-08-08) — partial; fifth relay issued
+
+- **Item 1 (follow-on tightening): CLOSED.** No objection from either
+  party. FOLLOWON_INSTRUCT.md stands as committed.
+- **S1 (exposure reporting): ADOPTED, double consent.** Sol's wording
+  governs: mean/median/distribution of realized intervened-site counts per
+  (family, depth, arm), published beside frozen density, descriptive only,
+  never a denominator for primary estimands. Fable consented to curve 1
+  "under either version."
+- **Curve 2: no jointly-consented definition.** Parallel replies: Sol
+  declined the implementer's ratio (post-treatment conditioning — realized
+  intervention count is downstream of treatment) and substituted a
+  native-path exposure-adjusted regression; Fable consented to the ratio
+  while disclosing a saturation bias in it favoring Fable's own side
+  (bounded penalty + growing site count mechanically shrinks the ratio at
+  depth) and offered a per-site survival hazard conditional on Sol's
+  independent acceptance. Process note for the writeup: the two parties
+  independently identified two DISTINCT flaws in the implementer's
+  proposal, one of which the disclosing party flagged against its own
+  interest.
+- **Disposition:** REVIEW_CONSULT_PROMPT_5.md issued — one final binary
+  cross-show round (ACCEPT/REJECT on each verbatim proposal; either party
+  may answer DROP to invoke the fourth relay's pre-declared default
+  immediately; no modifications by anyone). Any proposal with two ACCEPTs
+  is adopted as supplementary; otherwise curve 2 is dropped permanently.
+
 ## Remaining before hash (checkpoint Step 4)
 
 1. DONE 2026-08-08 — Noah's explicit sign-off on the reviewed site list
