@@ -161,6 +161,42 @@ manifests, before and after — see git history for the superseded file).
 Timing: before any generation run and before the forum post; the public
 git history preserves the superseded manifest transparently.
 
+## Third consultation reconciliation (2026-08-08) — calibration outcome and main-run grid
+
+Both parties ruled on REVIEW_CONSULT_PROMPT_3.md; full responses preserved
+in the project conversation.
+
+- **Unanimous: 3c with n = 400 per cell.** The frozen base-model run
+  proceeds on the calibration-selected grid; no amendment. Main-run grid:
+  reachability d2/d4/d6/d8 (primary depth axis), multiplication:2 and
+  composition:2 (secondary single-depth cells). Floored cells reported
+  under the frozen density/power policy and never recruited into the depth
+  regression.
+- **Pre-data analysis commitments (recorded verbatim in intent, before any
+  intervention data):** (1) Sol — the O2 estimate is described as "the
+  depth interaction within the calibrated reachability family," with
+  multiplication and composition as single-depth secondary checks; a
+  positive reachability slope supports the registered prediction on this
+  family and does not establish cross-family scaling. (2) Fable — d2/d4
+  have nonzero without-trace accuracy (0.225, 0.375), so CoT-necessity is
+  only partial there; O2 is read primarily from the d4->d8 slope;
+  cross-family generalization claims are out of scope for this run.
+  (3) Fable — the composition/multiplication floors are reportable
+  findings for the calibration section (where the workspace regime begins
+  at 7B scale), not discards.
+- **Fable's tightening, adopted under the standing tiebreak:** the
+  light-instruct follow-on is pre-registered NOW (FOLLOWON_INSTRUCT.md) —
+  model pin Qwen/Qwen2.5-7B-Instruct @
+  a09a35458c702b33eeacc393d103063234e8bc28, identified and logged before
+  the base main run begins; identical procedure; own calibration and
+  manifest; only execution gated on rung 1 completion. This executes Sol's
+  follow-on proposal with the design-after-data door closed; strictly more
+  binding on design freedom, overriding nothing Sol ruled. Flag to Sol as
+  FYI in the next relay.
+- **Implementation allocation (logged):** main-run problem generation uses
+  frozen task seed 2026 (calibration used 1337), so the main-run problem
+  stream does not overlap the calibration pilot's.
+
 ## Remaining before hash (checkpoint Step 4)
 
 1. DONE 2026-08-08 — Noah's explicit sign-off on the reviewed site list

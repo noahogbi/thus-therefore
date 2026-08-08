@@ -46,6 +46,25 @@ is the depth axis for the main run.
 
 ## Phase 3 — main run (per arm)
 
+RULED GRID (third consultation, both parties, 2026-08-08): cells =
+reachability d2/d4/d6/d8 + multiplication d2 + composition d2; n = 400 per
+cell; problem generation seed 2026 (calibration used 1337). Generate:
+
+```bash
+mkdir -p runs/problems
+for CELL in "reachability 2" "reachability 4" "reachability 6" "reachability 8" \
+            "multiplication 2" "composition 2"; do
+  set -- $CELL
+  python tasks/generate_tasks.py --family $1 --depth $2 --n 400 --seed 2026 \
+    --out runs/problems/main-$1-d$2.jsonl
+done
+```
+
+Passes are executed via scripts/run_pass.sh (idempotent per cell; safe to
+re-run after interruption). 25 passes total: native + (aggregate + 7 rules)
+x 3 seeds. Arms are independent — split passes across parallel pods.
+
+
 Arm plan (ruled 2b by both parties, REVIEW_LOG second reconciliation):
 native control + Tier A aggregate arm + all seven per-rule arms, with the
 SAME three intervention seeds (271828, 161803, 141421) on every randomized
