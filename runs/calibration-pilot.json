@@ -1,0 +1,17 @@
+{
+  "composition:10": {"with_trace_acc": 0.0, "without_trace_acc": 0.0, "gap": 0.0, "n": 40},
+  "composition:2": {"with_trace_acc": 0.25, "without_trace_acc": 0.0, "gap": 0.25, "n": 40},
+  "composition:4": {"with_trace_acc": 0.1, "without_trace_acc": 0.0, "gap": 0.1, "n": 40},
+  "composition:6": {"with_trace_acc": 0.075, "without_trace_acc": 0.0, "gap": 0.075, "n": 40},
+  "composition:8": {"with_trace_acc": 0.05, "without_trace_acc": 0.0, "gap": 0.05, "n": 40},
+  "multiplication:10": {"with_trace_acc": 0.0, "without_trace_acc": 0.0, "gap": 0.0, "n": 40},
+  "multiplication:2": {"with_trace_acc": 0.55, "without_trace_acc": 0.35, "gap": 0.20000000000000007, "n": 40},
+  "multiplication:4": {"with_trace_acc": 0.075, "without_trace_acc": 0.0, "gap": 0.075, "n": 40},
+  "multiplication:6": {"with_trace_acc": 0.0, "without_trace_acc": 0.0, "gap": 0.0, "n": 40},
+  "multiplication:8": {"with_trace_acc": 0.0, "without_trace_acc": 0.0, "gap": 0.0, "n": 40},
+  "reachability:10": {"with_trace_acc": 0.125, "without_trace_acc": 0.0, "gap": 0.125, "n": 40},
+  "reachability:2": {"with_trace_acc": 0.7, "without_trace_acc": 0.225, "gap": 0.475, "n": 40},
+  "reachability:4": {"with_trace_acc": 0.65, "without_trace_acc": 0.375, "gap": 0.275, "n": 40},
+  "reachability:6": {"with_trace_acc": 0.3, "without_trace_acc": 0.0, "gap": 0.3, "n": 40},
+  "reachability:8": {"with_trace_acc": 0.175, "without_trace_acc": 0.0, "gap": 0.175, "n": 40}
+}
