@@ -223,6 +223,30 @@ in the project conversation.
   immediately; no modifications by anyone). Any proposal with two ACCEPTs
   is adopted as supplementary; otherwise curve 2 is dropped permanently.
 
+## Fifth relay reconciliation (2026-08-08) — CLOSED; consultation program complete
+
+Binary round results: Fable "A: ACCEPT; B: REJECT"; Sol "A: ACCEPT;
+B: REJECT".
+
+- **Proposal A (Sol's native-path exposure-adjusted model): ADOPTED** with
+  double consent, verbatim as circulated, including the native-vs-realized
+  divergence publication clause. Supplementary; frozen O1/O2 primary.
+- **Proposal B: dead by double rejection** — including its author's. Fable's
+  non-binding rationale (recorded): B's k-bar is a realized randomized-arm
+  quantity, post-treatment in exactly the way Sol's original objection
+  targeted; A recovers per-intervention sensitivity without the endogeneity.
+- Implemented: harness/exposure.py (native_eligible_counts with the IN-1
+  initiation-set exclusion; S1 exposure stats; pure-python IRLS logistic
+  with documented 1e-6 ridge; Proposal A design builder). 122 tests pass.
+- Process note for the writeup: across relays four and five the parties
+  independently identified two distinct flaws in the implementer's original
+  proposal (post-treatment conditioning; saturation bias disclosed against
+  the discloser's side), and one party rejected its own replacement on the
+  merits after a no-advocacy cross-show. The supplementary analysis that
+  survived is stronger than any single participant's first proposal.
+
+No party-level questions remain open. Launch gates: credit top-up only.
+
 ## Remaining before hash (checkpoint Step 4)
 
 1. DONE 2026-08-08 — Noah's explicit sign-off on the reviewed site list
