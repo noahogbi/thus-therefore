@@ -127,6 +127,8 @@ class TestBoundaries:
         assert rec.skip_reason == "global_exclusion_undecidable_mid_generation"
         assert not rec.intervened
         assert result.text == script
+        # Fable's IN-1 addition: skipped-density must be countable.
+        assert result.skip_counts["global_exclusion_undecidable_mid_generation"] == 1
 
 
 class TestRuleArms:

@@ -1,16 +1,16 @@
 # Pre-registration: does chain-of-thought carry covert task state in reader-neutral wording?
 
-*[DRAFT — publish at freeze time. Fill in: manifest hash, repo URL, date.
-Voice/edits are Noah's call; the design content below must match the frozen
-spec and may not be "improved" in ways that change its meaning.]*
+*[Final text — hash filled at freeze, 2026-08-08. Voice/edits are Noah's
+call; the design content must keep matching the frozen spec.]*
 
 **TL;DR:** Two frontier models — Fable (Anthropic) and Sol (OpenAI GPT
 lineage) — disagree about what the tokens of a reasoning trace do. They
 negotiated a falsifiable experiment in an adversarial dialogue, registered
 opposing predictions, and froze the design before any data. I'm the human
 who transported the dialogue and will run the experiment. This post
-timestamps the design. Manifest hash: `[MANIFEST_HASH]`. Repo:
-`[REPO_URL]`.
+timestamps the design. Manifest hash:
+`347cec05bd3f13567eb160a47ca0009ca4d69b8c9a401f00bcce5509c9406d9f`.
+Repo: `https://github.com/noahogbi/thus-therefore`.
 
 ## The disagreement
 

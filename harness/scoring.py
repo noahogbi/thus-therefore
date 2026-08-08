@@ -100,10 +100,20 @@ class EligibilityScorer:
 
 class HFCausalLM:
     """Hugging Face adapter for SequenceLM. GPU-box workhorse; import-lazy so
-    the rest of the harness has no torch dependency."""
+    the rest of the harness has no torch dependency.
+
+    Transparent KV caching: consecutive calls reuse the attention cache for
+    the longest common token prefix with the previous call, so incremental
+    greedy decoding is O(1) forwards per token and candidate scoring reuses
+    the shared prefix. The interface is unchanged and results must match the
+    uncached path (verified in tests/test_hf_integration.py); `use_cache=
+    False` forces the naive full-forward path, which doubles as the
+    bit-identity sanity reference the working rules call for.
+    """
 
     def __init__(self, model_id: str, revision: str | None = None,
-                 device: str = "cpu", dtype: str | None = None):
+                 device: str = "cpu", dtype: str | None = None,
+                 use_cache: bool = True):
         import torch
         from transformers import AutoModelForCausalLM, AutoTokenizer
 
@@ -116,6 +126,9 @@ class HFCausalLM:
             model_id, revision=revision, **kwargs).to(device).eval()
         self.device = device
         self.eos_id = self.tok.eos_token_id
+        self.use_cache = use_cache
+        self._cache_ids: list[int] = []
+        self._cache = None
 
     def encode(self, text: str) -> list[int]:
         # No special tokens: the trace is scored/generated as raw text and
@@ -126,22 +139,53 @@ class HFCausalLM:
         return self.tok.decode(ids, skip_special_tokens=False,
                                clean_up_tokenization_spaces=False)
 
-    def _forward_logprobs(self, ids: list[int]):
+    def _logprob_rows(self, ids: list[int], first_needed_pos: int):
+        """Log-softmax rows for positions first_needed_pos..len(ids)-1.
+
+        With caching enabled, reuses the KV cache for the common prefix of
+        `ids` and the previous call's ids, cropped so that every needed
+        position is actually forwarded.
+        """
         torch = self._torch
+        if not self.use_cache:
+            with torch.no_grad():
+                logits = self.model(
+                    torch.tensor([ids], device=self.device)).logits[0]
+            return torch.log_softmax(
+                logits[first_needed_pos:].float(), dim=-1)
+
+        common = 0
+        for a, b in zip(self._cache_ids, ids):
+            if a != b:
+                break
+            common += 1
+        # Must forward at least the positions whose logits we need, and at
+        # least one token overall.
+        start = min(common, first_needed_pos, len(ids) - 1)
+        if start == 0 or self._cache is None:
+            start = 0
+            past = None
+        else:
+            self._cache.crop(start)
+            past = self._cache
         with torch.no_grad():
-            input_ids = torch.tensor([ids], device=self.device)
-            logits = self.model(input_ids).logits[0]
-            return torch.log_softmax(logits.float(), dim=-1)
+            out = self.model(
+                torch.tensor([ids[start:]], device=self.device),
+                past_key_values=past, use_cache=True)
+        self._cache = out.past_key_values
+        self._cache_ids = list(ids)
+        rows = torch.log_softmax(out.logits[0].float(), dim=-1)
+        return rows[first_needed_pos - start:]
 
     def greedy_next(self, ids: list[int]) -> int:
-        logprobs = self._forward_logprobs(ids)
-        return int(logprobs[-1].argmax().item())
+        rows = self._logprob_rows(ids, len(ids) - 1)
+        return int(rows[-1].argmax().item())
 
     def sequence_logprob(self, ids: list[int], from_index: int) -> float:
         if from_index <= 0:
             raise ValueError("cannot score the first token unconditionally")
-        logprobs = self._forward_logprobs(ids)
+        rows = self._logprob_rows(ids, from_index - 1)
         total = 0.0
         for i in range(from_index, len(ids)):
-            total += float(logprobs[i - 1, ids[i]].item())
+            total += float(rows[i - from_index, ids[i]].item())
         return total

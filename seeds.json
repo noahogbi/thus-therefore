@@ -1,6 +1,6 @@
 {
-  "_comment": "All randomness sources for the run. FILL BEFORE FREEZING. Audit sample seed must be committed before outcome analysis per SPEC section 8.",
+  "_comment": "All randomness sources for the run. Filled 2026-08-08 per both parties' second-round rulings (REVIEW_LOG.md): nothing-up-my-sleeve constants. Same three intervention seeds across every randomized arm. Audit sample seed committed BEFORE outcome analysis per SPEC section 8.",
   "task_generation_seeds": [1337, 2026, 8191],
-  "intervention_sampling_seed": null,
-  "audit_sample_seed": null
+  "intervention_sampling_seeds": [271828, 161803, 141421],
+  "audit_sample_seed": 314159
 }

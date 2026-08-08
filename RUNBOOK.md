@@ -46,23 +46,35 @@ is the depth axis for the main run.
 
 ## Phase 3 — main run (per arm)
 
+Arm plan (ruled 2b by both parties, REVIEW_LOG second reconciliation):
+native control + Tier A aggregate arm + all seven per-rule arms, with the
+SAME three intervention seeds (271828, 161803, 141421) on every randomized
+arm. The aggregate arm is the primary test of the section 6 predictions;
+per-rule arms are the registered decomposition and are never selectively
+promoted post hoc.
+
 Native control arm (once per problem set):
 
 ```bash
 python -m harness.runner --model-id Qwen/Qwen2.5-7B \
   --revision d149729398750b98c0af14eb82c78cfe92750796 \
-  --problems runs/problems/<cell>.jsonl --mode native --seed <intervention_sampling_seed> \
+  --problems runs/problems/<cell>.jsonl --mode native --seed 271828 \
   --out runs/native/<cell>.jsonl
 ```
 
-Randomized arms — all-rules aggregate and/or per-rule (arm plan decided with
-the parties before GPU spend):
+Randomized arms — aggregate plus each rule in isolation, times three seeds:
 
 ```bash
-python -m harness.runner ... --mode randomized --seed <intervention_sampling_seed> \
-  --out runs/rand-all/<cell>.jsonl
-python -m harness.runner ... --mode randomized --rules tier_a_01_connectives \
-  --seed <intervention_sampling_seed> --out runs/rand-r01/<cell>.jsonl
+for SEED in 271828 161803 141421; do
+  python -m harness.runner ... --mode randomized --seed $SEED \
+    --out runs/rand-all/s$SEED-<cell>.jsonl
+  for RULE in tier_a_01_connectives tier_a_02_punctuation \
+      tier_a_03_discourse_markers tier_a_04_contractions \
+      tier_a_05_whitespace tier_a_06_operator_spacing tier_a_07_list_markers; do
+    python -m harness.runner ... --mode randomized --rules $RULE --seed $SEED \
+      --out runs/rand-$RULE/s$SEED-<cell>.jsonl
+  done
+done
 ```
 
 ## Phase 4 — audit (BEFORE any outcome analysis)

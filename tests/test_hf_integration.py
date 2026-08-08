@@ -43,6 +43,42 @@ def test_sequence_logprob_finite_and_additive():
     assert lp_all == pytest.approx(lp_head + lp_tail, abs=1e-4)
 
 
+def test_kv_cache_greedy_matches_uncached():
+    # The cached path must be behaviorally identical to the naive full
+    # forward (the bit-identity sanity reference).
+    uncached = HFCausalLM("sshleifer/tiny-gpt2", use_cache=False)
+    ids_c = LM.encode("We compute the value of x now.")
+    ids_u = list(ids_c)
+    for _ in range(25):
+        ids_c.append(LM.greedy_next(ids_c))
+        ids_u.append(uncached.greedy_next(ids_u))
+    assert ids_c == ids_u
+
+
+def test_kv_cache_seqlogprob_matches_uncached():
+    uncached = HFCausalLM("sshleifer/tiny-gpt2", use_cache=False)
+    ids = LM.encode("x = 17 and y = 41 so z = 58")
+    # Prime the cache with a longer sequence, then score a shorter prefix
+    # variant to exercise the crop path.
+    LM.greedy_next(ids)
+    branch = ids[:6] + LM.encode(" instead")
+    got = LM.sequence_logprob(branch, 3)
+    want = uncached.sequence_logprob(branch, 3)
+    assert got == pytest.approx(want, abs=1e-3)
+
+
+def test_kv_cache_divergent_branches_score_equal():
+    # Scoring candidate A then candidate B then A again (as the scorer does
+    # across sites) must not drift.
+    prefix = LM.encode("The sum is ")
+    a = prefix + LM.encode("42 exactly")
+    b = prefix + LM.encode("41 roughly")
+    first = LM.sequence_logprob(a, len(prefix))
+    LM.sequence_logprob(b, len(prefix))
+    again = LM.sequence_logprob(a, len(prefix))
+    assert first == pytest.approx(again, abs=1e-5)
+
+
 def test_scorer_end_to_end_on_real_tokenizer():
     from harness.matcher import match_sites
 

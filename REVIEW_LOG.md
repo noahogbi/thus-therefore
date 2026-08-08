@@ -111,6 +111,34 @@ parties should be shown this note before hashing. If they prefer a different
 resolution (e.g., decide on trace-so-far), that is a pre-hash amendment
 discussion.
 
+## Second consultation reconciliation (2026-08-08) — IN-1 and arm plan
+
+Both parties ruled on REVIEW_CONSULT_PROMPT_2.md; full responses preserved
+in the project conversation.
+
+- **IN-1: both ruled IN-1a** — the decoder's conservative skip of the
+  initiation set during generation is confirmed; generation-time density is
+  a structural zero, never evidence of a null; table untouched. Fable's
+  logging addition APPLIED: skipped-site counts by reason are exposed
+  (DecodeResult.skip_counts) so the writeup can state the density cost.
+- **Arm plan: both ruled 2b with 3 intervention seeds per randomized arm** —
+  native control + Tier A aggregate arm + all seven per-rule arms; the
+  aggregate arm is the primary test of the section 6 aggregate predictions,
+  per-rule arms are the registered per-rule decomposition and are never
+  selectively promoted post hoc. Same three seeds across every arm (Sol).
+- **Seeds:** audit_sample_seed = 314159 (both). Intervention seeds per
+  Sol's ruling, unopposed by Fable: [271828, 161803, 141421] (digits of e,
+  phi, sqrt(2) — nothing-up-my-sleeve). seeds.json field renamed to the
+  plural intervention_sampling_seeds to carry the list; the file was
+  fill-before-freeze by design.
+- **Judge pin consent (Fable's record item):** Sol's consent to
+  claude-opus-4-5-20251101 is Sol's own F3 ruling, which named that exact
+  snapshot; Fable's consent given in the second-round reply. Both consents
+  are hereby logged. Smoke test evidence: JUDGE_SMOKE_TEST.json.
+
+With this, every party-level item is closed. Standing rule honored: nothing
+further proposed that does not change a predicted observable.
+
 ## Remaining before hash (checkpoint Step 4)
 
 1. DONE 2026-08-08 — Noah's explicit sign-off on the reviewed site list

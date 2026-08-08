@@ -78,6 +78,17 @@ class DecodeResult:
     sites: list[SiteRecord] = field(default_factory=list)
 
     @property
+    def skip_counts(self) -> dict[str, int]:
+        """Sites decided but not randomized, by reason (REVIEW_LOG F4 and
+        Fable's IN-1 addition: the writeup must be able to state how much
+        density each constraint cost)."""
+        out: dict[str, int] = {}
+        for rec in self.sites:
+            if rec.skip_reason:
+                out[rec.skip_reason] = out.get(rec.skip_reason, 0) + 1
+        return out
+
+    @property
     def density(self) -> dict[str, float]:
         """Intervenable (>= 2 eligible) sites per 1,000 generated tokens,
         per rule (SPEC section 9)."""

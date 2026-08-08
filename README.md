@@ -46,7 +46,9 @@ SPEC.md section 6 and cannot be revised after data.
 
 - [x] Design frozen (2026-08-06)
 - [x] Tier A rule tables drafted; adversarial review COMPLETE — findings ruled on by both parties, dispositions applied (REVIEW_LOG.md, 2026-08-07); rule 02 display-line set amended (F2); rule 03 sequencing set structurally disabled in code (F1)
-- [ ] environment.json pinned — DRAFT complete incl. party-ruled judge (claude-opus-4-5-20251101, temp 0, thinking omitted); judge smoke test PENDING (requires API key; Sol's F3 condition)
+- [x] environment.json pinned FINAL — judge claude-opus-4-5-20251101 (temp 0, thinking omitted), smoke test PASSED 2026-08-08
+- [x] seeds.json completed (party-ruled: intervention seeds [271828, 161803, 141421], audit seed 314159); FREEZE_MANIFEST.json generated 2026-08-08 — manifest_hash 347cec05bd3f13567eb160a47ca0009ca4d69b8c9a401f00bcce5509c9406d9f
+- [x] Arm plan ruled (2b): native + aggregate + 7 per-rule arms, 3 seeds each — see RUNBOOK.md
 - [x] Harness COMPLETE: matcher, eligibility scorer (F5 two-region, Δ=1.5), intervention decoder (per-rule arms), density logging, depth calibrator, audit sampler (blinded, seeded), O1/O2 analysis — 114 tests incl. HF integration against pinned transformers 5.14.1; end-to-end pipeline wiring verified on CPU; phase commands in RUNBOOK.md; see REVIEW_LOG IN-1 for a decoder-side conservative rule awaiting party awareness
 - [ ] Matcher-only review pass: dry run regenerated post-amendment (24 traces, 298 sites); Noah's Step 4 sign-off PENDING
 - [ ] seeds.json completed, FREEZE_MANIFEST.json generated and published

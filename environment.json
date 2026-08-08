@@ -1,6 +1,6 @@
 {
   "_comment": "Pin BEFORE freezing per Sol's freeze mechanics: model version alone is insufficient because the experiment is tokenizer-level.",
-  "_draft_status": "DRAFT (2026-08-07) — final at checkpoint Step 4. Model: Qwen2.5-7B base per HANDOFF hardware notes (RTX 4090 24GB, base/light-instruct condition). Judge: ruled by Sol at pre-freeze review (REVIEW_LOG F3), consented by Fable — claude-opus-4-5-20251101 at temperature 0 with thinking omitted/not enabled. Sol's conditions: one exact-request smoke test MUST pass before hashing; if this model/configuration is unavailable, no silent substitution — amendment protocol. Fable's rider: the audit runs immediately after the main generation run, before any outcome analysis.",
+  "_status": "FINAL (2026-08-08, checkpoint Step 4 complete). Model: Qwen2.5-7B base per HANDOFF hardware notes (RTX 4090 24GB, base/light-instruct condition). Judge: ruled by Sol (F3), consented by Fable (second round) — claude-opus-4-5-20251101 at temperature 0, thinking omitted/not enabled; smoke test PASSED 2026-08-08 (JUDGE_SMOKE_TEST.json). If the judge configuration becomes unavailable before the audit: no silent substitution — amendment protocol. Fable's rider: the audit runs immediately after the main generation run, before any outcome analysis.",
   "model_id": "Qwen/Qwen2.5-7B",
   "model_revision_hash": "d149729398750b98c0af14eb82c78cfe92750796",
   "tokenizer_id": "Qwen/Qwen2.5-7B",
