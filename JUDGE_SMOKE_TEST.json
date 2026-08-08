@@ -1,0 +1,20 @@
+{
+  "purpose": "REVIEW_LOG F3 pre-hash smoke test (Sol's condition)",
+  "requested_model": "claude-opus-4-5-20251101",
+  "temperature": 0,
+  "thinking": "omitted",
+  "timestamp_utc": "2026-08-08T17:37:29.327242+00:00",
+  "result": "OK",
+  "served_model": "claude-opus-4-5-20251101",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 445,
+    "output_tokens": 50
+  },
+  "raw_verdict_text": "{\"verdict\": \"PASS\", \"failed_criteria\": [], \"one_line_reason\": \"\\\"Thus\\\" and \\\"Therefore\\\" are synonymous logical connectors; no change in meaning, hedging, or structure.\"}",
+  "parsed_verdict": {
+    "verdict": "PASS",
+    "failed_criteria": [],
+    "one_line_reason": "\"Thus\" and \"Therefore\" are synonymous logical connectors; no change in meaning, hedging, or structure."
+  }
+}

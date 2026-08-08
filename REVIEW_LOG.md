@@ -114,8 +114,9 @@ discussion.
 ## Remaining before hash (checkpoint Step 4)
 
 1. Noah's explicit sign-off on the reviewed site list (post-amendment rerun).
-2. Judge smoke test: exact request against claude-opus-4-5-20251101,
-   temperature 0, thinking off (Sol's F3 condition).
+2. DONE 2026-08-08 — Judge smoke test passed (Sol's F3 condition): exact
+   request served by claude-opus-4-5-20251101 at temperature 0, thinking
+   off; well-formed PASS verdict returned. Evidence: JUDGE_SMOKE_TEST.json.
 3. Show the parties IN-1 (decoder initiation-set rule) and settle the arm
    plan (all-rules aggregate and/or per-rule arms).
 4. Fill seeds.json (intervention_sampling_seed, audit_sample_seed —
