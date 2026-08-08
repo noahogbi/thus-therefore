@@ -139,6 +139,28 @@ in the project conversation.
 With this, every party-level item is closed. Standing rule honored: nothing
 further proposed that does not change a predicted observable.
 
+## MANIFEST NOTE (2026-08-08) — canonical hash superseded pre-run
+
+The manifest hash first committed (347cec05bd3f13567eb160a47ca0009c
+a4d69b8c9a401f00bcce5509c9406d9f) was generated on Windows, where the
+non-frozen tooling script hash_commit.py built its file map with
+OS-native path separators. On the Linux experiment box the same frozen
+content produced different map KEYS (rules/tier_a/... vs rules\tier_a\...)
+and therefore a different aggregate hash. Verified before any fix: **all 14
+per-file SHA-256 hashes were byte-identical across platforms** — the frozen
+content never differed; only the bookkeeping keys did.
+
+Resolution: hash_commit.py (tooling — deliberately absent from every frozen-
+artifact list) now normalizes manifest keys to POSIX separators. Both
+platforms now independently produce the canonical manifest hash:
+
+  ebb6bca07b1773f1161e593f0fd393c10cdb866f3f121bfa4351c8ff72177040
+
+No frozen artifact changed (provable: identical per-file hashes in both
+manifests, before and after — see git history for the superseded file).
+Timing: before any generation run and before the forum post; the public
+git history preserves the superseded manifest transparently.
+
 ## Remaining before hash (checkpoint Step 4)
 
 1. DONE 2026-08-08 — Noah's explicit sign-off on the reviewed site list

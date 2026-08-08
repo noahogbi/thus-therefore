@@ -32,7 +32,10 @@ def main():
     if missing:
         sys.exit(f"REFUSING TO FREEZE — missing artifacts: {missing}")
     for p in sorted(paths):
-        entries[p] = sha256(p)
+        # Manifest keys are always POSIX-style so the manifest hash is
+        # platform-independent (os.path.join yields backslashes on Windows,
+        # which changed the aggregate hash; per-file hashes were unaffected).
+        entries[p.replace(os.sep, "/")] = sha256(p)
     manifest = {
         "frozen_at_utc": datetime.datetime.utcnow().isoformat() + "Z",
         "files": entries,

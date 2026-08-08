@@ -1,4 +1,4 @@
-# cot-freeze — Neutral-Choice Randomization Experiment
+﻿# cot-freeze â€” Neutral-Choice Randomization Experiment
 
 A pre-registered experiment testing whether LLM chain-of-thought carries covert task
 state in reader-neutral token choices. Design was frozen in an adversarial dialogue
@@ -20,9 +20,9 @@ is built in `harness/`.
 
 | File | What it is |
 |---|---|
-| **CLAUDE.md** | Standing instructions for Claude Code — auto-loaded every session |
+| **CLAUDE.md** | Standing instructions for Claude Code â€” auto-loaded every session |
 | **HANDOFF.md** | Build plan: what's frozen, what to build, in what order |
-| **SPEC.md** | The frozen experimental design (normative — wins all conflicts) |
+| **SPEC.md** | The frozen experimental design (normative â€” wins all conflicts) |
 | **FREEZE.md** | Amendment/validation/hashing protocol |
 | `rules/tier_a/` | Seven frozen intervention rule tables (JSON) |
 | `rules/disputed/` | Four separate-arm cells with both parties' predictions |
@@ -45,11 +45,11 @@ SPEC.md section 6 and cannot be revised after data.
 ## Status
 
 - [x] Design frozen (2026-08-06)
-- [x] Tier A rule tables drafted; adversarial review COMPLETE — findings ruled on by both parties, dispositions applied (REVIEW_LOG.md, 2026-08-07); rule 02 display-line set amended (F2); rule 03 sequencing set structurally disabled in code (F1)
-- [x] environment.json pinned FINAL — judge claude-opus-4-5-20251101 (temp 0, thinking omitted), smoke test PASSED 2026-08-08
-- [x] seeds.json completed (party-ruled: intervention seeds [271828, 161803, 141421], audit seed 314159); FREEZE_MANIFEST.json generated 2026-08-08 — manifest_hash 347cec05bd3f13567eb160a47ca0009ca4d69b8c9a401f00bcce5509c9406d9f
-- [x] Arm plan ruled (2b): native + aggregate + 7 per-rule arms, 3 seeds each — see RUNBOOK.md
-- [x] Harness COMPLETE: matcher, eligibility scorer (F5 two-region, Δ=1.5), intervention decoder (per-rule arms), density logging, depth calibrator, audit sampler (blinded, seeded), O1/O2 analysis — 114 tests incl. HF integration against pinned transformers 5.14.1; end-to-end pipeline wiring verified on CPU; phase commands in RUNBOOK.md; see REVIEW_LOG IN-1 for a decoder-side conservative rule awaiting party awareness
+- [x] Tier A rule tables drafted; adversarial review COMPLETE â€” findings ruled on by both parties, dispositions applied (REVIEW_LOG.md, 2026-08-07); rule 02 display-line set amended (F2); rule 03 sequencing set structurally disabled in code (F1)
+- [x] environment.json pinned FINAL â€” judge claude-opus-4-5-20251101 (temp 0, thinking omitted), smoke test PASSED 2026-08-08
+- [x] seeds.json completed (party-ruled: intervention seeds [271828, 161803, 141421], audit seed 314159); FREEZE_MANIFEST.json generated 2026-08-08 â€” manifest_hash ebb6bca07b1773f1161e593f0fd393c10cdb866f3f121bfa4351c8ff72177040
+- [x] Arm plan ruled (2b): native + aggregate + 7 per-rule arms, 3 seeds each â€” see RUNBOOK.md
+- [x] Harness COMPLETE: matcher, eligibility scorer (F5 two-region, Î”=1.5), intervention decoder (per-rule arms), density logging, depth calibrator, audit sampler (blinded, seeded), O1/O2 analysis â€” 114 tests incl. HF integration against pinned transformers 5.14.1; end-to-end pipeline wiring verified on CPU; phase commands in RUNBOOK.md; see REVIEW_LOG IN-1 for a decoder-side conservative rule awaiting party awareness
 - [ ] Matcher-only review pass: dry run regenerated post-amendment (24 traces, 298 sites); Noah's Step 4 sign-off PENDING
 - [ ] seeds.json completed, FREEZE_MANIFEST.json generated and published
 - [ ] Depth calibration (native greedy, with/without trace)
@@ -58,6 +58,6 @@ SPEC.md section 6 and cannot be revised after data.
 
 ## Hardware
 
-Rented RTX 4090 (24GB) on Vast.ai / RunPod (~$0.30–0.50/hr). Local: harness
-development, task generation, matcher tests, probe training, analysis — all CPU-fine.
+Rented RTX 4090 (24GB) on Vast.ai / RunPod (~$0.30â€“0.50/hr). Local: harness
+development, task generation, matcher tests, probe training, analysis â€” all CPU-fine.
 GPU needed only for eligibility scoring, generation runs, and (later) LoRA work.
