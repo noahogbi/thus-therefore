@@ -129,6 +129,28 @@ Both leanings come from adjacent designs, not ours. The registrations in SPEC.md
    before spending.
 4. Keep a running BibTeX file (writeup/references.bib) from day one; add every
    paper in this file plus anything new the re-checks surface.
+
+---
+
+## Rung 1 pre-run novelty re-check — 2026-08-08 (per item 3 above)
+
+Two-query sweep during calibration, before main-run GPU spend. New adjacent
+work since the freeze sweep, none claiming the rung 1 design:
+
+- arXiv:2605.07307 "Rethinking Dense Sequential Chains" — line-level CoT
+  shuffling costs <0.5pp accuracy, word-level retains 62-89%, token-level
+  collapses. Destroys ORDERING (protected channel 2 in our design); no
+  neutrality restriction, no eligibility criterion, no depth axis.
+- arXiv:2605.16874 "Reasoning Can Be Restored by Correcting a Few Decision
+  Tokens" — a small set of pivotal tokens dominates outcomes; corrective,
+  not neutrality-constrained intervention.
+- arXiv:2604.15726 "LLM Reasoning Is Latent, Not the Chain of Thought" —
+  position paper adjacent to the latent-vs-serialized carve; no
+  channel-1-minus-channel-2 measurement.
+- arXiv:2605.29087, arXiv:2606.13603 — trace-answer dissociation and
+  commitment-boundary probing; rung 3 adjacent.
+
+VERDICT: rung 1 design still unclaimed; clear to run.
 5. Write-up intent means: never discard raw generations; log per-site
    intervention records; keep the analysis notebook reproducible end-to-end from
    FREEZE_MANIFEST.json + seeds.
