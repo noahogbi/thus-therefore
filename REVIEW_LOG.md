@@ -116,6 +116,13 @@ discussion.
 1. Noah's explicit sign-off on the reviewed site list (post-amendment rerun).
 2. Judge smoke test: exact request against claude-opus-4-5-20251101,
    temperature 0, thinking off (Sol's F3 condition).
-3. Fill seeds.json (intervention_sampling_seed, audit_sample_seed).
-4. Finalize environment.json (remove DRAFT status).
-5. `python scripts/hash_commit.py`; publish manifest_hash via pushed commit.
+3. Show the parties IN-1 (decoder initiation-set rule) and settle the arm
+   plan (all-rules aggregate and/or per-rule arms).
+4. Fill seeds.json (intervention_sampling_seed, audit_sample_seed —
+   proposed: 271828 and 314159, nothing-up-my-sleeve digits of e and pi).
+5. Finalize environment.json (remove DRAFT status).
+6. `python scripts/hash_commit.py`; commit the manifest.
+7. Publication at freeze (adopted 2026-08-07): flip the repo public
+   (`gh repo edit --visibility public`), then publish writeup/prereg_post.md
+   with the manifest hash and repo URL filled in — BEFORE the first
+   generation run, so the pre-registration is publicly timestamped.
