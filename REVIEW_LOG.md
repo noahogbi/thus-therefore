@@ -113,7 +113,9 @@ discussion.
 
 ## Remaining before hash (checkpoint Step 4)
 
-1. Noah's explicit sign-off on the reviewed site list (post-amendment rerun).
+1. DONE 2026-08-08 — Noah's explicit sign-off on the reviewed site list
+   (post-amendment dry run, 298 sites), given in-session: "Signed off."
+   Checkpoint Step 4 gate cleared.
 2. DONE 2026-08-08 — Judge smoke test passed (Sol's F3 condition): exact
    request served by claude-opus-4-5-20251101 at temperature 0, thinking
    off; well-formed PASS verdict returned. Evidence: JUDGE_SMOKE_TEST.json.
