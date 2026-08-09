@@ -28,10 +28,14 @@ fi
 mkdir -p "runs/$LABEL"
 for CELL in "$@"; do
   OUT="runs/$LABEL/$CELL.jsonl"
-  if [ -s "$OUT" ]; then
-    echo "[skip] $OUT exists"
+  PROBS="runs/problems/main-$CELL.jsonl"
+  if [ -s "$OUT" ] && [ "$(wc -l < "$OUT")" -eq "$(wc -l < "$PROBS")" ]; then
+    echo "[skip] $OUT complete"
     continue
   fi
+  # Partial output from an interrupted run: redo the cell from scratch so
+  # the record set is exactly the problem set (runner appends per record).
+  rm -f "$OUT"
   echo "[run] $LABEL / $CELL"
   python -m harness.runner \
     --model-id Qwen/Qwen2.5-7B \
