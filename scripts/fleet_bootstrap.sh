@@ -4,6 +4,7 @@
 # randomized:tier_a_06_operator_spacing:161803
 # Idempotent (run_pass.sh skips completed cells); stops the pod when done.
 set -euo pipefail
+SPECS=("$@")   # save BEFORE any `set --` clobbers the positional params
 cd /workspace/thus-therefore
 git pull -q || true
 pip install -q "transformers==5.14.1" pytest 2>&1 | tail -1 || true
@@ -19,7 +20,7 @@ for CELL in "reachability 2" "reachability 4" "reachability 6" "reachability 8" 
 done
 
 CELLS="reachability-d2 reachability-d4 reachability-d6 reachability-d8 multiplication-d2 composition-d2"
-for SPEC in "$@"; do
+for SPEC in "${SPECS[@]}"; do
   MODE="${SPEC%%:*}"; REST="${SPEC#*:}"; RULES="${REST%%:*}"; SEED="${REST#*:}"
   export PASS_MODE="$MODE" PASS_SEED="$SEED"
   if [ "$RULES" != "all" ] && [ "$RULES" != "-" ]; then
