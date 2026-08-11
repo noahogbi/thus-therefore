@@ -247,6 +247,33 @@ B: REJECT".
 
 No party-level questions remain open. Launch gates: credit top-up only.
 
+## Rung 1 base run: executed, audited (2026-08-10/11)
+
+- **Main run complete** under manifest ebb6bca0: 25 passes (native +
+  aggregate + 7 per-rule arms x 3 seeds) x 6 ruled cells x n=400 = 60,000
+  generations; every pass exactly 2400 records. Raw dataset committed
+  (runs-raw-dataset.tar.gz).
+- **Frozen audit PASSED:** 500 blinded pairs, seed 314159, judge
+  claude-opus-4-5-20251101 @ temperature 0, thinking omitted. 500/500 PASS;
+  every rule 100%; none below the frozen 98% threshold. No rule removed, no
+  rerun triggered. Trail committed (audit_items / audit_key /
+  audit_verdicts).
+- **Measured exposure (S1):** 155,166 sites decided, 3,860 intervened
+  (2.5%); 147,593 skipped as fewer_than_two_eligible. Per-cell coverage
+  11%-40% of problems; exposure DECLINES with depth (reachability d2 ~24%
+  -> d8 ~11%), inverting the confound that motivated the fourth-relay
+  supplement. Discourse markers: 0 interventions run-wide. List markers:
+  17.
+- **Power consequence recorded before any outcome computation:** at
+  reachability:d8, coverage and native accuracy bound the maximum possible
+  penalty near 2pp against ~1.9pp sampling SE, so the d4->d8 slope (Fable's
+  pre-committed primary O2 read) cannot resolve an effect of any size.
+- **REVIEW_CONSULT_PROMPT_6.md issued** asking both parties to rule, BLIND
+  to any outcome number, on how O2 should be reported (6a report as frozen
+  / 6b report plus pre-declared non-discrimination / 6c other). No O1, O2,
+  or per-arm accuracy has been computed by anyone, including the
+  implementer; harness.analysis has not been run.
+
 ## Remaining before hash (checkpoint Step 4)
 
 1. DONE 2026-08-08 — Noah's explicit sign-off on the reviewed site list
