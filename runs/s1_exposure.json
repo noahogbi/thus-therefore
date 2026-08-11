@@ -1,0 +1,1645 @@
+{
+  "arms": {
+    "randomized-all-s141421": {
+      "composition:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.4,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 243,
+          "1": 154,
+          "2": 3
+        },
+        "problems_with_at_least_one": 157,
+        "coverage_fraction": 0.3925
+      },
+      "multiplication:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.36,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 261,
+          "1": 134,
+          "2": 5
+        },
+        "problems_with_at_least_one": 139,
+        "coverage_fraction": 0.3475
+      },
+      "reachability:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.3,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 298,
+          "1": 85,
+          "2": 16,
+          "3": 1
+        },
+        "problems_with_at_least_one": 102,
+        "coverage_fraction": 0.255
+      },
+      "reachability:d4": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.27,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 303,
+          "1": 86,
+          "2": 11
+        },
+        "problems_with_at_least_one": 97,
+        "coverage_fraction": 0.2425
+      },
+      "reachability:d6": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.2125,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 321,
+          "1": 73,
+          "2": 6
+        },
+        "problems_with_at_least_one": 79,
+        "coverage_fraction": 0.1975
+      },
+      "reachability:d8": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.115,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 354,
+          "1": 46
+        },
+        "problems_with_at_least_one": 46,
+        "coverage_fraction": 0.115
+      }
+    },
+    "randomized-all-s161803": {
+      "composition:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.395,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 243,
+          "1": 156,
+          "2": 1
+        },
+        "problems_with_at_least_one": 157,
+        "coverage_fraction": 0.3925
+      },
+      "multiplication:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.355,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 260,
+          "1": 138,
+          "2": 2
+        },
+        "problems_with_at_least_one": 140,
+        "coverage_fraction": 0.35
+      },
+      "reachability:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.27,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 310,
+          "1": 72,
+          "2": 18
+        },
+        "problems_with_at_least_one": 90,
+        "coverage_fraction": 0.225
+      },
+      "reachability:d4": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.2575,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 311,
+          "1": 77,
+          "2": 10,
+          "3": 2
+        },
+        "problems_with_at_least_one": 89,
+        "coverage_fraction": 0.2225
+      },
+      "reachability:d6": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.175,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 334,
+          "1": 62,
+          "2": 4
+        },
+        "problems_with_at_least_one": 66,
+        "coverage_fraction": 0.165
+      },
+      "reachability:d8": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.1175,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 354,
+          "1": 45,
+          "2": 1
+        },
+        "problems_with_at_least_one": 46,
+        "coverage_fraction": 0.115
+      }
+    },
+    "randomized-all-s271828": {
+      "composition:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.43,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 233,
+          "1": 162,
+          "2": 5
+        },
+        "problems_with_at_least_one": 167,
+        "coverage_fraction": 0.4175
+      },
+      "multiplication:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.3775,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 253,
+          "1": 143,
+          "2": 4
+        },
+        "problems_with_at_least_one": 147,
+        "coverage_fraction": 0.3675
+      },
+      "reachability:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.2975,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 304,
+          "1": 76,
+          "2": 17,
+          "3": 3
+        },
+        "problems_with_at_least_one": 96,
+        "coverage_fraction": 0.24
+      },
+      "reachability:d4": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.2525,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 308,
+          "1": 83,
+          "2": 9
+        },
+        "problems_with_at_least_one": 92,
+        "coverage_fraction": 0.23
+      },
+      "reachability:d6": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.17,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 333,
+          "1": 66,
+          "2": 1
+        },
+        "problems_with_at_least_one": 67,
+        "coverage_fraction": 0.1675
+      },
+      "reachability:d8": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.11,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 356,
+          "1": 44
+        },
+        "problems_with_at_least_one": 44,
+        "coverage_fraction": 0.11
+      }
+    },
+    "randomized-tier_a_01_connectives-s141421": {
+      "composition:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0025,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 399,
+          "1": 1
+        },
+        "problems_with_at_least_one": 1,
+        "coverage_fraction": 0.0025
+      },
+      "multiplication:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.1,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 360,
+          "1": 40
+        },
+        "problems_with_at_least_one": 40,
+        "coverage_fraction": 0.1
+      },
+      "reachability:d4": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.04,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 384,
+          "1": 16
+        },
+        "problems_with_at_least_one": 16,
+        "coverage_fraction": 0.04
+      },
+      "reachability:d6": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.025,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 390,
+          "1": 10
+        },
+        "problems_with_at_least_one": 10,
+        "coverage_fraction": 0.025
+      },
+      "reachability:d8": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0575,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 377,
+          "1": 23
+        },
+        "problems_with_at_least_one": 23,
+        "coverage_fraction": 0.0575
+      }
+    },
+    "randomized-tier_a_01_connectives-s161803": {
+      "composition:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.005,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 398,
+          "1": 2
+        },
+        "problems_with_at_least_one": 2,
+        "coverage_fraction": 0.005
+      },
+      "multiplication:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.09,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 364,
+          "1": 36
+        },
+        "problems_with_at_least_one": 36,
+        "coverage_fraction": 0.09
+      },
+      "reachability:d4": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0375,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 385,
+          "1": 15
+        },
+        "problems_with_at_least_one": 15,
+        "coverage_fraction": 0.0375
+      },
+      "reachability:d6": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0125,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 395,
+          "1": 5
+        },
+        "problems_with_at_least_one": 5,
+        "coverage_fraction": 0.0125
+      },
+      "reachability:d8": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.045,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 382,
+          "1": 18
+        },
+        "problems_with_at_least_one": 18,
+        "coverage_fraction": 0.045
+      }
+    },
+    "randomized-tier_a_01_connectives-s271828": {
+      "composition:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0075,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 397,
+          "1": 3
+        },
+        "problems_with_at_least_one": 3,
+        "coverage_fraction": 0.0075
+      },
+      "multiplication:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.08,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 368,
+          "1": 32
+        },
+        "problems_with_at_least_one": 32,
+        "coverage_fraction": 0.08
+      },
+      "reachability:d4": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0375,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 385,
+          "1": 15
+        },
+        "problems_with_at_least_one": 15,
+        "coverage_fraction": 0.0375
+      },
+      "reachability:d6": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.015,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 394,
+          "1": 6
+        },
+        "problems_with_at_least_one": 6,
+        "coverage_fraction": 0.015
+      },
+      "reachability:d8": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0575,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 377,
+          "1": 23
+        },
+        "problems_with_at_least_one": 23,
+        "coverage_fraction": 0.0575
+      }
+    },
+    "randomized-tier_a_02_punctuation-s141421": {
+      "composition:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "multiplication:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.055,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 378,
+          "1": 22
+        },
+        "problems_with_at_least_one": 22,
+        "coverage_fraction": 0.055
+      },
+      "reachability:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0675,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 373,
+          "1": 27
+        },
+        "problems_with_at_least_one": 27,
+        "coverage_fraction": 0.0675
+      },
+      "reachability:d4": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.1625,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 335,
+          "1": 65
+        },
+        "problems_with_at_least_one": 65,
+        "coverage_fraction": 0.1625
+      },
+      "reachability:d6": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.15,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 340,
+          "1": 60
+        },
+        "problems_with_at_least_one": 60,
+        "coverage_fraction": 0.15
+      },
+      "reachability:d8": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.045,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 382,
+          "1": 18
+        },
+        "problems_with_at_least_one": 18,
+        "coverage_fraction": 0.045
+      }
+    },
+    "randomized-tier_a_02_punctuation-s161803": {
+      "composition:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "multiplication:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0725,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 371,
+          "1": 29
+        },
+        "problems_with_at_least_one": 29,
+        "coverage_fraction": 0.0725
+      },
+      "reachability:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.07,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 372,
+          "1": 28
+        },
+        "problems_with_at_least_one": 28,
+        "coverage_fraction": 0.07
+      },
+      "reachability:d4": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.1425,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 343,
+          "1": 57
+        },
+        "problems_with_at_least_one": 57,
+        "coverage_fraction": 0.1425
+      },
+      "reachability:d6": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.125,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 350,
+          "1": 50
+        },
+        "problems_with_at_least_one": 50,
+        "coverage_fraction": 0.125
+      },
+      "reachability:d8": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.045,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 382,
+          "1": 18
+        },
+        "problems_with_at_least_one": 18,
+        "coverage_fraction": 0.045
+      }
+    },
+    "randomized-tier_a_02_punctuation-s271828": {
+      "composition:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "multiplication:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.06,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 376,
+          "1": 24
+        },
+        "problems_with_at_least_one": 24,
+        "coverage_fraction": 0.06
+      },
+      "reachability:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.065,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 374,
+          "1": 26
+        },
+        "problems_with_at_least_one": 26,
+        "coverage_fraction": 0.065
+      },
+      "reachability:d4": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.1425,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 343,
+          "1": 57
+        },
+        "problems_with_at_least_one": 57,
+        "coverage_fraction": 0.1425
+      },
+      "reachability:d6": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.13,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 348,
+          "1": 52
+        },
+        "problems_with_at_least_one": 52,
+        "coverage_fraction": 0.13
+      },
+      "reachability:d8": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.035,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 386,
+          "1": 14
+        },
+        "problems_with_at_least_one": 14,
+        "coverage_fraction": 0.035
+      }
+    },
+    "randomized-tier_a_03_discourse_markers-s141421": {
+      "composition:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "multiplication:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d4": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d6": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d8": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      }
+    },
+    "randomized-tier_a_03_discourse_markers-s161803": {
+      "composition:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "multiplication:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d4": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d6": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d8": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      }
+    },
+    "randomized-tier_a_03_discourse_markers-s271828": {
+      "composition:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "multiplication:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d4": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d6": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d8": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      }
+    },
+    "randomized-tier_a_04_contractions-s141421": {
+      "composition:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "multiplication:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0025,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 399,
+          "1": 1
+        },
+        "problems_with_at_least_one": 1,
+        "coverage_fraction": 0.0025
+      },
+      "reachability:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.05,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 381,
+          "1": 18,
+          "2": 1
+        },
+        "problems_with_at_least_one": 19,
+        "coverage_fraction": 0.0475
+      },
+      "reachability:d4": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0325,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 387,
+          "1": 13
+        },
+        "problems_with_at_least_one": 13,
+        "coverage_fraction": 0.0325
+      },
+      "reachability:d6": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.03,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 388,
+          "1": 12
+        },
+        "problems_with_at_least_one": 12,
+        "coverage_fraction": 0.03
+      },
+      "reachability:d8": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.01,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 396,
+          "1": 4
+        },
+        "problems_with_at_least_one": 4,
+        "coverage_fraction": 0.01
+      }
+    },
+    "randomized-tier_a_04_contractions-s161803": {
+      "composition:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "multiplication:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.05,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 382,
+          "1": 16,
+          "2": 2
+        },
+        "problems_with_at_least_one": 18,
+        "coverage_fraction": 0.045
+      },
+      "reachability:d4": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.04,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 384,
+          "1": 16
+        },
+        "problems_with_at_least_one": 16,
+        "coverage_fraction": 0.04
+      },
+      "reachability:d6": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.02,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 392,
+          "1": 8
+        },
+        "problems_with_at_least_one": 8,
+        "coverage_fraction": 0.02
+      },
+      "reachability:d8": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.025,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 390,
+          "1": 10
+        },
+        "problems_with_at_least_one": 10,
+        "coverage_fraction": 0.025
+      }
+    },
+    "randomized-tier_a_04_contractions-s271828": {
+      "composition:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "multiplication:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0575,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 379,
+          "1": 19,
+          "2": 2
+        },
+        "problems_with_at_least_one": 21,
+        "coverage_fraction": 0.0525
+      },
+      "reachability:d4": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.04,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 384,
+          "1": 16
+        },
+        "problems_with_at_least_one": 16,
+        "coverage_fraction": 0.04
+      },
+      "reachability:d6": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.02,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 392,
+          "1": 8
+        },
+        "problems_with_at_least_one": 8,
+        "coverage_fraction": 0.02
+      },
+      "reachability:d8": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0175,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 393,
+          "1": 7
+        },
+        "problems_with_at_least_one": 7,
+        "coverage_fraction": 0.0175
+      }
+    },
+    "randomized-tier_a_05_whitespace-s141421": {
+      "composition:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "multiplication:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.3075,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 280,
+          "1": 117,
+          "2": 3
+        },
+        "problems_with_at_least_one": 120,
+        "coverage_fraction": 0.3
+      },
+      "reachability:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0575,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 380,
+          "1": 17,
+          "2": 3
+        },
+        "problems_with_at_least_one": 20,
+        "coverage_fraction": 0.05
+      },
+      "reachability:d4": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0075,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 397,
+          "1": 3
+        },
+        "problems_with_at_least_one": 3,
+        "coverage_fraction": 0.0075
+      },
+      "reachability:d6": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0175,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 393,
+          "1": 7
+        },
+        "problems_with_at_least_one": 7,
+        "coverage_fraction": 0.0175
+      },
+      "reachability:d8": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0025,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 399,
+          "1": 1
+        },
+        "problems_with_at_least_one": 1,
+        "coverage_fraction": 0.0025
+      }
+    },
+    "randomized-tier_a_05_whitespace-s161803": {
+      "composition:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "multiplication:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.28,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 289,
+          "1": 110,
+          "2": 1
+        },
+        "problems_with_at_least_one": 111,
+        "coverage_fraction": 0.2775
+      },
+      "reachability:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.045,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 385,
+          "1": 12,
+          "2": 3
+        },
+        "problems_with_at_least_one": 15,
+        "coverage_fraction": 0.0375
+      },
+      "reachability:d4": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0075,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 397,
+          "1": 3
+        },
+        "problems_with_at_least_one": 3,
+        "coverage_fraction": 0.0075
+      },
+      "reachability:d6": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0125,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 395,
+          "1": 5
+        },
+        "problems_with_at_least_one": 5,
+        "coverage_fraction": 0.0125
+      },
+      "reachability:d8": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.01,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 396,
+          "1": 4
+        },
+        "problems_with_at_least_one": 4,
+        "coverage_fraction": 0.01
+      }
+    },
+    "randomized-tier_a_05_whitespace-s271828": {
+      "composition:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "multiplication:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.3225,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 274,
+          "1": 123,
+          "2": 3
+        },
+        "problems_with_at_least_one": 126,
+        "coverage_fraction": 0.315
+      },
+      "reachability:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.075,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 378,
+          "1": 16,
+          "2": 4,
+          "3": 2
+        },
+        "problems_with_at_least_one": 22,
+        "coverage_fraction": 0.055
+      },
+      "reachability:d4": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.01,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 397,
+          "1": 2,
+          "2": 1
+        },
+        "problems_with_at_least_one": 3,
+        "coverage_fraction": 0.0075
+      },
+      "reachability:d6": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0175,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 393,
+          "1": 7
+        },
+        "problems_with_at_least_one": 7,
+        "coverage_fraction": 0.0175
+      },
+      "reachability:d8": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.005,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 398,
+          "1": 2
+        },
+        "problems_with_at_least_one": 2,
+        "coverage_fraction": 0.005
+      }
+    },
+    "randomized-tier_a_06_operator_spacing-s141421": {
+      "composition:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.3975,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 246,
+          "1": 149,
+          "2": 5
+        },
+        "problems_with_at_least_one": 154,
+        "coverage_fraction": 0.385
+      },
+      "multiplication:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d4": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d6": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d8": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      }
+    },
+    "randomized-tier_a_06_operator_spacing-s161803": {
+      "composition:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.3875,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 246,
+          "1": 153,
+          "2": 1
+        },
+        "problems_with_at_least_one": 154,
+        "coverage_fraction": 0.385
+      },
+      "multiplication:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d4": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d6": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d8": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      }
+    },
+    "randomized-tier_a_06_operator_spacing-s271828": {
+      "composition:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.4225,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 236,
+          "1": 159,
+          "2": 5
+        },
+        "problems_with_at_least_one": 164,
+        "coverage_fraction": 0.41
+      },
+      "multiplication:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d4": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d6": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d8": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      }
+    },
+    "randomized-tier_a_07_list_markers-s141421": {
+      "composition:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "multiplication:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.01,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 398,
+          "1": 1,
+          "3": 1
+        },
+        "problems_with_at_least_one": 2,
+        "coverage_fraction": 0.005
+      },
+      "reachability:d4": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d6": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d8": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      }
+    },
+    "randomized-tier_a_07_list_markers-s161803": {
+      "composition:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "multiplication:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0075,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 398,
+          "1": 1,
+          "2": 1
+        },
+        "problems_with_at_least_one": 2,
+        "coverage_fraction": 0.005
+      },
+      "reachability:d4": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d6": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d8": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      }
+    },
+    "randomized-tier_a_07_list_markers-s271828": {
+      "composition:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "multiplication:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d2": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0075,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 398,
+          "1": 1,
+          "2": 1
+        },
+        "problems_with_at_least_one": 2,
+        "coverage_fraction": 0.005
+      },
+      "reachability:d4": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d6": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      },
+      "reachability:d8": {
+        "n_problems": 400,
+        "mean_intervened_per_trace": 0.0,
+        "median_intervened_per_trace": 0.0,
+        "distribution": {
+          "0": 400
+        },
+        "problems_with_at_least_one": 0,
+        "coverage_fraction": 0.0
+      }
+    }
+  },
+  "rule_totals": {
+    "tier_a_01_connectives": {
+      "sites_decided": 11334,
+      "sites_intervened": 512
+    },
+    "tier_a_02_punctuation": {
+      "sites_decided": 29588,
+      "sites_intervened": 1095
+    },
+    "tier_a_03_discourse_markers": {
+      "sites_decided": 12,
+      "sites_intervened": 0
+    },
+    "tier_a_04_contractions": {
+      "sites_decided": 5973,
+      "sites_intervened": 334
+    },
+    "tier_a_05_whitespace": {
+      "sites_decided": 17439,
+      "sites_intervened": 935
+    },
+    "tier_a_06_operator_spacing": {
+      "sites_decided": 46121,
+      "sites_intervened": 967
+    },
+    "tier_a_07_list_markers": {
+      "sites_decided": 44699,
+      "sites_intervened": 17
+    }
+  },
+  "skip_totals": {
+    "fewer_than_two_eligible": 147593,
+    "global_exclusion_undecidable_mid_generation": 12
+  },
+  "_note": "S1 exposure reporting, adopted by double consent (fourth relay). Descriptive only; never a denominator for primary estimands. Rules with zero interventions are structurally unavailable, not null effects (Sol, sixth relay)."
+}

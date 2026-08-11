@@ -274,6 +274,81 @@ No party-level questions remain open. Launch gates: credit top-up only.
   or per-arm accuracy has been computed by anyone, including the
   implementer; harness.analysis has not been run.
 
+## Sixth relay — Sol ruling received 2026-08-11 (Fable pending)
+
+**Sol: 6b** — compute and publish O1/O2 exactly as registered, per rule and
+aggregate, with frozen density/power reporting and the Proposal A exposure
+adjustment; do NOT alter cells, estimands, or analysis because of measured
+exposure. Registered interpretation, recorded before outcomes exist:
+
+- The base-model O2 result is **non-discriminating** between the parties'
+  registered depth-interaction hypotheses. Neither the sign nor the
+  statistical significance of the O2 estimate will be claimed by Sol as
+  evidence for or against either prediction. O2 is published because it is
+  a registered observable, as an underpowered secondary result.
+- The non-discrimination ruling does **not** extend automatically to O1 at
+  better-exposed cells, nor to descriptive/mechanistic findings; those are
+  interpreted according to their own measured power.
+- **Zero observed penalty is not evidence of invariance when intervention
+  opportunity is near zero.** Rule 03 has no experimental O1/O2 estimate at
+  all — zero interventions means structurally unavailable, not a null
+  effect. Rule 07 is to be described as effectively uninformative rather
+  than as meaningful evidence from 17 interventions.
+
+Non-binding: Sol reports the measured exposure materially increases the
+light-instruct follow-on's priority, which now answers two distinct
+questions — (1) whether stronger instruction tuning yields enough
+reader-equivalent choice entropy for the instrument to have power, and
+(2) whether neutral-choice dependence changes relative to the base
+checkpoint.
+
+**Fable: 6b** — same disposition, invoked explicitly against Fable's own
+side. Recorded reasoning: an underpowered O2 spuriously flatters the flat
+registration; at ~11% coverage and 0.175 native accuracy a 2pp maximum
+detectable effect against 1.9pp SE cannot distinguish flat from positive at
+any effect size either party contemplated, so 6a would position Fable to
+claim confirmation from data constitutionally incapable of disconfirming
+it. Fable pre-commits never to cite this run's O2 as support for the flat
+prediction.
+
+Additional Fable contributions, stated blind and pre-outcome:
+
+- **Substantive finding for the writeup:** 95% of decided sites had fewer
+  than two eligible alternatives under Delta = 1.5. On this base model the
+  reader-neutral channel is mostly **closed at the writer** — the surface-
+  form distribution is too peaked to offer comparable alternatives. This is
+  a measured property of the contested channel (its available write
+  capacity), independent of whether anything uses it, and belongs beside
+  the audit result.
+- **Auxiliary assumption falsified, recorded pre-outcome:** Fable predicted
+  discourse markers would be a high-density, high-entropy rule; the rule
+  produced 12 sites and zero interventions. The post-RL ordering
+  sub-prediction keeps its logic (effects concentrate where entropy exists)
+  but its rule ranking must be read against measured rather than assumed
+  entropy.
+
+**RECONCILIATION: 6b unanimous.** O1/O2 computed and published exactly as
+registered, per rule and aggregate, with frozen density/power reporting and
+the Proposal A exposure adjustment; no cells, estimands, or analyses
+altered on account of measured exposure. Both parties' non-discrimination
+statements bind: this run's O2 is evidence for neither registration. Sol's
+qualifiers carry: the statement covers O2 only (O1 at better-exposed cells
+and descriptive findings are read on their own power); rule 03 is
+structurally unavailable rather than a null; rule 07 is uninformative
+rather than evidence.
+
+**Follow-on (both, non-binding, concordant):** priority rises
+substantially. Fable's framing — the exposure finding converts the
+light-instruct follow-on from robustness check into the experiment's crux,
+since both stories route through whether post-training OPENS the writer
+(Fable: channel stays near-closed until outcome-filtered selection builds
+an encoder; substrate story: capacity is cheap to open and gets used). Sol
+concurs the follow-on now answers two questions: whether instruct tuning
+yields enough reader-equivalent entropy for the instrument to have power,
+and whether neutral-choice dependence changes. Both name the RLVR-stage
+comparison as the decisive third point. No design changes needed — density
+and exposure reporting are already frozen in.
+
 ## Remaining before hash (checkpoint Step 4)
 
 1. DONE 2026-08-08 — Noah's explicit sign-off on the reviewed site list
