@@ -381,6 +381,59 @@ altered on account of measured exposure.
   follow-on question. No frozen estimand is altered by any option; nothing
   is written up as a claim pending reconciliation.
 
+## Seventh relay reconciliation (2026-08-11) — rung 1 reporting settled
+
+- **7.1 — unanimous (d) = b and c jointly.** Publish the frozen raw O1 as
+  computed; the termination decomposition is a REQUIRED companion; a
+  supplementary aggregate excluding rule 05 appears additionally, labeled a
+  mechanistic decomposition and never a substitute. Sol's required framing
+  language adopted verbatim in RESULTS.md. Implementation note: the
+  exclusion aggregate is computed from the independent per-rule arms rather
+  than by subsetting the aggregate arm on which rules fired, which would be
+  post-treatment conditioning of the kind Sol objected to in relay four.
+- **7.2 — unanimous consent; Sol's three-way form adopted** (correct /
+  wrong parseable answer / no parseable answer) per arm and cell, as a
+  superset of Fable's two-way split. Frozen O1 unchanged: no-answer traces
+  remain incorrect.
+- **7.3 — unanimous (b):** distinct phenomenon, reported separately;
+  both parties explicitly declined (c) artifact. Names offered: Fable
+  "termination-cue sensitivity"; Sol "reader-neutral continuation-state
+  dependence". Both recorded; both quoted in RESULTS.md.
+- **7.4 — consent to recording the blind spot is unanimous; the proposed
+  REMEDY is disputed.** Fable: add a behavioral continuation check
+  (P(EOS)/next-token divergence profiling) at table-validation time. Sol:
+  rejects that as a neutrality gate — "excluding transformations whenever
+  they affect continuation would condition the instrument on the causal
+  outcome it is designed to detect" — and proposes instead extending the
+  READER-side audit to document-state equivalence (does a competent reader
+  regard the swap as changing apparent completion status / block boundary /
+  expectation of further text), with model-continuation testing permitted
+  DIAGNOSTICALLY only. Partial convergence recorded: both permit
+  continuation profiling as a diagnostic; they differ only on whether it
+  may gate neutrality. Disposition: the blind spot is recorded as
+  unanimous; both remedies are recorded with attribution as an open
+  question for the NEXT pre-registration. This affects no rung 1 reporting,
+  and the standing conservative tiebreak is not invoked because the dispute
+  is about validity rather than degree of randomization.
+- **7.5 — concordant pre-run registrations.** Fable: the multiplication:d2
+  rule-05 termination effect collapses to near zero on the instruct
+  checkpoint (residual under 2pp), with eligible-alternative density rising
+  modestly. Sol: substantially smaller in instruct. Fable offered
+  "termination sensitivity survives instruct tuning" as Sol's win condition
+  for the substrate story; **Sol explicitly declined to tie it to the
+  original covert-state disagreement**, keeping it a separate question.
+  Recorded as offered-and-declined.
+
+**Fable's recorded self-corrections (attributed, post-outcome but
+volunteered):** (1) Fable's registered whitespace prediction ("zero on
+base") is wrong as written — the registration allowed small constant
+brittleness and located it on connectives, and +0.211 in a cell is not
+small; logged as a miss with Fable's attribution. (2) Delta-eligibility
+passed both whitespace forms as comparable — the model rated `\n` a
+near-equivalent continuation and then treated its own alternative as a stop
+sign. Fable's formulation: eligibility certifies write-side plausibility,
+not read-side equivalence; that asymmetry is now empirical.
+
 ## Remaining before hash (checkpoint Step 4)
 
 1. DONE 2026-08-08 — Noah's explicit sign-off on the reviewed site list
