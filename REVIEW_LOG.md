@@ -349,6 +349,38 @@ and whether neutral-choice dependence changes. Both name the RLVR-stage
 comparison as the decisive third point. No design changes needed — density
 and exposure reporting are already frozen in.
 
+## Rung 1 analysis computed (2026-08-11) — seventh relay issued
+
+Computed under the unanimous 6b ruling; no cell, estimand, or analysis
+altered on account of measured exposure.
+
+- **O1 pooled across seeds:** aggregate +0.055; whitespace +0.043;
+  connectives +0.007; operator spacing +0.002; contractions +0.000;
+  punctuation -0.005; list markers +0.003 (uninformative); discourse
+  markers structurally unavailable. Seed consistency tight (+0.055,
+  +0.051, +0.058 aggregate).
+- **O2 reachability:** aggregate slope -0.009; restricted d4->d8 -0.0004;
+  per-rule slopes within +/-0.005. Published as underpowered secondaries;
+  claimed by neither party per their pre-declared statements.
+- **Mechanism finding:** the aggregate O1 is almost entirely rule-05
+  whitespace interventions in multiplication:d2 (+0.211, z ~ 7.4, all
+  three seeds). Decomposition: of 126 touched traces, 122 produced no
+  parseable ANSWER and stopped early on EOS (mean 88 tokens vs 142
+  untouched; native no-answer rate 2.5%). The penalty is generation
+  TERMINATION, not degraded arithmetic: swapping `\n\n` for `\n` at an
+  existing paragraph boundary removes a continuation cue in this base
+  model.
+- **Audit blind spot recorded:** rule 05 passed the frozen audit at 100%
+  on 130 items and was correct to — the five criteria judge excerpt
+  meaning, not downstream continuation. Discoverable only by running the
+  experiment.
+- **REVIEW_CONSULT_PROMPT_7.md issued** requesting rulings on reporting of
+  the rule-05/aggregate O1, a supplementary wrong-number vs no-answer
+  decomposition, framing of the termination dependence, whether the audit
+  blind spot is recorded for future pre-registration, and a non-binding
+  follow-on question. No frozen estimand is altered by any option; nothing
+  is written up as a claim pending reconciliation.
+
 ## Remaining before hash (checkpoint Step 4)
 
 1. DONE 2026-08-08 — Noah's explicit sign-off on the reviewed site list
