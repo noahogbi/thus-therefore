@@ -1,0 +1,2228 @@
+{
+  "_status": "SUPPLEMENTARY (eighth relay 8.2(b), unanimous). The frozen rung 1 numbers in runs/analysis_rung1.json remain the primary preregistered result. This file recomputes the same estimands under the extended extraction rule frozen for the instruct follow-on (8.1(b)), applied to rung 1 unmodified, so base and follow-on share one measurement rule. The sixth-relay non-discrimination pre-declaration extends to this O2.",
+  "arms": {
+    "all": {
+      "per_seed": {
+        "271828": {
+          "families": {
+            "composition": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.2275,
+                  "randomized_acc": 0.21,
+                  "penalty": 0.017500000000000016,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "multiplication": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.5725,
+                  "randomized_acc": 0.36,
+                  "penalty": 0.21250000000000002,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "reachability": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.68,
+                  "randomized_acc": 0.62,
+                  "penalty": 0.06000000000000005,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "4": {
+                  "native_acc": 0.6625,
+                  "randomized_acc": 0.63,
+                  "penalty": 0.03249999999999997,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "6": {
+                  "native_acc": 0.3725,
+                  "randomized_acc": 0.36,
+                  "penalty": 0.012500000000000011,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "8": {
+                  "native_acc": 0.1525,
+                  "randomized_acc": 0.1375,
+                  "penalty": 0.014999999999999986,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": -0.007750000000000009,
+              "o2_slope_d4_to_d8": -0.004374999999999997
+            }
+          },
+          "o1_mean_penalty": 0.05833333333333335,
+          "unmatched_cells": []
+        },
+        "161803": {
+          "families": {
+            "composition": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.2275,
+                  "randomized_acc": 0.22,
+                  "penalty": 0.007500000000000007,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "multiplication": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.5725,
+                  "randomized_acc": 0.3975,
+                  "penalty": 0.175,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "reachability": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.68,
+                  "randomized_acc": 0.615,
+                  "penalty": 0.06500000000000006,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "4": {
+                  "native_acc": 0.6625,
+                  "randomized_acc": 0.635,
+                  "penalty": 0.02749999999999997,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "6": {
+                  "native_acc": 0.3725,
+                  "randomized_acc": 0.3525,
+                  "penalty": 0.020000000000000018,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "8": {
+                  "native_acc": 0.1525,
+                  "randomized_acc": 0.1375,
+                  "penalty": 0.014999999999999986,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": -0.007875000000000009,
+              "o2_slope_d4_to_d8": -0.003124999999999996
+            }
+          },
+          "o1_mean_penalty": 0.05166666666666667,
+          "unmatched_cells": []
+        },
+        "141421": {
+          "families": {
+            "composition": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.2275,
+                  "randomized_acc": 0.215,
+                  "penalty": 0.012500000000000011,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "multiplication": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.5725,
+                  "randomized_acc": 0.375,
+                  "penalty": 0.1975,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "reachability": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.68,
+                  "randomized_acc": 0.6175,
+                  "penalty": 0.0625,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "4": {
+                  "native_acc": 0.6625,
+                  "randomized_acc": 0.625,
+                  "penalty": 0.03749999999999998,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "6": {
+                  "native_acc": 0.3725,
+                  "randomized_acc": 0.36,
+                  "penalty": 0.012500000000000011,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "8": {
+                  "native_acc": 0.1525,
+                  "randomized_acc": 0.13,
+                  "penalty": 0.022499999999999992,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": -0.0072499999999999995,
+              "o2_slope_d4_to_d8": -0.0037499999999999964
+            }
+          },
+          "o1_mean_penalty": 0.057499999999999996,
+          "unmatched_cells": []
+        }
+      },
+      "pooled": {
+        "families": {
+          "composition": {
+            "cells": {
+              "2": {
+                "native_acc": 0.2275,
+                "randomized_acc": 0.215,
+                "penalty": 0.012500000000000011,
+                "n_native": 1200,
+                "n_randomized": 1200
+              }
+            },
+            "o2_slope": null
+          },
+          "multiplication": {
+            "cells": {
+              "2": {
+                "native_acc": 0.5725,
+                "randomized_acc": 0.3775,
+                "penalty": 0.195,
+                "n_native": 1200,
+                "n_randomized": 1200
+              }
+            },
+            "o2_slope": null
+          },
+          "reachability": {
+            "cells": {
+              "2": {
+                "native_acc": 0.68,
+                "randomized_acc": 0.6175,
+                "penalty": 0.0625,
+                "n_native": 1200,
+                "n_randomized": 1200
+              },
+              "4": {
+                "native_acc": 0.6625,
+                "randomized_acc": 0.63,
+                "penalty": 0.03249999999999997,
+                "n_native": 1200,
+                "n_randomized": 1200
+              },
+              "6": {
+                "native_acc": 0.3725,
+                "randomized_acc": 0.3575,
+                "penalty": 0.015000000000000013,
+                "n_native": 1200,
+                "n_randomized": 1200
+              },
+              "8": {
+                "native_acc": 0.1525,
+                "randomized_acc": 0.135,
+                "penalty": 0.017499999999999988,
+                "n_native": 1200,
+                "n_randomized": 1200
+              }
+            },
+            "o2_slope": -0.007625,
+            "o2_slope_d4_to_d8": -0.0037499999999999964
+          }
+        },
+        "o1_mean_penalty": 0.055833333333333325,
+        "unmatched_cells": []
+      },
+      "proposal_a": {
+        "terms": [
+          "intercept",
+          "arm",
+          "depth",
+          "native_count",
+          "arm:native_count",
+          "arm:depth"
+        ],
+        "coefficients": [
+          1.758135459545741,
+          -0.2308811348214257,
+          -0.4082598199230724,
+          0.30873754606290343,
+          -0.1669834171618433,
+          0.029814952325696555
+        ],
+        "arm_x_depth": 0.029814952325696555,
+        "n_rows": 9600
+      }
+    },
+    "tier_a_01_connectives": {
+      "per_seed": {
+        "271828": {
+          "families": {
+            "composition": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.2275,
+                  "randomized_acc": 0.2225,
+                  "penalty": 0.0050000000000000044,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "multiplication": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.5725,
+                  "randomized_acc": 0.5725,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "reachability": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.68,
+                  "randomized_acc": 0.6625,
+                  "penalty": 0.01750000000000007,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "4": {
+                  "native_acc": 0.6625,
+                  "randomized_acc": 0.66,
+                  "penalty": 0.0024999999999999467,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "6": {
+                  "native_acc": 0.3725,
+                  "randomized_acc": 0.3725,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "8": {
+                  "native_acc": 0.1525,
+                  "randomized_acc": 0.14,
+                  "penalty": 0.012499999999999983,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": -0.0008750000000000105,
+              "o2_slope_d4_to_d8": 0.002500000000000009
+            }
+          },
+          "o1_mean_penalty": 0.006250000000000001,
+          "unmatched_cells": []
+        },
+        "161803": {
+          "families": {
+            "composition": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.2275,
+                  "randomized_acc": 0.225,
+                  "penalty": 0.0025000000000000022,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "multiplication": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.5725,
+                  "randomized_acc": 0.5725,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "reachability": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.68,
+                  "randomized_acc": 0.6575,
+                  "penalty": 0.022500000000000075,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "4": {
+                  "native_acc": 0.6625,
+                  "randomized_acc": 0.665,
+                  "penalty": -0.0025000000000000577,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "6": {
+                  "native_acc": 0.3725,
+                  "randomized_acc": 0.3675,
+                  "penalty": 0.0050000000000000044,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "8": {
+                  "native_acc": 0.1525,
+                  "randomized_acc": 0.1425,
+                  "penalty": 0.010000000000000009,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": -0.001500000000000007,
+              "o2_slope_d4_to_d8": 0.0031250000000000167
+            }
+          },
+          "o1_mean_penalty": 0.0062500000000000056,
+          "unmatched_cells": []
+        },
+        "141421": {
+          "families": {
+            "composition": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.2275,
+                  "randomized_acc": 0.2275,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "multiplication": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.5725,
+                  "randomized_acc": 0.5725,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "reachability": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.68,
+                  "randomized_acc": 0.66,
+                  "penalty": 0.020000000000000018,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "4": {
+                  "native_acc": 0.6625,
+                  "randomized_acc": 0.66,
+                  "penalty": 0.0024999999999999467,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "6": {
+                  "native_acc": 0.3725,
+                  "randomized_acc": 0.3675,
+                  "penalty": 0.0050000000000000044,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "8": {
+                  "native_acc": 0.1525,
+                  "randomized_acc": 0.1375,
+                  "penalty": 0.014999999999999986,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": -0.000625000000000002,
+              "o2_slope_d4_to_d8": 0.0031250000000000097
+            }
+          },
+          "o1_mean_penalty": 0.007083333333333326,
+          "unmatched_cells": []
+        }
+      },
+      "pooled": {
+        "families": {
+          "composition": {
+            "cells": {
+              "2": {
+                "native_acc": 0.2275,
+                "randomized_acc": 0.225,
+                "penalty": 0.0025000000000000022,
+                "n_native": 1200,
+                "n_randomized": 1200
+              }
+            },
+            "o2_slope": null
+          },
+          "multiplication": {
+            "cells": {
+              "2": {
+                "native_acc": 0.5725,
+                "randomized_acc": 0.5725,
+                "penalty": 0.0,
+                "n_native": 1200,
+                "n_randomized": 1200
+              }
+            },
+            "o2_slope": null
+          },
+          "reachability": {
+            "cells": {
+              "2": {
+                "native_acc": 0.68,
+                "randomized_acc": 0.66,
+                "penalty": 0.020000000000000018,
+                "n_native": 1200,
+                "n_randomized": 1200
+              },
+              "4": {
+                "native_acc": 0.6625,
+                "randomized_acc": 0.6616666666666666,
+                "penalty": 0.0008333333333333526,
+                "n_native": 1200,
+                "n_randomized": 1200
+              },
+              "6": {
+                "native_acc": 0.3725,
+                "randomized_acc": 0.36916666666666664,
+                "penalty": 0.003333333333333355,
+                "n_native": 1200,
+                "n_randomized": 1200
+              },
+              "8": {
+                "native_acc": 0.1525,
+                "randomized_acc": 0.14,
+                "penalty": 0.012499999999999983,
+                "n_native": 1200,
+                "n_randomized": 1200
+              }
+            },
+            "o2_slope": -0.001000000000000005,
+            "o2_slope_d4_to_d8": 0.0029166666666666577
+          }
+        },
+        "o1_mean_penalty": 0.006527777777777785,
+        "unmatched_cells": []
+      },
+      "proposal_a": {
+        "terms": [
+          "intercept",
+          "arm",
+          "depth",
+          "native_count",
+          "arm:native_count",
+          "arm:depth"
+        ],
+        "coefficients": [
+          1.7581354612022162,
+          -0.001960744023075189,
+          -0.4082598201985189,
+          0.30873754585326063,
+          -0.1130593161605942,
+          0.000432433983217318
+        ],
+        "arm_x_depth": 0.000432433983217318,
+        "n_rows": 9600
+      }
+    },
+    "tier_a_02_punctuation": {
+      "per_seed": {
+        "271828": {
+          "families": {
+            "composition": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.2275,
+                  "randomized_acc": 0.2325,
+                  "penalty": -0.0050000000000000044,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "multiplication": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.5725,
+                  "randomized_acc": 0.59,
+                  "penalty": -0.01749999999999996,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "reachability": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.68,
+                  "randomized_acc": 0.6775,
+                  "penalty": 0.0025000000000000577,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "4": {
+                  "native_acc": 0.6625,
+                  "randomized_acc": 0.6625,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "6": {
+                  "native_acc": 0.3725,
+                  "randomized_acc": 0.355,
+                  "penalty": 0.017500000000000016,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "8": {
+                  "native_acc": 0.1525,
+                  "randomized_acc": 0.155,
+                  "penalty": -0.0025000000000000022,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": 0.0001249999999999918,
+              "o2_slope_d4_to_d8": -0.0006250000000000006
+            }
+          },
+          "o1_mean_penalty": -0.0008333333333333156,
+          "unmatched_cells": []
+        },
+        "161803": {
+          "families": {
+            "composition": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.2275,
+                  "randomized_acc": 0.2325,
+                  "penalty": -0.0050000000000000044,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "multiplication": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.5725,
+                  "randomized_acc": 0.605,
+                  "penalty": -0.03249999999999997,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "reachability": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.68,
+                  "randomized_acc": 0.6825,
+                  "penalty": -0.0024999999999999467,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "4": {
+                  "native_acc": 0.6625,
+                  "randomized_acc": 0.665,
+                  "penalty": -0.0025000000000000577,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "6": {
+                  "native_acc": 0.3725,
+                  "randomized_acc": 0.3625,
+                  "penalty": 0.010000000000000009,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "8": {
+                  "native_acc": 0.1525,
+                  "randomized_acc": 0.1525,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": 0.0009999999999999953,
+              "o2_slope_d4_to_d8": 0.0006250000000000143
+            }
+          },
+          "o1_mean_penalty": -0.0054166666666666625,
+          "unmatched_cells": []
+        },
+        "141421": {
+          "families": {
+            "composition": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.2275,
+                  "randomized_acc": 0.2325,
+                  "penalty": -0.0050000000000000044,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "multiplication": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.5725,
+                  "randomized_acc": 0.595,
+                  "penalty": -0.022499999999999964,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "reachability": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.68,
+                  "randomized_acc": 0.68,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "4": {
+                  "native_acc": 0.6625,
+                  "randomized_acc": 0.6575,
+                  "penalty": 0.0050000000000000044,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "6": {
+                  "native_acc": 0.3725,
+                  "randomized_acc": 0.37,
+                  "penalty": 0.0025000000000000022,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "8": {
+                  "native_acc": 0.1525,
+                  "randomized_acc": 0.15,
+                  "penalty": 0.0025000000000000022,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": 0.0002500000000000002,
+              "o2_slope_d4_to_d8": -0.0006250000000000006
+            }
+          },
+          "o1_mean_penalty": -0.00291666666666666,
+          "unmatched_cells": []
+        }
+      },
+      "pooled": {
+        "families": {
+          "composition": {
+            "cells": {
+              "2": {
+                "native_acc": 0.2275,
+                "randomized_acc": 0.2325,
+                "penalty": -0.0050000000000000044,
+                "n_native": 1200,
+                "n_randomized": 1200
+              }
+            },
+            "o2_slope": null
+          },
+          "multiplication": {
+            "cells": {
+              "2": {
+                "native_acc": 0.5725,
+                "randomized_acc": 0.5966666666666667,
+                "penalty": -0.02416666666666667,
+                "n_native": 1200,
+                "n_randomized": 1200
+              }
+            },
+            "o2_slope": null
+          },
+          "reachability": {
+            "cells": {
+              "2": {
+                "native_acc": 0.68,
+                "randomized_acc": 0.68,
+                "penalty": 0.0,
+                "n_native": 1200,
+                "n_randomized": 1200
+              },
+              "4": {
+                "native_acc": 0.6625,
+                "randomized_acc": 0.6616666666666666,
+                "penalty": 0.0008333333333333526,
+                "n_native": 1200,
+                "n_randomized": 1200
+              },
+              "6": {
+                "native_acc": 0.3725,
+                "randomized_acc": 0.3625,
+                "penalty": 0.010000000000000009,
+                "n_native": 1200,
+                "n_randomized": 1200
+              },
+              "8": {
+                "native_acc": 0.1525,
+                "randomized_acc": 0.1525,
+                "penalty": 0.0,
+                "n_native": 1200,
+                "n_randomized": 1200
+              }
+            },
+            "o2_slope": 0.00045833333333333284,
+            "o2_slope_d4_to_d8": -0.00020833333333333814
+          }
+        },
+        "o1_mean_penalty": -0.0030555555555555522,
+        "unmatched_cells": []
+      },
+      "proposal_a": {
+        "terms": [
+          "intercept",
+          "arm",
+          "depth",
+          "native_count",
+          "arm:native_count",
+          "arm:depth"
+        ],
+        "coefficients": [
+          1.7581354614838662,
+          0.04290584077616073,
+          -0.40825982025021307,
+          0.30873754589286473,
+          -0.07590467130320078,
+          -0.005370830780328486
+        ],
+        "arm_x_depth": -0.005370830780328486,
+        "n_rows": 9600
+      }
+    },
+    "tier_a_03_discourse_markers": {
+      "per_seed": {
+        "271828": {
+          "families": {
+            "composition": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.2275,
+                  "randomized_acc": 0.2275,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "multiplication": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.5725,
+                  "randomized_acc": 0.5725,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "reachability": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.68,
+                  "randomized_acc": 0.68,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "4": {
+                  "native_acc": 0.6625,
+                  "randomized_acc": 0.6625,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "6": {
+                  "native_acc": 0.3725,
+                  "randomized_acc": 0.3725,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "8": {
+                  "native_acc": 0.1525,
+                  "randomized_acc": 0.1525,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": 0.0,
+              "o2_slope_d4_to_d8": 0.0
+            }
+          },
+          "o1_mean_penalty": 0.0,
+          "unmatched_cells": []
+        },
+        "161803": {
+          "families": {
+            "composition": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.2275,
+                  "randomized_acc": 0.2275,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "multiplication": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.5725,
+                  "randomized_acc": 0.5725,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "reachability": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.68,
+                  "randomized_acc": 0.68,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "4": {
+                  "native_acc": 0.6625,
+                  "randomized_acc": 0.6625,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "6": {
+                  "native_acc": 0.3725,
+                  "randomized_acc": 0.3725,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "8": {
+                  "native_acc": 0.1525,
+                  "randomized_acc": 0.1525,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": 0.0,
+              "o2_slope_d4_to_d8": 0.0
+            }
+          },
+          "o1_mean_penalty": 0.0,
+          "unmatched_cells": []
+        },
+        "141421": {
+          "families": {
+            "composition": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.2275,
+                  "randomized_acc": 0.2275,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "multiplication": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.5725,
+                  "randomized_acc": 0.5725,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "reachability": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.68,
+                  "randomized_acc": 0.68,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "4": {
+                  "native_acc": 0.6625,
+                  "randomized_acc": 0.6625,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "6": {
+                  "native_acc": 0.3725,
+                  "randomized_acc": 0.3725,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "8": {
+                  "native_acc": 0.1525,
+                  "randomized_acc": 0.1525,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": 0.0,
+              "o2_slope_d4_to_d8": 0.0
+            }
+          },
+          "o1_mean_penalty": 0.0,
+          "unmatched_cells": []
+        }
+      },
+      "pooled": {
+        "families": {
+          "composition": {
+            "cells": {
+              "2": {
+                "native_acc": 0.2275,
+                "randomized_acc": 0.2275,
+                "penalty": 0.0,
+                "n_native": 1200,
+                "n_randomized": 1200
+              }
+            },
+            "o2_slope": null
+          },
+          "multiplication": {
+            "cells": {
+              "2": {
+                "native_acc": 0.5725,
+                "randomized_acc": 0.5725,
+                "penalty": 0.0,
+                "n_native": 1200,
+                "n_randomized": 1200
+              }
+            },
+            "o2_slope": null
+          },
+          "reachability": {
+            "cells": {
+              "2": {
+                "native_acc": 0.68,
+                "randomized_acc": 0.68,
+                "penalty": 0.0,
+                "n_native": 1200,
+                "n_randomized": 1200
+              },
+              "4": {
+                "native_acc": 0.6625,
+                "randomized_acc": 0.6625,
+                "penalty": 0.0,
+                "n_native": 1200,
+                "n_randomized": 1200
+              },
+              "6": {
+                "native_acc": 0.3725,
+                "randomized_acc": 0.3725,
+                "penalty": 0.0,
+                "n_native": 1200,
+                "n_randomized": 1200
+              },
+              "8": {
+                "native_acc": 0.1525,
+                "randomized_acc": 0.1525,
+                "penalty": 0.0,
+                "n_native": 1200,
+                "n_randomized": 1200
+              }
+            },
+            "o2_slope": 0.0,
+            "o2_slope_d4_to_d8": 0.0
+          }
+        },
+        "o1_mean_penalty": 0.0,
+        "unmatched_cells": []
+      },
+      "proposal_a": {
+        "status": "not computed \u2014 zero interventions in this arm (structurally unavailable, not a null effect)"
+      }
+    },
+    "tier_a_04_contractions": {
+      "per_seed": {
+        "271828": {
+          "families": {
+            "composition": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.2275,
+                  "randomized_acc": 0.2275,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "multiplication": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.5725,
+                  "randomized_acc": 0.5725,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "reachability": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.68,
+                  "randomized_acc": 0.685,
+                  "penalty": -0.0050000000000000044,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "4": {
+                  "native_acc": 0.6625,
+                  "randomized_acc": 0.655,
+                  "penalty": 0.007499999999999951,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "6": {
+                  "native_acc": 0.3725,
+                  "randomized_acc": 0.3775,
+                  "penalty": -0.0050000000000000044,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "8": {
+                  "native_acc": 0.1525,
+                  "randomized_acc": 0.1525,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": 0.00012500000000000288,
+              "o2_slope_d4_to_d8": -0.0018749999999999878
+            }
+          },
+          "o1_mean_penalty": -0.0004166666666666763,
+          "unmatched_cells": []
+        },
+        "161803": {
+          "families": {
+            "composition": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.2275,
+                  "randomized_acc": 0.2275,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "multiplication": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.5725,
+                  "randomized_acc": 0.5725,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "reachability": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.68,
+                  "randomized_acc": 0.68,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "4": {
+                  "native_acc": 0.6625,
+                  "randomized_acc": 0.655,
+                  "penalty": 0.007499999999999951,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "6": {
+                  "native_acc": 0.3725,
+                  "randomized_acc": 0.38,
+                  "penalty": -0.007500000000000007,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "8": {
+                  "native_acc": 0.1525,
+                  "randomized_acc": 0.1525,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": -0.0007499999999999978,
+              "o2_slope_d4_to_d8": -0.0018749999999999878
+            }
+          },
+          "o1_mean_penalty": -9.25185853854297e-18,
+          "unmatched_cells": []
+        },
+        "141421": {
+          "families": {
+            "composition": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.2275,
+                  "randomized_acc": 0.2275,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "multiplication": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.5725,
+                  "randomized_acc": 0.57,
+                  "penalty": 0.0025000000000000577,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "reachability": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.68,
+                  "randomized_acc": 0.685,
+                  "penalty": -0.0050000000000000044,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "4": {
+                  "native_acc": 0.6625,
+                  "randomized_acc": 0.65,
+                  "penalty": 0.012499999999999956,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "6": {
+                  "native_acc": 0.3725,
+                  "randomized_acc": 0.3775,
+                  "penalty": -0.0050000000000000044,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "8": {
+                  "native_acc": 0.1525,
+                  "randomized_acc": 0.1525,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": -0.00012499999999999735,
+              "o2_slope_d4_to_d8": -0.003124999999999989
+            }
+          },
+          "o1_mean_penalty": 0.000833333333333334,
+          "unmatched_cells": []
+        }
+      },
+      "pooled": {
+        "families": {
+          "composition": {
+            "cells": {
+              "2": {
+                "native_acc": 0.2275,
+                "randomized_acc": 0.2275,
+                "penalty": 0.0,
+                "n_native": 1200,
+                "n_randomized": 1200
+              }
+            },
+            "o2_slope": null
+          },
+          "multiplication": {
+            "cells": {
+              "2": {
+                "native_acc": 0.5725,
+                "randomized_acc": 0.5716666666666667,
+                "penalty": 0.0008333333333333526,
+                "n_native": 1200,
+                "n_randomized": 1200
+              }
+            },
+            "o2_slope": null
+          },
+          "reachability": {
+            "cells": {
+              "2": {
+                "native_acc": 0.68,
+                "randomized_acc": 0.6833333333333333,
+                "penalty": -0.0033333333333332993,
+                "n_native": 1200,
+                "n_randomized": 1200
+              },
+              "4": {
+                "native_acc": 0.6625,
+                "randomized_acc": 0.6533333333333333,
+                "penalty": 0.009166666666666656,
+                "n_native": 1200,
+                "n_randomized": 1200
+              },
+              "6": {
+                "native_acc": 0.3725,
+                "randomized_acc": 0.37833333333333335,
+                "penalty": -0.005833333333333357,
+                "n_native": 1200,
+                "n_randomized": 1200
+              },
+              "8": {
+                "native_acc": 0.1525,
+                "randomized_acc": 0.1525,
+                "penalty": 0.0,
+                "n_native": 1200,
+                "n_randomized": 1200
+              }
+            },
+            "o2_slope": -0.00025000000000000575,
+            "o2_slope_d4_to_d8": -0.002291666666666664
+          }
+        },
+        "o1_mean_penalty": 0.0001388888888888921,
+        "unmatched_cells": []
+      },
+      "proposal_a": {
+        "terms": [
+          "intercept",
+          "arm",
+          "depth",
+          "native_count",
+          "arm:native_count",
+          "arm:depth"
+        ],
+        "coefficients": [
+          1.7581354610810722,
+          0.0025908762406199794,
+          -0.4082598201955749,
+          0.3087375461355796,
+          -0.017631447940087794,
+          0.0009001066517875524
+        ],
+        "arm_x_depth": 0.0009001066517875524,
+        "n_rows": 9600
+      }
+    },
+    "tier_a_05_whitespace": {
+      "per_seed": {
+        "271828": {
+          "families": {
+            "composition": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.2275,
+                  "randomized_acc": 0.2275,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "multiplication": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.5725,
+                  "randomized_acc": 0.355,
+                  "penalty": 0.21750000000000003,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "reachability": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.68,
+                  "randomized_acc": 0.65,
+                  "penalty": 0.030000000000000027,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "4": {
+                  "native_acc": 0.6625,
+                  "randomized_acc": 0.66,
+                  "penalty": 0.0024999999999999467,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "6": {
+                  "native_acc": 0.3725,
+                  "randomized_acc": 0.365,
+                  "penalty": 0.007500000000000007,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "8": {
+                  "native_acc": 0.1525,
+                  "randomized_acc": 0.1525,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": -0.004250000000000001,
+              "o2_slope_d4_to_d8": -0.0006249999999999867
+            }
+          },
+          "o1_mean_penalty": 0.042916666666666665,
+          "unmatched_cells": []
+        },
+        "161803": {
+          "families": {
+            "composition": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.2275,
+                  "randomized_acc": 0.2275,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "multiplication": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.5725,
+                  "randomized_acc": 0.37,
+                  "penalty": 0.2025,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "reachability": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.68,
+                  "randomized_acc": 0.6525,
+                  "penalty": 0.02750000000000008,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "4": {
+                  "native_acc": 0.6625,
+                  "randomized_acc": 0.6575,
+                  "penalty": 0.0050000000000000044,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "6": {
+                  "native_acc": 0.3725,
+                  "randomized_acc": 0.3675,
+                  "penalty": 0.0050000000000000044,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "8": {
+                  "native_acc": 0.1525,
+                  "randomized_acc": 0.1525,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": -0.004125000000000012,
+              "o2_slope_d4_to_d8": -0.0012500000000000011
+            }
+          },
+          "o1_mean_penalty": 0.040000000000000015,
+          "unmatched_cells": []
+        },
+        "141421": {
+          "families": {
+            "composition": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.2275,
+                  "randomized_acc": 0.2275,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "multiplication": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.5725,
+                  "randomized_acc": 0.36,
+                  "penalty": 0.21250000000000002,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "reachability": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.68,
+                  "randomized_acc": 0.6525,
+                  "penalty": 0.02750000000000008,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "4": {
+                  "native_acc": 0.6625,
+                  "randomized_acc": 0.66,
+                  "penalty": 0.0024999999999999467,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "6": {
+                  "native_acc": 0.3725,
+                  "randomized_acc": 0.3675,
+                  "penalty": 0.0050000000000000044,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "8": {
+                  "native_acc": 0.1525,
+                  "randomized_acc": 0.1525,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": -0.004000000000000009,
+              "o2_slope_d4_to_d8": -0.0006249999999999867
+            }
+          },
+          "o1_mean_penalty": 0.04125000000000001,
+          "unmatched_cells": []
+        }
+      },
+      "pooled": {
+        "families": {
+          "composition": {
+            "cells": {
+              "2": {
+                "native_acc": 0.2275,
+                "randomized_acc": 0.2275,
+                "penalty": 0.0,
+                "n_native": 1200,
+                "n_randomized": 1200
+              }
+            },
+            "o2_slope": null
+          },
+          "multiplication": {
+            "cells": {
+              "2": {
+                "native_acc": 0.5725,
+                "randomized_acc": 0.3616666666666667,
+                "penalty": 0.21083333333333332,
+                "n_native": 1200,
+                "n_randomized": 1200
+              }
+            },
+            "o2_slope": null
+          },
+          "reachability": {
+            "cells": {
+              "2": {
+                "native_acc": 0.68,
+                "randomized_acc": 0.6516666666666666,
+                "penalty": 0.028333333333333433,
+                "n_native": 1200,
+                "n_randomized": 1200
+              },
+              "4": {
+                "native_acc": 0.6625,
+                "randomized_acc": 0.6591666666666667,
+                "penalty": 0.0033333333333332993,
+                "n_native": 1200,
+                "n_randomized": 1200
+              },
+              "6": {
+                "native_acc": 0.3725,
+                "randomized_acc": 0.36666666666666664,
+                "penalty": 0.005833333333333357,
+                "n_native": 1200,
+                "n_randomized": 1200
+              },
+              "8": {
+                "native_acc": 0.1525,
+                "randomized_acc": 0.1525,
+                "penalty": 0.0,
+                "n_native": 1200,
+                "n_randomized": 1200
+              }
+            },
+            "o2_slope": -0.004125000000000012,
+            "o2_slope_d4_to_d8": -0.0008333333333333248
+          }
+        },
+        "o1_mean_penalty": 0.0413888888888889,
+        "unmatched_cells": []
+      },
+      "proposal_a": {
+        "terms": [
+          "intercept",
+          "arm",
+          "depth",
+          "native_count",
+          "arm:native_count",
+          "arm:depth"
+        ],
+        "coefficients": [
+          1.7581354601374353,
+          -0.12622893623766737,
+          -0.40825982003948885,
+          0.3087375462692986,
+          -0.042864603081925606,
+          0.020126866737646652
+        ],
+        "arm_x_depth": 0.020126866737646652,
+        "n_rows": 9600
+      }
+    },
+    "tier_a_06_operator_spacing": {
+      "per_seed": {
+        "271828": {
+          "families": {
+            "composition": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.2275,
+                  "randomized_acc": 0.215,
+                  "penalty": 0.012500000000000011,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "multiplication": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.5725,
+                  "randomized_acc": 0.5725,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "reachability": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.68,
+                  "randomized_acc": 0.68,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "4": {
+                  "native_acc": 0.6625,
+                  "randomized_acc": 0.6625,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "6": {
+                  "native_acc": 0.3725,
+                  "randomized_acc": 0.3725,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "8": {
+                  "native_acc": 0.1525,
+                  "randomized_acc": 0.1525,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": 0.0,
+              "o2_slope_d4_to_d8": 0.0
+            }
+          },
+          "o1_mean_penalty": 0.002083333333333335,
+          "unmatched_cells": []
+        },
+        "161803": {
+          "families": {
+            "composition": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.2275,
+                  "randomized_acc": 0.2225,
+                  "penalty": 0.0050000000000000044,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "multiplication": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.5725,
+                  "randomized_acc": 0.5725,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "reachability": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.68,
+                  "randomized_acc": 0.68,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "4": {
+                  "native_acc": 0.6625,
+                  "randomized_acc": 0.6625,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "6": {
+                  "native_acc": 0.3725,
+                  "randomized_acc": 0.3725,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "8": {
+                  "native_acc": 0.1525,
+                  "randomized_acc": 0.1525,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": 0.0,
+              "o2_slope_d4_to_d8": 0.0
+            }
+          },
+          "o1_mean_penalty": 0.000833333333333334,
+          "unmatched_cells": []
+        },
+        "141421": {
+          "families": {
+            "composition": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.2275,
+                  "randomized_acc": 0.215,
+                  "penalty": 0.012500000000000011,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "multiplication": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.5725,
+                  "randomized_acc": 0.5725,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "reachability": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.68,
+                  "randomized_acc": 0.68,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "4": {
+                  "native_acc": 0.6625,
+                  "randomized_acc": 0.6625,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "6": {
+                  "native_acc": 0.3725,
+                  "randomized_acc": 0.3725,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "8": {
+                  "native_acc": 0.1525,
+                  "randomized_acc": 0.1525,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": 0.0,
+              "o2_slope_d4_to_d8": 0.0
+            }
+          },
+          "o1_mean_penalty": 0.002083333333333335,
+          "unmatched_cells": []
+        }
+      },
+      "pooled": {
+        "families": {
+          "composition": {
+            "cells": {
+              "2": {
+                "native_acc": 0.2275,
+                "randomized_acc": 0.2175,
+                "penalty": 0.010000000000000009,
+                "n_native": 1200,
+                "n_randomized": 1200
+              }
+            },
+            "o2_slope": null
+          },
+          "multiplication": {
+            "cells": {
+              "2": {
+                "native_acc": 0.5725,
+                "randomized_acc": 0.5725,
+                "penalty": 0.0,
+                "n_native": 1200,
+                "n_randomized": 1200
+              }
+            },
+            "o2_slope": null
+          },
+          "reachability": {
+            "cells": {
+              "2": {
+                "native_acc": 0.68,
+                "randomized_acc": 0.68,
+                "penalty": 0.0,
+                "n_native": 1200,
+                "n_randomized": 1200
+              },
+              "4": {
+                "native_acc": 0.6625,
+                "randomized_acc": 0.6625,
+                "penalty": 0.0,
+                "n_native": 1200,
+                "n_randomized": 1200
+              },
+              "6": {
+                "native_acc": 0.3725,
+                "randomized_acc": 0.3725,
+                "penalty": 0.0,
+                "n_native": 1200,
+                "n_randomized": 1200
+              },
+              "8": {
+                "native_acc": 0.1525,
+                "randomized_acc": 0.1525,
+                "penalty": 0.0,
+                "n_native": 1200,
+                "n_randomized": 1200
+              }
+            },
+            "o2_slope": 0.0,
+            "o2_slope_d4_to_d8": 0.0
+          }
+        },
+        "o1_mean_penalty": 0.001666666666666668,
+        "unmatched_cells": []
+      },
+      "proposal_a": {
+        "terms": [
+          "intercept",
+          "arm",
+          "depth",
+          "native_count",
+          "arm:native_count",
+          "arm:depth"
+        ],
+        "coefficients": [
+          1.7581354610342457,
+          1.3110508746689754e-08,
+          -0.4082598201911708,
+          0.3087375461932142,
+          -1.9458215208854546e-09,
+          -2.1681066273673277e-09
+        ],
+        "arm_x_depth": -2.1681066273673277e-09,
+        "n_rows": 9600
+      }
+    },
+    "tier_a_07_list_markers": {
+      "per_seed": {
+        "271828": {
+          "families": {
+            "composition": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.2275,
+                  "randomized_acc": 0.2275,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "multiplication": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.5725,
+                  "randomized_acc": 0.5725,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "reachability": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.68,
+                  "randomized_acc": 0.67,
+                  "penalty": 0.010000000000000009,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "4": {
+                  "native_acc": 0.6625,
+                  "randomized_acc": 0.6575,
+                  "penalty": 0.0050000000000000044,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "6": {
+                  "native_acc": 0.3725,
+                  "randomized_acc": 0.3675,
+                  "penalty": 0.0050000000000000044,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "8": {
+                  "native_acc": 0.1525,
+                  "randomized_acc": 0.1475,
+                  "penalty": 0.0050000000000000044,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": -0.0007500000000000007,
+              "o2_slope_d4_to_d8": 0.0
+            }
+          },
+          "o1_mean_penalty": 0.00416666666666667,
+          "unmatched_cells": []
+        },
+        "161803": {
+          "families": {
+            "composition": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.2275,
+                  "randomized_acc": 0.2275,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "multiplication": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.5725,
+                  "randomized_acc": 0.5725,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "reachability": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.68,
+                  "randomized_acc": 0.6725,
+                  "penalty": 0.007500000000000062,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "4": {
+                  "native_acc": 0.6625,
+                  "randomized_acc": 0.6575,
+                  "penalty": 0.0050000000000000044,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "6": {
+                  "native_acc": 0.3725,
+                  "randomized_acc": 0.3675,
+                  "penalty": 0.0050000000000000044,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "8": {
+                  "native_acc": 0.1525,
+                  "randomized_acc": 0.1475,
+                  "penalty": 0.0050000000000000044,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": -0.0003750000000000087,
+              "o2_slope_d4_to_d8": 0.0
+            }
+          },
+          "o1_mean_penalty": 0.0037500000000000124,
+          "unmatched_cells": []
+        },
+        "141421": {
+          "families": {
+            "composition": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.2275,
+                  "randomized_acc": 0.2275,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "multiplication": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.5725,
+                  "randomized_acc": 0.5725,
+                  "penalty": 0.0,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": null
+            },
+            "reachability": {
+              "cells": {
+                "2": {
+                  "native_acc": 0.68,
+                  "randomized_acc": 0.6725,
+                  "penalty": 0.007500000000000062,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "4": {
+                  "native_acc": 0.6625,
+                  "randomized_acc": 0.6575,
+                  "penalty": 0.0050000000000000044,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "6": {
+                  "native_acc": 0.3725,
+                  "randomized_acc": 0.3675,
+                  "penalty": 0.0050000000000000044,
+                  "n_native": 400,
+                  "n_randomized": 400
+                },
+                "8": {
+                  "native_acc": 0.1525,
+                  "randomized_acc": 0.1475,
+                  "penalty": 0.0050000000000000044,
+                  "n_native": 400,
+                  "n_randomized": 400
+                }
+              },
+              "o2_slope": -0.0003750000000000087,
+              "o2_slope_d4_to_d8": 0.0
+            }
+          },
+          "o1_mean_penalty": 0.0037500000000000124,
+          "unmatched_cells": []
+        }
+      },
+      "pooled": {
+        "families": {
+          "composition": {
+            "cells": {
+              "2": {
+                "native_acc": 0.2275,
+                "randomized_acc": 0.2275,
+                "penalty": 0.0,
+                "n_native": 1200,
+                "n_randomized": 1200
+              }
+            },
+            "o2_slope": null
+          },
+          "multiplication": {
+            "cells": {
+              "2": {
+                "native_acc": 0.5725,
+                "randomized_acc": 0.5725,
+                "penalty": 0.0,
+                "n_native": 1200,
+                "n_randomized": 1200
+              }
+            },
+            "o2_slope": null
+          },
+          "reachability": {
+            "cells": {
+              "2": {
+                "native_acc": 0.68,
+                "randomized_acc": 0.6716666666666666,
+                "penalty": 0.008333333333333415,
+                "n_native": 1200,
+                "n_randomized": 1200
+              },
+              "4": {
+                "native_acc": 0.6625,
+                "randomized_acc": 0.6575,
+                "penalty": 0.0050000000000000044,
+                "n_native": 1200,
+                "n_randomized": 1200
+              },
+              "6": {
+                "native_acc": 0.3725,
+                "randomized_acc": 0.3675,
+                "penalty": 0.0050000000000000044,
+                "n_native": 1200,
+                "n_randomized": 1200
+              },
+              "8": {
+                "native_acc": 0.1525,
+                "randomized_acc": 0.1475,
+                "penalty": 0.0050000000000000044,
+                "n_native": 1200,
+                "n_randomized": 1200
+              }
+            },
+            "o2_slope": -0.0005000000000000115,
+            "o2_slope_d4_to_d8": 0.0
+          }
+        },
+        "o1_mean_penalty": 0.003888888888888905,
+        "unmatched_cells": []
+      },
+      "proposal_a": {
+        "terms": [
+          "intercept",
+          "arm",
+          "depth",
+          "native_count",
+          "arm:native_count",
+          "arm:depth"
+        ],
+        "coefficients": [
+          1.7581354607119164,
+          -0.041341743729604655,
+          -0.40825982014075635,
+          0.3087375462815197,
+          0.006974510956709397,
+          0.00204677942974992
+        ],
+        "arm_x_depth": 0.00204677942974992,
+        "n_rows": 9600
+      }
+    }
+  }
+}

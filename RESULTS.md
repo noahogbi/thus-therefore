@@ -213,6 +213,40 @@ robustness check, by both parties' account.
 
 Procedure unchanged; the pre-registered instrument runs as frozen.
 
+**Amendment note (eighth relay, unanimous):** the frozen procedure did not
+transport to the instruct checkpoint — its calibration measured
+answer-format compliance, not reasoning (`followon-instruct/
+calibration-instruct.json`, diagnostic traces committed). A measurement-side
+amendment (8.1(b)) was adopted with prompt bytes unchanged: extraction =
+frozen ANSWER-line rule with precedence, else last `\boxed{<integer>}`;
+terminal set = {configured chat EOS, `<|endoftext|>`}. New follow-on
+manifest `5bcf4dc8...`; both parties reaffirmed their predictions under the
+amended measurement before recalibration (REVIEW_LOG). Instructively, the
+frozen without-trace condition had scored 0.800 *because it was an
+instruction-following test* — calibration protocols themselves do not
+transport across training stages.
+
+## 9b. Supplementary re-extraction (eighth relay, unanimous 8.2(b))
+
+Diagnosing the follow-on's transport failure surfaced a rung 1 blind spot:
+2,794 records (4.7% of the corpus, all reachability) answered in
+`\boxed{}` style with no ANSWER line and were scored incorrect by the
+frozen extractor. Per the unanimous ruling, the frozen numbers above remain
+the primary preregistered result, untouched; a supplementary full
+re-extraction under the exact extended rule frozen for the follow-on — no
+rung-1-specific tuning, recomputation script committed before it ran — is
+published in `runs/analysis_rung1_supplementary_reextraction.json`, with
+transition counts by (family, depth, arm) in
+`runs/reextraction_transitions.json`.
+
+Result: **the supplementary extraction does not move rung 1.** 1,614
+records flip to correct, 0 to wrong, and the flips are arm-balanced
+(2.56%–2.82% per arm; native 2.71%). Aggregate O1 moves +0.0549 → +0.0558;
+the whitespace arm +0.0425 → +0.0414; every other arm shifts by ≤ 0.0015
+and no sign changes. The sixth-relay non-discrimination pre-declaration
+extends to the supplementary O2, which remains flat. The frozen and
+supplementary metrics agree on every conclusion in this document.
+
 ## 10. Limitations
 
 One model, one scale, greedy decoding, three task families, of which only

@@ -1,0 +1,442 @@
+{
+  "_status": "Extraction transition counts, frozen -> extended rule (eighth relay 8.2(b); published per Sol's requirement). A row per (arm, family, depth); zero-flip rows included so readers see where the metrics coincide.",
+  "rows": [
+    {
+      "arm": "all",
+      "family": "composition",
+      "depth": 2,
+      "records": 1200,
+      "flips_to_correct": 0,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "all",
+      "family": "multiplication",
+      "depth": 2,
+      "records": 1200,
+      "flips_to_correct": 0,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "all",
+      "family": "reachability",
+      "depth": 2,
+      "records": 1200,
+      "flips_to_correct": 88,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "all",
+      "family": "reachability",
+      "depth": 4,
+      "records": 1200,
+      "flips_to_correct": 59,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "all",
+      "family": "reachability",
+      "depth": 6,
+      "records": 1200,
+      "flips_to_correct": 20,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "all",
+      "family": "reachability",
+      "depth": 8,
+      "records": 1200,
+      "flips_to_correct": 21,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "native",
+      "family": "composition",
+      "depth": 2,
+      "records": 400,
+      "flips_to_correct": 0,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "native",
+      "family": "multiplication",
+      "depth": 2,
+      "records": 400,
+      "flips_to_correct": 0,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "native",
+      "family": "reachability",
+      "depth": 2,
+      "records": 400,
+      "flips_to_correct": 25,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "native",
+      "family": "reachability",
+      "depth": 4,
+      "records": 400,
+      "flips_to_correct": 25,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "native",
+      "family": "reachability",
+      "depth": 6,
+      "records": 400,
+      "flips_to_correct": 8,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "native",
+      "family": "reachability",
+      "depth": 8,
+      "records": 400,
+      "flips_to_correct": 7,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_01_connectives",
+      "family": "composition",
+      "depth": 2,
+      "records": 1200,
+      "flips_to_correct": 0,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_01_connectives",
+      "family": "multiplication",
+      "depth": 2,
+      "records": 1200,
+      "flips_to_correct": 0,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_01_connectives",
+      "family": "reachability",
+      "depth": 2,
+      "records": 1200,
+      "flips_to_correct": 82,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_01_connectives",
+      "family": "reachability",
+      "depth": 4,
+      "records": 1200,
+      "flips_to_correct": 74,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_01_connectives",
+      "family": "reachability",
+      "depth": 6,
+      "records": 1200,
+      "flips_to_correct": 24,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_01_connectives",
+      "family": "reachability",
+      "depth": 8,
+      "records": 1200,
+      "flips_to_correct": 21,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_02_punctuation",
+      "family": "composition",
+      "depth": 2,
+      "records": 1200,
+      "flips_to_correct": 0,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_02_punctuation",
+      "family": "multiplication",
+      "depth": 2,
+      "records": 1200,
+      "flips_to_correct": 0,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_02_punctuation",
+      "family": "reachability",
+      "depth": 2,
+      "records": 1200,
+      "flips_to_correct": 75,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_02_punctuation",
+      "family": "reachability",
+      "depth": 4,
+      "records": 1200,
+      "flips_to_correct": 64,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_02_punctuation",
+      "family": "reachability",
+      "depth": 6,
+      "records": 1200,
+      "flips_to_correct": 24,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_02_punctuation",
+      "family": "reachability",
+      "depth": 8,
+      "records": 1200,
+      "flips_to_correct": 21,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_03_discourse_markers",
+      "family": "composition",
+      "depth": 2,
+      "records": 1200,
+      "flips_to_correct": 0,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_03_discourse_markers",
+      "family": "multiplication",
+      "depth": 2,
+      "records": 1200,
+      "flips_to_correct": 0,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_03_discourse_markers",
+      "family": "reachability",
+      "depth": 2,
+      "records": 1200,
+      "flips_to_correct": 75,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_03_discourse_markers",
+      "family": "reachability",
+      "depth": 4,
+      "records": 1200,
+      "flips_to_correct": 75,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_03_discourse_markers",
+      "family": "reachability",
+      "depth": 6,
+      "records": 1200,
+      "flips_to_correct": 24,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_03_discourse_markers",
+      "family": "reachability",
+      "depth": 8,
+      "records": 1200,
+      "flips_to_correct": 21,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_04_contractions",
+      "family": "composition",
+      "depth": 2,
+      "records": 1200,
+      "flips_to_correct": 0,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_04_contractions",
+      "family": "multiplication",
+      "depth": 2,
+      "records": 1200,
+      "flips_to_correct": 0,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_04_contractions",
+      "family": "reachability",
+      "depth": 2,
+      "records": 1200,
+      "flips_to_correct": 70,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_04_contractions",
+      "family": "reachability",
+      "depth": 4,
+      "records": 1200,
+      "flips_to_correct": 81,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_04_contractions",
+      "family": "reachability",
+      "depth": 6,
+      "records": 1200,
+      "flips_to_correct": 24,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_04_contractions",
+      "family": "reachability",
+      "depth": 8,
+      "records": 1200,
+      "flips_to_correct": 21,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_05_whitespace",
+      "family": "composition",
+      "depth": 2,
+      "records": 1200,
+      "flips_to_correct": 0,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_05_whitespace",
+      "family": "multiplication",
+      "depth": 2,
+      "records": 1200,
+      "flips_to_correct": 0,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_05_whitespace",
+      "family": "reachability",
+      "depth": 2,
+      "records": 1200,
+      "flips_to_correct": 80,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_05_whitespace",
+      "family": "reachability",
+      "depth": 4,
+      "records": 1200,
+      "flips_to_correct": 81,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_05_whitespace",
+      "family": "reachability",
+      "depth": 6,
+      "records": 1200,
+      "flips_to_correct": 21,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_05_whitespace",
+      "family": "reachability",
+      "depth": 8,
+      "records": 1200,
+      "flips_to_correct": 21,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_06_operator_spacing",
+      "family": "composition",
+      "depth": 2,
+      "records": 1200,
+      "flips_to_correct": 0,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_06_operator_spacing",
+      "family": "multiplication",
+      "depth": 2,
+      "records": 1200,
+      "flips_to_correct": 0,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_06_operator_spacing",
+      "family": "reachability",
+      "depth": 2,
+      "records": 1200,
+      "flips_to_correct": 75,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_06_operator_spacing",
+      "family": "reachability",
+      "depth": 4,
+      "records": 1200,
+      "flips_to_correct": 75,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_06_operator_spacing",
+      "family": "reachability",
+      "depth": 6,
+      "records": 1200,
+      "flips_to_correct": 24,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_06_operator_spacing",
+      "family": "reachability",
+      "depth": 8,
+      "records": 1200,
+      "flips_to_correct": 21,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_07_list_markers",
+      "family": "composition",
+      "depth": 2,
+      "records": 1200,
+      "flips_to_correct": 0,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_07_list_markers",
+      "family": "multiplication",
+      "depth": 2,
+      "records": 1200,
+      "flips_to_correct": 0,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_07_list_markers",
+      "family": "reachability",
+      "depth": 2,
+      "records": 1200,
+      "flips_to_correct": 79,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_07_list_markers",
+      "family": "reachability",
+      "depth": 4,
+      "records": 1200,
+      "flips_to_correct": 66,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_07_list_markers",
+      "family": "reachability",
+      "depth": 6,
+      "records": 1200,
+      "flips_to_correct": 21,
+      "flips_to_wrong": 0
+    },
+    {
+      "arm": "tier_a_07_list_markers",
+      "family": "reachability",
+      "depth": 8,
+      "records": 1200,
+      "flips_to_correct": 21,
+      "flips_to_wrong": 0
+    }
+  ],
+  "totals": {
+    "records": 60000,
+    "flips_to_correct": 1614,
+    "flips_to_wrong": 0
+  }
+}
