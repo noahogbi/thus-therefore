@@ -1,0 +1,13 @@
+{
+  "_comment": "Pre-registered light-instruct follow-on (FOLLOWON_INSTRUCT.md). Model pin identified and logged 2026-08-08, BEFORE the rung 1 base main run began, so this design is provably blind to that run's outcomes. Procedure is identical to rung 1 end-to-end; only the model/tokenizer pin differs. Judge pin unchanged (Sol's F3 ruling, Fable's consent), smoke-tested 2026-08-08.",
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "model_revision_hash": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "tokenizer_id": "Qwen/Qwen2.5-7B-Instruct",
+  "tokenizer_revision_hash": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "decoding_implementation": "huggingface transformers (greedy + forced candidate scoring via per-step logits)",
+  "decoding_implementation_version": "5.14.1",
+  "judge_model_id": "claude-opus-4-5-20251101",
+  "judge_model_revision": "20251101",
+  "judge_temperature": 0,
+  "judge_thinking": "omitted"
+}

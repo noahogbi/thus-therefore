@@ -1,0 +1,20 @@
+{
+  "frozen_at_utc": "2026-08-11T19:02:24.555707Z",
+  "files": {
+    "FREEZE.md": "a1a0ba72f212d2621e19cdd669e4dbb2b295b7e8a600bf2e89c6f52a3db91a1c",
+    "SPEC.md": "25d4d639cdf1b4ea6a591899c8b31d75644dd941387fcf7ef162a208a6db56eb",
+    "followon-instruct/environment.json": "ca3e0ae0ecfab164db7f6ffa8a14b0bff56b7d007edc1624eadee8ce121c544e",
+    "followon-instruct/seeds.json": "7a9c6983505f99c653d68f6ec850a7197d725f1a4aa5bf1bc96897207bd50917",
+    "judge/judge_prompt.txt": "ef8862905663fd79fda03e18ef7191622cafe288cd61b52977fa080aa244efd6",
+    "rules/disputed/DISPUTED_CELLS.md": "b8f4a5eb534bed660d5f69a34249beecd44621ef9f2b28d197a8346308901365",
+    "rules/tier_a/01_connectives.json": "c8df99136611081542ef7a6cd1de0c1262cc851079e82c59eb925ff3686eabed",
+    "rules/tier_a/02_punctuation.json": "e4ca79bb1eee28b83b4e415e2d96c7587aaeecf86eb50fdccbff5c7491d86c83",
+    "rules/tier_a/03_discourse_markers.json": "61ffae256521ceaaa13b71d30f4b455442d7a111a6ed971d3eddc080d3b649b2",
+    "rules/tier_a/04_contractions.json": "a6ac086ad9c1b252b03f3f593fc9ad0630fde6994831e129d2479a11774fab39",
+    "rules/tier_a/05_whitespace.json": "372f4104ef03f57dd6f4276e4c8b3b40a57675066ed9f4d1d910f68ddb48feeb",
+    "rules/tier_a/06_operator_spacing.json": "3a39dfc71d8b00574328727936b219e0ed838a68be2b2373f5557de29f9b28fa",
+    "rules/tier_a/07_list_markers.json": "29601005d64ef9c6d3fe0acd9ab7b4030837b900575e3e9e7d8737f86532a36e",
+    "tasks/generate_tasks.py": "3e76c6b3b6ee0761b2719b12b0645708e4104e949f853da200d8497bf6dd8ebc"
+  },
+  "manifest_hash": "d32ca69f0ba34b70c7b24044b6726003e93323ef98831a1a9465760e021e3d0b"
+}

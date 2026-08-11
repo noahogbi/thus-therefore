@@ -1,0 +1,6 @@
+{
+  "_comment": "Follow-on seeds. Identical to rung 1 per FOLLOWON_INSTRUCT.md (same seeds policy): intervention seeds and audit seed unchanged, so arm-to-arm and run-to-run comparisons are not complicated by a change in the randomization-seed set (Sol's second-relay condition). Implementation allocation, logged: the follow-on main run reuses task generation seed 2026, so any cell its calibration selects that rung 1 also ran contains BYTE-IDENTICAL problems, enabling paired base-vs-instruct comparison. Calibration uses 1337, as rung 1's did.",
+  "task_generation_seeds": [1337, 2026, 8191],
+  "intervention_sampling_seeds": [271828, 161803, 141421],
+  "audit_sample_seed": 314159
+}

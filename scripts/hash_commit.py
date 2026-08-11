@@ -4,15 +4,17 @@ Hashes every frozen artifact (SPEC, rule tables, judge prompt, task generator,
 seeds file, and the pinned environment description) into FREEZE_MANIFEST.json.
 Any amendment => rerun this script => new manifest => new experiment.
 """
-import hashlib, json, os, sys, datetime
+import argparse, hashlib, json, os, sys, datetime
 
-FROZEN_PATHS = [
+# Shared frozen artifacts. The environment and seeds files are supplied
+# separately so a pre-registered follow-on (different model pin, same
+# procedure) can generate its own manifest without disturbing the manifest
+# of a completed run. Defaults reproduce the original invocation exactly.
+SHARED_PATHS = [
     "SPEC.md",
     "FREEZE.md",
     "judge/judge_prompt.txt",
     "tasks/generate_tasks.py",
-    "seeds.json",
-    "environment.json",
 ]
 
 def sha256(path):
@@ -23,8 +25,14 @@ def sha256(path):
     return h.hexdigest()
 
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--env", default="environment.json")
+    ap.add_argument("--seeds", default="seeds.json")
+    ap.add_argument("--out", default="FREEZE_MANIFEST.json")
+    args = ap.parse_args()
+
     entries = {}
-    paths = list(FROZEN_PATHS)
+    paths = list(SHARED_PATHS) + [args.seeds, args.env]
     for root, _, files in os.walk("rules"):
         for fn in sorted(files):
             paths.append(os.path.join(root, fn))
@@ -43,7 +51,7 @@ def main():
             json.dumps(entries, sort_keys=True).encode()
         ).hexdigest(),
     }
-    with open("FREEZE_MANIFEST.json", "w") as f:
+    with open(args.out, "w") as f:
         json.dump(manifest, f, indent=2)
     print("manifest_hash:", manifest["manifest_hash"])
 

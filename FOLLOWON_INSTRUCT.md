@@ -27,6 +27,25 @@ must be consistent with this file.
   main run, audit, and analysis are complete. Only the EXECUTION waits; the
   design is fixed by this document, blind to the base run's outcomes.
 
+## Freeze status (2026-08-11)
+
+Frozen artifacts generated after rung 1 completed, per the execution gate
+below. Manifest:
+
+    d32ca69f0ba34b70c7b24044b6726003e93323ef98831a1a9465760e021e3d0b
+
+covering the shared frozen design (SPEC, FREEZE, judge prompt, task
+generator, rule tables — byte-identical to rung 1) plus
+`followon-instruct/environment.json` and `followon-instruct/seeds.json`.
+Rung 1's manifest `ebb6bca0...` is untouched and still reproduces.
+
+Registered pre-run predictions for this follow-on (seventh relay, recorded
+before it executes): Fable — the multiplication:d2 rule-05 termination
+effect collapses to near zero (residual under 2pp), eligible-alternative
+density rises modestly. Sol — substantially smaller termination effect,
+explicitly kept separate from the original covert-state disagreement. See
+RESULTS.md section 9.
+
 ## Registration coverage
 
 SPEC section 6's registrations name "base and light-instruct checkpoints"
