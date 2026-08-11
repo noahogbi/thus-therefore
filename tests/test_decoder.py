@@ -56,6 +56,28 @@ class TestNativeMode:
         assert result.sites == []
 
 
+class TestTerminalSet:
+    """Eighth-relay 8.1(b): terminal set is exactly {configured EOS, literal
+    <|endoftext|>}. The decoder consults lm.terminal_ids when present; absent
+    that attribute, behavior is byte-identical to the frozen single-EOS check
+    (rung 1 unaffected)."""
+
+    def test_extra_terminal_token_stops_generation(self):
+        lm = ScriptedLM([("", "P: abc#def")])
+        lm.terminal_ids = {lm.eos_id, ord("#")}
+        result = make_decoder(lm, intervene=False).generate(
+            "P: ", max_new_tokens=100)
+        assert result.text == "P: abc"
+        assert result.ended == "eos"
+
+    def test_without_terminal_ids_attribute_behavior_is_frozen(self):
+        lm = ScriptedLM([("", "P: abc#def")])
+        result = make_decoder(lm, intervene=False).generate(
+            "P: ", max_new_tokens=100)
+        assert result.text == "P: abc#def"
+        assert result.ended == "eos"
+
+
 class TestIntervention:
     def test_uniform_sample_among_eligible_and_splice(self):
         lm = ScriptedLM(

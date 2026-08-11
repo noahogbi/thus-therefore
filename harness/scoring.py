@@ -113,7 +113,8 @@ class HFCausalLM:
 
     def __init__(self, model_id: str, revision: str | None = None,
                  device: str = "cpu", dtype: str | None = None,
-                 use_cache: bool = True):
+                 use_cache: bool = True,
+                 extra_terminal_tokens: list[str] | None = None):
         import torch
         from transformers import AutoModelForCausalLM, AutoTokenizer
 
@@ -126,6 +127,19 @@ class HFCausalLM:
             model_id, revision=revision, **kwargs).to(device).eval()
         self.device = device
         self.eos_id = self.tok.eos_token_id
+        if extra_terminal_tokens is not None:
+            # Eighth-relay 8.1(b): opt-in terminal SET (configured EOS plus
+            # the listed literal tokens). The attribute is only created on
+            # opt-in — the decoder's frozen single-EOS path keys off absence.
+            terminal = {self.eos_id} if self.eos_id is not None else set()
+            for t in extra_terminal_tokens:
+                tid = self.tok.convert_tokens_to_ids(t)
+                if tid is None or (self.tok.unk_token is not None
+                                   and tid == self.tok.unk_token_id
+                                   and t != self.tok.unk_token):
+                    raise ValueError(f"terminal token not in vocab: {t!r}")
+                terminal.add(tid)
+            self.terminal_ids = terminal
         self.use_cache = use_cache
         self._cache_ids: list[int] = []
         self._cache = None

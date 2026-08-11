@@ -27,17 +27,30 @@ must be consistent with this file.
   main run, audit, and analysis are complete. Only the EXECUTION waits; the
   design is fixed by this document, blind to the base run's outcomes.
 
-## Freeze status (2026-08-11)
+## Freeze status (2026-08-11, amended per eighth relay)
 
 Frozen artifacts generated after rung 1 completed, per the execution gate
-below. Manifest:
+below. Current manifest (supersedes `d32ca69f...`, see amendment note):
 
-    d32ca69f0ba34b70c7b24044b6726003e93323ef98831a1a9465760e021e3d0b
+    5bcf4dc8b3929e35e8682367122686988724206b9d0b515a8c948c0d7a5eba9a
 
 covering the shared frozen design (SPEC, FREEZE, judge prompt, task
 generator, rule tables — byte-identical to rung 1) plus
 `followon-instruct/environment.json` and `followon-instruct/seeds.json`.
 Rung 1's manifest `ebb6bca0...` is untouched and still reproduces.
+
+**Amendment (eighth relay, unanimous 8.1(b)):** the original manifest
+`d32ca69f...` froze a procedure that failed to transport to the instruct
+checkpoint — its Phase 2 calibration measured answer-format compliance, not
+reasoning (evidence: `followon-instruct/calibration-instruct.json`,
+`diagnostic-traces.jsonl`; full reconciliation in REVIEW_LOG). Per the
+FREEZE.md amendment protocol the change is measurement-side only, recorded
+in `environment.json` under the new hash, and calibration is rerun; no
+main-phase intervention data existed under the superseded manifest. Prompt
+bytes are unchanged. The two amended rules, frozen as exact mechanics:
+extraction = frozen ANSWER-line regex with precedence, else the LAST
+`\boxed{<integer>}`, nothing else; terminal set = exactly {configured chat
+EOS, `<|endoftext|>`}.
 
 Registered pre-run predictions for this follow-on (seventh relay, recorded
 before it executes): Fable — the multiplication:d2 rule-05 termination

@@ -5,7 +5,7 @@ import json
 import pytest
 
 from harness.calibrate import calibrate
-from harness.runner import extract_answer, run_problems
+from harness.runner import extract_answer, extract_answer_extended, run_problems
 from harness.scoring import EligibilityScorer
 from tests.stub_lm import ScriptedLM
 
@@ -23,6 +23,34 @@ class TestExtractAnswer:
 
     def test_missing_answer(self):
         assert extract_answer("no answer emitted") is None
+
+
+class TestExtractAnswerExtended:
+    """Eighth-relay 8.1(b) rule, frozen as exact mechanics (REVIEW_LOG):
+    ANSWER-line regex takes precedence; else the LAST \\boxed{<integer>} in
+    the trace; nothing else accepted."""
+
+    def test_answer_line_takes_precedence_over_boxed(self):
+        assert extract_answer_extended("\\boxed{99}\nANSWER: 7") == "7"
+        assert extract_answer_extended("ANSWER: 7\nthen \\boxed{99}") == "7"
+
+    def test_last_boxed_integer_when_no_answer_line(self):
+        assert extract_answer_extended("\\boxed{12} then \\boxed{042}") == "42"
+
+    def test_boxed_negative_and_display_math(self):
+        assert extract_answer_extended("\\[\n\\boxed{-56}\n\\]") == "-56"
+
+    def test_non_integer_boxed_is_not_a_match(self):
+        assert extract_answer_extended("\\boxed{x+2} and \\boxed{3.5}") is None
+        # ...and does not shadow an earlier integer boxed: LAST *integer* box.
+        assert extract_answer_extended("\\boxed{5} and \\boxed{x}") == "5"
+
+    def test_nothing_else_accepted(self):
+        assert extract_answer_extended("the answer is 12") is None
+
+    def test_matches_frozen_extractor_when_answer_line_present(self):
+        text = "steps...\nANSWER: 042"
+        assert extract_answer_extended(text) == extract_answer(text) == "42"
 
 
 def make_problem(pid, prompt, answer, family="composition", depth=3):
@@ -74,6 +102,24 @@ class TestRunProblems:
                   if s["rule_id"] == "tier_a_01_connectives"]
         assert set(site["eligible"]) == {"Thus", "So"}
         assert runs[0]["correct"] is True
+
+    def test_extended_extraction_mode(self):
+        p = make_problem("p1", "Q: ", "7")
+        lm = ScriptedLM([("Q: ", "Q: compute. \\boxed{7}")])
+        [r] = list(run_problems(lm, [p], mode="native", seed=1,
+                                max_new_tokens=200, extended_extraction=True))
+        assert r["answer_extracted"] == "7"
+        assert r["correct"] is True
+        assert r["extraction_rule"] == "extended"
+
+    def test_frozen_extraction_is_the_default_and_labeled(self):
+        p = make_problem("p1", "Q: ", "7")
+        lm = ScriptedLM([("Q: ", "Q: compute. \\boxed{7}")])
+        [r] = list(run_problems(lm, [p], mode="native", seed=1,
+                                max_new_tokens=200))
+        assert r["answer_extracted"] is None
+        assert r["correct"] is False
+        assert r["extraction_rule"] == "frozen"
 
     def test_rules_arm_passthrough(self):
         prompt = "Go on. "

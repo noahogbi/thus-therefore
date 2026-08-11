@@ -119,6 +119,12 @@ class InterventionDecoder:
         self.rules = rules
 
     def generate(self, prompt: str, max_new_tokens: int) -> DecodeResult:
+        # Terminal set (eighth-relay 8.1(b)): an LM may expose terminal_ids
+        # (e.g. {configured EOS, <|endoftext|>}). Absent that attribute the
+        # frozen single-EOS check applies, byte-identical to rung 1.
+        terminal_ids = getattr(self.lm, "terminal_ids", None)
+        if terminal_ids is None:
+            terminal_ids = {self.lm.eos_id} if self.lm.eos_id is not None else set()
         ids = self.lm.encode(prompt)
         prompt_id_len = len(ids)
         realized = prompt
@@ -139,7 +145,7 @@ class InterventionDecoder:
                 ended = "max_tokens"
                 continue
             nxt = self.lm.greedy_next(ids)
-            if self.lm.eos_id is not None and nxt == self.lm.eos_id:
+            if nxt in terminal_ids:
                 ended = "eos"
                 continue
             ids = ids + [nxt]

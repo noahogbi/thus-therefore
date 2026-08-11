@@ -43,6 +43,26 @@ def test_sequence_logprob_finite_and_additive():
     assert lp_all == pytest.approx(lp_head + lp_tail, abs=1e-4)
 
 
+def test_extra_terminal_tokens_resolved_to_ids():
+    # Eighth-relay 8.1(b): terminal set = {configured EOS, <|endoftext|>}.
+    # tiny-gpt2's EOS *is* <|endoftext|>, so the set collapses; a second
+    # ordinary vocab token proves distinct ids are added.
+    lm = HFCausalLM("sshleifer/tiny-gpt2",
+                    extra_terminal_tokens=["<|endoftext|>"])
+    assert lm.terminal_ids == {lm.eos_id}
+    lm2 = HFCausalLM("sshleifer/tiny-gpt2",
+                     extra_terminal_tokens=["<|endoftext|>", "the"])
+    tid = lm2.tok.convert_tokens_to_ids("the")
+    assert tid is not None and tid >= 0
+    assert lm2.terminal_ids == {lm2.eos_id, tid}
+
+
+def test_default_has_no_terminal_ids_attribute():
+    # Absent the opt-in, the adapter must not grow a terminal_ids attribute:
+    # the decoder's frozen single-EOS path (rung 1) keys off its absence.
+    assert not hasattr(LM, "terminal_ids")
+
+
 def test_kv_cache_greedy_matches_uncached():
     # The cached path must be behaviorally identical to the naive full
     # forward (the bit-identity sanity reference).

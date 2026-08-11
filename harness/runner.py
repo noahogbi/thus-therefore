@@ -33,6 +33,7 @@ from harness.decoder import InterventionDecoder
 from harness.scoring import EligibilityScorer, SequenceLM
 
 _ANSWER_RE = re.compile(r"ANSWER:\s*(-?\d+|none)", re.IGNORECASE)
+_BOXED_RE = re.compile(r"\\boxed\{(-?\d+)\}")
 
 
 def extract_answer(text: str) -> str | None:
@@ -46,6 +47,19 @@ def extract_answer(text: str) -> str | None:
     return str(int(raw))
 
 
+def extract_answer_extended(text: str) -> str | None:
+    """Eighth-relay 8.1(b) extended rule, frozen as exact mechanics
+    (REVIEW_LOG, unanimous): the frozen ANSWER-line rule takes precedence;
+    else the LAST \\boxed{<integer>} in the trace; nothing else accepted."""
+    frozen = extract_answer(text)
+    if frozen is not None:
+        return frozen
+    boxed = _BOXED_RE.findall(text)
+    if not boxed:
+        return None
+    return str(int(boxed[-1]))
+
+
 def _problem_rng(seed: int, problem_id: str) -> random.Random:
     return random.Random(f"{seed}:{problem_id}")
 
@@ -53,9 +67,11 @@ def _problem_rng(seed: int, problem_id: str) -> random.Random:
 def run_problems(lm: SequenceLM, problems: Iterable[dict], mode: str,
                  seed: int, rules: set[str] | None = None,
                  max_new_tokens: int = 1024,
-                 lookahead_chars: int = 100) -> Iterator[dict]:
+                 lookahead_chars: int = 100,
+                 extended_extraction: bool = False) -> Iterator[dict]:
     if mode not in ("native", "randomized"):
         raise ValueError(f"unknown mode: {mode}")
+    extractor = extract_answer_extended if extended_extraction else extract_answer
     scorer = EligibilityScorer(lm)
     for prob in problems:
         decoder = InterventionDecoder(
@@ -66,7 +82,7 @@ def run_problems(lm: SequenceLM, problems: Iterable[dict], mode: str,
             rules=rules,
         )
         result = decoder.generate(prob["prompt"], max_new_tokens=max_new_tokens)
-        extracted = extract_answer(result.text[len(prob["prompt"]):])
+        extracted = extractor(result.text[len(prob["prompt"]):])
         yield {
             "id": prob["id"],
             "family": prob.get("family"),
@@ -79,6 +95,7 @@ def run_problems(lm: SequenceLM, problems: Iterable[dict], mode: str,
             "generated_tokens": result.generated_tokens,
             "ended": result.ended,
             "answer_expected": prob.get("answer"),
+            "extraction_rule": "extended" if extended_extraction else "frozen",
             "answer_extracted": extracted,
             "correct": (extracted is not None
                         and extracted == str(prob.get("answer"))),
@@ -104,19 +121,27 @@ def main() -> None:
     ap.add_argument("--rules", default=None,
                     help="comma-separated rule_ids for a per-rule arm")
     ap.add_argument("--max-new-tokens", type=int, default=1024)
+    ap.add_argument("--extended-extraction", action="store_true",
+                    help="8.1(b) rule: ANSWER-line precedence, else last "
+                         "\\boxed{<integer>} (follow-on arms only)")
+    ap.add_argument("--extra-terminal-token", action="append", default=[],
+                    help="literal token added to the terminal set alongside "
+                         "the configured EOS (follow-on: <|endoftext|>)")
     ap.add_argument("--out", required=True)
     args = ap.parse_args()
 
     from harness.scoring import HFCausalLM
     lm = HFCausalLM(args.model_id, revision=args.revision,
-                    device=args.device, dtype=args.dtype)
+                    device=args.device, dtype=args.dtype,
+                    extra_terminal_tokens=(args.extra_terminal_token or None))
     rules = set(args.rules.split(",")) if args.rules else None
     problems = load_problems(args.problems)
 
     with open(args.out, "w", encoding="utf-8") as f:
         for i, record in enumerate(run_problems(
                 lm, problems, mode=args.mode, seed=args.seed, rules=rules,
-                max_new_tokens=args.max_new_tokens)):
+                max_new_tokens=args.max_new_tokens,
+                extended_extraction=args.extended_extraction)):
             f.write(json.dumps(record) + "\n")
             f.flush()
             print(f"[{i + 1}/{len(problems)}] {record['id']} "

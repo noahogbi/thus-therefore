@@ -434,6 +434,45 @@ near-equivalent continuation and then treated its own alternative as a stop
 sign. Fable's formulation: eligibility certifies write-side plausibility,
 not read-side equivalence; that asymmetry is now empirical.
 
+## Eighth relay reconciliation (2026-08-11) — unanimous 8.1(b), 8.2(b)
+
+- **8.1(b) unanimous — minimal measurement-side amendment for the
+  follow-on.** Fable's tightening adopted: the extended rule is frozen as
+  exact mechanics with no judgment calls — extraction is the frozen
+  ANSWER-line regex with precedence, else the LAST \boxed{<integer>} in the
+  trace, nothing else accepted; terminal set is exactly {configured chat
+  EOS, literal <|endoftext|>}. Prompt bytes unchanged (raw generator text,
+  no chat template) preserving the byte-identical paired comparison. New
+  follow-on manifest to be cut with the rule recorded under the hash;
+  recalibration before any main-run data.
+- **8.2(b) unanimous — rung 1 dual-report.** Frozen numbers primary and
+  untouched; supplementary full re-extraction under the identical extended
+  rule (no rung-1-specific tuning), all affected O1/O2 recomputed and
+  labeled supplementary. Sol's addition adopted: extraction transition
+  counts published by (family, depth, arm). Fable's safety condition
+  adopted: the recomputation script commits BEFORE it runs. Fable's
+  extension recorded: if flips prove arm-imbalanced enough to move O1/O2
+  materially, that is a reportable measurement-sensitivity finding, and the
+  sixth-relay non-discrimination statement extends to the supplementary O2
+  automatically.
+- **8.3 — predictions restated/reaffirmed pre-recalibration.** Fable,
+  falsifiable forms: (i) instruct multiplication:d2 rule-05 termination
+  differential (touched -> no-parseable-answer rate) falls below 2pp,
+  termination meaning any token in the frozen terminal set; (ii) aggregate
+  intervened-site rate at least doubles from base 2.5% while remaining
+  under 15%; win-condition offer to Sol stands at >= 5pp surviving
+  termination sensitivity. Sol: prediction unchanged (substantially smaller
+  termination effect), with the required distinction that reduced
+  rule-05-induced premature termination supports the prediction while
+  eliminating post-answer runaway is a harness repair and is not evidence.
+- **Watch item (Fable):** if the reachability:d4 with<without inversion
+  (-0.30) survives the 8.1(b) recalibration, it stops being a format
+  artifact and requires attention.
+- **Writeup finding (Fable):** the frozen without-trace condition scored
+  0.800 because it was an instruction-following test — calibration
+  protocols themselves do not transport across training stages; directly
+  relevant to the future RLVR-stage comparison.
+
 ## Remaining before hash (checkpoint Step 4)
 
 1. DONE 2026-08-08 — Noah's explicit sign-off on the reviewed site list

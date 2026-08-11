@@ -1,9 +1,9 @@
 {
-  "frozen_at_utc": "2026-08-11T19:02:24.555707Z",
+  "frozen_at_utc": "2026-08-11T23:52:32.097016Z",
   "files": {
     "FREEZE.md": "a1a0ba72f212d2621e19cdd669e4dbb2b295b7e8a600bf2e89c6f52a3db91a1c",
     "SPEC.md": "25d4d639cdf1b4ea6a591899c8b31d75644dd941387fcf7ef162a208a6db56eb",
-    "followon-instruct/environment.json": "ca3e0ae0ecfab164db7f6ffa8a14b0bff56b7d007edc1624eadee8ce121c544e",
+    "followon-instruct/environment.json": "866001c41965e81c5e52e59815216e057bd674d4b98b7f7339ce4e07cec0eb31",
     "followon-instruct/seeds.json": "7a9c6983505f99c653d68f6ec850a7197d725f1a4aa5bf1bc96897207bd50917",
     "judge/judge_prompt.txt": "ef8862905663fd79fda03e18ef7191622cafe288cd61b52977fa080aa244efd6",
     "rules/disputed/DISPUTED_CELLS.md": "b8f4a5eb534bed660d5f69a34249beecd44621ef9f2b28d197a8346308901365",
@@ -16,5 +16,5 @@
     "rules/tier_a/07_list_markers.json": "29601005d64ef9c6d3fe0acd9ab7b4030837b900575e3e9e7d8737f86532a36e",
     "tasks/generate_tasks.py": "3e76c6b3b6ee0761b2719b12b0645708e4104e949f853da200d8497bf6dd8ebc"
   },
-  "manifest_hash": "d32ca69f0ba34b70c7b24044b6726003e93323ef98831a1a9465760e021e3d0b"
+  "manifest_hash": "5bcf4dc8b3929e35e8682367122686988724206b9d0b515a8c948c0d7a5eba9a"
 }
