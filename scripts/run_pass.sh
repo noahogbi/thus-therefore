@@ -37,14 +37,18 @@ for CELL in "$@"; do
   # the record set is exactly the problem set (runner appends per record).
   rm -f "$OUT"
   echo "[run] $LABEL / $CELL"
+  # Model pin + extra flags are env-overridable so the pre-registered
+  # follow-on (instruct pin, 8.1(b) measurement flags) reuses this script;
+  # defaults are byte-identical to the rung 1 invocation.
   python -m harness.runner \
-    --model-id Qwen/Qwen2.5-7B \
-    --revision d149729398750b98c0af14eb82c78cfe92750796 \
+    --model-id "${PASS_MODEL_ID:-Qwen/Qwen2.5-7B}" \
+    --revision "${PASS_REVISION:-d149729398750b98c0af14eb82c78cfe92750796}" \
     --device cuda --dtype bfloat16 \
     --problems "runs/problems/main-$CELL.jsonl" \
     --mode "$PASS_MODE" $RULES_ARG \
     --seed "$PASS_SEED" \
     --max-new-tokens 1024 \
+    ${PASS_EXTRA_ARGS:-} \
     --out "$OUT" >> "runs/$LABEL.log" 2>&1
 done
 echo "[done] $LABEL"

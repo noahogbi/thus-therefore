@@ -487,6 +487,43 @@ re-selection vs union; drop-default (a)), plus non-binding reconfirmation
 of the 8.3 predictions against the realized grid. Nothing runs until both
 replies reconcile.
 
+## Ninth relay reconciliation (2026-08-12) — unanimous 9.1(c), union grid
+
+- **Grid: rung 1's six cells plus reachability:10 and composition:4, n=400
+  per cell** (multiplication:2, composition:2, composition:4, reachability
+  2/4/6/8/10). Both parties chose (c) independently.
+- **Analysis hierarchy, frozen before any intervention data** (Fable's
+  pre-commitment and Sol's pre-declaration are compatible; both adopted in
+  full as the conservative union of constraints):
+  1. PRIMARY O2 read — the paired d4->d8 restricted reachability slope,
+     carried verbatim from the rung 1 commitment for cross-checkpoint
+     comparability.
+  2. SECONDARY — full d2->d10 reachability axis, labeled per-checkpoint;
+     d4 flagged as weak-CoT-necessity (gap 0.050, without-trace 0.675).
+  3. TERTIARY — composition:2->4 two-point cross-family consistency check,
+     never pooled into the reachability slope.
+  - Paired base->instruct comparison uses the ORIGINAL SIX cells only
+    (Sol); reachability:10 and composition:4 are never retroactively added
+    to any rung 1 analysis (Sol); composition:4 reported as supplementary
+    evidence that the instruct checkpoint opens a region unavailable at
+    base (Sol).
+  - Ruled interpretive commitments, stated pre-run (Fable): a null at
+    reachability:d4 is uninformative (cell barely needs its trace); the
+    interesting paired contrast is d6/d8 where necessity is strong on both
+    checkpoints.
+- **9.2 predictions against the realized grid:** Fable — both falsifiable
+  forms stand unchanged (mult:d2 touched->no-parseable-answer differential
+  < 2pp under the frozen terminal set; aggregate intervened-site rate >=
+  2x base's 2.5% and < 15%), PLUS a new pre-run registration enabled by
+  the union grid: in the powered CoT-necessity cells (composition:4,
+  reachability d6->d10), per-rule O1s remain within noise of zero
+  excluding rule-05 termination-mechanism effects — the flat-interaction
+  registration in its first honestly testable form; an unexplained real
+  penalty in those cells is a clean loss, acknowledged in advance. Sol —
+  comparative prediction unchanged (substantially reduced termination
+  sensitivity vs rung 1); explicitly declines to add a numerical threshold
+  after seeing calibration.
+
 ## Remaining before hash (checkpoint Step 4)
 
 1. DONE 2026-08-08 — Noah's explicit sign-off on the reviewed site list
