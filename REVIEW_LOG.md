@@ -473,6 +473,20 @@ not read-side equivalence; that asymmetry is now empirical.
   protocols themselves do not transport across training stages; directly
   relevant to the future RLVR-stage comparison.
 
+## Follow-on recalibration under 8.1(b) (2026-08-12)
+
+Rerun on the frozen pin under manifest 5bcf4dc8, prompt bytes unchanged
+(grid: followon-instruct/calibration-instruct-8_1b.json). The transport
+failure was measurement-side in its entirety: multiplication:d2 with-trace
+0.050 -> 1.000. Fable's watch item resolved — the reachability:d4 inversion
+(-0.30) did not survive the amendment (+0.05, format artifact); what
+remains real is weak CoT-necessity at d4 on this checkpoint (without-trace
+0.675 vs base 0.375). Ninth relay (REVIEW_CONSULT_PROMPT_9.md) sent: one
+ruling on the instruct main-run grid (rung 1's exact cells vs mechanical
+re-selection vs union; drop-default (a)), plus non-binding reconfirmation
+of the 8.3 predictions against the realized grid. Nothing runs until both
+replies reconcile.
+
 ## Remaining before hash (checkpoint Step 4)
 
 1. DONE 2026-08-08 — Noah's explicit sign-off on the reviewed site list
