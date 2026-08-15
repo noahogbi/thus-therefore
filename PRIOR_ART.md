@@ -154,3 +154,47 @@ VERDICT: rung 1 design still unclaimed; clear to run.
 5. Write-up intent means: never discard raw generations; log per-site
    intervention records; keep the analysis notebook reproducible end-to-end from
    FREEZE_MANIFEST.json + seeds.
+
+---
+
+## Addendum 2026-08-15 — Sampling watermarks: a deployed industrial application
+## of the assumption we test
+
+On 2026-08-11 Anthropic announced sampling-based text watermarking for Claude
+outputs (anthropic.com/news/claude-text-watermark; support.claude.com article
+16266773), driven by the EU AI Act's transparency code (effective 2026-08-02).
+Mechanism per their own explainer: at generation steps where several next tokens
+are "low-stakes" (near-equiprobable, their example: "overcast" vs. "grey"), the
+choice is settled not by a fair random draw but by a keyed pseudorandom function
+of a secret key plus a few preceding words — leaving a reader-invisible,
+key-detectable statistical pattern. Method family in the literature:
+Kirchenbauer et al. 2023 (arXiv:2301.10226, logit green-listing), Aaronson's
+Gumbel trick, Kuditipudi et al. 2023 (arXiv:2307.15593, distortion-free
+schemes), SynthID-Text (Dathathri et al., Nature 2024) — which Anthropic cites
+for its no-quality-impact evidence.
+
+Relevance to us — application, not scoop risk:
+
+- The deployment premise is exactly our contested quantity. "The choice doesn't
+  matter to the reader" is a channel-2 statement; watermark quality evaluations
+  (side-by-side human ratings, SynthID's user studies) certify channel 2 only.
+  Whether the realized neutral choice matters to the MODEL's own downstream
+  computation when the trace is consumed as CoT — channel 1 minus channel 2 —
+  is untested by that literature and is our registered question.
+- The operational locus is the same as ours: decode-time re-settling of choices
+  among near-equivalent candidates. Our randomized arm (uniform resample within
+  Δ = 1.5 nats at reader-neutral rule sites, generation continuing conditioned
+  on the result) is a harsher, site-restricted cousin of a sampling watermark
+  applied to a reasoning trace.
+- Rung 1's rule-05 termination finding is a concrete caution for the genre:
+  a "low-stakes" whitespace choice was load-bearing via the termination
+  mechanism on the base checkpoint. Equiprobable does not imply inconsequential.
+- Even distortion-free schemes (distribution-preserving in aggregate) fix
+  particular realizations; whether particular neutral realizations carry task
+  state for the same model's continuation is untouched by the distortion-free
+  guarantee.
+
+No novelty threat to any rung: nothing in the watermarking literature measures
+spontaneous neutral-channel task state or its depth interaction. Framing
+material and operational consequences (judge determinism check) are in
+writeup/watermarking_context.md. Nothing here modifies frozen registrations.

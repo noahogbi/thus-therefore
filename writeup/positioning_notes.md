@@ -1,5 +1,11 @@
 # Positioning notes for the write-up (2026-08-08, non-frozen context)
 
+> 2026-08-15: see watermarking_context.md — Anthropic's sampling-watermark
+> deployment (announced 2026-08-11, after the freeze) is a live industrial
+> application of the assumption this experiment tests; it carries the framing
+> plan for the results post and paper, plus a required judge-determinism
+> check before the audit phase.
+
 Drafted during the rung 1 calibration run, alongside the pre-run novelty
 re-check logged in PRIOR_ART.md. Raw material for the Related Work and
 Contributions sections. Nothing here modifies frozen registrations.
