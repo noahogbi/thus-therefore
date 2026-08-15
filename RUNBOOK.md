@@ -118,3 +118,28 @@ python -m harness.analysis --arm-label tier_a_all \
 
 One invocation per arm. Disputed cells are separate arms and are NEVER
 pooled with Tier A (frozen reporting policy).
+
+## Follow-on (instruct) fleet allocation — staged 2026-08-15, launch on funds
+
+Ninth-relay ruled grid (unanimous 9.1(c)): eight cells at n=400, encoded in
+scripts/fleet_bootstrap_followon.sh along with the 8.1(b) measurement flags
+and the instruct pin. 25 passes, ~80k generations, est. $150-180 on four
+RTX 4090 pods (~$0.74/hr secure). Same worker pattern as rung 1: each pod
+runs fleet_bootstrap_followon.sh with its pod id then its pass specs
+(MODE:RULES:SEED), idempotent per cell, self-stops when its share is done.
+
+Pass split (25 = native 1 + aggregate 3 + 7 rules x 3 seeds):
+
+| Pod | Passes (7/6/6/6) |
+|---|---|
+| A | native:-:271828, randomized:all:271828, randomized:all:161803, randomized:all:141421, randomized:tier_a_01_connectives:{271828,161803,141421} |
+| B | randomized:tier_a_02_punctuation:{3 seeds}, randomized:tier_a_03_discourse_markers:{3 seeds} |
+| C | randomized:tier_a_04_contractions:{3 seeds}, randomized:tier_a_05_whitespace:{3 seeds} |
+| D | randomized:tier_a_06_operator_spacing:{3 seeds}, randomized:tier_a_07_list_markers:{3 seeds} |
+
+Post-run, per watermarking_context.md section 5: re-run the judge smoke test
+(JUDGE_SMOKE_TEST.json) BEFORE the audit phase; a non-reproduction is an
+environment break under FREEZE.md and requires party consult before auditing.
+Known operational trap from calibration: container resets wipe runpodctl
+config, so pod self-stop can fail — verify each pod actually stopped via the
+API after its "all passes done" line, and stop it from the API if not.

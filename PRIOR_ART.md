@@ -198,3 +198,40 @@ No novelty threat to any rung: nothing in the watermarking literature measures
 spontaneous neutral-channel task state or its depth interaction. Framing
 material and operational consequences (judge determinism check) are in
 writeup/watermarking_context.md. Nothing here modifies frozen registrations.
+
+---
+
+## Follow-on pre-main-run novelty re-check — 2026-08-15 (per item 3 above)
+
+Sweep before follow-on main-run GPU spend: standard vocabulary plus a
+watermark-reasoning lane search (new since the announcement). Adjacent work
+found, none claiming the design:
+
+- arXiv:2601.05144 "Distilling the Thought, Watermarking the Answer"
+  (ReasonMark) — watermarks ONLY the answer phase, explicitly motivated by
+  the assumption that watermarking the thinking phase corrupts reasoning.
+  The assumption is asserted and engineered around, not measured; no
+  neutrality restriction, no eligibility criterion, no depth axis. Framing
+  note: the watermark-engineering literature is already routing around the
+  unmeasured assumption we test.
+- arXiv:2604.25247 "R-CoT" — embeds a watermark IN the reasoning layer via
+  GRPO dual-trajectory training; reports robustness metrics only, no
+  reasoning-degradation measurement.
+- arXiv:2605.28890 "Echoes within the Reasoning" — CoT-carried watermark;
+  induced-payload capacity direction (rung 2 adjacent), not spontaneous
+  state.
+- arXiv:2607.20462 — watermark-induced degradation in medical text (lexical
+  corruption, hallucinated terminology). Evidence that watermarks are not
+  free in high-precision domains; compound treatment, no channel isolation.
+- arXiv:2603.03332 "Fragile Thoughts" — CoT perturbation taxonomy; all five
+  perturbation types are semantic (MathError, SkippedSteps, ...) — channel-2
+  edits, complementary rather than overlapping.
+- arXiv:2608.09942 — serial-depth bottleneck measurement for when CoT helps;
+  depth-axis adjacent, no intervention arm.
+
+VERDICT: follow-on design still unclaimed. The watermark-adjacent lane is
+active on the engineering side (schemes avoiding or exploiting CoT), which
+raises publication urgency (news-cycle decay + judge-retrofit clock, see
+writeup/watermarking_context.md §5) without threatening novelty: nobody
+measures spontaneous neutral-channel task state or its depth slope. Clear to
+launch on funds.
