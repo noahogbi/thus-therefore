@@ -14,22 +14,27 @@ Task generation seed 2026. Intervention seeds 271828 / 161803 / 141421.
 
 ## Pods (SSH key: ~/.ssh/thus_therefore_gpu, user root)
 
-| Pod | RunPod ID | IP:port | $/hr | Passes assigned |
-|---|---|---|---|---|
-| A | yqu2uhlc589efy | 213.173.98.23:21527 | 0.74 | native, agg x3 seeds |
-| B | a4do807wrv5zvm | 213.173.108.135:15394 | 0.74 | r02_punctuation x3, r01_connectives:271828 |
-| C | ww4ts4k9psivos | 213.173.103.151:33857 | 0.74 | r04_contractions x3, r01_connectives:161803 |
-| D | yga96zcmur278z | 213.173.110.102:10926 | 0.74 | r06_operator_spacing x3, r01_connectives:141421 |
-| H | ff2uqlt3u4i485 | 38.65.239.10:12108 | 0.34 | r05_whitespace x3, r07_list_markers:161803, :141421 |
+Allocation below is the REBALANCED one (2026-08-17 ~03:00 UTC), sized to each
+pod's measured throughput so all five finish together. No orphans remain.
 
-Assigned: 21 of 25 passes. Spend rate $3.34/hr.
+| Pod | RunPod ID | IP:port | $/hr | rec/hr | Passes assigned |
+|---|---|---|---|---|---|
+| A | yqu2uhlc589efy | 213.173.98.23:21527 | 0.74 | 208 | native, agg x3, r05_whitespace:141421 |
+| B | a4do807wrv5zvm | 213.173.108.135:15394 | 0.74 | 259 | r02_punctuation x3, r01_connectives:271828, r03_discourse:271828, r07_list:271828 |
+| C | ww4ts4k9psivos | 213.173.103.151:33857 | 0.74 | 260 | r04_contractions x3, r01_connectives:161803, r03_discourse:161803, r07_list:161803 |
+| D | yga96zcmur278z | 213.173.110.102:10926 | 0.74 | 258 | r06_operator_spacing x3, r01_connectives:141421, r03_discourse:141421, r07_list:141421 |
+| H | ff2uqlt3u4i485 | 38.65.239.10:12108 | 0.34 | 117 | r05_whitespace:271828, r05_whitespace:161803 |
 
-**ORPHANED — NOT YET ASSIGNED (4 passes):**
-`randomized:tier_a_03_discourse_markers` x {271828, 161803, 141421}
-`randomized:tier_a_07_list_markers:271828`
-These were on pod E (community, terminated: broken outbound networking —
-could not reach github even forced to IPv4). They must be run before the
-grid is complete. Assign to a new pod, or to the first pod that finishes.
+Coverage check: native 1 + aggregate 3 + (r01,r02,r03,r04,r05,r06,r07) x 3
+= 25 passes. All assigned. Spend rate $3.34/hr.
+
+Pod E (community) was terminated — broken outbound networking, could not
+reach github even forced to IPv4. Its 4 passes were absorbed above.
+
+Pod H is a slow host (117 rec/hr vs ~259 on Secure). Cost per generation is
+a wash ($2.91 vs $2.86 per 1000), so it is not wasting money, but it must be
+given proportionally less work or it strands the run by days. If H finishes
+early, hand it more; do not assume equal pods.
 
 ## Launch pattern (reuse verbatim)
 
@@ -67,9 +72,23 @@ skipped, a partially written cell is redone whole.
   the 1024-token cap. The instruct checkpoint is far more verbose than the
   rung 1 base checkpoint — this is why the original $150-180 estimate was
   low. Deeper cells will average higher.
+- Fleet aggregate 1,102 rec/hr across the five pods.
 - Total work ~330 pod-hours for 25 passes / 80,000 generations.
-- Projected total cost ~$205-225 on the current mix; ~2.5 days wall-clock
-  for the 21 assigned passes.
+- Measured at 7,363/80,000 done after 6.7h: ~66 more hours and ~$220 more.
+  Full-run total ~$245 against the original $150-180 estimate.
+- Balance was $149 at 2026-08-17 02:28 UTC; ~45 hours of runway at $3.34/hr.
+  Noah topping up ~$100 on the morning of 2026-08-17.
+
+## Backups
+
+Completed cells pulled to `runs/followon/pod{A,B,C,D,H}.tgz` (gitignored) at
+2026-08-17 ~02:45 UTC. Re-pull periodically — pod volumes die with the pod
+and nothing is auto-synced. Command used:
+```bash
+ssh -n -i ~/.ssh/thus_therefore_gpu -p PORT root@IP \
+ "cd /workspace/thus-therefore/runs && tar czf - --exclude=problems \
+  \$(ls -d */ | grep -v problems)" > podX.tgz
+```
 
 ## Sanity check already done
 
