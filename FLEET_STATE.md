@@ -17,13 +17,17 @@ Task generation seed 2026. Intervention seeds 271828 / 161803 / 141421.
 Allocation below is the REBALANCED one (2026-08-17 ~03:00 UTC), sized to each
 pod's measured throughput so all five finish together. No orphans remain.
 
+Second rebalance 2026-08-18 17:10 UTC: pod A's measured rate (~206 rec/hr vs
+~318 on B/C/D) made it a 40-hour straggler, so its two unstarted passes moved
+to B and C. A now finishes its in-flight aggregate pass and stops early.
+
 | Pod | RunPod ID | IP:port | $/hr | rec/hr | Passes assigned |
 |---|---|---|---|---|---|
-| A | yqu2uhlc589efy | 213.173.98.23:21527 | 0.74 | 208 | native, agg x3, r05_whitespace:141421 |
-| B | a4do807wrv5zvm | 213.173.108.135:15394 | 0.74 | 259 | r02_punctuation x3, r01_connectives:271828, r03_discourse:271828, r07_list:271828 |
-| C | ww4ts4k9psivos | 213.173.103.151:33857 | 0.74 | 260 | r04_contractions x3, r01_connectives:161803, r03_discourse:161803, r07_list:161803 |
-| D | yga96zcmur278z | 213.173.110.102:10926 | 0.74 | 258 | r06_operator_spacing x3, r01_connectives:141421, r03_discourse:141421, r07_list:141421 |
-| H | ff2uqlt3u4i485 | 38.65.239.10:12108 | 0.34 | 117 | r05_whitespace:271828, r05_whitespace:161803 |
+| A | yqu2uhlc589efy | 213.173.98.23:21527 | 0.74 | 206 | native, agg:271828, agg:161803 |
+| B | a4do807wrv5zvm | 213.173.108.135:15394 | 0.74 | 318 | r02_punctuation x3, r01_connectives:271828, r03_discourse:271828, r07_list:271828, agg:141421 |
+| C | ww4ts4k9psivos | 213.173.103.151:33857 | 0.74 | 320 | r04_contractions x3, r01_connectives:161803, r03_discourse:161803, r07_list:161803, r05_whitespace:141421 |
+| D | yga96zcmur278z | 213.173.110.102:10926 | 0.74 | 308 | r06_operator_spacing x3, r01_connectives:141421, r03_discourse:141421, r07_list:141421 |
+| H | ff2uqlt3u4i485 | 38.65.239.10:12108 | 0.34 | 119 | r05_whitespace:271828, r05_whitespace:161803 |
 
 Coverage check: native 1 + aggregate 3 + (r01,r02,r03,r04,r05,r06,r07) x 3
 = 25 passes. All assigned. Spend rate $3.34/hr.
@@ -78,6 +82,26 @@ skipped, a partially written cell is redone whole.
   Full-run total ~$245 against the original $150-180 estimate.
 - Balance was $149 at 2026-08-17 02:28 UTC; ~45 hours of runway at $3.34/hr.
   Noah topping up ~$100 on the morning of 2026-08-17.
+
+## If pods die (zero balance) — restore procedure
+
+Pod volumes do not survive termination, so a dead pod means re-creating it and
+restoring the backup so completed cells are skipped rather than regenerated:
+
+1. Create a replacement pod (see recipe above), note its id/ip/port.
+2. Run the bootstrap once with a trivial spec so it clones the repo and
+   generates the problem sets, or let step 3 precede the real launch.
+3. Push the backup back in BEFORE launching real passes:
+   ```bash
+   scp -i ~/.ssh/thus_therefore_gpu -P PORT runs/followon/podX.tgz root@IP:/tmp/
+   ssh ... "mkdir -p /workspace/thus-therefore/runs && \
+            tar xzf /tmp/podX.tgz -C /workspace/thus-therefore/runs"
+   ```
+4. Launch with that pod's full spec list. run_pass.sh skips any cell whose
+   output already has exactly 400 lines; partial cells are redone whole.
+
+Because of this, keeping runs/followon/*.tgz current is the difference
+between losing GPU hours and losing data. Re-pull after any long stretch.
 
 ## Backups
 
