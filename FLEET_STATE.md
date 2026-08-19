@@ -83,6 +83,15 @@ skipped, a partially written cell is redone whole.
 - Balance was $149 at 2026-08-17 02:28 UTC; ~45 hours of runway at $3.34/hr.
   Noah topping up ~$100 on the morning of 2026-08-17.
 
+## Completion log
+
+- **Pod A — COMPLETE 2026-08-19 05:21 UTC.** 3 passes (native, agg:271828,
+  agg:161803) = 24 cells x 400 = 9,600 records, verified locally (no short
+  files). Pulled to runs/followon/podA.tgz, pod TERMINATED 05:25 UTC.
+  Its self-stop FAILED as expected ("Runpod config file not found") — caught
+  by the monitor within 4 minutes. Expect the same on B, C, D, H: every pod
+  must be stopped manually via the API after its results are pulled.
+
 ## If pods die (zero balance) — restore procedure
 
 Pod volumes do not survive termination, so a dead pod means re-creating it and
