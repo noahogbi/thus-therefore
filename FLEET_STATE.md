@@ -92,6 +92,11 @@ skipped, a partially written cell is redone whole.
   by the monitor within 4 minutes. Expect the same on B, C, D, H: every pod
   must be stopped manually via the API after its results are pulled.
 
+- **Pod H — COMPLETE 2026-08-19 ~11:20 UTC.** 2 passes (r05_whitespace:271828,
+  :161803) = 16 cells x 400 = 6,400 records, verified (no short files).
+  Pulled to runs/followon/podH.tgz, pod TERMINATED 11:30 UTC. Self-stop failed
+  identically to A. 5 of 25 passes now banked (A's 3 + H's 2).
+
 ## If pods die (zero balance) — restore procedure
 
 Pod volumes do not survive termination, so a dead pod means re-creating it and
