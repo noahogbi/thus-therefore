@@ -97,6 +97,13 @@ skipped, a partially written cell is redone whole.
   Pulled to runs/followon/podH.tgz, pod TERMINATED 11:30 UTC. Self-stop failed
   identically to A. 5 of 25 passes now banked (A's 3 + H's 2).
 
+- **Pod D — COMPLETE 2026-08-19 ~20:15 UTC.** 6 passes (r06_operator_spacing
+  x3, r01_connectives:141421, r03_discourse:141421, r07_list:141421) = 48
+  cells x 400 = 19,200 records, verified (no short files). Pulled to
+  runs/followon/podD.tgz, TERMINATED 20:22 UTC. Self-stop failed as usual.
+  11 of 25 passes banked (A 3 + H 2 + D 6). Burn now $1.50/hr on B and C,
+  both on their final assigned pass.
+
 ## If pods die (zero balance) — restore procedure
 
 Pod volumes do not survive termination, so a dead pod means re-creating it and
