@@ -1,4 +1,13 @@
-# FLEET_STATE.md — live follow-on main run (started 2026-08-16 19:12 UTC)
+# FLEET_STATE.md — follow-on main run: COMPLETE
+
+**GENERATION FINISHED 2026-08-20 ~09:20 UTC.** All 25 passes x 8 cells x 400
+= 80,000 records generated, verified complete (no short files), and sealed in
+`runs-raw-dataset-followon.tar.gz` (sha256 in followon-instruct/raw-dataset.sha256).
+All pods terminated; final balance $0.42 of ~$260 total spend. Next: judge
+determinism check (JUDGE_SMOKE_TEST.json) BEFORE the blinded audit (seed
+314159), then O1/O2 analysis per RUNBOOK. Historical operational log below.
+
+# (was) live follow-on main run (started 2026-08-16 19:12 UTC)
 
 Operational scratch file, not an experimental artifact. Updated as the run
 proceeds so any session (or a session after a crash) can resume without
