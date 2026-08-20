@@ -80,6 +80,41 @@ Sources: anthropic.com/news/claude-text-watermark; support.claude.com article
    is orthogonal to the distortion-free guarantee — it is a property of the
    model's self-conditioning, not of the sampling distribution.
 
+## 2b. Deployment regimes (added 2026-08-20 — Noah's downstream-of-CoT point)
+
+Deployed watermarks today are effectively DOWNSTREAM of CoT: hidden
+reasoning is pointless to mark (never delivered, so never detectable; EU
+obligations cover delivered outputs), and the research frontier is
+converging on answer-only marking deliberately (ReasonMark, 2601.05144,
+engineered precisely to avoid perturbing the thinking phase). Which tokens
+carry signal in Anthropic's deployment is undisclosed. Three-regime framing
+for the paper's discussion:
+
+1. **Answer-only (today).** The industry pays a real CAPACITY tax to sit
+   here — delivered answers are often the shortest text in the exchange
+   while the reasoning holds the tokens detection needs — on the strength
+   of an unmeasured assumption. Our O1/O2 prices whether the tax is
+   necessary: flat => reclaimable capacity inside the reader-neutral
+   channel of reasoning traces; positive => the ReasonMark-style caution is
+   load-bearing. (Compounding: the follow-on density result — neutral-channel
+   exposure ~2.45% on instruct, unchanged from base — already says entropy
+   for watermark-carrying substitutions in CoT is scarce.)
+2. **Watermarked reasoning (unstable boundary).** Capacity pressure pushes
+   vendors toward marking the longest text available. If visible/delivered
+   reasoning gets marked, our measurement applies directly.
+3. **Agentic self-consumption (already here).** "Downstream of CoT" holds
+   for ONE turn only. Watermarked output re-entering a context window —
+   agents reading their own prior turns, distillation, model-quoting-model —
+   makes today's watermark upstream of tomorrow's reasoning. No vendor
+   quality eval covers iterated self-consumption; our
+   perturb-then-condition topology is a direct model of it, depth axis
+   included.
+
+Plus the termination caveat that regime 1 is not free: rung 1's confirmed
+rule-05 mechanism operated at the END of the trace — EOS-adjacent,
+answer-region territory. Answer-only marking that touches formatting near
+the close of generation plays with exactly that channel.
+
 ## 3. Honest asymmetries (must appear wherever the connection is drawn)
 
 - **Dose.** Ours is harsher: uniform resampling within the eligibility class
