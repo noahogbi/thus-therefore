@@ -1,0 +1,1210 @@
+{
+ "per_arm": {
+  "randomized-all-s141421": {
+   "composition-d2": {
+    "records": 400,
+    "touched": 170,
+    "chopped": 119,
+    "chopped_no_answer": 119
+   },
+   "composition-d4": {
+    "records": 400,
+    "touched": 215,
+    "chopped": 175,
+    "chopped_no_answer": 175
+   },
+   "multiplication-d2": {
+    "records": 400,
+    "touched": 268,
+    "chopped": 241,
+    "chopped_no_answer": 240
+   },
+   "reachability-d10": {
+    "records": 400,
+    "touched": 225,
+    "chopped": 38,
+    "chopped_no_answer": 26
+   },
+   "reachability-d2": {
+    "records": 400,
+    "touched": 195,
+    "chopped": 60,
+    "chopped_no_answer": 41
+   },
+   "reachability-d4": {
+    "records": 400,
+    "touched": 220,
+    "chopped": 72,
+    "chopped_no_answer": 56
+   },
+   "reachability-d6": {
+    "records": 400,
+    "touched": 278,
+    "chopped": 71,
+    "chopped_no_answer": 53
+   },
+   "reachability-d8": {
+    "records": 400,
+    "touched": 260,
+    "chopped": 52,
+    "chopped_no_answer": 42
+   }
+  },
+  "randomized-all-s161803": {
+   "composition-d2": {
+    "records": 400,
+    "touched": 182,
+    "chopped": 129,
+    "chopped_no_answer": 129
+   },
+   "composition-d4": {
+    "records": 400,
+    "touched": 209,
+    "chopped": 168,
+    "chopped_no_answer": 168
+   },
+   "multiplication-d2": {
+    "records": 400,
+    "touched": 255,
+    "chopped": 232,
+    "chopped_no_answer": 231
+   },
+   "reachability-d10": {
+    "records": 400,
+    "touched": 205,
+    "chopped": 32,
+    "chopped_no_answer": 21
+   },
+   "reachability-d2": {
+    "records": 400,
+    "touched": 195,
+    "chopped": 54,
+    "chopped_no_answer": 38
+   },
+   "reachability-d4": {
+    "records": 400,
+    "touched": 254,
+    "chopped": 90,
+    "chopped_no_answer": 67
+   },
+   "reachability-d6": {
+    "records": 400,
+    "touched": 251,
+    "chopped": 59,
+    "chopped_no_answer": 50
+   },
+   "reachability-d8": {
+    "records": 400,
+    "touched": 247,
+    "chopped": 45,
+    "chopped_no_answer": 33
+   }
+  },
+  "randomized-all-s271828": {
+   "composition-d2": {
+    "records": 400,
+    "touched": 190,
+    "chopped": 136,
+    "chopped_no_answer": 136
+   },
+   "composition-d4": {
+    "records": 400,
+    "touched": 208,
+    "chopped": 171,
+    "chopped_no_answer": 171
+   },
+   "multiplication-d2": {
+    "records": 400,
+    "touched": 267,
+    "chopped": 242,
+    "chopped_no_answer": 241
+   },
+   "reachability-d10": {
+    "records": 400,
+    "touched": 205,
+    "chopped": 31,
+    "chopped_no_answer": 22
+   },
+   "reachability-d2": {
+    "records": 400,
+    "touched": 203,
+    "chopped": 69,
+    "chopped_no_answer": 41
+   },
+   "reachability-d4": {
+    "records": 400,
+    "touched": 246,
+    "chopped": 80,
+    "chopped_no_answer": 62
+   },
+   "reachability-d6": {
+    "records": 400,
+    "touched": 258,
+    "chopped": 65,
+    "chopped_no_answer": 50
+   },
+   "reachability-d8": {
+    "records": 400,
+    "touched": 264,
+    "chopped": 59,
+    "chopped_no_answer": 47
+   }
+  },
+  "randomized-tier_a_01_connectives-s141421": {
+   "composition-d2": {
+    "records": 400,
+    "touched": 163,
+    "chopped": 118,
+    "chopped_no_answer": 118
+   },
+   "composition-d4": {
+    "records": 400,
+    "touched": 219,
+    "chopped": 176,
+    "chopped_no_answer": 176
+   },
+   "multiplication-d2": {
+    "records": 400,
+    "touched": 250,
+    "chopped": 237,
+    "chopped_no_answer": 236
+   },
+   "reachability-d10": {
+    "records": 400,
+    "touched": 149,
+    "chopped": 36,
+    "chopped_no_answer": 24
+   },
+   "reachability-d2": {
+    "records": 400,
+    "touched": 162,
+    "chopped": 56,
+    "chopped_no_answer": 39
+   },
+   "reachability-d4": {
+    "records": 400,
+    "touched": 198,
+    "chopped": 81,
+    "chopped_no_answer": 57
+   },
+   "reachability-d6": {
+    "records": 400,
+    "touched": 235,
+    "chopped": 85,
+    "chopped_no_answer": 59
+   },
+   "reachability-d8": {
+    "records": 400,
+    "touched": 206,
+    "chopped": 43,
+    "chopped_no_answer": 29
+   }
+  },
+  "randomized-tier_a_01_connectives-s161803": {
+   "composition-d2": {
+    "records": 400,
+    "touched": 169,
+    "chopped": 122,
+    "chopped_no_answer": 122
+   },
+   "composition-d4": {
+    "records": 400,
+    "touched": 212,
+    "chopped": 167,
+    "chopped_no_answer": 167
+   },
+   "multiplication-d2": {
+    "records": 400,
+    "touched": 237,
+    "chopped": 225,
+    "chopped_no_answer": 223
+   },
+   "reachability-d10": {
+    "records": 400,
+    "touched": 132,
+    "chopped": 33,
+    "chopped_no_answer": 22
+   },
+   "reachability-d2": {
+    "records": 400,
+    "touched": 166,
+    "chopped": 46,
+    "chopped_no_answer": 36
+   },
+   "reachability-d4": {
+    "records": 400,
+    "touched": 216,
+    "chopped": 88,
+    "chopped_no_answer": 63
+   },
+   "reachability-d6": {
+    "records": 400,
+    "touched": 217,
+    "chopped": 68,
+    "chopped_no_answer": 48
+   },
+   "reachability-d8": {
+    "records": 400,
+    "touched": 211,
+    "chopped": 49,
+    "chopped_no_answer": 30
+   }
+  },
+  "randomized-tier_a_01_connectives-s271828": {
+   "composition-d2": {
+    "records": 400,
+    "touched": 186,
+    "chopped": 137,
+    "chopped_no_answer": 137
+   },
+   "composition-d4": {
+    "records": 400,
+    "touched": 212,
+    "chopped": 174,
+    "chopped_no_answer": 174
+   },
+   "multiplication-d2": {
+    "records": 400,
+    "touched": 248,
+    "chopped": 237,
+    "chopped_no_answer": 233
+   },
+   "reachability-d10": {
+    "records": 400,
+    "touched": 139,
+    "chopped": 35,
+    "chopped_no_answer": 21
+   },
+   "reachability-d2": {
+    "records": 400,
+    "touched": 177,
+    "chopped": 53,
+    "chopped_no_answer": 34
+   },
+   "reachability-d4": {
+    "records": 400,
+    "touched": 216,
+    "chopped": 99,
+    "chopped_no_answer": 69
+   },
+   "reachability-d6": {
+    "records": 400,
+    "touched": 212,
+    "chopped": 76,
+    "chopped_no_answer": 60
+   },
+   "reachability-d8": {
+    "records": 400,
+    "touched": 209,
+    "chopped": 44,
+    "chopped_no_answer": 30
+   }
+  },
+  "randomized-tier_a_02_punctuation-s141421": {
+   "composition-d2": {
+    "records": 400,
+    "touched": 19,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "composition-d4": {
+    "records": 400,
+    "touched": 1,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "multiplication-d2": {
+    "records": 400,
+    "touched": 29,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d10": {
+    "records": 400,
+    "touched": 104,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d2": {
+    "records": 400,
+    "touched": 15,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d4": {
+    "records": 400,
+    "touched": 49,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d6": {
+    "records": 400,
+    "touched": 91,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d8": {
+    "records": 400,
+    "touched": 105,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   }
+  },
+  "randomized-tier_a_02_punctuation-s161803": {
+   "composition-d2": {
+    "records": 400,
+    "touched": 16,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "composition-d4": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "multiplication-d2": {
+    "records": 400,
+    "touched": 28,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d10": {
+    "records": 400,
+    "touched": 100,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d2": {
+    "records": 400,
+    "touched": 16,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d4": {
+    "records": 400,
+    "touched": 49,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d6": {
+    "records": 400,
+    "touched": 77,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d8": {
+    "records": 400,
+    "touched": 97,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   }
+  },
+  "randomized-tier_a_02_punctuation-s271828": {
+   "composition-d2": {
+    "records": 400,
+    "touched": 21,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "composition-d4": {
+    "records": 400,
+    "touched": 1,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "multiplication-d2": {
+    "records": 400,
+    "touched": 30,
+    "chopped": 1,
+    "chopped_no_answer": 1
+   },
+   "reachability-d10": {
+    "records": 400,
+    "touched": 98,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d2": {
+    "records": 400,
+    "touched": 13,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d4": {
+    "records": 400,
+    "touched": 45,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d6": {
+    "records": 400,
+    "touched": 77,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d8": {
+    "records": 400,
+    "touched": 96,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   }
+  },
+  "randomized-tier_a_03_discourse_markers-s141421": {
+   "composition-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "composition-d4": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "multiplication-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d10": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d4": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d6": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d8": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   }
+  },
+  "randomized-tier_a_03_discourse_markers-s161803": {
+   "composition-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "composition-d4": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "multiplication-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d10": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d4": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d6": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d8": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   }
+  },
+  "randomized-tier_a_03_discourse_markers-s271828": {
+   "composition-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "composition-d4": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "multiplication-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d10": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d4": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d6": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d8": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   }
+  },
+  "randomized-tier_a_04_contractions-s141421": {
+   "composition-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "composition-d4": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "multiplication-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d10": {
+    "records": 400,
+    "touched": 5,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d2": {
+    "records": 400,
+    "touched": 15,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d4": {
+    "records": 400,
+    "touched": 17,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d6": {
+    "records": 400,
+    "touched": 9,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d8": {
+    "records": 400,
+    "touched": 16,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   }
+  },
+  "randomized-tier_a_04_contractions-s161803": {
+   "composition-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "composition-d4": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "multiplication-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d10": {
+    "records": 400,
+    "touched": 6,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d2": {
+    "records": 400,
+    "touched": 18,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d4": {
+    "records": 400,
+    "touched": 12,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d6": {
+    "records": 400,
+    "touched": 13,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d8": {
+    "records": 400,
+    "touched": 12,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   }
+  },
+  "randomized-tier_a_04_contractions-s271828": {
+   "composition-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "composition-d4": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "multiplication-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d10": {
+    "records": 400,
+    "touched": 5,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d2": {
+    "records": 400,
+    "touched": 20,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d4": {
+    "records": 400,
+    "touched": 17,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d6": {
+    "records": 400,
+    "touched": 13,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d8": {
+    "records": 400,
+    "touched": 15,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   }
+  },
+  "randomized-tier_a_05_whitespace-s141421": {
+   "composition-d2": {
+    "records": 400,
+    "touched": 21,
+    "chopped": 1,
+    "chopped_no_answer": 1
+   },
+   "composition-d4": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "multiplication-d2": {
+    "records": 400,
+    "touched": 17,
+    "chopped": 7,
+    "chopped_no_answer": 7
+   },
+   "reachability-d10": {
+    "records": 400,
+    "touched": 19,
+    "chopped": 2,
+    "chopped_no_answer": 1
+   },
+   "reachability-d2": {
+    "records": 400,
+    "touched": 27,
+    "chopped": 6,
+    "chopped_no_answer": 3
+   },
+   "reachability-d4": {
+    "records": 400,
+    "touched": 29,
+    "chopped": 4,
+    "chopped_no_answer": 1
+   },
+   "reachability-d6": {
+    "records": 400,
+    "touched": 21,
+    "chopped": 6,
+    "chopped_no_answer": 4
+   },
+   "reachability-d8": {
+    "records": 400,
+    "touched": 27,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   }
+  },
+  "randomized-tier_a_05_whitespace-s161803": {
+   "composition-d2": {
+    "records": 400,
+    "touched": 16,
+    "chopped": 2,
+    "chopped_no_answer": 2
+   },
+   "composition-d4": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "multiplication-d2": {
+    "records": 400,
+    "touched": 16,
+    "chopped": 8,
+    "chopped_no_answer": 8
+   },
+   "reachability-d10": {
+    "records": 400,
+    "touched": 19,
+    "chopped": 3,
+    "chopped_no_answer": 3
+   },
+   "reachability-d2": {
+    "records": 400,
+    "touched": 24,
+    "chopped": 7,
+    "chopped_no_answer": 4
+   },
+   "reachability-d4": {
+    "records": 400,
+    "touched": 27,
+    "chopped": 4,
+    "chopped_no_answer": 2
+   },
+   "reachability-d6": {
+    "records": 400,
+    "touched": 22,
+    "chopped": 8,
+    "chopped_no_answer": 6
+   },
+   "reachability-d8": {
+    "records": 400,
+    "touched": 19,
+    "chopped": 3,
+    "chopped_no_answer": 3
+   }
+  },
+  "randomized-tier_a_05_whitespace-s271828": {
+   "composition-d2": {
+    "records": 400,
+    "touched": 22,
+    "chopped": 2,
+    "chopped_no_answer": 2
+   },
+   "composition-d4": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "multiplication-d2": {
+    "records": 400,
+    "touched": 12,
+    "chopped": 4,
+    "chopped_no_answer": 4
+   },
+   "reachability-d10": {
+    "records": 400,
+    "touched": 14,
+    "chopped": 2,
+    "chopped_no_answer": 1
+   },
+   "reachability-d2": {
+    "records": 400,
+    "touched": 28,
+    "chopped": 4,
+    "chopped_no_answer": 4
+   },
+   "reachability-d4": {
+    "records": 400,
+    "touched": 30,
+    "chopped": 4,
+    "chopped_no_answer": 2
+   },
+   "reachability-d6": {
+    "records": 400,
+    "touched": 19,
+    "chopped": 7,
+    "chopped_no_answer": 5
+   },
+   "reachability-d8": {
+    "records": 400,
+    "touched": 23,
+    "chopped": 2,
+    "chopped_no_answer": 2
+   }
+  },
+  "randomized-tier_a_06_operator_spacing-s141421": {
+   "composition-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "composition-d4": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "multiplication-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d10": {
+    "records": 400,
+    "touched": 2,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d2": {
+    "records": 400,
+    "touched": 4,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d4": {
+    "records": 400,
+    "touched": 1,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d6": {
+    "records": 400,
+    "touched": 7,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d8": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   }
+  },
+  "randomized-tier_a_06_operator_spacing-s161803": {
+   "composition-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "composition-d4": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "multiplication-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d10": {
+    "records": 400,
+    "touched": 1,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d2": {
+    "records": 400,
+    "touched": 3,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d4": {
+    "records": 400,
+    "touched": 3,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d6": {
+    "records": 400,
+    "touched": 6,
+    "chopped": 1,
+    "chopped_no_answer": 0
+   },
+   "reachability-d8": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   }
+  },
+  "randomized-tier_a_06_operator_spacing-s271828": {
+   "composition-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "composition-d4": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "multiplication-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d10": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d2": {
+    "records": 400,
+    "touched": 3,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d4": {
+    "records": 400,
+    "touched": 2,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d6": {
+    "records": 400,
+    "touched": 4,
+    "chopped": 1,
+    "chopped_no_answer": 0
+   },
+   "reachability-d8": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   }
+  },
+  "randomized-tier_a_07_list_markers-s141421": {
+   "composition-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "composition-d4": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "multiplication-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d10": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d4": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d6": {
+    "records": 400,
+    "touched": 1,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d8": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   }
+  },
+  "randomized-tier_a_07_list_markers-s161803": {
+   "composition-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "composition-d4": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "multiplication-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d10": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d4": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d6": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d8": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   }
+  },
+  "randomized-tier_a_07_list_markers-s271828": {
+   "composition-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "composition-d4": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "multiplication-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d10": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d2": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d4": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d6": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   },
+   "reachability-d8": {
+    "records": 400,
+    "touched": 0,
+    "chopped": 0,
+    "chopped_no_answer": 0
+   }
+  }
+ },
+ "total": {
+  "records": 76800,
+  "touched": 12070,
+  "chopped": 5064,
+  "chopped_no_answer": 4532
+ }
+}

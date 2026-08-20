@@ -223,3 +223,20 @@ class TestTerminalPassRegeneration:
         assert not [r for r in result.sites if r.intervened]
         assert result.text == self.SCRIPT_MAIN
         assert result.ended == "eos"
+
+    def test_terminal_pass_skip_does_not_resume(self):
+        # A terminal-pass site with fewer than two eligible candidates is
+        # logged and skipped; generation must still end (the ended flag is
+        # cleared only on actual intervention).
+        lm = ScriptedLM(
+            [("", self.SCRIPT_MAIN), (PROMPT + "Go on. So", self.SCRIPT_ALT)],
+            branch={
+                PROMPT + "Go on. ": {"T": 0.9, "S": 0.0001, "H": 0.0001},
+                PROMPT + "Go on. Th": {"u": 0.9, "e": 0.0001},
+            })
+        result = make_decoder(lm, rng=PickRng("So")).generate(
+            PROMPT, max_new_tokens=100)
+        assert not [r for r in result.sites if r.intervened]
+        assert [r for r in result.sites if r.skip_reason == "fewer_than_two_eligible"]
+        assert result.text == self.SCRIPT_MAIN
+        assert result.ended == "eos"

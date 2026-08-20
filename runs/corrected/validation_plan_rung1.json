@@ -1,0 +1,674 @@
+{
+ "seed": "repair-validation:314159:rung1",
+ "n": 123,
+ "strata": {
+  "randomized-all-s141421/composition-d2": 1,
+  "randomized-all-s141421/multiplication-d2": 12,
+  "randomized-all-s141421/reachability-d2": 2,
+  "randomized-all-s141421/reachability-d4": 1,
+  "randomized-all-s141421/reachability-d6": 1,
+  "randomized-all-s141421/reachability-d8": 2,
+  "randomized-all-s161803/composition-d2": 1,
+  "randomized-all-s161803/multiplication-d2": 11,
+  "randomized-all-s161803/reachability-d2": 2,
+  "randomized-all-s161803/reachability-d4": 1,
+  "randomized-all-s161803/reachability-d6": 1,
+  "randomized-all-s161803/reachability-d8": 2,
+  "randomized-all-s271828/composition-d2": 1,
+  "randomized-all-s271828/multiplication-d2": 12,
+  "randomized-all-s271828/reachability-d2": 1,
+  "randomized-all-s271828/reachability-d4": 1,
+  "randomized-all-s271828/reachability-d6": 1,
+  "randomized-all-s271828/reachability-d8": 2,
+  "randomized-tier_a_01_connectives-s141421/composition-d2": 1,
+  "randomized-tier_a_01_connectives-s141421/reachability-d2": 1,
+  "randomized-tier_a_01_connectives-s141421/reachability-d4": 1,
+  "randomized-tier_a_01_connectives-s141421/reachability-d6": 1,
+  "randomized-tier_a_01_connectives-s141421/reachability-d8": 2,
+  "randomized-tier_a_01_connectives-s161803/composition-d2": 1,
+  "randomized-tier_a_01_connectives-s161803/reachability-d2": 1,
+  "randomized-tier_a_01_connectives-s161803/reachability-d6": 1,
+  "randomized-tier_a_01_connectives-s161803/reachability-d8": 2,
+  "randomized-tier_a_01_connectives-s271828/composition-d2": 1,
+  "randomized-tier_a_01_connectives-s271828/reachability-d2": 1,
+  "randomized-tier_a_01_connectives-s271828/reachability-d4": 1,
+  "randomized-tier_a_01_connectives-s271828/reachability-d6": 1,
+  "randomized-tier_a_01_connectives-s271828/reachability-d8": 2,
+  "randomized-tier_a_04_contractions-s141421/multiplication-d2": 1,
+  "randomized-tier_a_04_contractions-s161803/reachability-d8": 1,
+  "randomized-tier_a_05_whitespace-s141421/multiplication-d2": 12,
+  "randomized-tier_a_05_whitespace-s141421/reachability-d2": 1,
+  "randomized-tier_a_05_whitespace-s141421/reachability-d4": 1,
+  "randomized-tier_a_05_whitespace-s141421/reachability-d6": 1,
+  "randomized-tier_a_05_whitespace-s161803/multiplication-d2": 11,
+  "randomized-tier_a_05_whitespace-s161803/reachability-d2": 1,
+  "randomized-tier_a_05_whitespace-s161803/reachability-d4": 1,
+  "randomized-tier_a_05_whitespace-s161803/reachability-d6": 1,
+  "randomized-tier_a_05_whitespace-s161803/reachability-d8": 1,
+  "randomized-tier_a_05_whitespace-s271828/multiplication-d2": 12,
+  "randomized-tier_a_05_whitespace-s271828/reachability-d2": 1,
+  "randomized-tier_a_05_whitespace-s271828/reachability-d4": 1,
+  "randomized-tier_a_05_whitespace-s271828/reachability-d6": 1,
+  "randomized-tier_a_05_whitespace-s271828/reachability-d8": 1,
+  "randomized-tier_a_06_operator_spacing-s141421/composition-d2": 1,
+  "randomized-tier_a_06_operator_spacing-s161803/composition-d2": 1,
+  "randomized-tier_a_06_operator_spacing-s271828/composition-d2": 1
+ },
+ "records": [
+  {
+   "arm": "randomized-all-s141421",
+   "cell": "composition-d2",
+   "index": 105
+  },
+  {
+   "arm": "randomized-all-s141421",
+   "cell": "multiplication-d2",
+   "index": 37
+  },
+  {
+   "arm": "randomized-all-s141421",
+   "cell": "multiplication-d2",
+   "index": 135
+  },
+  {
+   "arm": "randomized-all-s141421",
+   "cell": "multiplication-d2",
+   "index": 167
+  },
+  {
+   "arm": "randomized-all-s141421",
+   "cell": "multiplication-d2",
+   "index": 199
+  },
+  {
+   "arm": "randomized-all-s141421",
+   "cell": "multiplication-d2",
+   "index": 230
+  },
+  {
+   "arm": "randomized-all-s141421",
+   "cell": "multiplication-d2",
+   "index": 244
+  },
+  {
+   "arm": "randomized-all-s141421",
+   "cell": "multiplication-d2",
+   "index": 250
+  },
+  {
+   "arm": "randomized-all-s141421",
+   "cell": "multiplication-d2",
+   "index": 257
+  },
+  {
+   "arm": "randomized-all-s141421",
+   "cell": "multiplication-d2",
+   "index": 263
+  },
+  {
+   "arm": "randomized-all-s141421",
+   "cell": "multiplication-d2",
+   "index": 332
+  },
+  {
+   "arm": "randomized-all-s141421",
+   "cell": "multiplication-d2",
+   "index": 361
+  },
+  {
+   "arm": "randomized-all-s141421",
+   "cell": "multiplication-d2",
+   "index": 393
+  },
+  {
+   "arm": "randomized-all-s141421",
+   "cell": "reachability-d2",
+   "index": 33
+  },
+  {
+   "arm": "randomized-all-s141421",
+   "cell": "reachability-d2",
+   "index": 155
+  },
+  {
+   "arm": "randomized-all-s141421",
+   "cell": "reachability-d4",
+   "index": 227
+  },
+  {
+   "arm": "randomized-all-s141421",
+   "cell": "reachability-d6",
+   "index": 189
+  },
+  {
+   "arm": "randomized-all-s141421",
+   "cell": "reachability-d8",
+   "index": 126
+  },
+  {
+   "arm": "randomized-all-s141421",
+   "cell": "reachability-d8",
+   "index": 229
+  },
+  {
+   "arm": "randomized-all-s161803",
+   "cell": "composition-d2",
+   "index": 85
+  },
+  {
+   "arm": "randomized-all-s161803",
+   "cell": "multiplication-d2",
+   "index": 20
+  },
+  {
+   "arm": "randomized-all-s161803",
+   "cell": "multiplication-d2",
+   "index": 100
+  },
+  {
+   "arm": "randomized-all-s161803",
+   "cell": "multiplication-d2",
+   "index": 122
+  },
+  {
+   "arm": "randomized-all-s161803",
+   "cell": "multiplication-d2",
+   "index": 189
+  },
+  {
+   "arm": "randomized-all-s161803",
+   "cell": "multiplication-d2",
+   "index": 195
+  },
+  {
+   "arm": "randomized-all-s161803",
+   "cell": "multiplication-d2",
+   "index": 210
+  },
+  {
+   "arm": "randomized-all-s161803",
+   "cell": "multiplication-d2",
+   "index": 271
+  },
+  {
+   "arm": "randomized-all-s161803",
+   "cell": "multiplication-d2",
+   "index": 283
+  },
+  {
+   "arm": "randomized-all-s161803",
+   "cell": "multiplication-d2",
+   "index": 289
+  },
+  {
+   "arm": "randomized-all-s161803",
+   "cell": "multiplication-d2",
+   "index": 323
+  },
+  {
+   "arm": "randomized-all-s161803",
+   "cell": "multiplication-d2",
+   "index": 328
+  },
+  {
+   "arm": "randomized-all-s161803",
+   "cell": "reachability-d2",
+   "index": 96
+  },
+  {
+   "arm": "randomized-all-s161803",
+   "cell": "reachability-d2",
+   "index": 225
+  },
+  {
+   "arm": "randomized-all-s161803",
+   "cell": "reachability-d4",
+   "index": 234
+  },
+  {
+   "arm": "randomized-all-s161803",
+   "cell": "reachability-d6",
+   "index": 104
+  },
+  {
+   "arm": "randomized-all-s161803",
+   "cell": "reachability-d8",
+   "index": 220
+  },
+  {
+   "arm": "randomized-all-s161803",
+   "cell": "reachability-d8",
+   "index": 279
+  },
+  {
+   "arm": "randomized-all-s271828",
+   "cell": "composition-d2",
+   "index": 85
+  },
+  {
+   "arm": "randomized-all-s271828",
+   "cell": "multiplication-d2",
+   "index": 82
+  },
+  {
+   "arm": "randomized-all-s271828",
+   "cell": "multiplication-d2",
+   "index": 114
+  },
+  {
+   "arm": "randomized-all-s271828",
+   "cell": "multiplication-d2",
+   "index": 117
+  },
+  {
+   "arm": "randomized-all-s271828",
+   "cell": "multiplication-d2",
+   "index": 157
+  },
+  {
+   "arm": "randomized-all-s271828",
+   "cell": "multiplication-d2",
+   "index": 197
+  },
+  {
+   "arm": "randomized-all-s271828",
+   "cell": "multiplication-d2",
+   "index": 219
+  },
+  {
+   "arm": "randomized-all-s271828",
+   "cell": "multiplication-d2",
+   "index": 243
+  },
+  {
+   "arm": "randomized-all-s271828",
+   "cell": "multiplication-d2",
+   "index": 285
+  },
+  {
+   "arm": "randomized-all-s271828",
+   "cell": "multiplication-d2",
+   "index": 311
+  },
+  {
+   "arm": "randomized-all-s271828",
+   "cell": "multiplication-d2",
+   "index": 320
+  },
+  {
+   "arm": "randomized-all-s271828",
+   "cell": "multiplication-d2",
+   "index": 363
+  },
+  {
+   "arm": "randomized-all-s271828",
+   "cell": "multiplication-d2",
+   "index": 398
+  },
+  {
+   "arm": "randomized-all-s271828",
+   "cell": "reachability-d2",
+   "index": 97
+  },
+  {
+   "arm": "randomized-all-s271828",
+   "cell": "reachability-d4",
+   "index": 234
+  },
+  {
+   "arm": "randomized-all-s271828",
+   "cell": "reachability-d6",
+   "index": 163
+  },
+  {
+   "arm": "randomized-all-s271828",
+   "cell": "reachability-d8",
+   "index": 74
+  },
+  {
+   "arm": "randomized-all-s271828",
+   "cell": "reachability-d8",
+   "index": 137
+  },
+  {
+   "arm": "randomized-tier_a_01_connectives-s141421",
+   "cell": "composition-d2",
+   "index": 85
+  },
+  {
+   "arm": "randomized-tier_a_01_connectives-s141421",
+   "cell": "reachability-d2",
+   "index": 155
+  },
+  {
+   "arm": "randomized-tier_a_01_connectives-s141421",
+   "cell": "reachability-d4",
+   "index": 337
+  },
+  {
+   "arm": "randomized-tier_a_01_connectives-s141421",
+   "cell": "reachability-d6",
+   "index": 41
+  },
+  {
+   "arm": "randomized-tier_a_01_connectives-s141421",
+   "cell": "reachability-d8",
+   "index": 23
+  },
+  {
+   "arm": "randomized-tier_a_01_connectives-s141421",
+   "cell": "reachability-d8",
+   "index": 137
+  },
+  {
+   "arm": "randomized-tier_a_01_connectives-s161803",
+   "cell": "composition-d2",
+   "index": 255
+  },
+  {
+   "arm": "randomized-tier_a_01_connectives-s161803",
+   "cell": "reachability-d2",
+   "index": 155
+  },
+  {
+   "arm": "randomized-tier_a_01_connectives-s161803",
+   "cell": "reachability-d6",
+   "index": 1
+  },
+  {
+   "arm": "randomized-tier_a_01_connectives-s161803",
+   "cell": "reachability-d8",
+   "index": 135
+  },
+  {
+   "arm": "randomized-tier_a_01_connectives-s161803",
+   "cell": "reachability-d8",
+   "index": 325
+  },
+  {
+   "arm": "randomized-tier_a_01_connectives-s271828",
+   "cell": "composition-d2",
+   "index": 85
+  },
+  {
+   "arm": "randomized-tier_a_01_connectives-s271828",
+   "cell": "reachability-d2",
+   "index": 1
+  },
+  {
+   "arm": "randomized-tier_a_01_connectives-s271828",
+   "cell": "reachability-d4",
+   "index": 188
+  },
+  {
+   "arm": "randomized-tier_a_01_connectives-s271828",
+   "cell": "reachability-d6",
+   "index": 48
+  },
+  {
+   "arm": "randomized-tier_a_01_connectives-s271828",
+   "cell": "reachability-d8",
+   "index": 34
+  },
+  {
+   "arm": "randomized-tier_a_01_connectives-s271828",
+   "cell": "reachability-d8",
+   "index": 74
+  },
+  {
+   "arm": "randomized-tier_a_04_contractions-s141421",
+   "cell": "multiplication-d2",
+   "index": 242
+  },
+  {
+   "arm": "randomized-tier_a_04_contractions-s161803",
+   "cell": "reachability-d8",
+   "index": 275
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s141421",
+   "cell": "multiplication-d2",
+   "index": 16
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s141421",
+   "cell": "multiplication-d2",
+   "index": 36
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s141421",
+   "cell": "multiplication-d2",
+   "index": 80
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s141421",
+   "cell": "multiplication-d2",
+   "index": 86
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s141421",
+   "cell": "multiplication-d2",
+   "index": 192
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s141421",
+   "cell": "multiplication-d2",
+   "index": 203
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s141421",
+   "cell": "multiplication-d2",
+   "index": 210
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s141421",
+   "cell": "multiplication-d2",
+   "index": 237
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s141421",
+   "cell": "multiplication-d2",
+   "index": 244
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s141421",
+   "cell": "multiplication-d2",
+   "index": 292
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s141421",
+   "cell": "multiplication-d2",
+   "index": 330
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s141421",
+   "cell": "multiplication-d2",
+   "index": 361
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s141421",
+   "cell": "reachability-d2",
+   "index": 145
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s141421",
+   "cell": "reachability-d4",
+   "index": 235
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s141421",
+   "cell": "reachability-d6",
+   "index": 121
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s161803",
+   "cell": "multiplication-d2",
+   "index": 56
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s161803",
+   "cell": "multiplication-d2",
+   "index": 78
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s161803",
+   "cell": "multiplication-d2",
+   "index": 152
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s161803",
+   "cell": "multiplication-d2",
+   "index": 156
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s161803",
+   "cell": "multiplication-d2",
+   "index": 172
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s161803",
+   "cell": "multiplication-d2",
+   "index": 257
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s161803",
+   "cell": "multiplication-d2",
+   "index": 290
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s161803",
+   "cell": "multiplication-d2",
+   "index": 302
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s161803",
+   "cell": "multiplication-d2",
+   "index": 337
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s161803",
+   "cell": "multiplication-d2",
+   "index": 341
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s161803",
+   "cell": "multiplication-d2",
+   "index": 388
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s161803",
+   "cell": "reachability-d2",
+   "index": 145
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s161803",
+   "cell": "reachability-d4",
+   "index": 222
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s161803",
+   "cell": "reachability-d6",
+   "index": 311
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s161803",
+   "cell": "reachability-d8",
+   "index": 126
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s271828",
+   "cell": "multiplication-d2",
+   "index": 24
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s271828",
+   "cell": "multiplication-d2",
+   "index": 41
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s271828",
+   "cell": "multiplication-d2",
+   "index": 78
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s271828",
+   "cell": "multiplication-d2",
+   "index": 180
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s271828",
+   "cell": "multiplication-d2",
+   "index": 208
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s271828",
+   "cell": "multiplication-d2",
+   "index": 213
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s271828",
+   "cell": "multiplication-d2",
+   "index": 310
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s271828",
+   "cell": "multiplication-d2",
+   "index": 328
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s271828",
+   "cell": "multiplication-d2",
+   "index": 338
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s271828",
+   "cell": "multiplication-d2",
+   "index": 351
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s271828",
+   "cell": "multiplication-d2",
+   "index": 397
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s271828",
+   "cell": "multiplication-d2",
+   "index": 398
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s271828",
+   "cell": "reachability-d2",
+   "index": 145
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s271828",
+   "cell": "reachability-d4",
+   "index": 235
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s271828",
+   "cell": "reachability-d6",
+   "index": 311
+  },
+  {
+   "arm": "randomized-tier_a_05_whitespace-s271828",
+   "cell": "reachability-d8",
+   "index": 234
+  },
+  {
+   "arm": "randomized-tier_a_06_operator_spacing-s141421",
+   "cell": "composition-d2",
+   "index": 105
+  },
+  {
+   "arm": "randomized-tier_a_06_operator_spacing-s161803",
+   "cell": "composition-d2",
+   "index": 105
+  },
+  {
+   "arm": "randomized-tier_a_06_operator_spacing-s271828",
+   "cell": "composition-d2",
+   "index": 318
+  }
+ ]
+}

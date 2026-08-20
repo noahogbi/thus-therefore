@@ -542,3 +542,51 @@ replies reconcile.
    (`gh repo edit --visibility public`), then publish writeup/prereg_post.md
    with the manifest hash and repo URL filled in — BEFORE the first
    generation run, so the pre-registration is publicly timestamped.
+
+
+## Tenth relay reconciliation — 2026-08-20 (decoder defect disposition)
+
+Both parties ruled on REVIEW_CONSULT_PROMPT_10 (defect disclosure; outcome
+numbers embargoed from both parties and from the prompt).
+
+**10.1 — UNANIMOUS (d): deterministic resume-and-complete, both rungs.**
+Merged preconditions, all adopted: automatic total per-rung fallback to full
+rerun on a single RNG-replay or byte-identity failure (Fable i, Sol 4);
+validation >=100/rung, stratified arm x cell, small strata whole, full
+from-scratch regeneration, exact identity on all record fields (Sol 2-3,
+supersedes Fable ii's 50); programmatic signature census of every
+randomized record, published per cell (Fable iii -> chop_census_*.json:
+followon 5,064 chopped of 12,070 touched; rung1 985 of 3,693); decoder
+mutation-path regression audit (Fable iv -> DECODER_PATH_AUDIT.md);
+freeze-before-execute with immutable originals and per-record provenance
+(Sol 1 -> REPAIR_PLAN.md); publish resumed counts + validation summary
+(Sol 5). Corrected data is primary for both rungs; as-run randomized data
+is superseded history retained with the defect notice (Fable).
+
+**10.2 — UNANIMOUS: termination registrations voided-with-cause, both
+parties, not resurrected.** Sol's rung 1 correction text adopted as the
+substance of the RESULTS.md notice. Fable's three required elements
+adopted: (1) explicit self-attributed retraction of the 7.3(b)
+interpretation ("the contested channel exists and its first observed cargo
+was formatting" — a claim about a decoder bug); (2) 7.4's audit-blind-spot
+observation stands as design insight, its motivating instance flagged as
+artifact; (3) the P(EOS)-at-substitution probe that exposed the defect is
+noted as the 7.4-proposed behavioral continuation check, recommended into
+the next pre-registration's validation phase. Sol's addendum: the clean
+audit remains valid — it certified substitution neutrality, not decoder
+execution.
+
+**10.3 — CONFIRMED with Fable's scoping addition.** Embargoed as-run
+outcome files deleted unread by the parties (Sol: quarantine/delete).
+Blinding scope logged for the writeup: party rulings were blind to all
+outcome data; the implementer's defect diagnosis necessarily was not (the
+anomaly was found in the analysis) — the writeup must state this precisely.
+Fable's unprompted note is logged at Fable's request, for the limitations
+section: relays 6-9's most confident interpretive writing was built on the
+artifact, the audit passed the artifact because excerpt-level audits cannot
+see continuation effects, and the mechanism-check-before-interpretation
+ordering is the project's own lesson, failed locally by its proposer.
+
+Sequence per Sol: reconcile (this entry) -> freeze repair (REPAIR_PLAN.md,
+this commit) -> execute + validate -> fallback if any failure -> corrected
+frozen analysis under the unchanged ninth-relay hierarchy -> results relay.
