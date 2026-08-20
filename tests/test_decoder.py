@@ -184,3 +184,42 @@ class TestDensity:
         result = make_decoder(lm, intervene=False).generate(PROMPT, max_new_tokens=5)
         assert result.generated_tokens == 5
         assert result.ended == "max_tokens"
+
+
+class TestTerminalPassRegeneration:
+    """Regression: a site decided on the terminal pass (confirmed only after
+    EOS/cap, because its lookahead never cleared mid-generation) must, when
+    intervened, regenerate the continuation from the splice — not exit with
+    the completed tail silently truncated. This defect produced the chopped
+    traces in the instruct follow-on run and rung 1's rule-05 no-answer
+    signature (tenth relay disclosure)."""
+
+    SCRIPT_MAIN = PROMPT + "Go on. Thus, x is 2."
+    SCRIPT_ALT = PROMPT + "Go on. So, x is 22 yes."
+
+    def _lm(self):
+        return ScriptedLM(
+            [("", self.SCRIPT_MAIN), (PROMPT + "Go on. So", self.SCRIPT_ALT)],
+            branch=branch_two_eligible())
+
+    def test_terminal_pass_substitution_regenerates_tail(self):
+        # Site sits 13 chars from the end < lookahead 20, so it is only
+        # confirmable on the terminal pass.
+        rng = PickRng("So")
+        result = make_decoder(self._lm(), rng=rng).generate(
+            PROMPT, max_new_tokens=100)
+        [rec] = [r for r in result.sites if r.intervened]
+        assert rec.chosen == "So"
+        assert result.text == self.SCRIPT_ALT, (
+            "tail after terminal-pass substitution must be regenerated")
+        assert result.ended == "eos"
+
+    def test_terminal_pass_keep_choice_preserves_tail(self):
+        # Choosing the matched candidate on the terminal pass keeps the
+        # already-completed tail byte-identical.
+        rng = PickRng("Thus")
+        result = make_decoder(self._lm(), rng=rng).generate(
+            PROMPT, max_new_tokens=100)
+        assert not [r for r in result.sites if r.intervened]
+        assert result.text == self.SCRIPT_MAIN
+        assert result.ended == "eos"

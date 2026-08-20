@@ -138,6 +138,15 @@ class InterventionDecoder:
                 if site is not None:
                     realized, ids, frontier = self._decide_site(
                         realized, ids, site, records)
+                    if records[-1].intervened:
+                        # A substitution truncates the realized tail at the
+                        # splice point, so the continuation must be
+                        # regenerated — including when the site was decided
+                        # on the terminal pass after EOS/cap. Leaving `ended`
+                        # set here discards the completed tail (the follow-on
+                        # run's chopped-trace defect; see DIAGNOSIS in
+                        # REVIEW_CONSULT_PROMPT_10).
+                        ended = None
                     continue
             if ended is not None:
                 break
