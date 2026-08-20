@@ -5,6 +5,52 @@ Design frozen 2026-08-06, published before the first generation run. All
 reporting below follows the parties' rulings in REVIEW_LOG.md; the
 registered estimands are unchanged.
 
+---
+
+## CORRECTION (2026-08-20, tenth relay, approved by both parties) —
+## decoder defect affecting randomized arms
+
+Subsequent validation identified a defect in the terminal-pass intervention
+path. When an intervention was selected during the final site-confirmation
+sweep, the decoder applied the substitution but failed to regenerate the
+continuation from the realized sequence, silently deleting the existing
+tail. This affected 985 touched rung-1 records, including most touched
+rule-05 whitespace traces. Accordingly, **the previously reported rule-05
+termination effect — including its concentration in multiplication:d2 and
+its contribution to aggregate O1 — was a harness artifact and must not be
+interpreted as model behavior.** Affected randomized-arm results are
+superseded by the corrected dataset and reanalysis (tenth-relay ruling
+10.1(d); see REPAIR_PLAN.md and DECODER_DEFECT_DIAGNOSIS.md). Native
+generations, calibration results, intervention-site/exposure logs, the
+blinded neutrality audit, and findings unrelated to the defective
+terminal-pass continuation remain valid unless separately stated.
+
+The prior characterization of rule 05 as demonstrated "reader-neutral
+continuation-state dependence" is explicitly retracted: the experiment had
+not demonstrated that; the harness had manufactured the continuation
+failure. The clean audit does not become invalid — it certified the
+semantic neutrality of the substitutions presented to it, not that the
+decoder correctly executed the intervention protocol.
+
+Three elements recorded at Fable's insistence: (1) the seventh-relay
+7.3(b) interpretation — "the contested channel exists and its first
+observed cargo was formatting" — was a claim about a decoder bug, and its
+author (Fable) retracts it with attribution; (2) section 8's audit-blind-
+spot observation stands as a design insight (excerpt-level audits
+structurally cannot see continuation effects), but its motivating instance
+is now known to be artifact; (3) the diagnostic that exposed the defect —
+probing P(EOS) at substitution points — is the behavioral continuation
+check Fable proposed in section 8, and it is recommended into the next
+pre-registration's validation phase, where it caught a harness bug rather
+than a model mechanism.
+
+Sections 3-7 below are annotated where superseded; the affected registered
+reads are republished from the corrected dataset in the follow-on results
+document. Both parties' termination predictions (section 9) are voided
+with cause, not scored (tenth relay 10.2).
+
+---
+
 ## What was run
 
 25 passes — native control, the Tier A aggregate arm, and seven per-rule
@@ -62,6 +108,9 @@ capacity, independent of whether anything uses it.
 
 ## 3. Registered O1
 
+> **[CORRECTION NOTE]** Randomized-arm numbers in this section are
+> superseded by the corrected dataset (see Correction, top).
+
 Mean accuracy penalty (native − randomized), pooled across three seeds over
 the six cells:
 
@@ -90,6 +139,9 @@ mean per-rule O1 excluding rule 05 = **+0.001**. Outside the identified
 mechanism, no penalty remains.
 
 ## 4. Required companion — the mechanism is termination, not miscomputation
+
+> **[CORRECTION NOTE — SUPERSEDED]** The "termination mechanism" this
+> section describes was the decoder defect. Retained as history.
 
 The aggregate is one cell: rule-05 whitespace in multiplication:d2,
 penalty +0.211, z ≈ 7.4, in all three seeds. Decomposing that cell by
@@ -123,6 +175,9 @@ traces remain incorrect.
 
 ## 5. Registered O2 — published, non-discriminating by prior agreement
 
+> **[CORRECTION NOTE]** Randomized-arm inputs superseded by the
+> corrected dataset (see Correction, top).
+
 Reachability aggregate slope −0.009; restricted d4→d8 slope −0.0004;
 per-rule slopes within ±0.005. Proposal A exposure-adjusted arm×depth
 coefficients are in `runs/analysis_rung1.json`.
@@ -141,6 +196,10 @@ invariance when intervention opportunity is near zero.
 
 ## 6. How the parties characterize the finding
 
+> **[CORRECTION NOTE — SUPERSEDED]** Both characterizations address the
+> artifact. Fable's 7.3(b) line is retracted with attribution (see
+> Correction, top). Retained as history.
+
 Both ruled the termination dependence a **distinct phenomenon**, reported
 separately; both explicitly declined to call it a harness artifact.
 
@@ -158,6 +217,9 @@ separately."*
 
 ## 7. Registered predictions: one recorded miss
 
+> **[CORRECTION NOTE]** The recorded whitespace miss was a miss against
+> artifact data; scoring is superseded by the corrected reanalysis.
+
 Fable volunteered, with attribution: the registered whitespace prediction
 ("zero on base") is **wrong as written**. The registration allowed small
 constant brittleness and located it on connectives; +0.211 in a cell is not
@@ -170,6 +232,9 @@ sign. **Eligibility certifies write-side plausibility, not read-side
 equivalence.**
 
 ## 8. A validation blind spot, recorded for future pre-registrations
+
+> **[CORRECTION NOTE]** Stands as a design observation; its motivating
+> instance was the decoder artifact (see Correction, top).
 
 The frozen audit certified rule 05 at 100% and was correct to: its five
 criteria judge excerpt meaning, not downstream continuation. A
