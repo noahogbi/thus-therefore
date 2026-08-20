@@ -1,0 +1,19 @@
+{
+  "purpose": "Pre-audit judge determinism gate (watermarking_context.md 5.2)",
+  "baseline": "JUDGE_SMOKE_TEST.json (2026-08-08)",
+  "requested_model": "claude-opus-4-5-20251101",
+  "temperature": 0,
+  "thinking": "omitted",
+  "timestamp_utc": "2026-08-20T15:44:36.972910+00:00",
+  "served_model": "claude-opus-4-5-20251101",
+  "stop_reason": "end_turn",
+  "raw_verdict_text": "{\"verdict\": \"PASS\", \"failed_criteria\": [], \"one_line_reason\": \"\\\"Thus\\\" and \\\"Therefore\\\" are synonymous logical connectors; no change in meaning, hedging, or structure.\"}",
+  "byte_identical_to_baseline": true,
+  "parsed_verdict": {
+    "verdict": "PASS",
+    "failed_criteria": [],
+    "one_line_reason": "\"Thus\" and \"Therefore\" are synonymous logical connectors; no change in meaning, hedging, or structure."
+  },
+  "semantically_identical_to_baseline": true,
+  "result": "PASS_BYTE_IDENTICAL"
+}
