@@ -1,0 +1,58 @@
+{
+  "threshold": 0.98,
+  "rules": {
+    "tier_a_01_connectives": {
+      "n": 391,
+      "pass": 391,
+      "fail": 0,
+      "unparsed": 0,
+      "rate": 1.0,
+      "failed_criteria": {},
+      "fail_audit_ids": []
+    },
+    "tier_a_02_punctuation": {
+      "n": 64,
+      "pass": 64,
+      "fail": 0,
+      "unparsed": 0,
+      "rate": 1.0,
+      "failed_criteria": {},
+      "fail_audit_ids": []
+    },
+    "tier_a_04_contractions": {
+      "n": 15,
+      "pass": 15,
+      "fail": 0,
+      "unparsed": 0,
+      "rate": 1.0,
+      "failed_criteria": {},
+      "fail_audit_ids": []
+    },
+    "tier_a_05_whitespace": {
+      "n": 28,
+      "pass": 28,
+      "fail": 0,
+      "unparsed": 0,
+      "rate": 1.0,
+      "failed_criteria": {},
+      "fail_audit_ids": []
+    },
+    "tier_a_06_operator_spacing": {
+      "n": 2,
+      "pass": 2,
+      "fail": 0,
+      "unparsed": 0,
+      "rate": 1.0,
+      "failed_criteria": {},
+      "fail_audit_ids": []
+    }
+  },
+  "total": {
+    "n": 500,
+    "pass": 500,
+    "fail": 0,
+    "unparsed": 0
+  },
+  "rules_below_threshold": [],
+  "overall_rate": 1.0
+}
