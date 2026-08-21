@@ -51,9 +51,13 @@ SPEC.md section 6 and cannot be revised after data.
 - [x] Arm plan ruled (2b): native + aggregate + 7 per-rule arms, 3 seeds each — see RUNBOOK.md
 - [x] Harness COMPLETE: matcher, eligibility scorer (F5 two-region, Δ=1.5), intervention decoder (per-rule arms), density logging, depth calibrator, audit sampler (blinded, seeded), O1/O2 analysis — 114 tests incl. HF integration against pinned transformers 5.14.1; end-to-end pipeline wiring verified on CPU; phase commands in RUNBOOK.md; see REVIEW_LOG IN-1 for a decoder-side conservative rule awaiting party awareness
 - [x] Matcher-only review pass COMPLETE; Noah signed off 2026-08-08 (checkpoint Step 4 gate cleared)
-- [ ] Depth calibration (native greedy, with/without trace)
-- [ ] Main run (native vs. neutral-randomized)
-- [ ] Audit + analysis (O1 raw penalty, O2 depth interaction, per rule)
+- [x] Depth calibration COMPLETE (rung 1 2026-08-08; instruct follow-on under 8.1(b) 2026-08-12)
+- [x] Rung 1 main run COMPLETE (60,000 generations); audit 500/500 PASS; results in RESULTS.md **with 2026-08-20 correction notice**
+- [x] Instruct follow-on main run COMPLETE (80,000 generations, ninth-relay union grid); audit 500/500 PASS
+- [x] Terminal-pass decoder defect found post-run, repaired via unanimous 10.1(d) resume-and-complete, certified under 10B greedy-consistency gate (REPAIR_PLAN.md, DECODER_DEFECT_DIAGNOSIS.md)
+- [x] Corrected registered analysis UNSEALED both rungs (runs/corrected/analysis_*_corrected.json) — flat O1/O2
+- [ ] Eleventh relay: party prediction scoring + supplementary blessings (REVIEW_CONSULT_PROMPT_11.md)
+- [ ] Results post + prereg post (publish together), then formal write-up
 
 ## Hardware
 
