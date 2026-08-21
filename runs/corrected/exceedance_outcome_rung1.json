@@ -1,0 +1,18 @@
+[
+ {
+  "arm": "randomized-all-s141421",
+  "cell": "multiplication-d2",
+  "index": 80,
+  "id": "multiplication-d2-s2026-0080",
+  "regeneration_worst_deficit": 4.875,
+  "action": "EXCLUDED"
+ },
+ {
+  "arm": "randomized-all-s161803",
+  "cell": "multiplication-d2",
+  "index": 80,
+  "id": "multiplication-d2-s2026-0080",
+  "regeneration_worst_deficit": 4.875,
+  "action": "EXCLUDED"
+ }
+]

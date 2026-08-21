@@ -1,0 +1,171 @@
+{
+ "rung": "followon",
+ "epsilon": 2.0,
+ "resumed": {
+  "group": "resumed",
+  "records": 5064,
+  "tokens": 219374,
+  "exact_ties": 218888,
+  "exceedances": [
+   {
+    "arm": "randomized-all-s161803",
+    "cell": "reachability-d8",
+    "index": 394,
+    "id": "reachability-d8-s2026-0394",
+    "pos": 1005,
+    "deficit": 35.5078125,
+    "rank": 1084
+   }
+  ],
+  "boundary_shifts": 0,
+  "deficit_hist": {
+   "0.000": 218888,
+   "(0.5,1]": 71,
+   "(1,2]": 58,
+   "(0,0.5]": 356,
+   ">2": 1
+  },
+  "rank_hist": {
+   "1": 218888,
+   "3": 50,
+   "4": 19,
+   "2": 406,
+   "5": 11
+  }
+ },
+ "native_sample": {
+  "group": "native",
+  "records": 3200,
+  "tokens": 2136282,
+  "exact_ties": 2133349,
+  "exceedances": [
+   {
+    "arm": "native",
+    "cell": "reachability-d4",
+    "index": 36,
+    "id": "reachability-d4-s2026-0036",
+    "pos": 1070,
+    "deficit": 4.125,
+    "rank": 2
+   },
+   {
+    "arm": "native",
+    "cell": "composition-d4",
+    "index": 324,
+    "id": "composition-d4-s2026-0324",
+    "pos": 1131,
+    "deficit": 15.6875,
+    "rank": 2
+   },
+   {
+    "arm": "native",
+    "cell": "composition-d4",
+    "index": 344,
+    "id": "composition-d4-s2026-0344",
+    "pos": 300,
+    "deficit": 3.0,
+    "rank": 2
+   },
+   {
+    "arm": "native",
+    "cell": "reachability-d6",
+    "index": 260,
+    "id": "reachability-d6-s2026-0260",
+    "pos": 1140,
+    "deficit": 4.0,
+    "rank": 2
+   }
+  ],
+  "boundary_shifts": 0,
+  "deficit_hist": {
+   "0.000": 2133349,
+   "(0,0.5]": 2914,
+   "(0.5,1]": 12,
+   ">2": 4,
+   "(1,2]": 3
+  },
+  "rank_hist": {
+   "1": 2133349,
+   "2": 2865,
+   "3": 65,
+   "4": 3
+  }
+ },
+ "untouched_sample": {
+  "group": "untouched",
+  "records": 5064,
+  "tokens": 3360335,
+  "exact_ties": 3355651,
+  "exceedances": [
+   {
+    "arm": "randomized-tier_a_01_connectives-s161803",
+    "cell": "reachability-d4",
+    "index": 36,
+    "id": "reachability-d4-s2026-0036",
+    "pos": 1070,
+    "deficit": 4.125,
+    "rank": 2
+   },
+   {
+    "arm": "randomized-tier_a_04_contractions-s161803",
+    "cell": "reachability-d6",
+    "index": 260,
+    "id": "reachability-d6-s2026-0260",
+    "pos": 1140,
+    "deficit": 4.0,
+    "rank": 2
+   },
+   {
+    "arm": "randomized-tier_a_07_list_markers-s271828",
+    "cell": "composition-d4",
+    "index": 344,
+    "id": "composition-d4-s2026-0344",
+    "pos": 300,
+    "deficit": 3.0,
+    "rank": 2
+   },
+   {
+    "arm": "randomized-tier_a_06_operator_spacing-s161803",
+    "cell": "reachability-d6",
+    "index": 260,
+    "id": "reachability-d6-s2026-0260",
+    "pos": 1140,
+    "deficit": 4.0,
+    "rank": 2
+   },
+   {
+    "arm": "randomized-tier_a_05_whitespace-s161803",
+    "cell": "reachability-d4",
+    "index": 36,
+    "id": "reachability-d4-s2026-0036",
+    "pos": 1070,
+    "deficit": 4.125,
+    "rank": 2
+   },
+   {
+    "arm": "randomized-tier_a_04_contractions-s141421",
+    "cell": "reachability-d6",
+    "index": 260,
+    "id": "reachability-d6-s2026-0260",
+    "pos": 1140,
+    "deficit": 4.0,
+    "rank": 2
+   }
+  ],
+  "boundary_shifts": 0,
+  "deficit_hist": {
+   "0.000": 3355651,
+   "(0,0.5]": 4649,
+   "(0.5,1]": 23,
+   ">2": 6,
+   "(1,2]": 6
+  },
+  "rank_hist": {
+   "1": 3355651,
+   "2": 4571,
+   "3": 109,
+   "4": 4
+  }
+ },
+ "verdict": "EXCEEDANCES_REPORTED_ANALYSIS_HALTED"
+}

@@ -1,0 +1,80 @@
+{
+ "rung": "rung1",
+ "epsilon": 2.0,
+ "resumed": {
+  "group": "resumed",
+  "records": 985,
+  "tokens": 66697,
+  "exact_ties": 66517,
+  "exceedances": [
+   {
+    "arm": "randomized-all-s141421",
+    "cell": "multiplication-d2",
+    "index": 80,
+    "id": "multiplication-d2-s2026-0080",
+    "pos": 101,
+    "deficit": 2.875,
+    "rank": 4
+   },
+   {
+    "arm": "randomized-all-s161803",
+    "cell": "multiplication-d2",
+    "index": 80,
+    "id": "multiplication-d2-s2026-0080",
+    "pos": 101,
+    "deficit": 2.875,
+    "rank": 4
+   }
+  ],
+  "boundary_shifts": 0,
+  "deficit_hist": {
+   "0.000": 66517,
+   "(0,0.5]": 132,
+   ">2": 2,
+   "(0.5,1]": 27,
+   "(1,2]": 19
+  },
+  "rank_hist": {
+   "1": 66517,
+   "2": 176,
+   "4": 2,
+   "3": 2
+  }
+ },
+ "native_sample": {
+  "group": "native",
+  "records": 985,
+  "tokens": 350939,
+  "exact_ties": 350432,
+  "exceedances": [],
+  "boundary_shifts": 0,
+  "deficit_hist": {
+   "0.000": 350432,
+   "(0,0.5]": 507
+  },
+  "rank_hist": {
+   "1": 350432,
+   "2": 490,
+   "3": 17
+  }
+ },
+ "untouched_sample": {
+  "group": "untouched",
+  "records": 985,
+  "tokens": 345516,
+  "exact_ties": 345057,
+  "exceedances": [],
+  "boundary_shifts": 0,
+  "deficit_hist": {
+   "0.000": 345057,
+   "(0,0.5]": 459
+  },
+  "rank_hist": {
+   "1": 345057,
+   "2": 446,
+   "3": 12,
+   "4": 1
+  }
+ },
+ "verdict": "EXCEEDANCES_REPORTED_ANALYSIS_HALTED"
+}
