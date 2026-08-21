@@ -59,3 +59,18 @@ Party rulings were made blind to all outcome numbers. The implementer's
 diagnosis necessarily saw partial outcome-adjacent data (logged in
 REVIEW_LOG per Fable 10.3); the corrected analysis runs only after
 validation passes.
+
+
+## Post-hoc scope correction (relay 10B, both parties)
+
+Resume-and-complete does not claim to recover the unique counterfactual
+tail an exactly deterministic rerun would have produced; no such unique
+byte-level counterfactual exists under the measured inference stack. It is
+a corrected continuation conditional on the realized prefix, rather than a
+byte-for-byte shortcut to a hypothetical full rerun. Validity is certified
+relative to the measured numerical tolerance of the decoding stack
+(scripts/certify_greedy_consistency.py, epsilon frozen in REVIEW_LOG 10B).
+The byte-identity validation gate specified in the tenth relay was
+superseded in relay 10B after it was shown unsatisfiable by any procedure
+on this stack; its reports are retained as the discovery record of the
+nondeterminism finding.

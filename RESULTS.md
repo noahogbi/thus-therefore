@@ -49,6 +49,22 @@ reads are republished from the corrected dataset in the follow-on results
 document. Both parties' termination predictions (section 9) are voided
 with cause, not scored (tenth relay 10.2).
 
+**Determinism qualification (relay 10B, approved by both parties).**
+Generation used greedy decoding, but bf16 inference with KV-cache reuse was
+empirically not byte-repeatable at some near-tied argmax decisions.
+Repeated generation from identical inputs can therefore diverge because
+floating-point/kernel variation changes the selected token at numerically
+marginal decisions. References to "bit-identical" generation or
+deterministic replay in earlier documentation should be understood only
+where exact identity was directly demonstrated for the specific replay
+being discussed, not as a general property of the decoding stack. Input
+identity — task seeds and prompt bytes across checkpoints — is exact and
+untouched. The three-seed-per-arm design absorbs tie-flip noise into the
+reported seed-to-seed spread, so this finding affects determinism language,
+not the error structure of the registered estimates. Flip incidence and
+margins are published in runs/corrected/divergence_diagnosis_*.json and
+the certification reports.
+
 ---
 
 ## What was run
