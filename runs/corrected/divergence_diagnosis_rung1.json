@@ -1,0 +1,370 @@
+[
+ {
+  "id": "composition-d2-s2026-0105",
+  "arm": "randomized-all-s141421",
+  "cell": "composition-d2",
+  "index": 105,
+  "splice_char": 415,
+  "first_divergence_char": -1,
+  "region": "identical"
+ },
+ {
+  "id": "multiplication-d2-s2026-0037",
+  "arm": "randomized-all-s141421",
+  "cell": "multiplication-d2",
+  "index": 37,
+  "splice_char": 543,
+  "first_divergence_char": 105,
+  "region": "prefix",
+  "top2_margin_logits": 0.5,
+  "top2_tokens": [
+   "3",
+   "8"
+  ],
+  "scratch_char": "38 by 6 (the ones di",
+  "corrected_char": "the ones place of bo"
+ },
+ {
+  "id": "multiplication-d2-s2026-0135",
+  "arm": "randomized-all-s141421",
+  "cell": "multiplication-d2",
+  "index": 135,
+  "splice_char": 592,
+  "first_divergence_char": 847,
+  "region": "tail",
+  "top2_margin_logits": 3.375,
+  "top2_tokens": [
+   "Step",
+   "Answer"
+  ],
+  "scratch_char": "\nANSWER: 161",
+  "corrected_char": "Step 12: Multiply th"
+ },
+ {
+  "id": "multiplication-d2-s2026-0167",
+  "arm": "randomized-all-s141421",
+  "cell": "multiplication-d2",
+  "index": 167,
+  "splice_char": 139,
+  "first_divergence_char": -1,
+  "region": "identical"
+ },
+ {
+  "id": "multiplication-d2-s2026-0199",
+  "arm": "randomized-all-s141421",
+  "cell": "multiplication-d2",
+  "index": 199,
+  "splice_char": 399,
+  "first_divergence_char": 438,
+  "region": "tail",
+  "top2_margin_logits": 0.125,
+  "top2_tokens": [
+   "2",
+   "1"
+  ],
+  "scratch_char": "2 and 3: 1665.\n\nANSW",
+  "corrected_char": "1, 2, and 3: 1665.\n\n"
+ },
+ {
+  "id": "multiplication-d2-s2026-0230",
+  "arm": "randomized-all-s141421",
+  "cell": "multiplication-d2",
+  "index": 230,
+  "splice_char": 138,
+  "first_divergence_char": -1,
+  "region": "identical"
+ },
+ {
+  "id": "multiplication-d2-s2026-0244",
+  "arm": "randomized-all-s141421",
+  "cell": "multiplication-d2",
+  "index": 244,
+  "splice_char": 399,
+  "first_divergence_char": -1,
+  "region": "identical"
+ },
+ {
+  "id": "multiplication-d2-s2026-0250",
+  "arm": "randomized-all-s141421",
+  "cell": "multiplication-d2",
+  "index": 250,
+  "splice_char": 139,
+  "first_divergence_char": -1,
+  "region": "identical"
+ },
+ {
+  "id": "multiplication-d2-s2026-0257",
+  "arm": "randomized-all-s141421",
+  "cell": "multiplication-d2",
+  "index": 257,
+  "splice_char": 397,
+  "first_divergence_char": 433,
+  "region": "tail",
+  "top2_margin_logits": 0.625,
+  "top2_tokens": [
+   ":",
+   " "
+  ],
+  "scratch_char": "nswer: 4116",
+  "corrected_char": "NSWER: 4116"
+ },
+ {
+  "id": "multiplication-d2-s2026-0263",
+  "arm": "randomized-all-s141421",
+  "cell": "multiplication-d2",
+  "index": 263,
+  "splice_char": 138,
+  "first_divergence_char": -1,
+  "region": "identical"
+ },
+ {
+  "id": "multiplication-d2-s2026-0332",
+  "arm": "randomized-all-s141421",
+  "cell": "multiplication-d2",
+  "index": 332,
+  "splice_char": 201,
+  "first_divergence_char": -1,
+  "region": "identical"
+ },
+ {
+  "id": "multiplication-d2-s2026-0361",
+  "arm": "randomized-all-s141421",
+  "cell": "multiplication-d2",
+  "index": 361,
+  "splice_char": 358,
+  "first_divergence_char": 390,
+  "region": "tail",
+  "top2_margin_logits": 0.125,
+  "top2_tokens": [
+   ".\n\n",
+   "4"
+  ],
+  "scratch_char": ".\n\nAnswer: 166",
+  "corrected_char": "4.\n\nAnswer: 1664"
+ },
+ {
+  "id": "multiplication-d2-s2026-0393",
+  "arm": "randomized-all-s141421",
+  "cell": "multiplication-d2",
+  "index": 393,
+  "splice_char": 201,
+  "first_divergence_char": -1,
+  "region": "identical"
+ },
+ {
+  "id": "reachability-d2-s2026-0033",
+  "arm": "randomized-all-s141421",
+  "cell": "reachability-d2",
+  "index": 33,
+  "splice_char": 834,
+  "first_divergence_char": 226,
+  "region": "prefix",
+  "top2_margin_logits": 3.375,
+  "top2_tokens": [
+   "1",
+   "0"
+  ],
+  "scratch_char": "If there are multipl",
+  "corrected_char": "To determine if ther"
+ },
+ {
+  "id": "reachability-d2-s2026-0155",
+  "arm": "randomized-all-s141421",
+  "cell": "reachability-d2",
+  "index": 155,
+  "splice_char": 857,
+  "first_divergence_char": -1,
+  "region": "identical"
+ },
+ {
+  "id": "reachability-d4-s2026-0227",
+  "arm": "randomized-all-s141421",
+  "cell": "reachability-d4",
+  "index": 227,
+  "splice_char": 1374,
+  "first_divergence_char": 860,
+  "region": "prefix",
+  "top2_margin_logits": 0.0,
+  "top2_tokens": [
+   "already",
+   "re"
+  ],
+  "scratch_char": "repeated).\n10. N3 ->",
+  "corrected_char": "already listed).\n10."
+ },
+ {
+  "id": "reachability-d6-s2026-0189",
+  "arm": "randomized-all-s141421",
+  "cell": "reachability-d6",
+  "index": 189,
+  "splice_char": 1252,
+  "first_divergence_char": 351,
+  "region": "prefix",
+  "top2_margin_logits": 0.125,
+  "top2_tokens": [
+   " and",
+   ","
+  ],
+  "scratch_char": ", we need to analyze",
+  "corrected_char": " and to find its len"
+ },
+ {
+  "id": "reachability-d8-s2026-0126",
+  "arm": "randomized-all-s141421",
+  "cell": "reachability-d8",
+  "index": 126,
+  "splice_char": 1503,
+  "first_divergence_char": 538,
+  "region": "prefix",
+  "top2_margin_logits": 0.25,
+  "top2_tokens": [
+   "0",
+   "2"
+  ],
+  "scratch_char": "or D5.\n3. From D7, t",
+  "corrected_char": "D5, or N1.\n3. From D"
+ },
+ {
+  "id": "reachability-d8-s2026-0229",
+  "arm": "randomized-all-s141421",
+  "cell": "reachability-d8",
+  "index": 229,
+  "splice_char": 861,
+  "first_divergence_char": 857,
+  "region": "prefix",
+  "top2_margin_logits": 0.375,
+  "top2_tokens": [
+   "So",
+   "Now"
+  ],
+  "scratch_char": "So, there is a path ",
+  "corrected_char": "Thus, there is a pat"
+ },
+ {
+  "id": "composition-d2-s2026-0085",
+  "arm": "randomized-all-s161803",
+  "cell": "composition-d2",
+  "index": 85,
+  "splice_char": 567,
+  "first_divergence_char": 153,
+  "region": "prefix",
+  "top2_margin_logits": 1.625,
+  "top2_tokens": [
+   "1",
+   "2"
+  ],
+  "scratch_char": "Step 1: Compute f1(2",
+  "corrected_char": "To compute f2(f1(25)"
+ },
+ {
+  "id": "multiplication-d2-s2026-0020",
+  "arm": "randomized-all-s161803",
+  "cell": "multiplication-d2",
+  "index": 20,
+  "splice_char": 201,
+  "first_divergence_char": -1,
+  "region": "identical"
+ },
+ {
+  "id": "multiplication-d2-s2026-0100",
+  "arm": "randomized-all-s161803",
+  "cell": "multiplication-d2",
+  "index": 100,
+  "splice_char": 489,
+  "first_divergence_char": -1,
+  "region": "identical"
+ },
+ {
+  "id": "multiplication-d2-s2026-0122",
+  "arm": "randomized-all-s161803",
+  "cell": "multiplication-d2",
+  "index": 122,
+  "splice_char": 139,
+  "first_divergence_char": -1,
+  "region": "identical"
+ },
+ {
+  "id": "multiplication-d2-s2026-0189",
+  "arm": "randomized-all-s161803",
+  "cell": "multiplication-d2",
+  "index": 189,
+  "splice_char": 201,
+  "first_divergence_char": -1,
+  "region": "identical"
+ },
+ {
+  "id": "multiplication-d2-s2026-0195",
+  "arm": "randomized-all-s161803",
+  "cell": "multiplication-d2",
+  "index": 195,
+  "splice_char": 395,
+  "first_divergence_char": 431,
+  "region": "tail",
+  "top2_margin_logits": 0.8125,
+  "top2_tokens": [
+   ":",
+   " "
+  ],
+  "scratch_char": "nswer: 1175",
+  "corrected_char": "NSWER: 1175"
+ },
+ {
+  "id": "multiplication-d2-s2026-0210",
+  "arm": "randomized-all-s161803",
+  "cell": "multiplication-d2",
+  "index": 210,
+  "splice_char": 201,
+  "first_divergence_char": -1,
+  "region": "identical"
+ },
+ {
+  "id": "multiplication-d2-s2026-0271",
+  "arm": "randomized-all-s161803",
+  "cell": "multiplication-d2",
+  "index": 271,
+  "splice_char": 608,
+  "first_divergence_char": 624,
+  "region": "tail",
+  "top2_margin_logits": 1.625,
+  "top2_tokens": [
+   "0",
+   "2"
+  ],
+  "scratch_char": "two results: 2530 + ",
+  "corrected_char": "carried over 3 from "
+ },
+ {
+  "id": "multiplication-d2-s2026-0283",
+  "arm": "randomized-all-s161803",
+  "cell": "multiplication-d2",
+  "index": 283,
+  "splice_char": 159,
+  "first_divergence_char": -1,
+  "region": "identical"
+ },
+ {
+  "id": "multiplication-d2-s2026-0289",
+  "arm": "randomized-all-s161803",
+  "cell": "multiplication-d2",
+  "index": 289,
+  "splice_char": 585,
+  "first_divergence_char": -1,
+  "region": "identical"
+ },
+ {
+  "id": "multiplication-d2-s2026-0323",
+  "arm": "randomized-all-s161803",
+  "cell": "multiplication-d2",
+  "index": 323,
+  "splice_char": 245,
+  "first_divergence_char": 507,
+  "region": "tail",
+  "top2_margin_logits": 0.0,
+  "top2_tokens": [
+   "8",
+   "7"
+  ],
+  "scratch_char": "79, which equals 221",
+  "corrected_char": "80, which equals 224"
+ }
+]
