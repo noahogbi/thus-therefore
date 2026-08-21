@@ -590,3 +590,60 @@ ordering is the project's own lesson, failed locally by its proposer.
 Sequence per Sol: reconcile (this entry) -> freeze repair (REPAIR_PLAN.md,
 this commit) -> execute + validate -> fallback if any failure -> corrected
 frozen analysis under the unchanged ninth-relay hierarchy -> results relay.
+
+
+## Relay 10B reconciliation — 2026-08-21 (validation gate superseded)
+
+**10B.1 — UNANIMOUS (i):** repair accepted under the demonstrably-external
+clause; byte-identity gate formally superseded by an outcome-blind
+greedy-consistency certification. Both parties independently found the
+byte-exact criterion unsatisfiable by any procedure on the measured stack
+(including the rerun fallback each had mandated); Fable notes its own
+zero-tolerance clause "fired exactly as designed and thereby falsified its
+own premise." Merged certification requirements, all adopted:
+- epsilon frozen BEFORE certification, derived solely from the outcome-blind
+  divergence-diagnosis margins (Sol), outliers (3.375, 6.75) not
+  grandfathered (Fable a). FROZEN: epsilon = 2.0 logits — strictly above the
+  observed ULP-scale mass (max 1.875), below the outlier gap (3.375).
+- Certification of every resumed tail token: rank and logit deficit vs the
+  contemporaneously recomputed argmax under teacher forcing; full
+  distributions published, not pass/fail (Sol).
+- Uniform application: matched-size random samples of native and
+  untouched-randomized records certified identically, so greedy-consistency
+  is a dataset property, not a repaired-record special (Fable b).
+- Exact ties (deficit 0.000): argmax undefined; either branch is
+  greedy-consistent; stack tie-break behavior documented (Fable c).
+- Exceedance protocol (merged Fable a / Sol 3): an epsilon exceedance halts
+  analysis and triggers diagnosis; idiosyncratic exceedances get one full
+  from-scratch regeneration, which must itself pass certification or the
+  record is excluded with a published tally; any systematic splice-local or
+  RNG/state pattern fails the repair and returns to the parties before any
+  outcome is examined. A rerun is recognized as not a cure for numerical
+  nondeterminism.
+
+**10B.2 — UNANIMOUS approve, scope cut precisely:**
+- Input identity (task seeds, prompt bytes across checkpoints) is untouched
+  and remains the paired-comparison foundation (Fable).
+- Decoding determinism rescoped everywhere (rung 1 included): greedy, but
+  bf16 inference with KV-cache reuse is empirically not byte-repeatable at
+  near-tied argmax decisions; "bit-identical" claims stand only where
+  identity was directly demonstrated for the specific replay discussed
+  (Sol's qualification text adopted).
+- "(a) computed lazily" retired; replaced by Sol's formulation: "a corrected
+  continuation conditional on the realized prefix, rather than a
+  byte-for-byte shortcut to a hypothetical full rerun." Attribution shared:
+  implementer overclaimed, Fable endorsed and amplifies the retraction.
+- Explicit statement required (Fable): the three-seed-per-arm design
+  absorbs tie-flip noise into the reported seed-to-seed spread, so the
+  finding affects determinism language, not the error structure of the
+  registered estimates.
+- Reported regardless of eventual O1/O2 (Sol): apparatus property found
+  under outcome embargo, not post-hoc explanation.
+- Methods-lessons (Fable, logged): second consecutive relay where the
+  validation machinery's failure was the informative event — the
+  terminal-pass defect exposed the audit's downstream blindness; the
+  byte-identity gate exposed the determinism fiction the repo's own tooling
+  had been asserting.
+
+Sequence resumes per the tenth relay: certify -> publish margins -> unseal
+corrected analysis under the unchanged ninth-relay hierarchy.
