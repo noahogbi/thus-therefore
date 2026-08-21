@@ -726,3 +726,26 @@ uniform-choice capacity 1.72 bits/trace mean (median 1.0) on instruct,
 0.54 bits/trace (median 0.0; 53% of traces zero) on base; 2.6 / 1.5 bits
 per 1000 generated tokens. Labeled proxy, not demonstrated end-to-end
 capacity, per Sol's amendment.
+
+
+### Relay 11B — final confirmations (2026-08-21). PUBLICATION CLEARED.
+
+11B.1 final ledger lines received, both to print verbatim: Fable's
+"strained, not fallen" text as supplied (registration "survives on
+statistical power, not vindication"; unregistered shape acknowledged;
+outcome-filtered crux unrun). Sol confirms with the appended refinement:
+"directionally supported, not statistically resolved" — stands under the
+literal preregistered sign criterion, not to be presented as strong
+mechanism evidence; position data removes one confound, does not upgrade
+evidentiary strength. 11B.2 both confirm publication with nothing further;
+Fable verifies 11.3(iii) rides in the ledger; Sol's sentence to place
+prominently: "Available neutral-choice capacity is not evidence that the
+model actually uses that capacity to transmit hidden task state."
+11B.3 bridge arm AFTER publication, unanimous; Fable's non-blocking freeze
+suggestion recorded (capacity proxy under each watermark scheme's own
+effective Delta for comparability). Fable's closing sentence logged at its
+request, to close the ledger where it opened: "we set out to price a
+disagreement, and the price list survived contact with two harness
+defects, a determinism fiction, and both of our registered shapes being
+wrong somewhere — which is, as far as I can tell, what it looks like when
+the procedure is doing the work instead of the participants."
