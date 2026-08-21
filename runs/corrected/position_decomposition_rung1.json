@@ -1,0 +1,3440 @@
+{
+ "randomized-all-s141421/composition-d2": {
+  "opportunities": 330,
+  "interventions": 160,
+  "iv_norm_pos_hist": {
+   "0.1": 133,
+   "0.3": 10,
+   "0.0": 15,
+   "0.9": 1,
+   "0.8": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.1": 286,
+   "0.3": 17,
+   "0.0": 21,
+   "0.9": 2,
+   "0.8": 2,
+   "0.2": 1,
+   "0.7": 1
+  },
+  "iv_final_step_region": {
+   "before": 157,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 160,
+   "min": 13,
+   "p25": 172,
+   "median": 173,
+   "p75": 237,
+   "max": 278
+  }
+ },
+ "randomized-all-s141421/multiplication-d2": {
+  "opportunities": 316,
+  "interventions": 161,
+  "iv_norm_pos_hist": {
+   "0.5": 27,
+   "0.4": 6,
+   "0.7": 44,
+   "0.6": 15,
+   "0.3": 8,
+   "0.8": 28,
+   "0.1": 8,
+   "0.2": 17,
+   "0.9": 3,
+   "0.0": 5
+  },
+  "opp_norm_pos_hist": {
+   "0.8": 50,
+   "0.7": 79,
+   "0.5": 27,
+   "0.4": 6,
+   "0.2": 35,
+   "0.6": 16,
+   "0.9": 78,
+   "0.3": 9,
+   "0.1": 10,
+   "0.0": 6
+  },
+  "iv_final_step_region": {
+   "before": 130,
+   "within_or_after": 8
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 161,
+   "min": 8,
+   "p25": 23,
+   "median": 23,
+   "p75": 78,
+   "max": 1002
+  }
+ },
+ "randomized-all-s141421/reachability-d2": {
+  "opportunities": 217,
+  "interventions": 120,
+  "iv_norm_pos_hist": {
+   "0.7": 39,
+   "0.9": 10,
+   "0.6": 22,
+   "0.8": 14,
+   "0.5": 14,
+   "0.4": 7,
+   "0.2": 3,
+   "0.3": 9,
+   "0.1": 2
+  },
+  "opp_norm_pos_hist": {
+   "0.7": 65,
+   "0.5": 26,
+   "0.6": 36,
+   "0.9": 16,
+   "0.8": 28,
+   "0.4": 21,
+   "0.2": 5,
+   "0.3": 14,
+   "0.1": 6
+  },
+  "iv_final_step_region": {
+   "before": 105,
+   "within_or_after": 1
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 120,
+   "min": 5,
+   "p25": 54,
+   "median": 75,
+   "p75": 137,
+   "max": 853
+  }
+ },
+ "randomized-all-s141421/reachability-d4": {
+  "opportunities": 197,
+  "interventions": 108,
+  "iv_norm_pos_hist": {
+   "0.6": 22,
+   "0.8": 15,
+   "0.4": 12,
+   "0.7": 25,
+   "0.2": 3,
+   "0.1": 3,
+   "0.3": 9,
+   "0.5": 11,
+   "0.9": 8
+  },
+  "opp_norm_pos_hist": {
+   "0.6": 43,
+   "0.4": 20,
+   "0.8": 20,
+   "0.7": 53,
+   "0.2": 9,
+   "0.1": 9,
+   "0.3": 14,
+   "0.5": 16,
+   "0.9": 13
+  },
+  "iv_final_step_region": {
+   "before": 100,
+   "within_or_after": 3
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 108,
+   "min": 8,
+   "p25": 65,
+   "median": 99,
+   "p75": 176,
+   "max": 906
+  }
+ },
+ "randomized-all-s141421/reachability-d6": {
+  "opportunities": 146,
+  "interventions": 85,
+  "iv_norm_pos_hist": {
+   "0.3": 10,
+   "0.7": 13,
+   "0.9": 6,
+   "0.6": 17,
+   "0.2": 6,
+   "0.8": 15,
+   "0.5": 9,
+   "0.4": 7,
+   "0.0": 2
+  },
+  "opp_norm_pos_hist": {
+   "0.3": 11,
+   "0.8": 24,
+   "0.7": 27,
+   "0.5": 17,
+   "0.4": 17,
+   "0.9": 7,
+   "0.6": 34,
+   "0.2": 7,
+   "0.0": 2
+  },
+  "iv_final_step_region": {
+   "before": 74,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 85,
+   "min": 11,
+   "p25": 57,
+   "median": 119,
+   "p75": 216,
+   "max": 954
+  }
+ },
+ "randomized-all-s141421/reachability-d8": {
+  "opportunities": 91,
+  "interventions": 46,
+  "iv_norm_pos_hist": {
+   "0.5": 3,
+   "0.1": 2,
+   "0.6": 7,
+   "0.8": 22,
+   "0.7": 6,
+   "0.9": 3,
+   "0.2": 2,
+   "0.3": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.3": 5,
+   "0.5": 5,
+   "0.1": 6,
+   "0.6": 12,
+   "0.2": 5,
+   "0.8": 40,
+   "0.7": 11,
+   "0.9": 5,
+   "0.4": 2
+  },
+  "iv_final_step_region": {
+   "before": 42,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 46,
+   "min": 22,
+   "p25": 28,
+   "median": 55,
+   "p75": 131,
+   "max": 897
+  }
+ },
+ "randomized-all-s161803/composition-d2": {
+  "opportunities": 332,
+  "interventions": 158,
+  "iv_norm_pos_hist": {
+   "0.1": 134,
+   "0.3": 6,
+   "0.0": 15,
+   "0.9": 2,
+   "0.8": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.1": 287,
+   "0.3": 20,
+   "0.0": 20,
+   "0.7": 1,
+   "0.9": 2,
+   "0.8": 2
+  },
+  "iv_final_step_region": {
+   "before": 156,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 158,
+   "min": 13,
+   "p25": 172,
+   "median": 172,
+   "p75": 245,
+   "max": 336
+  }
+ },
+ "randomized-all-s161803/multiplication-d2": {
+  "opportunities": 311,
+  "interventions": 148,
+  "iv_norm_pos_hist": {
+   "0.6": 10,
+   "0.5": 34,
+   "0.7": 36,
+   "0.4": 6,
+   "0.8": 31,
+   "0.2": 20,
+   "0.0": 4,
+   "0.1": 5,
+   "0.3": 2
+  },
+  "opp_norm_pos_hist": {
+   "0.6": 10,
+   "0.7": 63,
+   "0.5": 35,
+   "0.8": 65,
+   "0.2": 31,
+   "0.9": 84,
+   "0.4": 7,
+   "0.1": 8,
+   "0.0": 5,
+   "0.3": 3
+  },
+  "iv_final_step_region": {
+   "before": 124,
+   "within_or_after": 8
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 148,
+   "min": 18,
+   "p25": 23,
+   "median": 23,
+   "p75": 64,
+   "max": 1002
+  }
+ },
+ "randomized-all-s161803/reachability-d2": {
+  "opportunities": 215,
+  "interventions": 108,
+  "iv_norm_pos_hist": {
+   "0.7": 30,
+   "0.9": 14,
+   "0.6": 17,
+   "0.5": 12,
+   "0.4": 9,
+   "0.3": 7,
+   "0.8": 13,
+   "0.1": 4,
+   "0.2": 1,
+   "0.0": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.7": 59,
+   "0.5": 28,
+   "0.6": 35,
+   "0.9": 17,
+   "0.8": 30,
+   "0.4": 18,
+   "0.3": 15,
+   "0.2": 4,
+   "0.1": 8,
+   "0.0": 1
+  },
+  "iv_final_step_region": {
+   "before": 87,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 108,
+   "min": 11,
+   "p25": 52,
+   "median": 71,
+   "p75": 140,
+   "max": 933
+  }
+ },
+ "randomized-all-s161803/reachability-d4": {
+  "opportunities": 193,
+  "interventions": 103,
+  "iv_norm_pos_hist": {
+   "0.6": 22,
+   "0.8": 11,
+   "0.9": 8,
+   "0.4": 10,
+   "0.7": 32,
+   "0.1": 2,
+   "0.2": 3,
+   "0.5": 10,
+   "0.3": 5
+  },
+  "opp_norm_pos_hist": {
+   "0.6": 45,
+   "0.4": 23,
+   "0.8": 15,
+   "0.9": 11,
+   "0.7": 56,
+   "0.2": 9,
+   "0.1": 6,
+   "0.0": 1,
+   "0.5": 13,
+   "0.3": 14
+  },
+  "iv_final_step_region": {
+   "before": 94,
+   "within_or_after": 2
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 103,
+   "min": 10,
+   "p25": 58,
+   "median": 99,
+   "p75": 139,
+   "max": 906
+  }
+ },
+ "randomized-all-s161803/reachability-d6": {
+  "opportunities": 151,
+  "interventions": 70,
+  "iv_norm_pos_hist": {
+   "0.8": 11,
+   "0.7": 16,
+   "0.6": 18,
+   "0.9": 4,
+   "0.3": 8,
+   "0.4": 3,
+   "0.0": 1,
+   "0.5": 7,
+   "0.2": 2
+  },
+  "opp_norm_pos_hist": {
+   "0.3": 13,
+   "0.8": 19,
+   "0.7": 29,
+   "0.9": 7,
+   "0.6": 42,
+   "0.5": 12,
+   "0.4": 17,
+   "0.2": 10,
+   "0.0": 1,
+   "0.1": 1
+  },
+  "iv_final_step_region": {
+   "before": 64,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 70,
+   "min": 20,
+   "p25": 59,
+   "median": 118,
+   "p75": 174,
+   "max": 954
+  }
+ },
+ "randomized-all-s161803/reachability-d8": {
+  "opportunities": 92,
+  "interventions": 47,
+  "iv_norm_pos_hist": {
+   "0.3": 1,
+   "0.5": 3,
+   "0.6": 6,
+   "0.1": 7,
+   "0.2": 1,
+   "0.7": 6,
+   "0.8": 21,
+   "0.9": 2
+  },
+  "opp_norm_pos_hist": {
+   "0.3": 4,
+   "0.5": 6,
+   "0.6": 12,
+   "0.1": 7,
+   "0.8": 42,
+   "0.2": 4,
+   "0.7": 11,
+   "0.9": 5,
+   "0.4": 1
+  },
+  "iv_final_step_region": {
+   "before": 40,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 47,
+   "min": 11,
+   "p25": 28,
+   "median": 68,
+   "p75": 194,
+   "max": 925
+  }
+ },
+ "randomized-all-s271828/composition-d2": {
+  "opportunities": 337,
+  "interventions": 172,
+  "iv_norm_pos_hist": {
+   "0.1": 138,
+   "0.3": 11,
+   "0.0": 18,
+   "0.7": 1,
+   "0.9": 2,
+   "0.8": 1,
+   "0.2": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.1": 286,
+   "0.3": 22,
+   "0.0": 21,
+   "0.7": 2,
+   "0.9": 2,
+   "0.8": 2,
+   "0.2": 2
+  },
+  "iv_final_step_region": {
+   "before": 169,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 172,
+   "min": 13,
+   "p25": 172,
+   "median": 172,
+   "p75": 235,
+   "max": 318
+  }
+ },
+ "randomized-all-s271828/multiplication-d2": {
+  "opportunities": 314,
+  "interventions": 159,
+  "iv_norm_pos_hist": {
+   "0.5": 33,
+   "0.0": 5,
+   "0.8": 35,
+   "0.7": 36,
+   "0.6": 12,
+   "0.4": 4,
+   "0.9": 6,
+   "0.2": 17,
+   "0.1": 6,
+   "0.3": 5
+  },
+  "opp_norm_pos_hist": {
+   "0.8": 62,
+   "0.5": 34,
+   "0.7": 68,
+   "0.0": 5,
+   "0.6": 14,
+   "0.9": 81,
+   "0.4": 4,
+   "0.2": 33,
+   "0.1": 8,
+   "0.3": 5
+  },
+  "iv_final_step_region": {
+   "before": 129,
+   "within_or_after": 7
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 159,
+   "min": 9,
+   "p25": 23,
+   "median": 23,
+   "p75": 67,
+   "max": 1002
+  }
+ },
+ "randomized-all-s271828/reachability-d2": {
+  "opportunities": 214,
+  "interventions": 119,
+  "iv_norm_pos_hist": {
+   "0.7": 36,
+   "0.5": 15,
+   "0.9": 8,
+   "0.3": 13,
+   "0.8": 13,
+   "0.2": 4,
+   "0.4": 9,
+   "0.6": 16,
+   "0.1": 5
+  },
+  "opp_norm_pos_hist": {
+   "0.7": 66,
+   "0.5": 25,
+   "0.6": 36,
+   "0.9": 15,
+   "0.4": 19,
+   "0.8": 23,
+   "0.3": 18,
+   "0.2": 5,
+   "0.1": 7
+  },
+  "iv_final_step_region": {
+   "before": 97,
+   "within_or_after": 1
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 119,
+   "min": 5,
+   "p25": 54,
+   "median": 84,
+   "p75": 153,
+   "max": 860
+  }
+ },
+ "randomized-all-s271828/reachability-d4": {
+  "opportunities": 192,
+  "interventions": 101,
+  "iv_norm_pos_hist": {
+   "0.4": 9,
+   "0.6": 21,
+   "0.8": 13,
+   "0.9": 8,
+   "0.7": 29,
+   "0.3": 7,
+   "0.2": 5,
+   "0.1": 1,
+   "0.5": 8
+  },
+  "opp_norm_pos_hist": {
+   "0.6": 42,
+   "0.4": 22,
+   "0.8": 16,
+   "0.9": 13,
+   "0.7": 54,
+   "0.2": 11,
+   "0.0": 1,
+   "0.1": 5,
+   "0.3": 16,
+   "0.5": 12
+  },
+  "iv_final_step_region": {
+   "before": 88,
+   "within_or_after": 2
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 101,
+   "min": 8,
+   "p25": 58,
+   "median": 99,
+   "p75": 139,
+   "max": 915
+  }
+ },
+ "randomized-all-s271828/reachability-d6": {
+  "opportunities": 144,
+  "interventions": 68,
+  "iv_norm_pos_hist": {
+   "0.7": 11,
+   "0.5": 8,
+   "0.8": 11,
+   "0.6": 16,
+   "0.2": 5,
+   "0.3": 6,
+   "0.4": 9,
+   "0.9": 2
+  },
+  "opp_norm_pos_hist": {
+   "0.3": 11,
+   "0.8": 18,
+   "0.7": 33,
+   "0.5": 16,
+   "0.4": 15,
+   "0.9": 4,
+   "0.2": 11,
+   "0.6": 35,
+   "0.1": 1
+  },
+  "iv_final_step_region": {
+   "before": 60,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 68,
+   "min": 28,
+   "p25": 72,
+   "median": 125,
+   "p75": 224,
+   "max": 869
+  }
+ },
+ "randomized-all-s271828/reachability-d8": {
+  "opportunities": 91,
+  "interventions": 44,
+  "iv_norm_pos_hist": {
+   "0.3": 2,
+   "0.6": 4,
+   "0.1": 5,
+   "0.8": 23,
+   "0.7": 7,
+   "0.2": 2,
+   "0.9": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.3": 5,
+   "0.5": 6,
+   "0.6": 12,
+   "0.1": 7,
+   "0.8": 40,
+   "0.7": 13,
+   "0.9": 3,
+   "0.2": 4,
+   "0.4": 1
+  },
+  "iv_final_step_region": {
+   "before": 37,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 44,
+   "min": 22,
+   "p25": 29,
+   "median": 47,
+   "p75": 155,
+   "max": 925
+  }
+ },
+ "randomized-tier_a_01_connectives-s141421/composition-d2": {
+  "opportunities": 3,
+  "interventions": 1,
+  "iv_norm_pos_hist": {
+   "0.9": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.9": 3
+  },
+  "iv_final_step_region": {
+   "before": 1,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 1,
+   "min": 13,
+   "p25": 13,
+   "median": 13,
+   "p75": 13,
+   "max": 13
+  }
+ },
+ "randomized-tier_a_01_connectives-s141421/multiplication-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_01_connectives-s141421/reachability-d2": {
+  "opportunities": 65,
+  "interventions": 40,
+  "iv_norm_pos_hist": {
+   "0.7": 18,
+   "0.6": 8,
+   "0.8": 7,
+   "0.4": 1,
+   "0.9": 6
+  },
+  "opp_norm_pos_hist": {
+   "0.8": 11,
+   "0.7": 29,
+   "0.6": 12,
+   "0.4": 1,
+   "0.5": 4,
+   "0.9": 8
+  },
+  "iv_final_step_region": {
+   "before": 36,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 40,
+   "min": 15,
+   "p25": 40,
+   "median": 52,
+   "p75": 58,
+   "max": 214
+  }
+ },
+ "randomized-tier_a_01_connectives-s141421/reachability-d4": {
+  "opportunities": 32,
+  "interventions": 16,
+  "iv_norm_pos_hist": {
+   "0.7": 11,
+   "0.8": 2,
+   "0.9": 3
+  },
+  "opp_norm_pos_hist": {
+   "0.7": 24,
+   "0.8": 4,
+   "0.9": 4
+  },
+  "iv_final_step_region": {
+   "before": 14,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 16,
+   "min": 20,
+   "p25": 50,
+   "median": 58,
+   "p75": 58,
+   "max": 68
+  }
+ },
+ "randomized-tier_a_01_connectives-s141421/reachability-d6": {
+  "opportunities": 16,
+  "interventions": 10,
+  "iv_norm_pos_hist": {
+   "0.9": 1,
+   "0.8": 6,
+   "0.7": 3
+  },
+  "opp_norm_pos_hist": {
+   "0.8": 9,
+   "0.9": 2,
+   "0.7": 5
+  },
+  "iv_final_step_region": {
+   "before": 10,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 10,
+   "min": 28,
+   "p25": 29,
+   "median": 31,
+   "p75": 64,
+   "max": 74
+  }
+ },
+ "randomized-tier_a_01_connectives-s141421/reachability-d8": {
+  "opportunities": 40,
+  "interventions": 23,
+  "iv_norm_pos_hist": {
+   "0.8": 19,
+   "0.7": 1,
+   "0.9": 3
+  },
+  "opp_norm_pos_hist": {
+   "0.8": 34,
+   "0.7": 2,
+   "0.9": 4
+  },
+  "iv_final_step_region": {
+   "before": 23,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 23,
+   "min": 26,
+   "p25": 28,
+   "median": 28,
+   "p75": 29,
+   "max": 71
+  }
+ },
+ "randomized-tier_a_01_connectives-s161803/composition-d2": {
+  "opportunities": 3,
+  "interventions": 2,
+  "iv_norm_pos_hist": {
+   "0.9": 2
+  },
+  "opp_norm_pos_hist": {
+   "0.9": 3
+  },
+  "iv_final_step_region": {
+   "before": 2,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 2,
+   "min": 13,
+   "p25": 13,
+   "median": 13,
+   "p75": 13,
+   "max": 13
+  }
+ },
+ "randomized-tier_a_01_connectives-s161803/multiplication-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_01_connectives-s161803/reachability-d2": {
+  "opportunities": 66,
+  "interventions": 36,
+  "iv_norm_pos_hist": {
+   "0.9": 7,
+   "0.7": 17,
+   "0.6": 5,
+   "0.8": 5,
+   "0.4": 1,
+   "0.5": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.9": 11,
+   "0.7": 32,
+   "0.6": 11,
+   "0.8": 9,
+   "0.4": 1,
+   "0.5": 2
+  },
+  "iv_final_step_region": {
+   "before": 31,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 36,
+   "min": 15,
+   "p25": 35,
+   "median": 52,
+   "p75": 58,
+   "max": 214
+  }
+ },
+ "randomized-tier_a_01_connectives-s161803/reachability-d4": {
+  "opportunities": 32,
+  "interventions": 15,
+  "iv_norm_pos_hist": {
+   "0.7": 13,
+   "0.9": 2
+  },
+  "opp_norm_pos_hist": {
+   "0.7": 25,
+   "0.8": 3,
+   "0.9": 3,
+   "0.6": 1
+  },
+  "iv_final_step_region": {
+   "before": 13,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 15,
+   "min": 33,
+   "p25": 58,
+   "median": 58,
+   "p75": 62,
+   "max": 74
+  }
+ },
+ "randomized-tier_a_01_connectives-s161803/reachability-d6": {
+  "opportunities": 16,
+  "interventions": 5,
+  "iv_norm_pos_hist": {
+   "0.8": 3,
+   "0.9": 1,
+   "0.7": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.8": 8,
+   "0.9": 2,
+   "0.6": 1,
+   "0.7": 5
+  },
+  "iv_final_step_region": {
+   "before": 5,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 5,
+   "min": 20,
+   "p25": 28,
+   "median": 29,
+   "p75": 44,
+   "max": 64
+  }
+ },
+ "randomized-tier_a_01_connectives-s161803/reachability-d8": {
+  "opportunities": 40,
+  "interventions": 18,
+  "iv_norm_pos_hist": {
+   "0.7": 1,
+   "0.8": 15,
+   "0.9": 2
+  },
+  "opp_norm_pos_hist": {
+   "0.8": 34,
+   "0.7": 2,
+   "0.9": 4
+  },
+  "iv_final_step_region": {
+   "before": 18,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 18,
+   "min": 17,
+   "p25": 28,
+   "median": 28,
+   "p75": 31,
+   "max": 68
+  }
+ },
+ "randomized-tier_a_01_connectives-s271828/composition-d2": {
+  "opportunities": 3,
+  "interventions": 3,
+  "iv_norm_pos_hist": {
+   "0.9": 2,
+   "0.8": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.9": 2,
+   "0.8": 1
+  },
+  "iv_final_step_region": {
+   "before": 3,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 3,
+   "min": 13,
+   "p25": 13,
+   "median": 13,
+   "p75": 13,
+   "max": 13
+  }
+ },
+ "randomized-tier_a_01_connectives-s271828/multiplication-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_01_connectives-s271828/reachability-d2": {
+  "opportunities": 65,
+  "interventions": 32,
+  "iv_norm_pos_hist": {
+   "0.9": 5,
+   "0.6": 7,
+   "0.8": 5,
+   "0.7": 12,
+   "0.4": 1,
+   "0.2": 1,
+   "0.5": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.9": 9,
+   "0.6": 13,
+   "0.7": 30,
+   "0.8": 8,
+   "0.4": 1,
+   "0.5": 3,
+   "0.2": 1
+  },
+  "iv_final_step_region": {
+   "before": 27,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 32,
+   "min": 22,
+   "p25": 40,
+   "median": 52,
+   "p75": 58,
+   "max": 745
+  }
+ },
+ "randomized-tier_a_01_connectives-s271828/reachability-d4": {
+  "opportunities": 32,
+  "interventions": 15,
+  "iv_norm_pos_hist": {
+   "0.7": 11,
+   "0.8": 1,
+   "0.9": 3
+  },
+  "opp_norm_pos_hist": {
+   "0.7": 25,
+   "0.8": 4,
+   "0.9": 3
+  },
+  "iv_final_step_region": {
+   "before": 12,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 15,
+   "min": 29,
+   "p25": 40,
+   "median": 58,
+   "p75": 62,
+   "max": 68
+  }
+ },
+ "randomized-tier_a_01_connectives-s271828/reachability-d6": {
+  "opportunities": 16,
+  "interventions": 6,
+  "iv_norm_pos_hist": {
+   "0.8": 5,
+   "0.7": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.8": 9,
+   "0.9": 2,
+   "0.7": 5
+  },
+  "iv_final_step_region": {
+   "before": 6,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 6,
+   "min": 28,
+   "p25": 29,
+   "median": 31,
+   "p75": 31,
+   "max": 74
+  }
+ },
+ "randomized-tier_a_01_connectives-s271828/reachability-d8": {
+  "opportunities": 40,
+  "interventions": 23,
+  "iv_norm_pos_hist": {
+   "0.8": 20,
+   "0.7": 1,
+   "0.9": 2
+  },
+  "opp_norm_pos_hist": {
+   "0.8": 35,
+   "0.7": 2,
+   "0.9": 3
+  },
+  "iv_final_step_region": {
+   "before": 23,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 23,
+   "min": 26,
+   "p25": 28,
+   "median": 29,
+   "p75": 31,
+   "max": 71
+  }
+ },
+ "randomized-tier_a_02_punctuation-s141421/composition-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_02_punctuation-s141421/multiplication-d2": {
+  "opportunities": 42,
+  "interventions": 22,
+  "iv_norm_pos_hist": {
+   "0.2": 11,
+   "0.6": 1,
+   "0.1": 3,
+   "0.7": 6,
+   "0.0": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.0": 3,
+   "0.2": 25,
+   "0.6": 2,
+   "0.1": 4,
+   "0.7": 8
+  },
+  "iv_final_step_region": {
+   "before": 11,
+   "within_or_after": 6
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 22,
+   "min": 54,
+   "p25": 63,
+   "median": 76,
+   "p75": 91,
+   "max": 990
+  }
+ },
+ "randomized-tier_a_02_punctuation-s141421/reachability-d2": {
+  "opportunities": 53,
+  "interventions": 27,
+  "iv_norm_pos_hist": {
+   "0.7": 10,
+   "0.6": 7,
+   "0.4": 3,
+   "0.3": 5,
+   "0.8": 1,
+   "0.5": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.7": 19,
+   "0.6": 14,
+   "0.4": 4,
+   "0.3": 7,
+   "0.8": 2,
+   "0.1": 2,
+   "0.5": 5
+  },
+  "iv_final_step_region": {
+   "before": 27,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 27,
+   "min": 42,
+   "p25": 67,
+   "median": 87,
+   "p75": 150,
+   "max": 236
+  }
+ },
+ "randomized-tier_a_02_punctuation-s141421/reachability-d4": {
+  "opportunities": 112,
+  "interventions": 65,
+  "iv_norm_pos_hist": {
+   "0.6": 17,
+   "0.2": 4,
+   "0.1": 3,
+   "0.7": 16,
+   "0.4": 8,
+   "0.8": 8,
+   "0.5": 5,
+   "0.3": 4
+  },
+  "opp_norm_pos_hist": {
+   "0.6": 34,
+   "0.4": 13,
+   "0.2": 7,
+   "0.1": 8,
+   "0.7": 31,
+   "0.8": 8,
+   "0.3": 5,
+   "0.5": 6
+  },
+  "iv_final_step_region": {
+   "before": 60,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 65,
+   "min": 22,
+   "p25": 76,
+   "median": 111,
+   "p75": 159,
+   "max": 906
+  }
+ },
+ "randomized-tier_a_02_punctuation-s141421/reachability-d6": {
+  "opportunities": 105,
+  "interventions": 60,
+  "iv_norm_pos_hist": {
+   "0.3": 4,
+   "0.8": 10,
+   "0.6": 14,
+   "0.2": 6,
+   "0.4": 7,
+   "0.7": 12,
+   "0.5": 7
+  },
+  "opp_norm_pos_hist": {
+   "0.3": 4,
+   "0.7": 23,
+   "0.5": 15,
+   "0.4": 16,
+   "0.8": 12,
+   "0.6": 29,
+   "0.2": 6
+  },
+  "iv_final_step_region": {
+   "before": 50,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 60,
+   "min": 26,
+   "p25": 89,
+   "median": 120,
+   "p75": 225,
+   "max": 869
+  }
+ },
+ "randomized-tier_a_02_punctuation-s141421/reachability-d8": {
+  "opportunities": 34,
+  "interventions": 18,
+  "iv_norm_pos_hist": {
+   "0.1": 1,
+   "0.6": 6,
+   "0.5": 2,
+   "0.7": 5,
+   "0.2": 1,
+   "0.8": 2,
+   "0.3": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.1": 1,
+   "0.6": 11,
+   "0.2": 2,
+   "0.5": 5,
+   "0.8": 4,
+   "0.7": 9,
+   "0.3": 2
+  },
+  "iv_final_step_region": {
+   "before": 15,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 18,
+   "min": 22,
+   "p25": 101,
+   "median": 133,
+   "p75": 194,
+   "max": 858
+  }
+ },
+ "randomized-tier_a_02_punctuation-s161803/composition-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_02_punctuation-s161803/multiplication-d2": {
+  "opportunities": 42,
+  "interventions": 29,
+  "iv_norm_pos_hist": {
+   "0.2": 19,
+   "0.7": 7,
+   "0.1": 2,
+   "0.0": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.0": 3,
+   "0.2": 27,
+   "0.4": 1,
+   "0.7": 9,
+   "0.1": 2
+  },
+  "iv_final_step_region": {
+   "before": 16,
+   "within_or_after": 7
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 29,
+   "min": 59,
+   "p25": 63,
+   "median": 65,
+   "p75": 81,
+   "max": 990
+  }
+ },
+ "randomized-tier_a_02_punctuation-s161803/reachability-d2": {
+  "opportunities": 53,
+  "interventions": 28,
+  "iv_norm_pos_hist": {
+   "0.7": 10,
+   "0.6": 7,
+   "0.8": 1,
+   "0.4": 2,
+   "0.3": 2,
+   "0.5": 4,
+   "0.1": 1,
+   "0.2": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.7": 19,
+   "0.6": 12,
+   "0.8": 3,
+   "0.4": 4,
+   "0.3": 5,
+   "0.1": 3,
+   "0.5": 6,
+   "0.2": 1
+  },
+  "iv_final_step_region": {
+   "before": 27,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 28,
+   "min": 42,
+   "p25": 67,
+   "median": 83,
+   "p75": 147,
+   "max": 912
+  }
+ },
+ "randomized-tier_a_02_punctuation-s161803/reachability-d4": {
+  "opportunities": 112,
+  "interventions": 57,
+  "iv_norm_pos_hist": {
+   "0.6": 17,
+   "0.1": 2,
+   "0.7": 16,
+   "0.4": 8,
+   "0.2": 2,
+   "0.5": 5,
+   "0.3": 1,
+   "0.8": 6
+  },
+  "opp_norm_pos_hist": {
+   "0.6": 35,
+   "0.4": 16,
+   "0.2": 6,
+   "0.1": 5,
+   "0.7": 32,
+   "0.3": 5,
+   "0.5": 6,
+   "0.8": 7
+  },
+  "iv_final_step_region": {
+   "before": 53,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 57,
+   "min": 22,
+   "p25": 76,
+   "median": 112,
+   "p75": 130,
+   "max": 906
+  }
+ },
+ "randomized-tier_a_02_punctuation-s161803/reachability-d6": {
+  "opportunities": 106,
+  "interventions": 50,
+  "iv_norm_pos_hist": {
+   "0.8": 7,
+   "0.6": 16,
+   "0.4": 3,
+   "0.7": 12,
+   "0.5": 8,
+   "0.3": 2,
+   "0.2": 2
+  },
+  "opp_norm_pos_hist": {
+   "0.3": 6,
+   "0.7": 20,
+   "0.8": 10,
+   "0.6": 36,
+   "0.5": 12,
+   "0.4": 14,
+   "0.2": 7,
+   "0.1": 1
+  },
+  "iv_final_step_region": {
+   "before": 45,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 50,
+   "min": 30,
+   "p25": 89,
+   "median": 120,
+   "p75": 153,
+   "max": 869
+  }
+ },
+ "randomized-tier_a_02_punctuation-s161803/reachability-d8": {
+  "opportunities": 34,
+  "interventions": 18,
+  "iv_norm_pos_hist": {
+   "0.6": 5,
+   "0.1": 2,
+   "0.5": 2,
+   "0.8": 4,
+   "0.7": 5
+  },
+  "opp_norm_pos_hist": {
+   "0.6": 12,
+   "0.1": 2,
+   "0.5": 5,
+   "0.8": 4,
+   "0.7": 9,
+   "0.2": 1,
+   "0.3": 1
+  },
+  "iv_final_step_region": {
+   "before": 16,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 18,
+   "min": 22,
+   "p25": 99,
+   "median": 153,
+   "p75": 194,
+   "max": 860
+  }
+ },
+ "randomized-tier_a_02_punctuation-s271828/composition-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_02_punctuation-s271828/multiplication-d2": {
+  "opportunities": 42,
+  "interventions": 24,
+  "iv_norm_pos_hist": {
+   "0.0": 3,
+   "0.2": 13,
+   "0.6": 1,
+   "0.1": 2,
+   "0.8": 1,
+   "0.7": 4
+  },
+  "opp_norm_pos_hist": {
+   "0.0": 3,
+   "0.2": 27,
+   "0.6": 2,
+   "0.1": 2,
+   "0.8": 1,
+   "0.7": 7
+  },
+  "iv_final_step_region": {
+   "before": 8,
+   "within_or_after": 5
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 24,
+   "min": 50,
+   "p25": 64,
+   "median": 68,
+   "p75": 100,
+   "max": 1002
+  }
+ },
+ "randomized-tier_a_02_punctuation-s271828/reachability-d2": {
+  "opportunities": 53,
+  "interventions": 26,
+  "iv_norm_pos_hist": {
+   "0.6": 7,
+   "0.4": 2,
+   "0.7": 10,
+   "0.3": 4,
+   "0.1": 1,
+   "0.5": 1,
+   "0.8": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.6": 17,
+   "0.7": 17,
+   "0.4": 5,
+   "0.2": 1,
+   "0.8": 2,
+   "0.3": 6,
+   "0.1": 2,
+   "0.5": 3
+  },
+  "iv_final_step_region": {
+   "before": 25,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 26,
+   "min": 42,
+   "p25": 67,
+   "median": 86,
+   "p75": 137,
+   "max": 836
+  }
+ },
+ "randomized-tier_a_02_punctuation-s271828/reachability-d4": {
+  "opportunities": 112,
+  "interventions": 57,
+  "iv_norm_pos_hist": {
+   "0.4": 5,
+   "0.6": 17,
+   "0.8": 10,
+   "0.2": 3,
+   "0.7": 14,
+   "0.1": 1,
+   "0.5": 5,
+   "0.3": 2
+  },
+  "opp_norm_pos_hist": {
+   "0.6": 35,
+   "0.4": 13,
+   "0.8": 10,
+   "0.2": 7,
+   "0.7": 27,
+   "0.1": 5,
+   "0.3": 6,
+   "0.5": 9
+  },
+  "iv_final_step_region": {
+   "before": 53,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 57,
+   "min": 22,
+   "p25": 76,
+   "median": 101,
+   "p75": 125,
+   "max": 915
+  }
+ },
+ "randomized-tier_a_02_punctuation-s271828/reachability-d6": {
+  "opportunities": 106,
+  "interventions": 52,
+  "iv_norm_pos_hist": {
+   "0.5": 8,
+   "0.8": 5,
+   "0.7": 11,
+   "0.6": 13,
+   "0.2": 4,
+   "0.3": 5,
+   "0.4": 6
+  },
+  "opp_norm_pos_hist": {
+   "0.3": 8,
+   "0.7": 27,
+   "0.5": 15,
+   "0.4": 11,
+   "0.2": 7,
+   "0.6": 30,
+   "0.8": 7,
+   "0.1": 1
+  },
+  "iv_final_step_region": {
+   "before": 43,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 52,
+   "min": 46,
+   "p25": 91,
+   "median": 125,
+   "p75": 232,
+   "max": 869
+  }
+ },
+ "randomized-tier_a_02_punctuation-s271828/reachability-d8": {
+  "opportunities": 34,
+  "interventions": 14,
+  "iv_norm_pos_hist": {
+   "0.6": 4,
+   "0.1": 1,
+   "0.8": 2,
+   "0.7": 6,
+   "0.2": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.6": 11,
+   "0.1": 1,
+   "0.5": 6,
+   "0.8": 3,
+   "0.7": 11,
+   "0.2": 1,
+   "0.3": 1
+  },
+  "iv_final_step_region": {
+   "before": 12,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 14,
+   "min": 22,
+   "p25": 101,
+   "median": 133,
+   "p75": 155,
+   "max": 860
+  }
+ },
+ "randomized-tier_a_03_discourse_markers-s141421/composition-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_03_discourse_markers-s141421/multiplication-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_03_discourse_markers-s141421/reachability-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_03_discourse_markers-s141421/reachability-d4": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_03_discourse_markers-s141421/reachability-d6": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_03_discourse_markers-s141421/reachability-d8": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_03_discourse_markers-s161803/composition-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_03_discourse_markers-s161803/multiplication-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_03_discourse_markers-s161803/reachability-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_03_discourse_markers-s161803/reachability-d4": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_03_discourse_markers-s161803/reachability-d6": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_03_discourse_markers-s161803/reachability-d8": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_03_discourse_markers-s271828/composition-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_03_discourse_markers-s271828/multiplication-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_03_discourse_markers-s271828/reachability-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_03_discourse_markers-s271828/reachability-d4": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_03_discourse_markers-s271828/reachability-d6": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_03_discourse_markers-s271828/reachability-d8": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_04_contractions-s141421/composition-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_04_contractions-s141421/multiplication-d2": {
+  "opportunities": 1,
+  "interventions": 1,
+  "iv_norm_pos_hist": {
+   "0.7": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.7": 1
+  },
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 1,
+   "min": 30,
+   "p25": 30,
+   "median": 30,
+   "p75": 30,
+   "max": 30
+  }
+ },
+ "randomized-tier_a_04_contractions-s141421/reachability-d2": {
+  "opportunities": 43,
+  "interventions": 20,
+  "iv_norm_pos_hist": {
+   "0.6": 5,
+   "0.4": 2,
+   "0.5": 9,
+   "0.3": 1,
+   "0.8": 2,
+   "0.7": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.6": 11,
+   "0.4": 7,
+   "0.8": 6,
+   "0.7": 4,
+   "0.5": 14,
+   "0.3": 1
+  },
+  "iv_final_step_region": {
+   "before": 18,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 20,
+   "min": 41,
+   "p25": 116,
+   "median": 135,
+   "p75": 180,
+   "max": 426
+  }
+ },
+ "randomized-tier_a_04_contractions-s141421/reachability-d4": {
+  "opportunities": 32,
+  "interventions": 13,
+  "iv_norm_pos_hist": {
+   "0.4": 4,
+   "0.3": 3,
+   "0.2": 2,
+   "0.5": 2,
+   "0.7": 1,
+   "0.6": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.4": 6,
+   "0.6": 6,
+   "0.2": 5,
+   "0.3": 6,
+   "0.5": 6,
+   "0.7": 3
+  },
+  "iv_final_step_region": {
+   "before": 10,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 13,
+   "min": 92,
+   "p25": 137,
+   "median": 195,
+   "p75": 230,
+   "max": 806
+  }
+ },
+ "randomized-tier_a_04_contractions-s141421/reachability-d6": {
+  "opportunities": 17,
+  "interventions": 12,
+  "iv_norm_pos_hist": {
+   "0.3": 3,
+   "0.2": 1,
+   "0.4": 2,
+   "0.0": 2,
+   "0.6": 3,
+   "0.5": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.3": 4,
+   "0.2": 2,
+   "0.4": 3,
+   "0.0": 2,
+   "0.6": 4,
+   "0.7": 1,
+   "0.5": 1
+  },
+  "iv_final_step_region": {
+   "before": 10,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 12,
+   "min": 74,
+   "p25": 168,
+   "median": 227,
+   "p75": 441,
+   "max": 954
+  }
+ },
+ "randomized-tier_a_04_contractions-s141421/reachability-d8": {
+  "opportunities": 15,
+  "interventions": 4,
+  "iv_norm_pos_hist": {
+   "0.5": 1,
+   "0.6": 1,
+   "0.2": 1,
+   "0.1": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.3": 2,
+   "0.5": 1,
+   "0.1": 5,
+   "0.6": 2,
+   "0.2": 2,
+   "0.9": 1,
+   "0.4": 2
+  },
+  "iv_final_step_region": {
+   "before": 3,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 4,
+   "min": 68,
+   "p25": 128,
+   "median": 320,
+   "p75": 897,
+   "max": 897
+  }
+ },
+ "randomized-tier_a_04_contractions-s161803/composition-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_04_contractions-s161803/multiplication-d2": {
+  "opportunities": 1,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {
+   "0.7": 1
+  },
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_04_contractions-s161803/reachability-d2": {
+  "opportunities": 41,
+  "interventions": 20,
+  "iv_norm_pos_hist": {
+   "0.6": 4,
+   "0.4": 4,
+   "0.8": 1,
+   "0.7": 2,
+   "0.5": 6,
+   "0.3": 2,
+   "0.1": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.6": 8,
+   "0.4": 5,
+   "0.8": 6,
+   "0.7": 5,
+   "0.5": 13,
+   "0.3": 2,
+   "0.9": 1,
+   "0.1": 1
+  },
+  "iv_final_step_region": {
+   "before": 13,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 20,
+   "min": 50,
+   "p25": 116,
+   "median": 180,
+   "p75": 218,
+   "max": 820
+  }
+ },
+ "randomized-tier_a_04_contractions-s161803/reachability-d4": {
+  "opportunities": 31,
+  "interventions": 16,
+  "iv_norm_pos_hist": {
+   "0.4": 3,
+   "0.2": 2,
+   "0.3": 4,
+   "0.5": 2,
+   "0.6": 3,
+   "0.7": 2
+  },
+  "opp_norm_pos_hist": {
+   "0.4": 8,
+   "0.6": 7,
+   "0.2": 4,
+   "0.3": 5,
+   "0.5": 4,
+   "0.7": 3
+  },
+  "iv_final_step_region": {
+   "before": 13,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 16,
+   "min": 83,
+   "p25": 125,
+   "median": 195,
+   "p75": 248,
+   "max": 779
+  }
+ },
+ "randomized-tier_a_04_contractions-s161803/reachability-d6": {
+  "opportunities": 17,
+  "interventions": 8,
+  "iv_norm_pos_hist": {
+   "0.3": 3,
+   "0.4": 2,
+   "0.0": 1,
+   "0.6": 1,
+   "0.7": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.3": 5,
+   "0.2": 3,
+   "0.4": 3,
+   "0.0": 1,
+   "0.6": 3,
+   "0.7": 1,
+   "0.5": 1
+  },
+  "iv_final_step_region": {
+   "before": 7,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 8,
+   "min": 58,
+   "p25": 191,
+   "median": 278,
+   "p75": 441,
+   "max": 954
+  }
+ },
+ "randomized-tier_a_04_contractions-s161803/reachability-d8": {
+  "opportunities": 15,
+  "interventions": 10,
+  "iv_norm_pos_hist": {
+   "0.3": 2,
+   "0.5": 1,
+   "0.1": 6,
+   "0.6": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.3": 3,
+   "0.5": 1,
+   "0.1": 6,
+   "0.6": 2,
+   "0.2": 2,
+   "0.4": 1
+  },
+  "iv_final_step_region": {
+   "before": 3,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 10,
+   "min": 68,
+   "p25": 433,
+   "median": 860,
+   "p75": 897,
+   "max": 931
+  }
+ },
+ "randomized-tier_a_04_contractions-s271828/composition-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_04_contractions-s271828/multiplication-d2": {
+  "opportunities": 1,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {
+   "0.7": 1
+  },
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_04_contractions-s271828/reachability-d2": {
+  "opportunities": 41,
+  "interventions": 23,
+  "iv_norm_pos_hist": {
+   "0.4": 3,
+   "0.5": 10,
+   "0.6": 4,
+   "0.8": 3,
+   "0.3": 1,
+   "0.7": 1,
+   "0.1": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.6": 7,
+   "0.4": 5,
+   "0.8": 6,
+   "0.7": 4,
+   "0.5": 16,
+   "0.3": 2,
+   "0.1": 1
+  },
+  "iv_final_step_region": {
+   "before": 19,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 23,
+   "min": 40,
+   "p25": 116,
+   "median": 139,
+   "p75": 205,
+   "max": 820
+  }
+ },
+ "randomized-tier_a_04_contractions-s271828/reachability-d4": {
+  "opportunities": 32,
+  "interventions": 16,
+  "iv_norm_pos_hist": {
+   "0.4": 3,
+   "0.3": 3,
+   "0.2": 1,
+   "0.5": 3,
+   "0.6": 4,
+   "0.7": 2
+  },
+  "opp_norm_pos_hist": {
+   "0.4": 8,
+   "0.6": 7,
+   "0.2": 2,
+   "0.3": 6,
+   "0.7": 4,
+   "0.5": 5
+  },
+  "iv_final_step_region": {
+   "before": 14,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 16,
+   "min": 83,
+   "p25": 132,
+   "median": 184,
+   "p75": 213,
+   "max": 717
+  }
+ },
+ "randomized-tier_a_04_contractions-s271828/reachability-d6": {
+  "opportunities": 17,
+  "interventions": 8,
+  "iv_norm_pos_hist": {
+   "0.2": 1,
+   "0.4": 3,
+   "0.3": 1,
+   "0.6": 2,
+   "0.5": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.5": 2,
+   "0.2": 3,
+   "0.4": 3,
+   "0.0": 1,
+   "0.3": 3,
+   "0.6": 4,
+   "0.7": 1
+  },
+  "iv_final_step_region": {
+   "before": 8,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 8,
+   "min": 99,
+   "p25": 172,
+   "median": 224,
+   "p75": 229,
+   "max": 394
+  }
+ },
+ "randomized-tier_a_04_contractions-s271828/reachability-d8": {
+  "opportunities": 15,
+  "interventions": 7,
+  "iv_norm_pos_hist": {
+   "0.3": 1,
+   "0.6": 1,
+   "0.2": 1,
+   "0.1": 4
+  },
+  "opp_norm_pos_hist": {
+   "0.3": 2,
+   "0.5": 1,
+   "0.1": 6,
+   "0.6": 2,
+   "0.2": 2,
+   "0.9": 1,
+   "0.4": 1
+  },
+  "iv_final_step_region": {
+   "before": 3,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 7,
+   "min": 68,
+   "p25": 320,
+   "median": 705,
+   "p75": 864,
+   "max": 925
+  }
+ },
+ "randomized-tier_a_05_whitespace-s141421/composition-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_05_whitespace-s141421/multiplication-d2": {
+  "opportunities": 275,
+  "interventions": 141,
+  "iv_norm_pos_hist": {
+   "0.5": 26,
+   "0.4": 7,
+   "0.7": 39,
+   "0.6": 13,
+   "0.9": 5,
+   "0.3": 7,
+   "0.8": 25,
+   "0.1": 6,
+   "0.2": 9,
+   "0.0": 4
+  },
+  "opp_norm_pos_hist": {
+   "0.8": 47,
+   "0.7": 71,
+   "0.5": 26,
+   "0.4": 7,
+   "0.6": 14,
+   "0.9": 80,
+   "0.3": 8,
+   "0.1": 8,
+   "0.2": 10,
+   "0.0": 4
+  },
+  "iv_final_step_region": {
+   "before": 117,
+   "within_or_after": 4
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 141,
+   "min": 8,
+   "p25": 23,
+   "median": 23,
+   "p75": 69,
+   "max": 962
+  }
+ },
+ "randomized-tier_a_05_whitespace-s141421/reachability-d2": {
+  "opportunities": 49,
+  "interventions": 23,
+  "iv_norm_pos_hist": {
+   "0.7": 4,
+   "0.9": 4,
+   "0.5": 5,
+   "0.2": 2,
+   "0.3": 2,
+   "0.1": 2,
+   "0.6": 3,
+   "0.4": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.7": 7,
+   "0.9": 8,
+   "0.5": 7,
+   "0.8": 4,
+   "0.2": 3,
+   "0.3": 4,
+   "0.4": 9,
+   "0.1": 4,
+   "0.6": 3
+  },
+  "iv_final_step_region": {
+   "before": 15,
+   "within_or_after": 4
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 23,
+   "min": 7,
+   "p25": 56,
+   "median": 93,
+   "p75": 182,
+   "max": 853
+  }
+ },
+ "randomized-tier_a_05_whitespace-s141421/reachability-d4": {
+  "opportunities": 7,
+  "interventions": 3,
+  "iv_norm_pos_hist": {
+   "0.3": 2,
+   "0.9": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.3": 2,
+   "0.9": 3,
+   "0.5": 1,
+   "0.4": 1
+  },
+  "iv_final_step_region": {
+   "before": 2,
+   "within_or_after": 1
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 3,
+   "min": 8,
+   "p25": 8,
+   "median": 138,
+   "p75": 284,
+   "max": 284
+  }
+ },
+ "randomized-tier_a_05_whitespace-s141421/reachability-d6": {
+  "opportunities": 10,
+  "interventions": 7,
+  "iv_norm_pos_hist": {
+   "0.7": 2,
+   "0.8": 3,
+   "0.3": 1,
+   "0.2": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.7": 3,
+   "0.8": 5,
+   "0.3": 1,
+   "0.2": 1
+  },
+  "iv_final_step_region": {
+   "before": 6,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 7,
+   "min": 43,
+   "p25": 50,
+   "median": 58,
+   "p75": 490,
+   "max": 781
+  }
+ },
+ "randomized-tier_a_05_whitespace-s141421/reachability-d8": {
+  "opportunities": 5,
+  "interventions": 1,
+  "iv_norm_pos_hist": {
+   "0.8": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.8": 3,
+   "0.9": 2
+  },
+  "iv_final_step_region": {
+   "before": 1,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 1,
+   "min": 47,
+   "p25": 47,
+   "median": 47,
+   "p75": 47,
+   "max": 47
+  }
+ },
+ "randomized-tier_a_05_whitespace-s161803/composition-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_05_whitespace-s161803/multiplication-d2": {
+  "opportunities": 268,
+  "interventions": 122,
+  "iv_norm_pos_hist": {
+   "0.6": 10,
+   "0.5": 33,
+   "0.7": 28,
+   "0.4": 6,
+   "0.8": 30,
+   "0.0": 3,
+   "0.9": 3,
+   "0.1": 3,
+   "0.2": 4,
+   "0.3": 2
+  },
+  "opp_norm_pos_hist": {
+   "0.6": 10,
+   "0.7": 53,
+   "0.5": 33,
+   "0.8": 63,
+   "0.9": 85,
+   "0.4": 6,
+   "0.1": 6,
+   "0.0": 3,
+   "0.2": 6,
+   "0.3": 3
+  },
+  "iv_final_step_region": {
+   "before": 107,
+   "within_or_after": 2
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 122,
+   "min": 9,
+   "p25": 23,
+   "median": 23,
+   "p75": 44,
+   "max": 961
+  }
+ },
+ "randomized-tier_a_05_whitespace-s161803/reachability-d2": {
+  "opportunities": 49,
+  "interventions": 18,
+  "iv_norm_pos_hist": {
+   "0.7": 2,
+   "0.9": 3,
+   "0.5": 3,
+   "0.3": 3,
+   "0.1": 2,
+   "0.6": 2,
+   "0.2": 1,
+   "0.4": 2
+  },
+  "opp_norm_pos_hist": {
+   "0.7": 4,
+   "0.9": 8,
+   "0.5": 8,
+   "0.3": 5,
+   "0.6": 6,
+   "0.4": 8,
+   "0.8": 5,
+   "0.1": 4,
+   "0.2": 1
+  },
+  "iv_final_step_region": {
+   "before": 12,
+   "within_or_after": 3
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 18,
+   "min": 7,
+   "p25": 56,
+   "median": 125,
+   "p75": 315,
+   "max": 853
+  }
+ },
+ "randomized-tier_a_05_whitespace-s161803/reachability-d4": {
+  "opportunities": 7,
+  "interventions": 3,
+  "iv_norm_pos_hist": {
+   "0.9": 2,
+   "0.3": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.0": 1,
+   "0.9": 3,
+   "0.5": 1,
+   "0.3": 1,
+   "0.4": 1
+  },
+  "iv_final_step_region": {
+   "before": 2,
+   "within_or_after": 1
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 3,
+   "min": 10,
+   "p25": 10,
+   "median": 34,
+   "p75": 284,
+   "max": 284
+  }
+ },
+ "randomized-tier_a_05_whitespace-s161803/reachability-d6": {
+  "opportunities": 10,
+  "interventions": 5,
+  "iv_norm_pos_hist": {
+   "0.7": 1,
+   "0.8": 2,
+   "0.2": 1,
+   "0.9": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.7": 3,
+   "0.9": 2,
+   "0.8": 3,
+   "0.3": 1,
+   "0.2": 1
+  },
+  "iv_final_step_region": {
+   "before": 5,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 5,
+   "min": 34,
+   "p25": 43,
+   "median": 58,
+   "p75": 58,
+   "max": 490
+  }
+ },
+ "randomized-tier_a_05_whitespace-s161803/reachability-d8": {
+  "opportunities": 5,
+  "interventions": 4,
+  "iv_norm_pos_hist": {
+   "0.8": 2,
+   "0.9": 2
+  },
+  "opp_norm_pos_hist": {
+   "0.8": 3,
+   "0.9": 2
+  },
+  "iv_final_step_region": {
+   "before": 3,
+   "within_or_after": 1
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 4,
+   "min": 10,
+   "p25": 34,
+   "median": 40,
+   "p75": 55,
+   "max": 55
+  }
+ },
+ "randomized-tier_a_05_whitespace-s271828/composition-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_05_whitespace-s271828/multiplication-d2": {
+  "opportunities": 274,
+  "interventions": 140,
+  "iv_norm_pos_hist": {
+   "0.5": 33,
+   "0.7": 33,
+   "0.8": 32,
+   "0.6": 11,
+   "0.9": 7,
+   "0.4": 4,
+   "0.0": 2,
+   "0.2": 8,
+   "0.1": 3,
+   "0.3": 7
+  },
+  "opp_norm_pos_hist": {
+   "0.8": 58,
+   "0.5": 33,
+   "0.7": 61,
+   "0.6": 13,
+   "0.9": 82,
+   "0.4": 4,
+   "0.0": 2,
+   "0.2": 9,
+   "0.1": 5,
+   "0.3": 7
+  },
+  "iv_final_step_region": {
+   "before": 117,
+   "within_or_after": 3
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 140,
+   "min": 8,
+   "p25": 23,
+   "median": 23,
+   "p75": 47,
+   "max": 961
+  }
+ },
+ "randomized-tier_a_05_whitespace-s271828/reachability-d2": {
+  "opportunities": 53,
+  "interventions": 30,
+  "iv_norm_pos_hist": {
+   "0.7": 3,
+   "0.5": 5,
+   "0.3": 6,
+   "0.2": 3,
+   "0.4": 4,
+   "0.1": 4,
+   "0.9": 3,
+   "0.6": 2
+  },
+  "opp_norm_pos_hist": {
+   "0.7": 7,
+   "0.9": 7,
+   "0.5": 9,
+   "0.3": 7,
+   "0.2": 3,
+   "0.4": 9,
+   "0.8": 3,
+   "0.1": 5,
+   "0.6": 3
+  },
+  "iv_final_step_region": {
+   "before": 19,
+   "within_or_after": 2
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 30,
+   "min": 10,
+   "p25": 82,
+   "median": 138,
+   "p75": 628,
+   "max": 860
+  }
+ },
+ "randomized-tier_a_05_whitespace-s271828/reachability-d4": {
+  "opportunities": 10,
+  "interventions": 4,
+  "iv_norm_pos_hist": {
+   "0.9": 1,
+   "0.4": 1,
+   "0.5": 1,
+   "0.3": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.0": 1,
+   "0.9": 3,
+   "0.4": 2,
+   "0.5": 1,
+   "0.6": 1,
+   "0.2": 1,
+   "0.3": 1
+  },
+  "iv_final_step_region": {
+   "before": 3,
+   "within_or_after": 1
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 4,
+   "min": 8,
+   "p25": 120,
+   "median": 160,
+   "p75": 190,
+   "max": 190
+  }
+ },
+ "randomized-tier_a_05_whitespace-s271828/reachability-d6": {
+  "opportunities": 10,
+  "interventions": 7,
+  "iv_norm_pos_hist": {
+   "0.7": 1,
+   "0.8": 3,
+   "0.3": 1,
+   "0.2": 1,
+   "0.9": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.7": 3,
+   "0.8": 4,
+   "0.3": 1,
+   "0.2": 1,
+   "0.9": 1
+  },
+  "iv_final_step_region": {
+   "before": 6,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 7,
+   "min": 34,
+   "p25": 41,
+   "median": 58,
+   "p75": 490,
+   "max": 781
+  }
+ },
+ "randomized-tier_a_05_whitespace-s271828/reachability-d8": {
+  "opportunities": 5,
+  "interventions": 2,
+  "iv_norm_pos_hist": {
+   "0.8": 1,
+   "0.9": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.8": 3,
+   "0.9": 2
+  },
+  "iv_final_step_region": {
+   "before": 1,
+   "within_or_after": 1
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 2,
+   "min": 10,
+   "p25": 10,
+   "median": 55,
+   "p75": 55,
+   "max": 55
+  }
+ },
+ "randomized-tier_a_06_operator_spacing-s141421/composition-d2": {
+  "opportunities": 327,
+  "interventions": 159,
+  "iv_norm_pos_hist": {
+   "0.1": 133,
+   "0.3": 9,
+   "0.0": 15,
+   "0.2": 1,
+   "0.8": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.1": 286,
+   "0.3": 16,
+   "0.0": 21,
+   "0.2": 2,
+   "0.8": 2
+  },
+  "iv_final_step_region": {
+   "before": 156,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 159,
+   "min": 44,
+   "p25": 172,
+   "median": 173,
+   "p75": 237,
+   "max": 335
+  }
+ },
+ "randomized-tier_a_06_operator_spacing-s141421/multiplication-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_06_operator_spacing-s141421/reachability-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_06_operator_spacing-s141421/reachability-d4": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_06_operator_spacing-s141421/reachability-d6": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_06_operator_spacing-s141421/reachability-d8": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_06_operator_spacing-s161803/composition-d2": {
+  "opportunities": 327,
+  "interventions": 155,
+  "iv_norm_pos_hist": {
+   "0.1": 137,
+   "0.3": 4,
+   "0.0": 12,
+   "0.2": 1,
+   "0.8": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.1": 290,
+   "0.3": 17,
+   "0.0": 17,
+   "0.2": 1,
+   "0.8": 2
+  },
+  "iv_final_step_region": {
+   "before": 154,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 155,
+   "min": 44,
+   "p25": 172,
+   "median": 172,
+   "p75": 245,
+   "max": 336
+  }
+ },
+ "randomized-tier_a_06_operator_spacing-s161803/multiplication-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_06_operator_spacing-s161803/reachability-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_06_operator_spacing-s161803/reachability-d4": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_06_operator_spacing-s161803/reachability-d6": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_06_operator_spacing-s161803/reachability-d8": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_06_operator_spacing-s271828/composition-d2": {
+  "opportunities": 333,
+  "interventions": 169,
+  "iv_norm_pos_hist": {
+   "0.1": 141,
+   "0.3": 11,
+   "0.0": 15,
+   "0.8": 1,
+   "0.2": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.1": 289,
+   "0.3": 22,
+   "0.0": 18,
+   "0.8": 2,
+   "0.2": 2
+  },
+  "iv_final_step_region": {
+   "before": 165,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 169,
+   "min": 44,
+   "p25": 172,
+   "median": 172,
+   "p75": 235,
+   "max": 318
+  }
+ },
+ "randomized-tier_a_06_operator_spacing-s271828/multiplication-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_06_operator_spacing-s271828/reachability-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_06_operator_spacing-s271828/reachability-d4": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_06_operator_spacing-s271828/reachability-d6": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_06_operator_spacing-s271828/reachability-d8": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_07_list_markers-s141421/composition-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_07_list_markers-s141421/multiplication-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_07_list_markers-s141421/reachability-d2": {
+  "opportunities": 7,
+  "interventions": 4,
+  "iv_norm_pos_hist": {
+   "0.2": 1,
+   "0.5": 2,
+   "0.7": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.2": 1,
+   "0.3": 1,
+   "0.5": 2,
+   "0.7": 1,
+   "0.9": 1,
+   "0.4": 1
+  },
+  "iv_final_step_region": {
+   "before": 4,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 4,
+   "min": 213,
+   "p25": 269,
+   "median": 396,
+   "p75": 782,
+   "max": 782
+  }
+ },
+ "randomized-tier_a_07_list_markers-s141421/reachability-d4": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_07_list_markers-s141421/reachability-d6": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_07_list_markers-s141421/reachability-d8": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_07_list_markers-s161803/composition-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_07_list_markers-s161803/multiplication-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_07_list_markers-s161803/reachability-d2": {
+  "opportunities": 5,
+  "interventions": 3,
+  "iv_norm_pos_hist": {
+   "0.4": 2,
+   "0.8": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.2": 2,
+   "0.4": 2,
+   "0.8": 1
+  },
+  "iv_final_step_region": {
+   "before": 1,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 3,
+   "min": 117,
+   "p25": 117,
+   "median": 215,
+   "p75": 344,
+   "max": 344
+  }
+ },
+ "randomized-tier_a_07_list_markers-s161803/reachability-d4": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_07_list_markers-s161803/reachability-d6": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_07_list_markers-s161803/reachability-d8": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_07_list_markers-s271828/composition-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_07_list_markers-s271828/multiplication-d2": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_07_list_markers-s271828/reachability-d2": {
+  "opportunities": 4,
+  "interventions": 3,
+  "iv_norm_pos_hist": {
+   "0.2": 1,
+   "0.3": 1,
+   "0.4": 1
+  },
+  "opp_norm_pos_hist": {
+   "0.2": 1,
+   "0.3": 1,
+   "0.5": 1,
+   "0.4": 1
+  },
+  "iv_final_step_region": {
+   "before": 3,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 3,
+   "min": 215,
+   "p25": 215,
+   "median": 585,
+   "p75": 782,
+   "max": 782
+  }
+ },
+ "randomized-tier_a_07_list_markers-s271828/reachability-d4": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_07_list_markers-s271828/reachability-d6": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ },
+ "randomized-tier_a_07_list_markers-s271828/reachability-d8": {
+  "opportunities": 0,
+  "interventions": 0,
+  "iv_norm_pos_hist": {},
+  "opp_norm_pos_hist": {},
+  "iv_final_step_region": {
+   "before": 0,
+   "within_or_after": 0
+  },
+  "iv_tok_dist_to_end_summary": {
+   "n": 0
+  }
+ }
+}

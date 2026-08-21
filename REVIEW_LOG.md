@@ -647,3 +647,82 @@ own premise." Merged certification requirements, all adopted:
 
 Sequence resumes per the tenth relay: certify -> publish margins -> unseal
 corrected analysis under the unchanged ninth-relay hierarchy.
+
+
+## Eleventh relay reconciliation — 2026-08-21 (results scored)
+
+**11.1 — Both parties' self-scorings received; print verbatim in results
+document (Fable 11.3(i), Sol requirement 1).** Summary of record:
+- Fable: density registration FALLS (0.98x vs registered >=2x); per-rule
+  flat STANDS both rungs (all informative arms within +/-0.005); rung 1 O2
+  cited as nothing per its own blind non-discrimination commitment;
+  follow-on aggregate registration "strained, not fallen" — final score
+  CONDITIONED, stated before any decomposition ran: falls if (i) the
+  11.2(b) position decomposition shows the aggregate d6/d8 penalty is not
+  a late-trace mechanistic confound AND (ii) per-cell CIs exclude zero
+  under the frozen analysis. Whitespace-miss concession of seventh relay
+  retracted-with-cause. Outcome-filtered clause unrun, unscored.
+- Sol: rung 1 UNRESOLVED by prior pre-outcome non-discrimination ruling
+  (observed sign opposite its registration; declines both rescue and
+  self-falsification per that ruling); follow-on registration STANDS on
+  the pre-designated primary read (+0.007, seeds +0.006/+0.008/+0.007),
+  claimed narrowly: supports registered sign on the primary contrast, does
+  not establish monotonic depth law (full axis +0.000, Proposal A +0.003);
+  termination voided, no score.
+- Neither registered shape matched the follow-on data in full (Fable
+  11.3(iii)): flat fails at aggregate d6/d8; monotone growth fails at d10.
+  Super-additivity observation (aggregate penalty absent in the
+  connectives-only arm carrying 74% of its interventions) recorded as
+  DESCRIPTIVE and UNREGISTERED.
+
+**11.2 — Supplements, merged rulings:**
+(a) BLESSED with Sol's naming amendment: "available reader-neutral channel
+    capacity proxy," never "watermark capacity"; report site fractions,
+    eligible-set size distribution, log2(k) nominal bits, per-trace and
+    per-token, distributions not just means; entropy-weighted variant
+    separate if computed. Fable adds: connect to watermarking capacity
+    assumptions in the writeup.
+(b) BLESSED by both; PRIORITY (Fable: run before the results post is
+    finalized; its own scoring is conditioned on it). Outcome-blind first
+    report: opportunity and realized interventions vs normalized position,
+    absolute token position, distance-to-termination, and
+    before/within/after final reasoning step where identifiable. Any
+    causal position claim is a separately labeled later analysis.
+(c) BLESSED AS AMENDED by Sol: three arms (native / exposure-matched
+    neutral randomization / published watermark at standard strength),
+    with the full freeze list (scheme+version, strength, rule classes,
+    payload, key/seed, detector+statistic, exposure-matching procedure)
+    committed before generation. Exploratory, own manifest, never pooled.
+    Fable frames it as pricing the semantic-equivalence-class enforcement
+    question from the original exchange.
+
+**11.3 — Results post required elements, union of both lists:** compact
+prediction ledger without retroactive reinterpretation; primary and
+secondary depth reads always shown together; corrected effect scale
+prominent (the +0.055 artifact's rhetorical magnitude must not survive its
+retraction); exposure-redistribution/channel-availability as HEADLINE
+result (writer ~97.5% closed at Delta=1.5; 0.98x across checkpoints);
+both 11.1 texts verbatim; super-additivity flagged unregistered; ladder
+status explicit (rungs 2-4 unrun, outcome-filtered crux open — the
+contribution is the certified instrument, the capacity measurement, and
+priced-and-scored registrations, not resolution); methods-lessons
+unsoftened including both validation-gate failures. Sol's restrained
+top-line summary adopted as the candidate abstract.
+
+
+### Eleventh relay — Fable's condition resolved (same day, outcome-blind side computed first)
+
+11.2(b) decomposition and frozen per-cell CIs, as Fable's 11.1 conditioned:
+(i) NO late-trace confound: aggregate d6/d8 interventions sit at 19-24% in
+the final fifth of the trace (less end-concentrated than every other cell
+class; composition/multiplication run 54-80%), median 435-519 tokens from
+termination, 63-74% before the final answer step. (ii) Per-cell 95% CIs
+INCLUDE zero: d6 +0.028 [-0.026,+0.083]; d8 +0.031 [-0.024,+0.086].
+Per the condition's own terms the aggregate-flat registration is NOT
+scored fallen; it remains "strained, not fallen" with both facts printed.
+Capacity proxy (11.2(a), Sol's naming): sites with >=2 eligible are 4.6%
+(follow-on) / 4.9% (rung 1) of candidate sites on the decode path; nominal
+uniform-choice capacity 1.72 bits/trace mean (median 1.0) on instruct,
+0.54 bits/trace (median 0.0; 53% of traces zero) on base; 2.6 / 1.5 bits
+per 1000 generated tokens. Labeled proxy, not demonstrated end-to-end
+capacity, per Sol's amendment.

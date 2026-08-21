@@ -1,0 +1,57 @@
+{
+ "followon": {
+  "_label": "available reader-neutral channel capacity proxy (decode-path, aggregate arm seed 271828); nominal uniform-choice bits; NOT demonstrated end-to-end encoding capacity",
+  "candidate_sites": 104947,
+  "sites_with_ge2_eligible": 4855,
+  "fraction_ge2": 0.0463,
+  "eligible_set_size_hist": {
+   "2": 3764,
+   "3": 1056,
+   "4": 35
+  },
+  "nominal_bits_total": 5507.7,
+  "nominal_bits_per_rule": {
+   "tier_a_01_connectives": 4308.7,
+   "tier_a_02_punctuation": 758.0,
+   "tier_a_04_contractions": 121.0,
+   "tier_a_05_whitespace": 297.0,
+   "tier_a_06_operator_spacing": 20.0,
+   "tier_a_07_list_markers": 3.0
+  },
+  "bits_per_trace": {
+   "mean": 1.721,
+   "median": 1.0,
+   "p90": 3.585,
+   "max": 17.755,
+   "frac_zero": 0.154
+  },
+  "bits_per_1000_generated_tokens": 2.587
+ },
+ "rung1": {
+  "_label": "available reader-neutral channel capacity proxy (decode-path, aggregate arm seed 271828); nominal uniform-choice bits; NOT demonstrated end-to-end encoding capacity",
+  "candidate_sites": 26355,
+  "sites_with_ge2_eligible": 1292,
+  "fraction_ge2": 0.049,
+  "eligible_set_size_hist": {
+   "2": 1279,
+   "3": 13
+  },
+  "nominal_bits_total": 1299.6,
+  "nominal_bits_per_rule": {
+   "tier_a_01_connectives": 167.6,
+   "tier_a_02_punctuation": 346.0,
+   "tier_a_04_contractions": 108.0,
+   "tier_a_05_whitespace": 341.0,
+   "tier_a_06_operator_spacing": 333.0,
+   "tier_a_07_list_markers": 4.0
+  },
+  "bits_per_trace": {
+   "mean": 0.542,
+   "median": 0.0,
+   "p90": 1.0,
+   "max": 3.585,
+   "frac_zero": 0.527
+  },
+  "bits_per_1000_generated_tokens": 1.498
+ }
+}
