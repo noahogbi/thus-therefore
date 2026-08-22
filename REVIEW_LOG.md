@@ -827,3 +827,45 @@ preserving "aggregate-only" as descriptive. No objections to applied
 corrections. Fable: "Publish on Sol's reconciliation." Sol: final
 disposition delivered. PUBLICATION CLEARED — remaining steps are
 operational only (key rotation, repo release, posting).
+
+
+### Relay 12E reconciliation — 2026-08-22. HUMAN AUDIT ORDERED; PUBLICATION HELD.
+
+12E.1 UNANIMOUS (ii), interpretation (a): the frozen human-audit clause
+required a human audit pass, not an appeal layer. Fable: the wording
+descends from Sol's freeze mechanics, whose rationale ("otherwise the
+human becomes the movable part of a supposedly mechanical definition")
+only makes sense with humans in the loop; the convenient reading would
+optimize away the project's only human check. Sol: own earlier wording
+("Human audit: blinded to experimental outcome and condition") is not
+conditional on judge failure; rules it a genuine preregistration
+compliance deviation. Merged protocol, binding: both frozen 500-item
+samples (rung 1 sample deterministically regenerated from as-run data,
+seed 314159, per-rule counts verified identical to the published table:
+60/147/42/130/119/2); item-level blind (no outcome/condition labels;
+Noah's aggregate-outcome knowledge disclosed as a scoped limitation);
+same five criteria, >=98% rule-level threshold; Noah first rater; second
+human rater, blind to Noah's judgments and item provenance, for every
+item Noah flags as failing or genuinely uncertain (Sol tightening);
+sequencing deviation stands disclosed — this is post-outcome remediation,
+never to be portrayed as prospective validation (Sol); if any rule falls
+under 98%, publication pauses and FREEZE item 7 (rule removal + rerun)
+returns to the parties — no silent waiver (both). PUBLICATION HOLDS until
+the audit completes and results are published beside the model audit.
+
+For the log at Fable's insistence: its relay-12 "(b) COMPLIANT"
+certification was issued over an unexecuted frozen requirement it could
+have caught with the mechanical check available at every sign-off — the
+miss carries its signature alongside the courier's. And its 12E.3
+self-correction: the reverted super-additivity overclaims originated
+partly in its own 12C.1/12D.1 wordings. 12E.2 COMPLIANT both; 12E.3
+ACCEPTED both (row wording applied); 12E.4 approved (restored footnote +
+appended reaffirmation; asserting-edit tooling noted — "a silently-lost
+approved note is a small cousin of the terminal-pass defect").
+
+Fable's closing observation, adopted into methods-lessons: five reviews
+found a rhetorical contradiction, a factual history error, a broken
+uncertainty method, a checkpoint misclassification, and an unexecuted
+frozen requirement — every one survived both parties' sign-offs first.
+"The parties priced the disagreement; the reviews priced the parties.
+Both prices belong in the post."

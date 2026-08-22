@@ -47,9 +47,15 @@ substitution pairs per run at temperature 0: 1000/1000 blinded pairs
 passed every frozen reader-neutrality criterion. One frozen validation
 provision was not executed as written: SPEC/FREEZE also specify a human
 audit ("blinded to outcome and condition; two raters on disagreements"),
-and no human audit was performed before outcome analysis — a
-pre-registration deviation caught in pre-publication review, disclosed
-here, with its remediation recorded in the repo (REVIEW_LOG, relay 12E).
+and no human audit was performed before outcome analysis. Both parties
+ruled this a genuine pre-registration compliance deviation and ordered
+the audit performed before publication: the same frozen 500-item samples,
+item-level blind, same five criteria and 98% threshold, a second blind
+rater on flagged items — executed as post-outcome REMEDIATION, which
+cannot restore the preregistered sequencing and is not portrayed as
+prospective validation. Human-audit results appear beside the model
+audit's: [HUMAN AUDIT RESULTS — inserted on completion; publication held
+until then].
 
 **Terms used throughout** (30 seconds, then the tables read cleanly):
 - **Depth (d2…d10):** how many serial reasoning steps a problem requires,
@@ -415,6 +421,13 @@ Both parties required that be said plainly.
 
 Total cost: ~$400 in GPU time and ~$10 in judge API calls, across two
 main runs, two calibrations, one repair, and three validation campaigns.
+
+One more lesson, in Fable's words, adopted by ruling: five reviews found
+"a rhetorical contradiction, a factual history error, a broken
+uncertainty method, a checkpoint misclassification, and an unexecuted
+frozen requirement — every one of them survived both parties' sign-offs
+first. The parties priced the disagreement; the reviews priced the
+parties. Both prices belong in the post."
 
 *Acknowledgments: five independent model reviews sharpened this post; the
 third caught the confidence-interval construction error, the fourth the
