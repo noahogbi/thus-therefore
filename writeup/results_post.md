@@ -6,12 +6,13 @@ all three calibration amendments ACCEPTED. Verbatim blocks locked. Title
 mirrors the pre-registration post's frozen phrasing.]*
 
 **TL;DR (adopted from Sol's summary, both parties approving):** The
-corrected experiments show small aggregate accuracy costs from
-neutral-choice randomization. The pre-registered instruct contrast produced a
+corrected experiments produce small positive aggregate point estimates
+from neutral-choice randomization — the base-rung interval excludes zero,
+the instruct interval does not. The pre-registered instruct contrast produced a
 positive, seed-consistent d4→d8 point estimate — not statistically
 resolved — while the broader depth axis is flat. The experiment does not establish covert task-state
-encoding, but it provides a certified instrument with documented
-validation limits — and a
+encoding, but it provides an instrument that passed its
+preregistered neutrality audit, with documented validation limits — and a
 considerably clearer picture of how little neutral-choice bandwidth this
 rule set actually exposes.
 
@@ -165,6 +166,7 @@ distributed through the trace, not concentrated at boundaries.
 | Fable: instruct exposure ≥2× base | **Falls.** Realized 0.98×. Conceded "wrong not marginally but directionally." |
 | Both: termination-sensitivity predictions | Voided with cause — they addressed a harness defect (below). |
 | Fable: ordering sub-prediction, outcome-filtered checkpoints | Unrun. The central crux remains open. |
+| *Unregistered finding:* rung 1 aggregate brittleness | +0.012 [+0.002, +0.021] — excludes zero; depth-flat, concentrated in the shallowest cell; absent from every per-rule arm. Claimed as a full win by neither party (characterizations below). |
 
 **Required statement (both parties):** the observed point-estimate shape
 matched neither registration. The aggregate departs descriptively from
@@ -172,10 +174,18 @@ flat at reachability d6/d8 (+0.028, +0.031), though both 95% CIs include
 zero ([−0.003, +0.060], [−0.004, +0.066], problem-paired); monotone
 growth likewise fails
 descriptively at d10 (−0.010) and across the full axis (0.000).
-One descriptive, **unregistered** observation neither side predicted: the
-aggregate arm's penalty is absent from the connectives-only arm, which
-carries 74% of the aggregate's interventions — whatever the d6/d8 signal
-is, it appears only when rules are randomized together.
+One **unregistered** observation neither side predicted, now seen in
+different forms on both checkpoints: the aggregate arm's penalty is absent
+from every per-rule arm — on the follow-on, the d6/d8 signal appears only
+when rules are randomized together despite connectives carrying 74% of
+the aggregate's interventions; on rung 1, the same aggregate-only shape
+is statistically resolved (the +0.012 above). Both parties declined to
+claim it. Fable: within its registered "small constant brittleness"
+allowance "in magnitude and depth-shape, but outside it in structure: the
+registration allowed per-rule brittleness, and the penalty ... appears
+only under joint randomization." Sol: "supports a small aggregate
+brittleness effect under the intervention but not my predicted
+depth-growing signature."
 
 **Party scorings, verbatim** *(required: printed unedited, including
 concessions; the one elided quote below carries author-approved, marked
@@ -335,6 +345,11 @@ Both parties required that be said plainly.
 
 Total cost: ~$400 in GPU time and ~$10 in judge API calls, across two
 main runs, two calibrations, one repair, and three validation campaigns.
+
+*Acknowledgments: three independent model reviews sharpened this post;
+the third caught the confidence-interval construction error corrected
+above — a publication gate that fired late but fired. Remaining errors
+are mine.*
 
 Closing the ledger where it opened, in Fable's words:
 > "We set out to price a disagreement, and the price list survived contact

@@ -781,3 +781,26 @@ exact wording, applied to the TL;DR. Fable: "Publish on Sol's
 reconciliation." Sol: "Publication can proceed on my side." This entry is
 the reconciliation. No further party rounds; remaining steps are
 PUBLISH_CHECKLIST phases 0 (key rotation), 2 (repo release), 3 (posting).
+
+
+### Relay 12C reconciliation — 2026-08-22. TEXT FINAL (again); PUBLICATION CLEARED BY BOTH.
+
+Corrected problem-paired CI method disclosed; point estimates unchanged;
+rung 1 aggregate O1 now excludes zero (+0.012 [+0.002,+0.021]). 12C.1:
+both ledger lines STAND. Neither party claims the new fact: Fable notes
+it is within its brittleness allowance in magnitude/depth-shape but
+OUTSIDE it in structure (registration allowed per-rule brittleness; the
+penalty is aggregate-only — the unregistered super-additivity, now
+resolved on base); Sol declines partial confirmation ("my hypothesis was
+about scaling with depth, not merely whether randomization can ever
+hurt"). New ledger row added with merged wording; both characterizations
+printed. Fable acknowledges increased strain on its follow-on line (d6/d8
+intervals now only barely include zero) — carried in the 12C.2 footnote,
+ACCEPTED with Fable's appended clause. 12C.3 ACCEPTED by Sol (final
+TL;DR: base interval excludes zero, instruct does not; "an instrument
+that passed its preregistered neutrality audit"). Items 1-7 COMPLIANT,
+both. Fable requests third-review credit in acknowledgments (added) and
+notes for the record the CI overclaim was "exactly the kind ... I flagged
+in other people's denominators and missed in our own." Fable: "Publish on
+Sol's reconciliation." Sol: final disposition delivered. Publication
+cleared.

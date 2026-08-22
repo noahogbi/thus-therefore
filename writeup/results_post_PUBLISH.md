@@ -2,12 +2,13 @@
 
 
 **TL;DR (adopted from Sol's summary, both parties approving):** The
-corrected experiments show small aggregate accuracy costs from
-neutral-choice randomization. The pre-registered instruct contrast produced a
+corrected experiments produce small positive aggregate point estimates
+from neutral-choice randomization — the base-rung interval excludes zero,
+the instruct interval does not. The pre-registered instruct contrast produced a
 positive, seed-consistent d4→d8 point estimate — not statistically
 resolved — while the broader depth axis is flat. The experiment does not establish covert task-state
-encoding, but it provides a certified instrument with documented
-validation limits — and a
+encoding, but it provides an instrument that passed its
+preregistered neutrality audit, with documented validation limits — and a
 considerably clearer picture of how little neutral-choice bandwidth this
 rule set actually exposes.
 
@@ -28,7 +29,9 @@ predictions, and the design was frozen before any data. Their role should
 be understood procedurally: they are model-generated adversarial
 reviewers operating under frozen scoring rules, with me as human courier —
 every consequential decision in this project was a ruling by both, logged
-verbatim in the repo. I ran the experiment: Qwen2.5-7B base (60,000
+verbatim in the repo. Their agreement constrains the *procedure*; it is
+not independent scientific validation — the evidence is the frozen rules,
+git history, data, and analysis, not the models' assent. I ran the experiment: Qwen2.5-7B base (60,000
 generations) and Qwen2.5-7B-Instruct (80,000), greedy decoding everywhere
 except at pre-registered reader-neutral sites (thus/therefore, `x=17` vs
 `x = 17`, contraction and punctuation variants, ...) where the decoder
@@ -62,16 +65,23 @@ passed every frozen reader-neutrality criterion.
 Randomizing reader-neutral wording barely moves accuracy on either
 checkpoint, and the mechanistic question stays open:
 
-- **Aggregate O1:** base +0.012 (95% CI [−0.009, +0.033]); instruct
-  +0.008 (95% CI [−0.009, +0.024]).
+- **Aggregate O1:** base +0.012 (95% CI [+0.002, +0.021] — excludes
+  zero, concentrated in the shallowest reachability cell, +0.045
+  [+0.010, +0.080], with a flat-to-negative depth slope); instruct +0.008
+  (95% CI [−0.002, +0.017] — includes zero).
 - **Every informative per-rule arm sits within ±0.005** on both
   checkpoints.
 - **Registered primary depth read (instruct d4→d8):** +0.007 per depth
   step, positive in all three seeds (+0.006/+0.008/+0.007), 95% CI
-  [−0.011, +0.024]. The secondary full-axis slope is 0.000 and the
+  [−0.004, +0.018]. The secondary full-axis slope is 0.000 and the
   exposure-adjusted Proposal A interaction is +0.003. Sign as Sol
   registered; not statistically resolved — and the seed consistency is a
   robustness check, not three replications.
+
+All intervals are problem-level paired: each problem contributes native
+outcome minus its mean across the three intervention seeds, so the shared
+problem set and shared native control are respected rather than treated
+as independent rows; cells are disjoint problem sets.
 
 | arm | rung 1 (base) | follow-on (instruct) |
 |---|---|---|
@@ -86,7 +96,7 @@ checkpoint, and the mechanistic question stays open:
 
 | depth read | rung 1 | follow-on |
 |---|---|---|
-| primary: paired d4→d8 slope | −0.001 [−0.018, +0.016] | **+0.007** [−0.011, +0.024] |
+| primary d4→d8 slope | −0.001 [−0.009, +0.007] | **+0.007** [−0.004, +0.018] |
 | secondary: full reachability axis | −0.006 | 0.000 |
 | supplementary: Proposal A arm×depth | +0.027 | +0.003 |
 
@@ -146,22 +156,32 @@ distributed through the trace, not concentrated at boundaries.
 | Registration (frozen form) | Status |
 |---|---|
 | Sol: positive depth interaction, aggregate (rung 1) | Unresolved — pre-declared non-discriminating before outcomes (exposure collapse). Observed primary slope −0.001. |
-| Sol: positive depth interaction (instruct) | **Stands, narrowly** — "directionally supported, not statistically resolved" (Sol's words). |
+| Sol: positive depth interaction (instruct) | Met the preregistered sign criterion; evidentially unresolved — "directionally supported, not statistically resolved" (Sol's words). |
 | Fable: per-rule O1 ~zero, base + light-instruct | Stands on every informative per-rule arm, both rungs. |
 | Fable: aggregate flat (instruct) | **Strained, not fallen** (Fable's words) — survives "on statistical power, not vindication." |
 | Fable: instruct exposure ≥2× base | **Falls.** Realized 0.98×. Conceded "wrong not marginally but directionally." |
 | Both: termination-sensitivity predictions | Voided with cause — they addressed a harness defect (below). |
 | Fable: ordering sub-prediction, outcome-filtered checkpoints | Unrun. The central crux remains open. |
+| *Unregistered finding:* rung 1 aggregate brittleness | +0.012 [+0.002, +0.021] — excludes zero; depth-flat, concentrated in the shallowest cell; absent from every per-rule arm. Claimed as a full win by neither party (characterizations below). |
 
 **Required statement (both parties):** the observed point-estimate shape
 matched neither registration. The aggregate departs descriptively from
 flat at reachability d6/d8 (+0.028, +0.031), though both 95% CIs include
-zero ([−0.026, +0.083], [−0.024, +0.086]); monotone growth likewise fails
+zero ([−0.003, +0.060], [−0.004, +0.066], problem-paired); monotone
+growth likewise fails
 descriptively at d10 (−0.010) and across the full axis (0.000).
-One descriptive, **unregistered** observation neither side predicted: the
-aggregate arm's penalty is absent from the connectives-only arm, which
-carries 74% of the aggregate's interventions — whatever the d6/d8 signal
-is, it appears only when rules are randomized together.
+One **unregistered** observation neither side predicted, now seen in
+different forms on both checkpoints: the aggregate arm's penalty is absent
+from every per-rule arm — on the follow-on, the d6/d8 signal appears only
+when rules are randomized together despite connectives carrying 74% of
+the aggregate's interventions; on rung 1, the same aggregate-only shape
+is statistically resolved (the +0.012 above). Both parties declined to
+claim it. Fable: within its registered "small constant brittleness"
+allowance "in magnitude and depth-shape, but outside it in structure: the
+registration allowed per-rule brittleness, and the penalty ... appears
+only under joint randomization." Sol: "supports a small aggregate
+brittleness effect under the intervention but not my predicted
+depth-growing signature."
 
 **Party scorings, verbatim** *(required: printed unedited, including
 concessions; the one elided quote below carries author-approved, marked
@@ -269,24 +289,29 @@ tallies published.
 
 ## Why this happens to matter right now: watermarking
 
-Five days after the follow-on's grid was frozen, Anthropic announced
-sampling-based text watermarking for Claude — a deployed technology
+Anthropic's watermarking announcement (2026-08-11) came five days after
+this experiment's design was frozen and pre-registered (2026-08-06/08),
+and the follow-on's grid ruling was contemporaneous with it. Anthropic's
+own published explainer describes settling "low-stakes" choices among
+near-equivalent next words with keyed randomness — a deployed technology
 premised on a closely related assumption to the one this experiment
-measures: that re-settling "low-stakes" token choices doesn't matter.
-The interventions differ — a deployed watermark biases a decoding
-distribution by a key; we resampled uniformly within frozen, audited
-reader-equivalence classes — and prior work has perturbed reasoning
-traces in other ways (paraphrase-based faithfulness tests; reasoning-
-watermark studies). The narrower, distinctive object here: to our
-knowledge, prior work had not directly measured downstream task
-sensitivity to locally reader-neutral, likelihood-constrained surface
-substitutions made online within a self-consumed reasoning trace.
+measures: that re-settling such choices doesn't matter. The interventions
+differ — a deployed watermark transforms the sampling distribution by a
+key; we resampled uniformly within frozen, audited reader-equivalence
+classes — and prior work has perturbed reasoning traces in other ways
+(notably Lanham et al. 2023's paraphrase and truncation interventions on
+CoT, and the recent reasoning-watermark literature). The narrower,
+distinctive object here: I did not find prior work combining these
+features — downstream task sensitivity to locally reader-neutral,
+likelihood-constrained surface substitutions made online within a
+self-consumed reasoning trace, with a registered depth observable.
 
 What these results contribute, with the registered caveats attached:
 - Under uniform resampling within the audited-neutral class — aggressive
   *conditional on intervening*, though intervention opportunities are
-  sparse — the measured penalty on the deployed checkpoint class is
-  ≤ ~1 point in aggregate, flat-to-ambiguous in depth. That is
+  sparse — on the instruct checkpoint tested, the aggregate point
+  estimate was +0.8 accuracy points (95% CI −0.2 to +1.7, problem-paired),
+  flat-to-ambiguous in depth. That is
   mechanistically relevant, adjacent stress-test evidence for the
   assumption behind watermarking self-consumed text — adjacent, not
   direct: deployed schemes use keyed sampling transformations rather than
@@ -294,13 +319,15 @@ What these results contribute, with the registered caveats attached:
   private reasoning tokens are watermarked at all. The registered caveat
   rides along: the d4→d8 sign was seed-consistent, positive, and
   unresolved at the cell level.
-- The capacity numbers cut the other way for watermark strength: ~1–2
-  nominal bits per trace of reader-neutral bandwidth under these
-  equivalence classes is very little signal room, consistent with the
-  industry's own observation that low-entropy text watermarks poorly.
+- The choice-space numbers point the other way for watermark strength:
+  our enumerated near-tied equivalence classes expose only ~1–2 nominal
+  choice bits per trace. That bounds what *this rule set* offers, not
+  watermark schemes generally — but it is consistent with the industry's
+  own observation that low-entropy text watermarks poorly.
 - A three-arm bridge experiment (native / exposure-matched neutral
-  randomization / published watermark at standard strength) is designed,
-  party-blessed as exploratory, and runs after this publication.
+  randomization / a published watermark scheme, e.g. green-list biasing
+  at conventional strength) is designed, party-blessed as exploratory,
+  and runs after this publication.
 
 ## What's next
 
@@ -314,6 +341,11 @@ Both parties required that be said plainly.
 
 Total cost: ~$400 in GPU time and ~$10 in judge API calls, across two
 main runs, two calibrations, one repair, and three validation campaigns.
+
+*Acknowledgments: three independent model reviews sharpened this post;
+the third caught the confidence-interval construction error corrected
+above — a publication gate that fired late but fired. Remaining errors
+are mine.*
 
 Closing the ledger where it opened, in Fable's words:
 > "We set out to price a disagreement, and the price list survived contact
