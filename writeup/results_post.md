@@ -44,7 +44,12 @@ except at pre-registered reader-neutral sites (thus/therefore, `x=17` vs
 resampled uniformly among alternatives the model itself rated nearly
 equivalent (within 1.5 nats). A frozen judge audited 500 blinded
 substitution pairs per run at temperature 0: 1000/1000 blinded pairs
-passed every frozen reader-neutrality criterion.
+passed every frozen reader-neutrality criterion. One frozen validation
+provision was not executed as written: SPEC/FREEZE also specify a human
+audit ("blinded to outcome and condition; two raters on disagreements"),
+and no human audit was performed before outcome analysis — a
+pre-registration deviation caught in pre-publication review, disclosed
+here, with its remediation recorded in the repo (REVIEW_LOG, relay 12E).
 
 **Terms used throughout** (30 seconds, then the tables read cleanly):
 - **Depth (d2…d10):** how many serial reasoning steps a problem requires,
@@ -74,8 +79,10 @@ checkpoint, and the mechanistic question stays open:
 
 - **Aggregate O1, on the preregistered grid matched across checkpoints
   (six cells):** base +0.012 (95% CI [+0.002, +0.021]); instruct +0.012
-  (95% CI [+0.002, +0.022]). **Both exclude zero and are statistically
-  indistinguishable from each other.** The instruct run-wide mean over
+  (95% CI [+0.002, +0.022]). **Both exclude zero; the paired
+  cross-checkpoint difference over the 2,400 shared problems is −0.001
+  (95% CI [−0.014, +0.013])** — no detectable difference, though formal
+  equivalence (which needs a pre-specified margin) was not tested. The instruct run-wide mean over
   all eight of its cells is +0.008 [−0.002, +0.017] (includes zero) —
   lower only because the two instruct-only cells (composition d4,
   reachability d10) have negative point estimates; per the frozen
@@ -199,7 +206,7 @@ distributed through the trace, not concentrated at boundaries.
 | Fable: instruct exposure ≥2× base | **Falls.** Realized 0.98×. Conceded "wrong not marginally but directionally." |
 | Both: termination-sensitivity predictions | Voided with cause — they addressed a harness defect (below). |
 | Fable: ordering sub-prediction, outcome-filtered checkpoints | Unrun. The central crux remains open. |
-| *Unregistered finding:* matched-grid aggregate brittleness | +0.012 [+0.002, +0.021] base and +0.012 [+0.002, +0.022] instruct (matched grid) — both exclude zero; depth-flat, absent from every per-rule arm. Claimed as a full win by neither party (characterizations below). |
+| *Unregistered finding:* matched-grid aggregate brittleness | +0.012 [+0.002, +0.021] base and +0.012 [+0.002, +0.022] instruct (matched grid) — both exclude zero; depth-flat; no informative per-rule point estimate exceeds ±0.005 (joint-rule interaction untested). Claimed as a full win by neither party (characterizations below). |
 
 **Required statement (both parties):** the observed point-estimate shape
 matched neither registration. The aggregate departs descriptively from
@@ -207,13 +214,17 @@ flat at reachability d6/d8 (+0.028, +0.031), though both 95% CIs include
 zero ([−0.003, +0.060], [−0.004, +0.066], problem-paired); monotone
 growth likewise fails
 descriptively at d10 (−0.010) and across the full axis (0.000).
-One **unregistered** observation neither side predicted, now seen in
-different forms on both checkpoints: the aggregate arm's penalty is absent
-from every per-rule arm — on the follow-on, the d6/d8 signal appears only
-when rules are randomized together despite connectives carrying 74% of
-the aggregate's interventions; on rung 1, the same aggregate-only shape
-is statistically resolved (+0.012 above) — and under the matched grid the
-instruct aggregate (+0.012 [+0.002, +0.022]) now resolves as well. Both parties declined to
+One **unregistered** observation neither side predicted: both
+matched-grid aggregate intervals exclude zero while no informative
+per-rule point estimate exceeds ±0.005 — and the aggregate arms carry 74%
+of their interventions in connectives, whose own arm reads 0.000. Whether
+this is a genuine joint-rule interaction (super-additivity) was **not
+tested**: that would require a direct contrast between the aggregate and
+an explicitly defined additive expectation, which is queued for the next
+pre-registration. A positive estimate in one arm beside near-zero
+estimates in others is not itself evidence that the arms differ. The
+characterizations below are the parties' attributed readings of this
+untested pattern. Both parties declined to
 claim it. Fable: within its registered "small constant brittleness"
 allowance "in magnitude and depth-shape, but outside it in structure: the
 registration allowed per-rule brittleness, and the penalty ... appears
@@ -253,6 +264,13 @@ elisions — full texts in the repo's REVIEW_LOG)*:
 > confirmed, and under genuine pressure at exactly the cells my loss
 > clause named. The outcome-filtered checkpoint — the registration's
 > actual crux — remains unrun."
+
+*[Editor's note, party-approved: the interval values inside this verbatim
+ledger line are as computed at scoring time; under the corrected
+problem-paired method (relay 12C) they are (−0.003, +0.060) and
+(−0.004, +0.066) — still including zero, so the stated condition resolves
+identically, though the corrected intervals include zero far more
+narrowly. Fable reaffirmed the scoring after the correction.]*
 
 **Fable, exposure registration:**
 > "[Falls], cleanly. I predicted the aggregate intervened-site rate would
@@ -398,11 +416,12 @@ Both parties required that be said plainly.
 Total cost: ~$400 in GPU time and ~$10 in judge API calls, across two
 main runs, two calibrations, one repair, and three validation campaigns.
 
-*Acknowledgments: four independent model reviews sharpened this post; the
-third caught the confidence-interval construction error and the fourth
-caught the training-regime misclassification, an eligibility/intervention
-rate conflation, and a mismatched-grid comparison — publication gates
-that fired late but fired. Remaining errors are mine.*
+*Acknowledgments: five independent model reviews sharpened this post; the
+third caught the confidence-interval construction error, the fourth the
+training-regime misclassification, a rate conflation, and a
+mismatched-grid comparison, and the fifth a frozen human-audit provision
+that had gone unexecuted, plus two inferential overclaims — publication
+gates that fired late but fired. Remaining errors are mine.*
 
 Closing the ledger where it opened, in Fable's words:
 > "We set out to price a disagreement, and the price list survived contact
