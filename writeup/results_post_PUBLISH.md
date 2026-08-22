@@ -3,9 +3,9 @@
 
 **TL;DR (adopted from Sol's summary, both parties approving):** The
 corrected experiments show small aggregate accuracy costs from
-neutral-choice randomization. The pre-registered instruct contrast shows a
-positive, seed-consistent d4→d8 depth interaction, while the broader depth
-axis is flat. The experiment does not establish covert task-state
+neutral-choice randomization. The pre-registered instruct contrast produced a
+positive, seed-consistent d4→d8 point estimate — not statistically
+resolved — while the broader depth axis is flat. The experiment does not establish covert task-state
 encoding, but it provides a certified instrument with documented
 validation limits — and a
 considerably clearer picture of how little neutral-choice bandwidth this

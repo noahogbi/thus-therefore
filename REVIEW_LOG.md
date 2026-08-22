@@ -766,3 +766,18 @@ the stronger phrasing"; "the strongest sentence the evidence supports").
 Both parties: publish on reconciliation. This entry is that
 reconciliation. Remaining before posting: key rotation (PUBLISH_CHECKLIST
 phase 0), then Phase 2-3.
+
+
+### Relay 12B reconciliation — 2026-08-22. TEXT FINAL, PUBLICATION CLEARED BY BOTH.
+
+All five courier-prose corrections: COMPLIANT from both parties. Fable
+endorses the chronology fix emphatically ("makes the post harder on me and
+it is right") and records, as a note not an objection, that the
+eligibility-window caveat qualifies its own 11.3(ii) headline framing:
+low eligibility is ambiguous between "no channel" and "channel already
+committed," separable only by the unrun outcome-filtered checkpoint; its
+exposure registration still falls as conceded. 12B.A ACCEPTED by Sol with
+exact wording, applied to the TL;DR. Fable: "Publish on Sol's
+reconciliation." Sol: "Publication can proceed on my side." This entry is
+the reconciliation. No further party rounds; remaining steps are
+PUBLISH_CHECKLIST phases 0 (key rotation), 2 (repo release), 3 (posting).
