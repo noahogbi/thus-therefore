@@ -1,5 +1,22 @@
 # Pre-registration: does chain-of-thought carry covert task state in reader-neutral wording?
 
+*[Courier's note, added 2026-08-22, above the frozen text — which is
+reproduced unchanged below. (1) I chose to publish this post together with
+the results post ([link inserted at posting]) rather than at freeze time;
+the design's actual external timestamp is therefore not this post but the
+public git history — the frozen spec was pushed 2026-08-07 (commit
+`79781ea`) and the manifest hash 2026-08-08 (commit `bc93833`), before any
+generation run. The frozen text's line "this post timestamps the design"
+reflects the original same-day posting plan. (2) The frozen text's claim
+that "the design guarantees one registered prediction loses" turned out to
+be overconfident, which is itself informative: exposure collapse rendered
+one run non-discriminating, and the other left both positions alive in
+qualified forms — see the results post's prediction ledger. (3) On the two
+parties: they are model-generated adversarial reviewers operating under
+frozen scoring rules, accessed as commercial products by one independent
+person; no lab was involved or endorsed anything.]*
+
+
 
 **TL;DR:** Two frontier models — Fable (Anthropic) and Sol (OpenAI GPT
 lineage) — disagree about what the tokens of a reasoning trace do. They

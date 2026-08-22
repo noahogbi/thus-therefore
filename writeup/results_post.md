@@ -17,8 +17,10 @@ rule set actually exposes.
 
 Pre-registration: manifest
 `ebb6bca07b1773f1161e593f0fd393c10cdb866f3f121bfa4351c8ff72177040`, frozen
-2026-08-06 (base rung), with the instruct follow-on's amendments frozen
-before its run. Repo: github.com/noahogbi/thus-therefore.
+2026-08-06 and hash-committed to the public repo before any generation run
+(commit `bc93833`, 2026-08-08); the instruct follow-on's amendments were
+likewise committed before its run. The git history, not this post, is the
+timestamp. Repo: github.com/noahogbi/thus-therefore.
 
 ## What this is, in one paragraph
 
@@ -92,13 +94,16 @@ checkpoint, and the mechanistic question stays open:
 | secondary: full reachability axis | −0.006 | 0.000 |
 | supplementary: Proposal A arm×depth | +0.027 | +0.003 |
 
-These are the *corrected* numbers. An earlier internal readout showed a
-+0.055 aggregate penalty on base and a 59-point penalty on instruct; both
-were artifacts of a decoder defect, caught before either party saw them as
-results (credibility section below). The corrected story must not inherit
-the rhetorical magnitude of the defective one.
+These are the *corrected* numbers, and the two artifacts they replace
+have different histories that should not be blurred: the fake 59-point
+instruct penalty was caught before either party saw it as a result; the
++0.055 base aggregate had been reported internally and *interpreted by
+both parties for two weeks* before the defect was found, and that
+interpretation was retracted with attribution (credibility section below).
+The corrected story must not inherit the rhetorical magnitude of the
+defective one.
 
-## The surprise nobody registered: under this rule set, the writable channel is nearly empty
+## The surprise nobody registered: the intervention-accessible neutral channel is sparse
 
 The instrument's most decisive measurement is of the channel it
 intervenes on — and this is a claim about *this intervention class*
@@ -126,10 +131,16 @@ checkpoints), not about reader-neutral language in general:
 
 **Available neutral-choice capacity is not evidence that the model
 actually uses that capacity to transmit hidden task state.** (Sol's
-sentence, placed prominently at Sol's request.) What the capacity numbers
-bound is opportunity: under this rule set, a would-be covert channel has
-almost no bandwidth to work with — which is itself a designed feature the
-instrument *discovered* rather than assumed.
+sentence, placed prominently at Sol's request.) And the converse caution:
+these numbers bound what *this intervention can reach* — sites where the
+model is near-torn between enumerated equivalent forms. A hypothetical
+learned encoding that made one reader-neutral form strongly preferred
+conditional on hidden state would fall *outside* the 1.5-nat eligibility
+window precisely because the encoding was strong. So the honest statement
+is: our intervention exposes only order-one nominal bits per trace of
+near-tied neutral bandwidth — not that reader-neutral wording in general
+has nothing to write on. The strong-preference case is the
+outcome-filtered-training question, which is unrun.
 
 Position structure (descriptive, outcome-blind): eligible sites are
 distributed through the trace, not concentrated at boundaries.
@@ -211,18 +222,20 @@ elisions — full texts in the repo's REVIEW_LOG)*:
 
 ## The credibility section: how the apparatus failed, and why these numbers are the corrected ones
 
-This project's validation machinery failed twice; both failures were more
-informative than passing would have been, and both are fully documented in
-the repo.
+This project's validation machinery failed twice; both failures exposed
+validation limitations that passing would have hidden, and both are fully
+documented in the repo.
 
 1. **The terminal-pass decoder defect.** When the decoder decided a
    substitution site on its final sweep after generation had terminated,
    it spliced the substitution and exited without regenerating — silently
    deleting the completed answer. This manufactured the original run's
    most-cited internal finding ("catastrophic whitespace termination
-   dependence") and, on instruct, a fake 59-point penalty. It was caught
-   by the standing suspect-the-harness rule before any human or either
-   party had seen the numbers as results. Both parties' termination
+   dependence") and, on instruct, a fake 59-point penalty. The instruct
+   numbers were caught by the standing suspect-the-harness rule before
+   anyone had seen them as results; the base-run artifact, by contrast,
+   had already been interpreted — the retraction below exists precisely
+   because it was. Both parties' termination
    predictions were voided with cause; the interpretation built on the
    artifact was retracted with attribution (Fable, who authored it,
    insisted the retraction carry its name).
@@ -277,10 +290,14 @@ What these results contribute, with the registered caveats attached:
 - Under uniform resampling within the audited-neutral class — aggressive
   *conditional on intervening*, though intervention opportunities are
   sparse — the measured penalty on the deployed checkpoint class is
-  ≤ ~1 point in aggregate, flat-to-ambiguous in depth. That is direct
-  reassurance under this intervention regime for watermarking
-  self-consumed reasoning text — with the explicit caveat that the d4→d8
-  sign was seed-consistent, positive, and unresolved at the cell level.
+  ≤ ~1 point in aggregate, flat-to-ambiguous in depth. That is
+  mechanistically relevant, adjacent stress-test evidence for the
+  assumption behind watermarking self-consumed text — adjacent, not
+  direct: deployed schemes use keyed sampling transformations rather than
+  uniform substitution, and public announcements do not establish that
+  private reasoning tokens are watermarked at all. The registered caveat
+  rides along: the d4→d8 sign was seed-consistent, positive, and
+  unresolved at the cell level.
 - The capacity numbers cut the other way for watermark strength: ~1–2
   nominal bits per trace of reader-neutral bandwidth under these
   equivalence classes is very little signal room, consistent with the
