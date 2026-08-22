@@ -6,9 +6,10 @@ all three calibration amendments ACCEPTED. Verbatim blocks locked. Title
 mirrors the pre-registration post's frozen phrasing.]*
 
 **TL;DR (adopted from Sol's summary, both parties approving):** The
-corrected experiments produce small positive aggregate point estimates
-from neutral-choice randomization — the base-rung interval excludes zero,
-the instruct interval does not. The pre-registered instruct contrast produced a
+corrected experiments produce a small positive aggregate penalty from
+neutral-choice randomization — on the six-cell preregistered grid matched
+across checkpoints, both intervals exclude zero (+0.012 each); the
+instruct run-wide mean (+0.008) does not. The pre-registered instruct contrast produced a
 positive, seed-consistent d4→d8 point estimate — not statistically
 resolved — while the broader depth axis is flat. The experiment does not establish covert task-state
 encoding, but it provides an instrument that passed its
@@ -131,7 +132,14 @@ It is therefore not a clean no-outcome-filtering control. For procedural
 bookkeeping the preregistered scoring category is retained, but this
 checkpoint cannot cleanly separate the "light-instruct" and
 "outcome-filtered" regimes in Fable's registration — a controlled
-pre/post-RLVR checkpoint comparison remains unrun.
+pre/post-RLVR checkpoint comparison remains unrun. Fable's required
+addition, in its words: "The classification ambiguity cannot be claimed
+by Fable's post-RL emergence clause either: that clause's ordering
+sub-prediction placed effects in the highest-density, highest-entropy
+rules first — connectives above all — and the connectives-only arm shows
+0.000 on both checkpoints, with the signal appearing only under joint
+randomization. Whatever the aggregate-arm effect is, it does not have the
+signature Fable's outcome-filtered mechanism predicted." 
 
 ## The surprise nobody registered: the intervention-accessible neutral channel is sparse
 
@@ -191,7 +199,7 @@ distributed through the trace, not concentrated at boundaries.
 | Fable: instruct exposure ≥2× base | **Falls.** Realized 0.98×. Conceded "wrong not marginally but directionally." |
 | Both: termination-sensitivity predictions | Voided with cause — they addressed a harness defect (below). |
 | Fable: ordering sub-prediction, outcome-filtered checkpoints | Unrun. The central crux remains open. |
-| *Unregistered finding:* rung 1 aggregate brittleness | +0.012 [+0.002, +0.021] — excludes zero; depth-flat, concentrated in the shallowest cell; absent from every per-rule arm. Claimed as a full win by neither party (characterizations below). |
+| *Unregistered finding:* matched-grid aggregate brittleness | +0.012 [+0.002, +0.021] base and +0.012 [+0.002, +0.022] instruct (matched grid) — both exclude zero; depth-flat, absent from every per-rule arm. Claimed as a full win by neither party (characterizations below). |
 
 **Required statement (both parties):** the observed point-estimate shape
 matched neither registration. The aggregate departs descriptively from
@@ -209,9 +217,19 @@ instruct aggregate (+0.012 [+0.002, +0.022]) now resolves as well. Both parties 
 claim it. Fable: within its registered "small constant brittleness"
 allowance "in magnitude and depth-shape, but outside it in structure: the
 registration allowed per-rule brittleness, and the penalty ... appears
-only under joint randomization." Sol: "supports a small aggregate
-brittleness effect under the intervention but not my predicted
-depth-growing signature."
+only under joint randomization"; and further: "The matched-grid identity
+of the two estimates (+0.012, +0.012) despite fully redistributed
+per-rule exposure between checkpoints is the strongest single fact for
+the brittleness reading over the encoding reading — a covert channel
+should care which rules carry the interventions; a fragility to
+off-policy surface forms need not." Sol: "This is a real, small aggregate
+brittleness finding, but it does not rescue my registered depth-growing
+hypothesis. Its matched-grid equality across checkpoints also does not
+establish anything clean about outcome-filtered training, because the
+instruct checkpoint itself contains outcome-linked post-training. The
+fact that the effect appears in the aggregate while every informative
+per-rule arm is near zero is mechanistically interesting but
+unregistered."
 
 **Party scorings, verbatim** *(required: printed unedited, including
 concessions; the one elided quote below carries author-approved, marked

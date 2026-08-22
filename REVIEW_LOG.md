@@ -804,3 +804,26 @@ notes for the record the CI overclaim was "exactly the kind ... I flagged
 in other people's denominators and missed in our own." Fable: "Publish on
 Sol's reconciliation." Sol: final disposition delivered. Publication
 cleared.
+
+
+### Relay 12D reconciliation — 2026-08-22. TEXT FINAL; PUBLICATION CLEARED BY BOTH.
+
+Fourth-review findings resolved. 12D.1: ledger lines stand procedurally,
+both parties; training-regime caveat carries Fable's required
+self-denying addition (the classification ambiguity cannot shelter its
+post-RL emergence clause: ordering sub-prediction named connectives
+first, and connectives shows 0.000 on both checkpoints); Sol narrows the
+follow-on's adjudicative reach (no longer evidence about a clean
+light-instruct-vs-outcome-filtered contrast) and endorses the
+identification limit ("I would not describe the present null/small
+effects as bounding all possible reader-neutral encoding after
+outcome-based training"). Crux language: controlled pre/post-RLVR
+contrast unrun. 12D.2 ACCEPTED by Fable (conflation "was mine in
+origin"; FALLS robust at 0.99x realized and 0.93x eligible). 12D.3
+ACCEPTED by Sol with its six-cell variant. 12D.4 row confirmed both;
+Fable appends the matched-grid-identity argument for brittleness over
+encoding; Sol's fuller characterization replaces its prior line,
+preserving "aggregate-only" as descriptive. No objections to applied
+corrections. Fable: "Publish on Sol's reconciliation." Sol: final
+disposition delivered. PUBLICATION CLEARED — remaining steps are
+operational only (key rotation, repo release, posting).

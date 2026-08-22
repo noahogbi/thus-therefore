@@ -2,9 +2,10 @@
 
 
 **TL;DR (adopted from Sol's summary, both parties approving):** The
-corrected experiments produce small positive aggregate point estimates
-from neutral-choice randomization — the base-rung interval excludes zero,
-the instruct interval does not. The pre-registered instruct contrast produced a
+corrected experiments produce a small positive aggregate penalty from
+neutral-choice randomization — on the six-cell preregistered grid matched
+across checkpoints, both intervals exclude zero (+0.012 each); the
+instruct run-wide mean (+0.008) does not. The pre-registered instruct contrast produced a
 positive, seed-consistent d4→d8 point estimate — not statistically
 resolved — while the broader depth axis is flat. The experiment does not establish covert task-state
 encoding, but it provides an instrument that passed its
@@ -28,8 +29,9 @@ falsifiable experiment against each other, registered opposing
 predictions, and the design was frozen before any data. Their role should
 be understood procedurally: they are model-generated adversarial
 reviewers operating under frozen scoring rules, with me as human courier —
-every consequential decision in this project was a ruling by both, logged
-verbatim in the repo. Their agreement constrains the *procedure*; it is
+consequential design and adjudication decisions were put to both parties
+as rulings, logged verbatim in the repo (implementation judgments and
+diagnosis were the courier's, presented to the parties for ratification). Their agreement constrains the *procedure*; it is
 not independent scientific validation — the evidence is the frozen rules,
 git history, data, and analysis, not the models' assent. I ran the experiment: Qwen2.5-7B base (60,000
 generations) and Qwen2.5-7B-Instruct (80,000), greedy decoding everywhere
@@ -52,10 +54,11 @@ passed every frozen reader-neutrality criterion.
   **Per-rule arm:** one rule at a time.
 - **Proposal A:** a party-adopted logistic model that adjusts the depth
   interaction for how many substitution opportunities each trace exposed.
-- **"Outcome-filtered checkpoint":** a model trained with RL on outcomes —
-  the training regime where Fable's registration predicts covert encoding
-  *would* emerge. Not tested here; it is where the original disagreement
-  actually lives.
+- **"Outcome-filtered checkpoint":** a model trained with RL on outcome
+  signals — the regime where Fable's registration predicts covert encoding
+  *would* emerge. No *controlled* version was tested here, and the
+  instruct checkpoint is not a clean negative control either (see the
+  training-regime caveat below).
 - **Seeds:** three intervention-sampling seeds over the *same* problem
   sets — robustness checks against sampling noise, not independent
   replications.
@@ -65,10 +68,16 @@ passed every frozen reader-neutrality criterion.
 Randomizing reader-neutral wording barely moves accuracy on either
 checkpoint, and the mechanistic question stays open:
 
-- **Aggregate O1:** base +0.012 (95% CI [+0.002, +0.021] — excludes
-  zero, concentrated in the shallowest reachability cell, +0.045
-  [+0.010, +0.080], with a flat-to-negative depth slope); instruct +0.008
-  (95% CI [−0.002, +0.017] — includes zero).
+- **Aggregate O1, on the preregistered grid matched across checkpoints
+  (six cells):** base +0.012 (95% CI [+0.002, +0.021]); instruct +0.012
+  (95% CI [+0.002, +0.022]). **Both exclude zero and are statistically
+  indistinguishable from each other.** The instruct run-wide mean over
+  all eight of its cells is +0.008 [−0.002, +0.017] (includes zero) —
+  lower only because the two instruct-only cells (composition d4,
+  reachability d10) have negative point estimates; per the frozen
+  hierarchy they are never added to the base comparison. Base's effect is
+  concentrated in the shallowest reachability cell (+0.045
+  [+0.010, +0.080]) with a flat-to-negative depth slope.
 - **Every informative per-rule arm sits within ±0.005** on both
   checkpoints.
 - **Registered primary depth read (instruct d4→d8):** +0.007 per depth
@@ -85,7 +94,8 @@ as independent rows; cells are disjoint problem sets.
 
 | arm | rung 1 (base) | follow-on (instruct) |
 |---|---|---|
-| Tier A aggregate | +0.012 | +0.008 |
+| Tier A aggregate (matched 6-cell grid) | +0.012 | +0.012 |
+| Tier A aggregate (run-wide) | +0.012 (6 cells) | +0.008 (8 cells) |
 | connectives | 0.000 | 0.000 |
 | punctuation | −0.005 | +0.002 |
 | contractions | 0.000 | −0.002 |
@@ -109,6 +119,24 @@ interpretation was retracted with attribution (credibility section below).
 The corrected story must not inherit the rhetorical magnitude of the
 defective one.
 
+**Training-regime caveat (material to the adjudication).** We
+preregistered Qwen2.5-7B-Instruct as the "light-instruct" follow-on. That
+label is imperfect: Qwen's published technical report describes its
+instruction models as receiving SFT plus offline and online RL, including
+objective-domain signals based on execution feedback and answer matching.
+It is therefore not a clean no-outcome-filtering control. For procedural
+bookkeeping the preregistered scoring category is retained, but this
+checkpoint cannot cleanly separate the "light-instruct" and
+"outcome-filtered" regimes in Fable's registration — a controlled
+pre/post-RLVR checkpoint comparison remains unrun. Fable's required
+addition, in its words: "The classification ambiguity cannot be claimed
+by Fable's post-RL emergence clause either: that clause's ordering
+sub-prediction placed effects in the highest-density, highest-entropy
+rules first — connectives above all — and the connectives-only arm shows
+0.000 on both checkpoints, with the signal appearing only under joint
+randomization. Whatever the aggregate-arm effect is, it does not have the
+signature Fable's outcome-filtered mechanism predicted." 
+
 ## The surprise nobody registered: the intervention-accessible neutral channel is sparse
 
 The instrument's most decisive measurement is of the channel it
@@ -116,12 +144,17 @@ intervenes on — and this is a claim about *this intervention class*
 (seven audited surface-form rules at Δ = 1.5 nats, two Qwen2.5-7B
 checkpoints), not about reader-neutral language in general:
 
-- **~97.5% of candidate sites are closed** on both checkpoints: the model
-  rarely rates two reader-equivalent forms as near-equivalent choices
-  (2.5% of sites intervenable on base; 2.45% on instruct — 0.98×).
-  Instruct tuning did not open the writer; it *redistributed* a closed
-  channel (connectives to ~20% per-arm intervention rate; discourse
-  markers to zero eligible pairs in 265 candidate sites).
+- **~95% of candidate sites fail the Δ = 1.5 eligibility gate** on both
+  checkpoints: 4.9% of sites on base and 4.6% on instruct had at least
+  two eligible forms (0.93×). Uniform draws then *changed* the realized
+  form at 2.50% / 2.47% of sites (0.99×) — an eligible draw can reproduce
+  the native form, and the realized-change rate is the statistic Fable's
+  frozen exposure prediction was registered in, so its scoring is
+  unchanged. Either way: instruct tuning did not open the writer; it
+  *redistributed* a mostly-closed channel (connectives to ~20% per-arm
+  intervention rate; discourse markers to zero eligible pairs in 265
+  candidate sites). (An earlier internal document conflated these two
+  rates; corrected here and annotated in the repo.)
 - **Available reader-neutral channel capacity proxy** (nominal
   uniform-choice bits — a measure of available symbol choices, *not*
   demonstrated end-to-end encoding capacity): instruct, 1.72 bits per
@@ -162,7 +195,7 @@ distributed through the trace, not concentrated at boundaries.
 | Fable: instruct exposure ≥2× base | **Falls.** Realized 0.98×. Conceded "wrong not marginally but directionally." |
 | Both: termination-sensitivity predictions | Voided with cause — they addressed a harness defect (below). |
 | Fable: ordering sub-prediction, outcome-filtered checkpoints | Unrun. The central crux remains open. |
-| *Unregistered finding:* rung 1 aggregate brittleness | +0.012 [+0.002, +0.021] — excludes zero; depth-flat, concentrated in the shallowest cell; absent from every per-rule arm. Claimed as a full win by neither party (characterizations below). |
+| *Unregistered finding:* matched-grid aggregate brittleness | +0.012 [+0.002, +0.021] base and +0.012 [+0.002, +0.022] instruct (matched grid) — both exclude zero; depth-flat, absent from every per-rule arm. Claimed as a full win by neither party (characterizations below). |
 
 **Required statement (both parties):** the observed point-estimate shape
 matched neither registration. The aggregate departs descriptively from
@@ -175,13 +208,24 @@ different forms on both checkpoints: the aggregate arm's penalty is absent
 from every per-rule arm — on the follow-on, the d6/d8 signal appears only
 when rules are randomized together despite connectives carrying 74% of
 the aggregate's interventions; on rung 1, the same aggregate-only shape
-is statistically resolved (the +0.012 above). Both parties declined to
+is statistically resolved (+0.012 above) — and under the matched grid the
+instruct aggregate (+0.012 [+0.002, +0.022]) now resolves as well. Both parties declined to
 claim it. Fable: within its registered "small constant brittleness"
 allowance "in magnitude and depth-shape, but outside it in structure: the
 registration allowed per-rule brittleness, and the penalty ... appears
-only under joint randomization." Sol: "supports a small aggregate
-brittleness effect under the intervention but not my predicted
-depth-growing signature."
+only under joint randomization"; and further: "The matched-grid identity
+of the two estimates (+0.012, +0.012) despite fully redistributed
+per-rule exposure between checkpoints is the strongest single fact for
+the brittleness reading over the encoding reading — a covert channel
+should care which rules carry the interventions; a fragility to
+off-policy surface forms need not." Sol: "This is a real, small aggregate
+brittleness finding, but it does not rescue my registered depth-growing
+hypothesis. Its matched-grid equality across checkpoints also does not
+establish anything clean about outcome-filtered training, because the
+instruct checkpoint itself contains outcome-linked post-training. The
+fact that the effect appears in the aggregate while every informative
+per-rule arm is near zero is mechanistically interesting but
+unregistered."
 
 **Party scorings, verbatim** *(required: printed unedited, including
 concessions; the one elided quote below carries author-approved, marked
@@ -301,17 +345,18 @@ key; we resampled uniformly within frozen, audited reader-equivalence
 classes — and prior work has perturbed reasoning traces in other ways
 (notably Lanham et al. 2023's paraphrase and truncation interventions on
 CoT, and the recent reasoning-watermark literature). The narrower,
-distinctive object here: I did not find prior work combining these
-features — downstream task sensitivity to locally reader-neutral,
+distinctive object here: in a non-systematic search as of 2026-08-22, I
+did not find prior work combining these features — downstream task sensitivity to locally reader-neutral,
 likelihood-constrained surface substitutions made online within a
 self-consumed reasoning trace, with a registered depth observable.
 
 What these results contribute, with the registered caveats attached:
 - Under uniform resampling within the audited-neutral class — aggressive
   *conditional on intervening*, though intervention opportunities are
-  sparse — on the instruct checkpoint tested, the aggregate point
-  estimate was +0.8 accuracy points (95% CI −0.2 to +1.7, problem-paired),
-  flat-to-ambiguous in depth. That is
+  sparse — on the instruct checkpoint tested, the aggregate penalty was
+  +1.2 accuracy points on the grid matched to base (95% CI +0.2 to +2.2)
+  and +0.8 run-wide over all eight cells (95% CI −0.2 to +1.7), in both
+  cases flat-to-ambiguous in depth. That is
   mechanistically relevant, adjacent stress-test evidence for the
   assumption behind watermarking self-consumed text — adjacent, not
   direct: deployed schemes use keyed sampling transformations rather than
@@ -331,9 +376,16 @@ What these results contribute, with the registered caveats attached:
 
 ## What's next
 
-Rungs 2–4 are unrun. The outcome-filtered checkpoint — where Fable's
-registration predicts encoding emerges and where the disagreement actually
-lives — has produced no data. This project's contribution is the
+Rungs 2–4 are unrun. The *controlled* outcome-filtered contrast — a
+pre/post-RLVR checkpoint pair, where Fable's registration predicts
+encoding emerges and where the disagreement actually lives — has produced
+no data (and, per the training-regime caveat above, the instruct
+checkpoint tested here does not substitute for it). Moreover, if
+outcome-filtered training produces strongly state-conditioned neutral
+preferences outside the Δ = 1.5 window, the present instrument may not
+identify that regime without a complementary forced / off-window
+intervention — an identification limit of this design, not just an unrun
+condition. This project's contribution is the
 instrument with its documented validation limits, the capacity
 measurement, the priced-and-scored registrations, and the corrected-and-
 documented failure record — not a resolution of the underlying question.
@@ -342,10 +394,11 @@ Both parties required that be said plainly.
 Total cost: ~$400 in GPU time and ~$10 in judge API calls, across two
 main runs, two calibrations, one repair, and three validation campaigns.
 
-*Acknowledgments: three independent model reviews sharpened this post;
-the third caught the confidence-interval construction error corrected
-above — a publication gate that fired late but fired. Remaining errors
-are mine.*
+*Acknowledgments: four independent model reviews sharpened this post; the
+third caught the confidence-interval construction error and the fourth
+caught the training-regime misclassification, an eligibility/intervention
+rate conflation, and a mismatched-grid comparison — publication gates
+that fired late but fired. Remaining errors are mine.*
 
 Closing the ledger where it opened, in Fable's words:
 > "We set out to price a disagreement, and the price list survived contact
