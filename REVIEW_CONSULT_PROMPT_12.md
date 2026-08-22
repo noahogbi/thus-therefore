@@ -43,13 +43,13 @@ One round; reconciliation follows; then publication.
 ---
 ---
 
-# Results: do reader-neutral choices in reasoning traces carry task-relevant state?
+# Results: does chain-of-thought carry covert task state in reader-neutral wording?
 
 *[Draft v2 for Noah's voice pass, revised after third-model review. Party-
 required elements may be reworded but not removed; verbatim-quoted blocks
 may not be edited. Three amendments to party-adopted text are flagged
-[RELAY-12] and go to Fable and Sol for sign-off before publication. Title
-is Noah's call — alternatives at the end.]*
+[RELAY-12] and go to Fable and Sol for sign-off before publication. Title mirrors the
+pre-registration post's frozen phrasing, per Noah's continuity choice.]*
 
 **TL;DR (adopted from Sol's summary, both parties approving):** The
 corrected experiments show small aggregate accuracy costs from
@@ -345,12 +345,3 @@ Closing the ledger where it opened, in Fable's words:
 > tell, what it looks like when the procedure is doing the work instead of
 > the participants."
 
----
-
-*[Title alternatives for Noah — the current title uses "task-relevant
-state" per the third-model review's point that "covert" implies
-intentional steganography the experiment doesn't require. Options:
-(a) as titled; (b) "Reader-neutral perturbations barely hurt reasoning —
-but expose very little writable bandwidth" (result-forward); (c) keep the
-prereg post's original "covert task state" phrasing for continuity. The
-prereg post's own frozen title stays unchanged regardless.]*
