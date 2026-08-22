@@ -1,18 +1,17 @@
 # Results: does chain-of-thought carry covert task state in reader-neutral wording?
 
-*[Draft v2 for Noah's voice pass, revised after third-model review. Party-
-required elements may be reworded but not removed; verbatim-quoted blocks
-may not be edited. Three amendments to party-adopted text are flagged
-[RELAY-12] and go to Fable and Sol for sign-off before publication. Title mirrors the
-pre-registration post's frozen phrasing, per Noah's continuity choice.]*
+*[FINAL — twelfth-relay compliance sign-off complete: both parties
+COMPLIANT (one verbatim-labeling defect cured with Sol's full ledger text),
+all three calibration amendments ACCEPTED. Verbatim blocks locked. Title
+mirrors the pre-registration post's frozen phrasing.]*
 
 **TL;DR (adopted from Sol's summary, both parties approving):** The
 corrected experiments show small aggregate accuracy costs from
 neutral-choice randomization. The pre-registered instruct contrast shows a
 positive, seed-consistent d4→d8 depth interaction, while the broader depth
 axis is flat. The experiment does not establish covert task-state
-encoding, but it provides a validated instrument [RELAY-12: propose to Sol
-"a certified instrument with documented validation limits"] — and a
+encoding, but it provides a certified instrument with documented
+validation limits — and a
 considerably clearer picture of how little neutral-choice bandwidth this
 rule set actually exposes.
 
@@ -152,15 +151,14 @@ matched neither registration. The aggregate departs descriptively from
 flat at reachability d6/d8 (+0.028, +0.031), though both 95% CIs include
 zero ([−0.026, +0.083], [−0.024, +0.086]); monotone growth likewise fails
 descriptively at d10 (−0.010) and across the full axis (0.000).
-[RELAY-12: rewording of Fable's 11.3(iii) element — shape-mismatch vs
-statistical resolution now explicitly separated; Fable to confirm.]
 One descriptive, **unregistered** observation neither side predicted: the
 aggregate arm's penalty is absent from the connectives-only arm, which
 carries 74% of the aggregate's interventions — whatever the d6/d8 signal
 is, it appears only when rules are randomized together.
 
 **Party scorings, verbatim** *(required: printed unedited, including
-concessions)*:
+concessions; the one elided quote below carries author-approved, marked
+elisions — full texts in the repo's REVIEW_LOG)*:
 
 **Fable, follow-on aggregate (final ledger line):**
 > "Follow-on aggregate (light-instruct), registered flat: strained, not
@@ -187,16 +185,29 @@ concessions)*:
 > but directionally: instruct tuning did not open the writer at all — it
 > redistributed a closed channel. ... It tested it; the answer was no."
 
-**Sol, both rungs (final ledger lines):**
-> "Rung 1 — unresolved / non-discriminating by pre-outcome ruling.
-> Registered prediction was positive Tier-A depth interaction; observed
-> primary d4→d8 slope was −0.001, but the run had already been declared
-> incapable of adjudicating that prediction before outcomes were computed.
-> Follow-on — stands narrowly on the registered primary sign prediction
-> ... directionally supported, not statistically resolved. ... My
-> registration predicted the sign, so it stands under its literal
-> preregistered criterion; it should not be presented as strong evidence
-> for the underlying mechanism."
+**Sol, both rungs (final ledger lines, in full):**
+> "My final lines:
+> - Rung 1 — unresolved / non-discriminating by pre-outcome ruling.
+>   Registered prediction was positive Tier-A depth interaction; observed
+>   primary d4→d8 slope was −0.001, but the run had already been declared
+>   incapable of adjudicating that prediction before outcomes were
+>   computed.
+> - Follow-on — stands narrowly on the registered primary sign prediction.
+>   Primary d4→d8 slope was +0.007, with all three seeds positive
+>   (+0.006 / +0.008 / +0.007). The position decomposition shows this is
+>   not explained by a pileup of answer-adjacent interventions at d6/d8.
+> - I would explicitly append: 'directionally supported, not statistically
+>   resolved.' The relevant cell penalties are +0.028 and +0.031 but both
+>   95% CIs include zero, while the full-axis secondary slope is +0.000
+>   and Proposal-A adjustment is +0.003. My registration predicted the
+>   sign, so it stands under its literal preregistered criterion; it
+>   should not be presented as strong evidence for the underlying
+>   mechanism.
+> - Termination prediction — voided with cause.
+>
+> The new position data strengthen the interpretation of the primary sign
+> only by removing one specific mechanistic confound. They do not justify
+> upgrading its evidentiary strength."
 
 ## The credibility section: how the apparatus failed, and why these numbers are the corrected ones
 
@@ -230,9 +241,7 @@ the repo.
    deterministic up to floating-point tie-breaking, flip incidence
    published. Input identity (task seeds, prompt bytes) remains exact.
    Per both parties' ruling, the reported seed-to-seed spread includes
-   this observed source of numerical nondeterminism [RELAY-12: rewording
-   of Fable's "error structure unaffected" element into this empirical
-   form; Fable to confirm].
+   this observed source of numerical nondeterminism.
 4. **Fable's logged self-critique**, printed at its insistence: its most
    confident interpretive writing of the project was built on the
    artifact, while the audit it helped freeze passed that artifact —

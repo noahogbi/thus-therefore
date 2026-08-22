@@ -749,3 +749,20 @@ disagreement, and the price list survived contact with two harness
 defects, a determinism fiction, and both of our registered shapes being
 wrong somewhere — which is, as far as I can tell, what it looks like when
 the procedure is doing the work instead of the participants."
+
+
+### Relay 12 reconciliation — 2026-08-22. FINAL TEXT LOCKED.
+
+(a) Fable COMPLIANT (waives dropped bolding; approves its marked
+elisions). Sol NON-COMPLIANT on one point, cured: the Sol scoring block
+was an elided excerpt labeled verbatim — replaced with Sol's full 11B
+final ledger text including the confound-removal-does-not-upgrade
+qualification and the voided termination line; scorings-section preamble
+now states the elision policy accurately. (b),(c) both COMPLIANT.
+Amendments: 12.A ACCEPTED by Sol ("a certified instrument with documented
+validation limits"); 12.B and 12.C ACCEPTED by Fable as worded, with
+Fable's reasoning logged ("it would have been inconsistent of me to keep
+the stronger phrasing"; "the strongest sentence the evidence supports").
+Both parties: publish on reconciliation. This entry is that
+reconciliation. Remaining before posting: key rotation (PUBLISH_CHECKLIST
+phase 0), then Phase 2-3.
