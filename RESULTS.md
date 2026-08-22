@@ -103,6 +103,12 @@ sites and intervened on **3,860 (2.5%)**. The other 97.5% were skipped
 because fewer than two candidates fell within Δ = 1.5 nats: the model
 rarely regards two reader-equivalent surface forms as comparable.
 
+> **[CORRECTION NOTE, 2026-08-22]** The second sentence conflates two
+> rates: ~4.9% of candidate sites had >=2 eligible forms (the eligibility
+> gate); uniform draws then *changed* the realized form at 2.5% of sites,
+> because an eligible draw can reproduce the native form. "Skipped for
+> fewer than two eligible" describes ~95% of sites, not 97.5%.
+
 Per-problem coverage, aggregate arm (consistent across all three seeds):
 
 | cell | problems touched | mean interventions | native-path mean eligible |
