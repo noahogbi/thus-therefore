@@ -9,9 +9,15 @@ relay.**
 
 ## Rerun fleet (SSH key ~/.ssh/thus_therefore_gpu, root)
 
-| Pod | RunPod ID | IP:port | $/hr | Assignment |
-|---|---|---|---|---|
-| r1-a | 2wv6026fvnlw62 | 38.65.239.56:25259 | 0.34 (community) | ALL 21 rung-1 randomized passes, queued in order (agg x3, r01-r06 x3) |
+**STATUS 2026-08-27 ~06:10 UTC: NO PODS RUNNING; LAUNCH ON FUNDS.**
+Balance ~$5.72. First launch attempt failed on infrastructure, not
+science: community pool served the SAME broken-CUDA host 4x (ip
+38.65.239.56 — nvidia-smi fine, torch.cuda.init() fails; AVOID/verify
+CUDA with `python -c "import torch; torch.cuda.init()"` BEFORE launching
+work); a secure pod then never exposed SSH in 20 min and was culled.
+~$0.32 spent. Nothing generated yet; nothing lost. On top-up: create pod
+(verify CUDA first), clone repo, run scripts/fleet_bootstrap.sh with the
+21 rung-1 specs below.
 
 Launched 2026-08-26 with ~$6 balance (Noah topping up ~$150-180; pod dies
 safely at zero — completed cells backed up to runs/rerun-backups/r1-a.tgz
