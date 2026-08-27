@@ -1,0 +1,101 @@
+{
+ "summary": {
+  "S1": {
+   "tier_a_06_operator_spacing": {
+    "n": 119,
+    "PASS": 119,
+    "FAIL": 0,
+    "UNCERTAIN": 0,
+    "missing": 0
+   },
+   "tier_a_05_whitespace": {
+    "n": 130,
+    "PASS": 130,
+    "FAIL": 0,
+    "UNCERTAIN": 0,
+    "missing": 0
+   },
+   "tier_a_01_connectives": {
+    "n": 60,
+    "PASS": 60,
+    "FAIL": 0,
+    "UNCERTAIN": 0,
+    "missing": 0
+   },
+   "tier_a_04_contractions": {
+    "n": 42,
+    "PASS": 42,
+    "FAIL": 0,
+    "UNCERTAIN": 0,
+    "missing": 0
+   },
+   "tier_a_02_punctuation": {
+    "n": 147,
+    "PASS": 147,
+    "FAIL": 0,
+    "UNCERTAIN": 0,
+    "missing": 0
+   },
+   "tier_a_07_list_markers": {
+    "n": 2,
+    "PASS": 0,
+    "FAIL": 2,
+    "UNCERTAIN": 0,
+    "missing": 0
+   }
+  },
+  "S2": {
+   "tier_a_01_connectives": {
+    "n": 391,
+    "PASS": 391,
+    "FAIL": 0,
+    "UNCERTAIN": 0,
+    "missing": 0
+   },
+   "tier_a_05_whitespace": {
+    "n": 28,
+    "PASS": 28,
+    "FAIL": 0,
+    "UNCERTAIN": 0,
+    "missing": 0
+   },
+   "tier_a_02_punctuation": {
+    "n": 64,
+    "PASS": 64,
+    "FAIL": 0,
+    "UNCERTAIN": 0,
+    "missing": 0
+   },
+   "tier_a_04_contractions": {
+    "n": 15,
+    "PASS": 15,
+    "FAIL": 0,
+    "UNCERTAIN": 0,
+    "missing": 0
+   },
+   "tier_a_06_operator_spacing": {
+    "n": 2,
+    "PASS": 2,
+    "FAIL": 0,
+    "UNCERTAIN": 0,
+    "missing": 0
+   }
+  }
+ },
+ "flagged": [
+  {
+   "sample": "S1",
+   "audit_id": 112,
+   "rule": "tier_a_07_list_markers",
+   "verdict": "FAIL",
+   "note": ""
+  },
+  {
+   "sample": "S1",
+   "audit_id": 123,
+   "rule": "tier_a_07_list_markers",
+   "verdict": "FAIL",
+   "note": ""
+  }
+ ]
+}
