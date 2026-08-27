@@ -1,3 +1,49 @@
+# FLEET_STATE.md — THIRTEENTH-RELAY RERUN IN PROGRESS (updated 2026-08-26)
+
+**Current operation: full randomized-arm rerun, both rungs, six-rule Tier A
+(rule 07 removed per relay 13; Sol's (a) governs via Fable's tiebreak
+deference). New manifests: rung 1 4a48c9fb... / follow-on 313ed911...
+Native arms RETAINED with provenance (party ruling). Publication held
+until rerun + audits (model AND human, both raters) + analyses + final
+relay.**
+
+## Rerun fleet (SSH key ~/.ssh/thus_therefore_gpu, root)
+
+| Pod | RunPod ID | IP:port | $/hr | Assignment |
+|---|---|---|---|---|
+| r1-a | 2wv6026fvnlw62 | 38.65.239.56:25259 | 0.34 (community) | ALL 21 rung-1 randomized passes, queued in order (agg x3, r01-r06 x3) |
+
+Launched 2026-08-26 with ~$6 balance (Noah topping up ~$150-180; pod dies
+safely at zero — completed cells backed up to runs/rerun-backups/r1-a.tgz
+by the session monitor every ~20 min; relaunch with the SAME bootstrap
+command resumes, redoing only the partial cell).
+
+Relaunch command (rung 1): create community 4090, gai-fix IPv4, clone
+repo, then run scripts/fleet_bootstrap.sh with the 21 specs
+(randomized:all:SEED x3, randomized:tier_a_0N_NAME:SEED for N=1..6 x3
+seeds 271828/161803/141421). run_pass defaults = rung-1 frozen config
+(base pin, frozen extraction). Follow-on rerun (NOT YET LAUNCHED): use
+scripts/fleet_bootstrap_followon.sh, same spec pattern minus tier_a_07,
+21 passes over the 8-cell grid.
+
+Cost plan: community/spot hunting, cull slow hosts after 20-min
+throughput check (pod H lesson: $/gen varies 2x). Est. total $130-200.
+
+## After the rerun (frozen sequence)
+1. Judge determinism gate (JUDGE_SMOKE_TEST reproduction).
+2. Model audit per rung (harness.audit seed 314159 over NEW randomized
+   data; judge_audit; score_audit).
+3. HUMAN audit per 12E protocol: Noah rater 1 (fresh samples), second
+   blind rater on flags with embedded decoys. FREEZE item 7 applies.
+4. Frozen analyses (run_analysis) on six-rule data; paired CIs
+   (problem-level, per relay 12C).
+5. Final relay: parties re-affirm ledger vs rerun numbers.
+6. Post updates, keys rotation (STILL PENDING), LessWrong.
+
+
+---
+# HISTORICAL LOG (pre-rerun operations)
+
 # FLEET_STATE.md — follow-on main run: COMPLETE
 
 **GENERATION FINISHED 2026-08-20 ~09:20 UTC.** All 25 passes x 8 cells x 400
