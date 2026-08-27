@@ -47,3 +47,13 @@ analysis is delivered, always labeled exploratory/descriptive.
 - **Watermark-strength dose-response.** If the bridge arm (above) is
   interesting, a proper dose axis (delta sweep) with registered functional
   form belongs in the next prereg.
+
+- **Freeze-time external timestamping.** Anchor the manifest hash to
+  independent witnesses at freeze time (OpenTimestamps; archive.org crawl
+  of the pushed commit) — git dates are self-asserted and GitHub push
+  events expire. Discovered 2026-08-27 when assessing what the current
+  project's timestamps can and cannot prove.
+- **Write human raters into the frozen validation path, not the appeal
+  path** (Fable's thirteenth-relay closing observation, adopted for the
+  next freeze): the human audit found the one thing every mechanical
+  layer passed.

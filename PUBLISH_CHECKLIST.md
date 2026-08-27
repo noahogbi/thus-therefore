@@ -108,3 +108,27 @@ Forum crossposting if offered.
 
 Current account state for reference: RunPod $6.04 (enough for phase 0–4;
 bridge arm needs ~$50 more when you get there).
+
+## Status addendum (2026-08-27)
+
+- **Step 5 secret scan: EXECUTED, CLEAN.** Full git history (all commits,
+  all diffs) + worktree: zero matches for Anthropic/RunPod/HF/AWS key
+  patterns or private-key blocks; no env/credential files ever committed.
+  Keys appeared only in local ~/.claude session transcripts (not the
+  repo) — rotation (steps 1-3) STILL PENDING and remains the only
+  credential exposure to close.
+- **Author identity note:** all commits are authored
+  `Noah <noah@foreverbuilt.com>` — public on GitHub since day one,
+  standard practice, and UNREMOVABLE without rewriting history (which
+  would destroy the timestamp commits 79781ea/bc93833). Noah signed off
+  2026-08-27. Future repos: use GitHub noreply email if unwanted.
+- **Archive.org: NEVER archived** (verified via availability API
+  2026-08-27: no snapshots exist, ours or crawler's). Archiving remains a
+  post-publication step (21). Honest scope: a snapshot now proves
+  existence-by-now only; it cannot retroactively witness the Aug-8 push.
+- **Timestamp lesson for next prereg** (also in IDEAS file): anchor the
+  manifest hash to an external witness AT FREEZE TIME — OpenTimestamps
+  and/or an archive.org crawl — so "when" is independent of all parties.
+- **Schedule:** soft publication target mid-to-late September 2026 ruled
+  worth it (core contributions don't decay; news-cycle loss already
+  mostly absorbed; scoop risk mitigated by git priority).
