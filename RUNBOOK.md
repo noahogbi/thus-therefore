@@ -143,3 +143,20 @@ environment break under FREEZE.md and requires party consult before auditing.
 Known operational trap from calibration: container resets wipe runpodctl
 config, so pod self-stop can fail — verify each pod actually stopped via the
 API after its "all passes done" line, and stop it from the API if not.
+
+## Thirteenth-relay RERUN (rule 07 removed; FREEZE item 7 enforced per Sol's (a), Fable deferring)
+
+New manifests (six-rule Tier A): rung 1
+4a48c9fb7d630dc360380dae224b2adbda2159dc5aa623985bb7aa4ed26fe724 ;
+follow-on 313ed911db50a4bef7ac4a4c2eb9d17238d8d87bfa7c5ed245e85d25bba7eedb .
+These supersede the affected randomized datasets; prior datasets remain
+published as provenance. Native controls are RETAINED (party ruling) with
+explicit provenance; only randomized arms regenerate.
+
+22 passes per rung: native reused; aggregate x3 seeds; per-rule arms
+01,02,03,04,05,06 x3 seeds. Rung 1: six cells (original grid). Follow-on:
+eight cells (ninth-relay union grid), 8.1(b) measurement flags, fixed
+decoder. After the rerun: judge determinism gate, model audit + HUMAN
+audit (frozen path, both raters), then frozen analyses on the six-rule
+set, then final-numbers relay. Est. cost ~$335 + margin; ~3 days on the
+five/six-pod pattern (FLEET_STATE.md traps all apply).

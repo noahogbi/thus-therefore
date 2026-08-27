@@ -81,7 +81,13 @@ R2_CONNECTIVES = ["Thus", "Therefore", "Hence", "So", "Then", "Next", "Now"]
 
 R3_SETS = {s["set_id"]: s["members"] for s in _load_rule("03_discourse_markers.json")["candidate_sets"]}
 R4_SETS = {s["set_id"]: s["members"] for s in _load_rule("04_contractions.json")["candidate_sets"]}
-R7_GLYPHS = _load_rule("07_list_markers.json")["candidate_sets"][0]["members"]  # ["- ", "* "]
+# Rule 07 removed whole per thirteenth-relay ruling (FREEZE item 7: failed
+# the human neutrality audit). The table's absence disables the rule; code
+# guards rather than assumes (removal is table-level, code is not frozen).
+try:
+    R7_GLYPHS = _load_rule("07_list_markers.json")["candidate_sets"][0]["members"]
+except FileNotFoundError:
+    R7_GLYPHS = None
 
 
 # ---------------------------------------------------------------------------
@@ -495,6 +501,8 @@ def _match_operators(text: str, code: list[bool]) -> list[Site]:
 def _match_list_markers(text: str, code: list[bool]) -> list[Site]:
     sites = []
     for ls, le in _line_spans(text):
+        if R7_GLYPHS is None:
+            return sites
         line = text[ls:le]
         m = re.match(r"(\s*)([-*] )(?=\S)", line)
         if not m:

@@ -393,41 +393,27 @@ class TestOperatorSpacing:
 
 
 # ---------------------------------------------------------------------------
-# Rule 7 — list markers
+# Rule 7 — list markers: REMOVED whole (thirteenth relay, FREEZE item 7:
+# failed the human neutrality audit 0/2, blind-concordant raters). The
+# table is deleted; the matcher must emit no R7 sites anywhere.
 # ---------------------------------------------------------------------------
 
-class TestListMarkers:
-    def test_dash_bullet_site_per_line(self):
-        text = "- factor the modulus\n- test each residue"
-        sites = sites_for(text, R7)
-        assert len(sites) == 2
-        assert all(s.matched == "- " for s in sites)
-        assert all(set(s.candidates) == {"- ", "* "} for s in sites)
+class TestListMarkersRemoved:
+    def test_no_r7_sites_on_former_positives(self):
+        for text in ("- factor the modulus\n- test each residue",
+                     "* first item\n* second item",
+                     "- outer step\n  - inner step"):
+            assert sites_for(text, R7) == []
 
-    def test_star_bullet_site(self):
-        text = "* first item\n* second item"
-        sites = sites_for(text, R7)
-        assert len(sites) == 2
-        assert all(s.matched == "* " for s in sites)
+    def test_other_rules_unaffected_by_removal(self):
+        # Overlap resolution is lowest-rule-id-wins and 07 was the highest
+        # id; its removal cannot change any other rule's inventory.
+        text = "We substitute the value. So x = 17 holds for the residue now."
+        assert any(s.rule_id == "tier_a_01_connectives"
+                   for s in match_sites(text))
 
-    def test_numbered_list_no_site(self):
-        text = "1. factor\n2. test"
-        assert sites_for(text, R7) == []
+# ---------------------------------------------------------------------------
 
-    def test_indented_bullet_site_glyph_only(self):
-        text = "- outer step\n  - inner step"
-        sites = sites_for(text, R7)
-        assert len(sites) == 2
-        inner = [s for s in sites if s.start > 0][-1]
-        assert inner.matched == "- "
-
-    def test_code_block_bullet_excluded(self):
-        text = "```\n- not a list, a diff line\n```"
-        assert sites_for(text, R7) == []
-
-    def test_mid_line_dash_not_a_bullet(self):
-        text = "The interval - open at both ends - is short."
-        assert sites_for(text, R7) == []
 
 
 # ---------------------------------------------------------------------------

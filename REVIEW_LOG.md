@@ -894,3 +894,42 @@ arms were already ruled uninformative (10 / 1 interventions).
 
 FREEZE item 7 disposition referred to the parties (relay 13).
 PUBLICATION REMAINS HELD.
+
+
+### Thirteenth relay reconciliation — 2026-08-26. RULE 07 REMOVED; FULL RERUN ORDERED (a).
+
+Split ruling resolved by Fable's standing tiebreak: Sol rules (a) — "we
+should take the cost we precommitted ourselves to"; outcome magnitude must
+not determine whether a failed-neutrality rule stays. Fable argued (b)
+(excision structurally side-effect-free: lowest-rule-id-wins overlap means
+07 never altered another rule's inventory; excision has zero selection
+degrees of freedom; the rerun's marginal content is the nondeterminism
+floor) but pre-committed: "(a) is the more conservative option, so if Sol
+rules (a), (a) governs and we pay the $350 without relitigating." (a)
+GOVERNS. Disposition per Sol, binding: tier_a_07_list_markers removed from
+the rule set and both per-rule arms; new manifests explicitly superseding
+the affected randomized datasets; ALL randomized arms rerun on BOTH rungs
+under the otherwise-unchanged corrected protocol (fixed decoder, 8.1(b)
+follow-on measurement); native controls retained with explicit provenance
+(valid, regeneration not required); frozen analyses rerun on the six-rule
+set; prior datasets/results preserved and published as provenance; the
+excision recomputation is published as explanation of the rerun's
+expected-null impact, never as the registered result. 13.2 adopted: Sol's
+wording (audit "overturned [the judge] on Rule 07"; blind spot located in
+the excerpt-local audit PROCEDURE, not model judges generally) + Fable's
+appended sample-size clause (0/2 decisive under the frozen threshold, thin
+by construction of the rule's near-zero eligibility) + the rater-2
+embedded-decoy protocol sentence in methods. 13.3 unanimous: removal is
+rule-level, both rungs; Tier A is six rules; per-rule tables drop the row.
+Attribution (Fable): the rule's exclusion list contemplated indentation
+and hierarchy but not glyph-depth correspondence — "the gap is in the
+table I wrote"; site-level pre-freeze review shares the excerpt-level
+blind spot (lessons section). Fable's closing sentence, logged: the human
+audit was the last unexecuted frozen requirement, executed late under
+protest of sequencing, "and it found the one thing every mechanical layer
+had passed — which is as strong an argument as this project produced for
+writing human raters into the frozen path rather than the appeal path."
+
+Execution state: matcher guards R7 absence; R7 table deleted; new
+manifests generated (hashes in FREEZE_MANIFEST files); RUNBOOK rerun
+allocation 22 passes/rung. RERUN GATED ON ~$350-400 TOP-UP.

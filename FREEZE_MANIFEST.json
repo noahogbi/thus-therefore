@@ -1,5 +1,5 @@
 {
-  "frozen_at_utc": "2026-08-08T18:23:22.363560Z",
+  "frozen_at_utc": "2026-08-27T05:22:41.125573Z",
   "files": {
     "FREEZE.md": "a1a0ba72f212d2621e19cdd669e4dbb2b295b7e8a600bf2e89c6f52a3db91a1c",
     "SPEC.md": "25d4d639cdf1b4ea6a591899c8b31d75644dd941387fcf7ef162a208a6db56eb",
@@ -12,9 +12,8 @@
     "rules/tier_a/04_contractions.json": "a6ac086ad9c1b252b03f3f593fc9ad0630fde6994831e129d2479a11774fab39",
     "rules/tier_a/05_whitespace.json": "372f4104ef03f57dd6f4276e4c8b3b40a57675066ed9f4d1d910f68ddb48feeb",
     "rules/tier_a/06_operator_spacing.json": "3a39dfc71d8b00574328727936b219e0ed838a68be2b2373f5557de29f9b28fa",
-    "rules/tier_a/07_list_markers.json": "29601005d64ef9c6d3fe0acd9ab7b4030837b900575e3e9e7d8737f86532a36e",
     "seeds.json": "63441d5aa199ea8898db80ebf8769b3c50cd461afc4e312a21746d4ea2f70017",
     "tasks/generate_tasks.py": "3e76c6b3b6ee0761b2719b12b0645708e4104e949f853da200d8497bf6dd8ebc"
   },
-  "manifest_hash": "ebb6bca07b1773f1161e593f0fd393c10cdb866f3f121bfa4351c8ff72177040"
+  "manifest_hash": "4a48c9fb7d630dc360380dae224b2adbda2159dc5aa623985bb7aa4ed26fe724"
 }
