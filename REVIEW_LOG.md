@@ -869,3 +869,28 @@ uncertainty method, a checkpoint misclassification, and an unexecuted
 frozen requirement — every one survived both parties' sign-offs first.
 "The parties priced the disagreement; the reviews priced the parties.
 Both prices belong in the post."
+
+
+### Human audit complete — 2026-08-26. RULE 07 (rung 1) FAILS; FREEZE item 7 live.
+
+Rater 1 (Noah): 1000/1000 rated; 998 PASS; both FAILs are rung 1's only
+two list-marker items (S1-112, S1-123: '- ' -> '* ' inside a nested
+outline using distinct glyphs per depth; rationale logged post-rating,
+withheld from rater 2). Rater 2 (independent, blind; 2 flagged items
+embedded among 18 seeded decoys): 20/20 concordant with rater 1 — all 18
+decoys PASS, both flagged items FAIL, no notes. Rule-level human rates:
+every rule 100% on both rungs EXCEPT tier_a_07_list_markers rung 1 at 0/2
+(model judge: 2/2 PASS on the same items). First demonstrated instance of
+the excerpt-audit blind spot recorded as a design observation in 7.4:
+structure-in-context (glyph-depth correspondence) invisible to
+excerpt-local judging. Follow-on sample contained no list-marker items
+(the rule's single follow-on intervention was not drawn).
+
+Computed removal impact (aggregate arms, matched grid): rung 1 O1
++0.0117 -> +0.0119 [+0.0026,+0.0213]; follow-on +0.0124 -> +0.0124
+[+0.0024,+0.0223]; both d4->d8 slopes unchanged to reported precision.
+Affected record-instances: 4 (rung 1) + 2 (follow-on). Rule-07 per-rule
+arms were already ruled uninformative (10 / 1 interventions).
+
+FREEZE item 7 disposition referred to the parties (relay 13).
+PUBLICATION REMAINS HELD.
