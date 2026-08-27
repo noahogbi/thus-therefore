@@ -88,14 +88,16 @@
    "audit_id": 112,
    "rule": "tier_a_07_list_markers",
    "verdict": "FAIL",
-   "note": ""
+   "note": "",
+   "rater1_reason_recorded_post_hoc": "Swap '- ' -> '* ' occurs inside a nested outline whose sibling levels use distinct glyphs ('-','+') to mark depth; changing one glyph mid-hierarchy changes the apparent nesting structure (protected channel 2: dependency structure / schedule-granularity). Confirmed by Noah as matching his reasoning; recorded after rating, withheld from rater 2."
   },
   {
    "sample": "S1",
    "audit_id": 123,
    "rule": "tier_a_07_list_markers",
    "verdict": "FAIL",
-   "note": ""
+   "note": "",
+   "rater1_reason_recorded_post_hoc": "Swap '- ' -> '* ' occurs inside a nested outline whose sibling levels use distinct glyphs ('-','+') to mark depth; changing one glyph mid-hierarchy changes the apparent nesting structure (protected channel 2: dependency structure / schedule-granularity). Confirmed by Noah as matching his reasoning; recorded after rating, withheld from rater 2."
   }
  ]
 }
