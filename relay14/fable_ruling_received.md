@@ -1,9 +1,16 @@
-# Fable ruling, fourteenth relay — received 2026-09-01 (Sol pending)
+# ADVISORY ONLY — in-session duplicate consultation. NOT the party ruling.
 
-Courier note: received via in-session consultation against the committed
-REVIEW_CONSULT_PROMPT_14.md; recorded verbatim below. Not yet reconciled;
-Sol has not ruled and must not see this before ruling. Reconciliation goes
-to REVIEW_LOG.md once both rulings are in.
+**Status corrected 2026-09-01, same day, before any reconciliation.** This
+document was produced by a fresh in-session Fable instance given repo
+access — not by the standing Fable thread that has ruled in all thirteen
+prior relays. **The party is the thread.** Noah is putting the same
+REVIEW_CONSULT_PROMPT_14.md to the original Fable thread; that ruling,
+when received, is the fourteenth-relay Fable ruling, and this file has no
+authority over it. Kept rather than deleted because this repo records
+what happened; labeled so it can never be mistaken for the party ruling
+or shown to either party thread before they rule.
+
+Recorded verbatim below as received.
 
 ---
 
