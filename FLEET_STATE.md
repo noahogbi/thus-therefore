@@ -5,7 +5,9 @@
 deference). New manifests: rung 1 4a48c9fb... / follow-on 313ed911...
 Native arms RETAINED with provenance (party ruling). Publication held
 until rerun + audits (model AND human, both raters) + analyses + final
-relay.**
+relay — AS OF RELAY 14 (2026-09-01) THIS HOLD IS A PARTY RULING, no
+longer an implementer summary: Sol ruled (b), Fable deferred per standing
+tiebreak. Funding the rerun is the critical path to publication.**
 
 ## Rerun fleet (SSH key ~/.ssh/thus_therefore_gpu, root)
 

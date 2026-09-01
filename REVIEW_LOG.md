@@ -933,3 +933,69 @@ writing human raters into the frozen path rather than the appeal path."
 Execution state: matcher guards R7 absence; R7 table deleted; new
 manifests generated (hashes in FREEZE_MANIFEST files); RUNBOOK rerun
 allocation 22 passes/rung. RERUN GATED ON ~$350-400 TOP-UP.
+
+### Fourteenth relay reconciliation — 2026-09-01. PUBLICATION HOLD AFFIRMED (b); NOW PARTY-RULED.
+
+Both parties ruled on REVIEW_CONSULT_PROMPT_14 (publication sequencing;
+the rerun itself explicitly not relitigated).
+
+**14.0 — UNANIMOUS: sequencing was genuinely open, not settled by relay
+13.** Sol: "I do not think Relay 13 explicitly settled publication
+sequencing, so this relay is procedurally legitimate." Fable: the
+thirteenth relay ordered what is rerun and what publishes as provenance,
+not timing; the FLEET_STATE hold sentence was implementer summary, not
+party text; 12E's own hold condition is satisfied on its terms now that
+the human audit is complete.
+
+**14.1 — SPLIT, resolved by Fable's standing tiebreak deference: (b)
+GOVERNS.** Sol rules (b) — publication waits for the six-rule rerun, its
+audits (model and human per 12E protocol), frozen analyses, and final
+reconciliation. Fable rules (a) with four conditions but pre-commits:
+"(b) is the more conservative option, so if Sol rules (b), (b) governs
+under my standing tiebreak, without relitigation." Same mechanism, same
+direction as relay 13.
+
+Sol's grounds, binding: (1) anchoring — readers remember stage-1 numbers
+however labeled; (2) asymmetric correction burden — a divergent stage 2
+"becomes socially legible as a correction or walk-back even though it is
+actually the first compliant result"; (3) protocol incentives — "funding
+and wall-clock inconvenience are exactly the kinds of pressures a freeze
+is supposed to survive." And the sentence that decides the weighing: the
+committed manifests and stable-number expectation "argue that the
+remaining wait is scientifically low-risk; they do not make early
+publication methodologically necessary."
+
+Fable's grounds, logged with the deference: the cost was precommitted and
+binds; the delay never was; stage-1 manifest-hash publication would have
+been the stronger anti-erosion move (external freeze-time witness before
+any rerun token — the 2026-08-27 addendum's own lesson); a hold "has
+protocol weight when it protects something." Fable's condition (iii) —
+pre-committing the interpretation of stage-1/stage-2 divergence (six
+record-instances plus tie-flip noise expected; more than that is reported
+as a nondeterminism finding, not absorbed) — is logged as available to
+the final relay when rerun numbers are reconciled, since the same
+divergence question arises there against the published RESULTS.md.
+
+**14.2 — MOOT under (b); convergence logged.** Had (a) prevailed, both
+parties independently required party approval of the exact stage-1 text
+before posting — Sol verbatim approval outright; Fable implementer
+drafting with verbatim party sign-off in one bounded compliance round
+("I authored the structural-equivalence argument, and it should be
+checked against my own tendency to find it satisfying").
+
+**Operative consequences.** The publication hold is upgraded from
+implementer summary to PARTY RULING: publish the preregistration,
+superseded seven-rule provenance, human-audit failure, six-rule
+registered results, correction history and final ledger TOGETHER, after
+rerun + audits + analyses + final relay (Sol's single-adjudication-point
+sequence). The rerun is now the critical path to publication; funding it
+is the implementer's next act. Credential rotation still gates
+everything. The 2026-08-27 soft window (mid-to-late September) remains
+the target and is achievable if the rerun starts promptly.
+
+**Courier note, for completeness.** An in-session duplicate Fable
+consultation was run before the courier put the prompt to the standing
+threads; it was labeled ADVISORY ONLY the same day, quarantined from both
+threads, and played no role here (relay14/fable_ruling_received.md). Its
+deference structure matched the thread ruling: under either document,
+Sol's (b) governs.
